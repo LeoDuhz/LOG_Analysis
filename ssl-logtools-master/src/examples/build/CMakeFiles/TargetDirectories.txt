@@ -1,3 +1,0 @@
-/home/zjunlict/dhz/LOG_Analysis/ssl-logtools-master/src/examples/build/CMakeFiles/rebuild_cache.dir
-/home/zjunlict/dhz/LOG_Analysis/ssl-logtools-master/src/examples/build/CMakeFiles/examplereader.dir
-/home/zjunlict/dhz/LOG_Analysis/ssl-logtools-master/src/examples/build/CMakeFiles/edit_cache.dir
