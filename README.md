@@ -45,4 +45,4 @@ To Do:
       
         ![Screenshot from 2021-02-23 16-52-42](README.assets/Screenshot from 2021-02-23 16-52-42.png)
       
-        
+        g++ examplereader.cpp -o examplereader -lprotobuf -lpthread -lm -lstdc++
