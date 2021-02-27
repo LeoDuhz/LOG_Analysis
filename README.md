@@ -45,4 +45,5 @@ To Do:
       
         ![Screenshot from 2021-02-23 16-52-42](README.assets/Screenshot from 2021-02-23 16-52-42.png)
       
-        g++ examplereader.cpp -o examplereader -lprotobuf -lpthread -lm -lstdc++
+        - g++ examplereader.cpp -o examplereader -lprotobuf -lpthread -lm -lstdc++
+        - g++ examplereader.cpp protobuf/cpp/messages_robocup_ssl_detection.pb.cc protobuf/cpp/messages_robocup_ssl_detection.pb.h protobuf/cpp/messages_robocup_ssl_geometry_legacy.pb.cc protobuf/cpp/messages_robocup_ssl_geometry_legacy.pb.h protobuf/cpp/messages_robocup_ssl_geometry.pb.cc protobuf/cpp/messages_robocup_ssl_geometry.pb.h protobuf/cpp/messages_robocup_ssl_wrapper_legacy.pb.cc protobuf/cpp/messages_robocup_ssl_wrapper.pb.h protobuf/cpp/messages_robocup_ssl_wrapper.pb.cc protobuf/cpp/messages_robocup_ssl_wrapper.pb.h protobuf/cpp/ssl_referee.pb.cc protobuf/cpp/ssl_referee.pb.h protobuf/cpp/messages_robocup_ssl_wrapper.pb.h.gch protobuf/cpp/ssl_referee.pb.h.gch -o examplereader -lprotobuf -lpthread -lm -lstdc++
