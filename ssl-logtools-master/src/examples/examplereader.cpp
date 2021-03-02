@@ -75,8 +75,8 @@ int main(int argc, char *argv[])
                     SSL_WrapperPacket packet;
                     if (packet.ParseFromArray(data, dataHeader.messageSize)) {
                         visionPackets++;
-                        std::cout << std::setiosflags(std::ios::fixed) << std::setprecision(3) << (double) dataHeader.timestamp / 1e9
-                                  << ": Read " << visionPackets << " vision packets and " << refereePackets << " referee packets!" << std::endl;
+                        // std::cout << std::setiosflags(std::ios::fixed) << std::setprecision(3) << (double) dataHeader.timestamp / 1e9
+                        //           << ": Read " << visionPackets << " vision packets and " << refereePackets << " referee packets!" << std::endl;
                     } else {
                         std::cerr << "Error parsing vision packet!" << std::endl;
                     }
@@ -84,8 +84,9 @@ int main(int argc, char *argv[])
                     SSL_Referee packet;
                     if (packet.ParseFromArray(data, dataHeader.messageSize)) {
                         refereePackets++;
-                        std::cout << std::setiosflags(std::ios::fixed) << std::setprecision(3) << (double) dataHeader.timestamp / 1e9
-                                  << ": Read " << visionPackets << " vision packets and " << refereePackets << " referee packets!" << std::endl;
+                        // std::cout << std::setiosflags(std::ios::fixed) << std::setprecision(3) << (double) dataHeader.timestamp / 1e9
+                        //           << ": Read " << visionPackets << " vision packets and " << refereePackets << " referee packets!" << std::endl;
+                        std::cout << "Referee Command" << packet.command() << std::endl;
                     } else {
                         std::cerr << "Error parsing vision packet!" << std::endl;
                     }
