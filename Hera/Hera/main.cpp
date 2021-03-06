@@ -10,7 +10,9 @@
 #include "logreader_global.h"
 #include "netreceive.h"
 #include "netreceive_global.h"
-#include "Windows.h"
+//#include "Windows.h"
+#include <time.h>
+#include <QThread>
 #include "staticparams.h"
 
 int main(int argc, char *argv[])
@@ -147,7 +149,7 @@ int main(int argc, char *argv[])
                         std::cout << "Error unsupported message type found in log file!" << std::endl;
                     }
                     if (parser.value(outputOption) == "ns") {
-                        Sleep(1000/60);
+                        QThread::msleep(1000/60);
                     }
                     std::cout << m_currentFrame + 1 << "/" << size << "\r";
                 }
@@ -171,7 +173,7 @@ int main(int argc, char *argv[])
                 vm.parse((void*)datagram.data(), datagram.size());
                 std::cout << "Some data was gotten from UDP." << "\r";
             }
-            Sleep(5);
+            QThread::msleep(5);
             std::cout << "Nothing from UDP." << "\r";
         }
     } else {

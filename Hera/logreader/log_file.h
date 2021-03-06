@@ -4,6 +4,7 @@
 #include "file_format.h"
 #include <QList>
 #include <QMap>
+#include "qfile.h"
 
 class QtIOCompressor;
 

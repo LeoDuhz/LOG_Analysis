@@ -3,50 +3,63 @@ Robocup SSL LOG Analysis
 
 
 
-To Do:
+File:
 
-- [ ] LOG Split
+`Hera`:ZJUNLICT LOG Tools
 
-  - Find useful log part(skip the referee time)
+`ssl-logtools`:Robocup SSL LOG Tools
 
-    - Official LOG:https://tigers-mannheim.de/download/gamelogs/ or https://mirror.robojackets.org/robocup-small-size-league/gamelogs/
 
-    - LOG file format(Reference: https://github.com/RoboCup-SSL/ssl-logtools)
 
-      Each log file starts with the following header:
+## To Do:
 
-      > 1: String - File type ("SSL_LOG_FILE") <br>
-      > 2: Int32  - Log file format version <br>
+### LOG Split
 
-      Format version 1 encodes the protobuf messages in the following format:
+- Find useful log part(skip the referee time)
 
-      > 1: Int64  - Receiver timestamp in ns <br>
-      > 2: Int32  - Message type <br>
-      > 3: Int32  - Size of binary protobuf message <br>
-      > 4: String - Binary protobuf message <br>
+  - Official LOG:https://tigers-mannheim.de/download/gamelogs/ or https://mirror.robojackets.org/robocup-small-size-league/gamelogs/
 
-      The message types are:
+  - LOG file format(Reference: https://github.com/RoboCup-SSL/ssl-logtools)
 
-      > MESSAGE_BLANK           = 0 (ignore message)<br>
-      > MESSAGE_UNKNOWN         = 1 (try to guess message type by parsing the data)<br>
-      > MESSAGE_SSL_VISION_2010 = 2<br>
-      > MESSAGE_SSL_REFBOX_2013 = 3<br>
-      > MESSAGE_SSL_VISION_2014 = 4<br>
+    Each log file starts with the following header:
 
-    - Read 
+    > 1: String - File type ("SSL_LOG_FILE") <br>
+    > 2: Int32  - Log file format version <br>
 
-      Header->DataHeader->MessageType?->Message
+    Format version 1 encodes the protobuf messages in the following format:
 
-      - Learn Protobuf
+    > 1: Int64  - Receiver timestamp in ns <br>
+    > 2: Int32  - Message type <br>
+    > 3: Int32  - Size of binary protobuf message <br>
+    > 4: String - Binary protobuf message <br>
 
-      - Protobuf format: Referee status judge:Command:Normal Start or Force Start
+    The message types are:
 
-      - Problem:
+    > MESSAGE_BLANK           = 0 (ignore message)<br>
+    > MESSAGE_UNKNOWN         = 1 (try to guess message type by parsing the data)<br>
+    > MESSAGE_SSL_VISION_2010 = 2<br>
+    > MESSAGE_SSL_REFBOX_2013 = 3<br>
+    > MESSAGE_SSL_VISION_2014 = 4<br>
 
-        ![Screenshot from 2021-02-23 16-52-42](README.assets/Screenshot from 2021-02-23 16-52-42.png)
+    #### Read 
 
-        - g++ examplereader.cpp -o examplereader -lprotobuf -lpthread -lm -lstdc++
+    Header->DataHeader->MessageType?->Message
 
-        - fuck! Problem Solved!
+    - Learn Protobuf
 
-          Solution:ssl-logtools-master/src/examplereader/CMakeLists.txt last line delete
+    - Protobuf format: Referee status judge:Command:Normal Start or Force Start
+
+    - 2021.2.28 Problem:
+
+      ![Screenshot from 2021-02-23 16-52-42](README.assets/Screenshot from 2021-02-23 16-52-42.png)
+
+      - g++ examplereader.cpp -o examplereader -lprotobuf -lpthread -lm -lstdc++
+
+      - 2021.3.1 fuck! Problem Solved!
+
+        Solution:ssl-logtools-master/src/examplereader/CMakeLists.txt last line delete
+
+    - LOG: may have error    **how to deal with error and some problems in LOG**
+    - Raw data has to be processed by our **Vision Module**
+    - 2021.3.6 fix many problems of **Hera**
+  

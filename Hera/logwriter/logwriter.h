@@ -11,7 +11,7 @@ public:
     ~LogWriter();
 
     qint64 write(QByteArray buffer);
-    void setFileName(QString &filename);
+    void setFileName(QString filename);
 private:
     QFile* outfile;
 };

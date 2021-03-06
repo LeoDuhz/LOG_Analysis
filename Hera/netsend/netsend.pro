@@ -32,8 +32,50 @@ HEADERS += \
     ../Hera/share/staticparams.h \
     ../Hera/share/proto/cpp/vision_detection.pb.h
 
-PROTOBUF_INCLUDE_DIR = $$PWD/../3rdParty/protobuf/include
-PROTOBUF_LIB = $$PWD/../3rdParty/protobuf/lib/x64/libprotobuf.lib
+win32 {
+    PROTOBUF_INCLUDE_DIR = $${THIRD_PARTY_DIR}/protobuf/include
+    ZLIB_INCLUDE_DIR = $${THIRD_PARTY_DIR}/zlib/include
+    EIGEN_INCLUDE_DIR = $${THIRD_PARTY_DIR}/Eigen
+
+    contains(QMAKE_TARGET.arch, x86_64){
+        message("64-bit")
+        CONFIG(release,debug|release){
+            PROTOBUF_LIB = $${THIRD_PARTY_DIR}/protobuf/lib/x64/libprotobuf.lib
+            ZLIB_LIB = $${THIRD_PARTY_DIR}/zlib/lib/x64/zlib.lib
+        }
+        CONFIG(debug,debug|release){
+            PROTOBUF_LIB = $${THIRD_PARTY_DIR}/protobuf/lib/x64/libprotobufd.lib
+            ZLIB_LIB = $${THIRD_PARTY_DIR}/zlib/lib/x64/zlibD.lib
+        }
+    } else {
+        message("32-bit")
+        CONFIG(release,debug|release){
+            PROTOBUF_LIB = $${THIRD_PARTY_DIR}/protobuf/lib/x86/libprotobuf.lib
+            ZLIB_LIB = $${THIRD_PARTY_DIR}/zlib/lib/x86/zlib.lib
+        }
+        CONFIG(debug,debug|release){
+            PROTOBUF_LIB = $${THIRD_PARTY_DIR}/protobuf/lib/x86/libprotobufd.lib
+            ZLIB_LIB = $${THIRD_PARTY_DIR}/zlib/lib/x86/zlib.lib
+        }
+    }
+}
+
+unix:!macx{
+    PROTOBUF_INCLUDE_DIR = $${PROTOBUF2_DIR}/include
+    PROTOBUF_LIB = -L$${PROTOBUF2_DIR}/lib \
+                -lprotobuf
+    ZLIB_INCLUDE_DIR = $${THIRD_PARTY_DIR}/zlib/include
+    ZLIB_LIB = -lz
+    EIGEN_INCLUDE_DIR = /usr/include/eigen3
+}
+
+macx {
+    PROTOBUF_INCLUDE_DIR = $${THIRD_PARTY_DIR}/protobuf/2.6.1/include
+    PROTOBUF_LIB = $${THIRD_PARTY_DIR}/protobuf/2.6.1/lib/libprotobuf.a
+    ZLIB_INCLUDE_DIR = $${THIRD_PARTY_DIR}/zlib/include
+    ZLIB_LIB = $${THIRD_PARTY_DIR}/zlib/lib/zlib.a
+    EIGEN_INCLUDE_DIR = $${THIRD_PARTY_DIR}/Eigen
+}
 
 LIBS += $$PROTOBUF_LIB \
 

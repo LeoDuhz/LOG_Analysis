@@ -11,7 +11,7 @@ LogWriter::~LogWriter() {
     outfile = NULL;
 }
 
-void LogWriter::setFileName(QString &filename) {
+void LogWriter::setFileName(QString filename) {
     delete outfile;
     outfile = NULL;
 

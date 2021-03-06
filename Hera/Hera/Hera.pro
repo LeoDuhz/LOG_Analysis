@@ -56,15 +56,7 @@ INCLUDEPATH += \
     $$PWD/share \
     $$PWD/share/proto/cpp
 
-LOGREADER_LIB = $$PWD/../bin/logreader.lib
-LOGWRITER_LIB = $$PWD/../bin/logwriter.lib
-NETSEND_LIB = $$PWD/../bin/netsend.lib
-NETRECEIVE_LIB = $$PWD/../bin/netreceive.lib
 
-LIBS += $$LOGREADER_LIB \
-        $$LOGWRITER_LIB \
-        $$NETSEND_LIB \
-        $$NETRECEIVE_LIB
 
 DESTDIR = $$PWD/../bin/
 
@@ -131,6 +123,10 @@ win32 {
         PROTOBUF_LIB = $${THIRD_PARTY_DIR}/protobuf/lib/libprotobufD.lib
         ZLIB_LIB = $${THIRD_PARTY_DIR}/zlib/lib/zlibD.lib
     }
+    LOGREADER_LIB = $$PWD/../bin/logreader.lib
+    LOGWRITER_LIB = $$PWD/../bin/logwriter.lib
+    NETSEND_LIB = $$PWD/../bin/netsend.lib
+    NETRECEIVE_LIB = $$PWD/../bin/netreceive.lib
 }
 unix:!macx{
     PROTOBUF_INCLUDE_DIR = $${THIRD_PARTY_DIR}/include
@@ -138,6 +134,11 @@ unix:!macx{
     ZLIB_INCLUDE_DIR = $${THIRD_PARTY_DIR}/zlib/include
     ZLIB_LIB = -lz
     EIGEN_INCLUDE_DIR = /usr/include/eigen3
+    LOGREADER_LIB = $$PWD/../bin/liblogreader.so
+    LOGWRITER_LIB = $$PWD/../bin/liblogwriter.so
+    NETSEND_LIB = $$PWD/../bin/libnetsend.so
+    NETRECEIVE_LIB = $$PWD/../bin/libnetreceive.so
+
 }
 
 macx {
@@ -146,9 +147,17 @@ macx {
     ZLIB_INCLUDE_DIR = $${THIRD_PARTY_DIR}/zlib/include
     ZLIB_LIB = $${THIRD_PARTY_DIR}/zlib/lib/zlib.a
     EIGEN_INCLUDE_DIR = $${THIRD_PARTY_DIR}/Eigen
+    LOGREADER_LIB = $$PWD/../bin/liblogreader.a
+    LOGWRITER_LIB = $$PWD/../bin/liblogwriter.a
+    NETSEND_LIB = $$PWD/../bin/libnetsend.a
+    NETRECEIVE_LIB = $$PWD/../bin/libnetreceive.a
 }
 
-LIBS += $$PROTOBUF_LIB \
+LIBS += $$LOGREADER_LIB \
+        $$LOGWRITER_LIB \
+        $$NETSEND_LIB \
+        $$NETRECEIVE_LIB \
+        $$PROTOBUF_LIB \
         $$ZLIB_LIB
 
 INCLUDEPATH += $$PROTOBUF_INCLUDE_DIR \

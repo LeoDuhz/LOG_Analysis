@@ -1,6 +1,6 @@
 #include "../Hera/share/staticparams.h"
 #include "netreceive.h"
-#include "Windows.h"
+//#include "Windows.h"
 
 NetReceive::NetReceive(QObject *parent) : QObject(parent){
     udpSocketConnect();
