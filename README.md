@@ -3,7 +3,7 @@ Robocup SSL LOG Analysis
 
 
 
-File:
+## File:
 
 `Hera`:ZJUNLICT LOG Tools
 
@@ -60,6 +60,15 @@ File:
         Solution:ssl-logtools-master/src/examplereader/CMakeLists.txt last line delete
 
     - LOG: may have error    **how to deal with error and some problems in LOG**
+    
     - Raw data has to be processed by our **Vision Module**
-    - 2021.3.6 fix many problems of **Hera**
+    
+    - 2021.3.6 fix many problems of **Hera**, see git commits
+    
+    - 2021.3.7 while running Hera, **segmentation fault**,  using gdb to debug:
+    
+      Program terminated with signal SIGSEGV, Segmentation fault.
+      #0  google::protobuf::Message::GetDescriptor (this=0x7f0af7938348)
+          at ./google/protobuf/message.h:353
+      353	  const Descriptor* GetDescriptor() const { return GetMetadata().descriptor; }
   
