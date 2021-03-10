@@ -1,0 +1,30 @@
+syntax = "proto2";
+
+package ZSS.Protocol;
+
+message Robot_Param {
+	required Robot robot          = 1;
+	required Chip_Param chipparam = 2;
+  	required Flat_Param flatparam = 3;
+}
+
+message Flat_Param {
+  	required double fa   = 1;
+  	required double fb   = 2;
+  	required double fc   = 3;
+	required double fmax = 4;
+	required double fmin = 5;
+}
+
+message Chip_Param {
+  	required double ca   = 1;
+  	required double cb   = 2;
+  	required double cc   = 3;
+	required double cmax = 4;
+	required double cmin = 5;
+}
+
+message Robot {
+  	required int32 team = 1;
+  	required int32 id   = 2;
+}

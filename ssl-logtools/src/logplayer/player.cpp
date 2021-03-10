@@ -28,7 +28,7 @@ Player::Player() :
 
     // create vision socket
     Q_ASSERT(m_vision == NULL);
-    m_vision = new Network(QHostAddress("224.5.23.2"), 0, 10006);
+    m_vision = new Network(QHostAddress("224.5.23.2"), 0, 10008);
     m_vision->connect();
 
     // create legacy vision socket

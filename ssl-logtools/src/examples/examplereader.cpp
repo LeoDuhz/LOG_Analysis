@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
                     SSL_WrapperPacket packet;
                     if (packet.ParseFromArray(data, dataHeader.messageSize)) {
                         visionPackets++;
-                        std::cout << "Robot_yellow size: " << packet.has_geometry() << std::endl;
+                        std::cout << "Robot_yellow size: " << packet.detection().camera_id() << std::endl;
                         // std::cout << std::setiosflags(std::ios::fixed) << std::setprecision(3) << (double) dataHeader.timestamp / 1e9
                         //           << ": Read " << visionPackets << " vision packets and " << refereePackets << " referee packets!" << std::endl;
                     } else {

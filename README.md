@@ -71,4 +71,15 @@ Robocup SSL LOG Analysis
       #0  google::protobuf::Message::GetDescriptor (this=0x7f0af7938348)
           at ./google/protobuf/message.h:353
       353	  const Descriptor* GetDescriptor() const { return GetMetadata().descriptor; }
+    
+    - fix by Keke, with a brand new vision module 
+    
+      using official logplayer, sending data to visionmodule by udp
+    
+    - newvisionmodule:
+    
+      port of referee and vision needs to match with logplayer player.cpp
+    
+      move the main.qml to debug directory
+  
   
