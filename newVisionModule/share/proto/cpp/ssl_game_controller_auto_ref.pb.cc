@@ -14,84 +14,132 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fcommon_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BotId_ssl_5fgame_5fcontroller_5fcommon_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fcommon_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<34> scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fcommon_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto;
+class AutoRefRegistrationDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AutoRefRegistration> _instance;
+} _AutoRefRegistration_default_instance_;
+class AutoRefToControllerDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AutoRefToController> _instance;
+} _AutoRefToController_default_instance_;
+class ControllerToAutoRefDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ControllerToAutoRef> _instance;
+  const ::ControllerReply* controller_reply_;
+} _ControllerToAutoRef_default_instance_;
+class AutoRefMessage_WaitForBots_ViolatorDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AutoRefMessage_WaitForBots_Violator> _instance;
+} _AutoRefMessage_WaitForBots_Violator_default_instance_;
+class AutoRefMessage_WaitForBotsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AutoRefMessage_WaitForBots> _instance;
+} _AutoRefMessage_WaitForBots_default_instance_;
+class AutoRefMessageDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AutoRefMessage> _instance;
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr custom_;
+  const ::AutoRefMessage_WaitForBots* wait_for_bots_;
+} _AutoRefMessage_default_instance_;
+static void InitDefaultsscc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr AutoRefRegistration::AutoRefRegistration(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : identifier_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , signature_(nullptr){}
-struct AutoRefRegistrationDefaultTypeInternal {
-  constexpr AutoRefRegistrationDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~AutoRefRegistrationDefaultTypeInternal() {}
-  union {
-    AutoRefRegistration _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AutoRefRegistrationDefaultTypeInternal _AutoRefRegistration_default_instance_;
-constexpr AutoRefToController::AutoRefToController(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : signature_(nullptr)
-  , game_event_(nullptr)
-  , auto_ref_message_(nullptr){}
-struct AutoRefToControllerDefaultTypeInternal {
-  constexpr AutoRefToControllerDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~AutoRefToControllerDefaultTypeInternal() {}
-  union {
-    AutoRefToController _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AutoRefToControllerDefaultTypeInternal _AutoRefToController_default_instance_;
-constexpr ControllerToAutoRef::ControllerToAutoRef(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : _oneof_case_{}{}
-struct ControllerToAutoRefDefaultTypeInternal {
-  constexpr ControllerToAutoRefDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~ControllerToAutoRefDefaultTypeInternal() {}
-  union {
-    ControllerToAutoRef _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ControllerToAutoRefDefaultTypeInternal _ControllerToAutoRef_default_instance_;
-constexpr AutoRefMessage_WaitForBots_Violator::AutoRefMessage_WaitForBots_Violator(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : bot_id_(nullptr)
-  , distance_(0){}
-struct AutoRefMessage_WaitForBots_ViolatorDefaultTypeInternal {
-  constexpr AutoRefMessage_WaitForBots_ViolatorDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~AutoRefMessage_WaitForBots_ViolatorDefaultTypeInternal() {}
-  union {
-    AutoRefMessage_WaitForBots_Violator _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AutoRefMessage_WaitForBots_ViolatorDefaultTypeInternal _AutoRefMessage_WaitForBots_Violator_default_instance_;
-constexpr AutoRefMessage_WaitForBots::AutoRefMessage_WaitForBots(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : violators_(){}
-struct AutoRefMessage_WaitForBotsDefaultTypeInternal {
-  constexpr AutoRefMessage_WaitForBotsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~AutoRefMessage_WaitForBotsDefaultTypeInternal() {}
-  union {
-    AutoRefMessage_WaitForBots _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AutoRefMessage_WaitForBotsDefaultTypeInternal _AutoRefMessage_WaitForBots_default_instance_;
-constexpr AutoRefMessage::AutoRefMessage(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : _oneof_case_{}{}
-struct AutoRefMessageDefaultTypeInternal {
-  constexpr AutoRefMessageDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~AutoRefMessageDefaultTypeInternal() {}
-  union {
-    AutoRefMessage _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AutoRefMessageDefaultTypeInternal _AutoRefMessage_default_instance_;
+  {
+    void* ptr = &::_AutoRefMessage_default_instance_;
+    new (ptr) ::AutoRefMessage();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AutoRefMessage::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto}, {
+      &scc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,}};
+
+static void InitDefaultsscc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_AutoRefMessage_WaitForBots_default_instance_;
+    new (ptr) ::AutoRefMessage_WaitForBots();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AutoRefMessage_WaitForBots::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto}, {
+      &scc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,}};
+
+static void InitDefaultsscc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_AutoRefMessage_WaitForBots_Violator_default_instance_;
+    new (ptr) ::AutoRefMessage_WaitForBots_Violator();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AutoRefMessage_WaitForBots_Violator::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto}, {
+      &scc_info_BotId_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_AutoRefRegistration_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_AutoRefRegistration_default_instance_;
+    new (ptr) ::AutoRefRegistration();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AutoRefRegistration::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_AutoRefRegistration_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_AutoRefRegistration_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto}, {
+      &scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_AutoRefToController_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_AutoRefToController_default_instance_;
+    new (ptr) ::AutoRefToController();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AutoRefToController::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_AutoRefToController_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_AutoRefToController_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto}, {
+      &scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,
+      &scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,}};
+
+static void InitDefaultsscc_info_ControllerToAutoRef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ControllerToAutoRef_default_instance_;
+    new (ptr) ::ControllerToAutoRef();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ControllerToAutoRef::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ControllerToAutoRef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ControllerToAutoRef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto}, {
+      &scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto[6];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto = nullptr;
@@ -117,13 +165,14 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ssl_5fgame_5fcontroller_5fauto
   0,
   1,
   2,
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ControllerToAutoRef, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ControllerToAutoRef, _internal_metadata_),
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::ControllerToAutoRef, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  offsetof(::ControllerToAutoRefDefaultTypeInternal, controller_reply_),
   PROTOBUF_FIELD_OFFSET(::ControllerToAutoRef, msg_),
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage_WaitForBots_Violator, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage_WaitForBots_Violator, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -133,28 +182,31 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ssl_5fgame_5fcontroller_5fauto
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage_WaitForBots_Violator, distance_),
   0,
   1,
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::AutoRefMessage_WaitForBots, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage_WaitForBots, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage_WaitForBots, violators_),
-  ~0u,  // no _has_bits_
+  ~0u,
+  PROTOBUF_FIELD_OFFSET(::AutoRefMessage, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  offsetof(::AutoRefMessageDefaultTypeInternal, custom_),
+  offsetof(::AutoRefMessageDefaultTypeInternal, wait_for_bots_),
   PROTOBUF_FIELD_OFFSET(::AutoRefMessage, message_),
+  ~0u,
+  ~0u,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::AutoRefRegistration)},
   { 9, 17, sizeof(::AutoRefToController)},
-  { 20, -1, sizeof(::ControllerToAutoRef)},
-  { 27, 34, sizeof(::AutoRefMessage_WaitForBots_Violator)},
-  { 36, -1, sizeof(::AutoRefMessage_WaitForBots)},
-  { 42, -1, sizeof(::AutoRefMessage)},
+  { 20, 27, sizeof(::ControllerToAutoRef)},
+  { 28, 35, sizeof(::AutoRefMessage_WaitForBots_Violator)},
+  { 37, 43, sizeof(::AutoRefMessage_WaitForBots)},
+  { 44, 52, sizeof(::AutoRefMessage)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -188,24 +240,32 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto,
   &::descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto = {
-  false, false, 609, descriptor_table_protodef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto, "ssl_game_controller_auto_ref.proto", 
-  &descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_once, descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_deps, 2, 6,
-  schemas, file_default_instances, TableStruct_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto::offsets,
-  file_level_metadata_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto, file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto, file_level_service_descriptors_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_sccs[6] = {
+  &scc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,
+  &scc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,
+  &scc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,
+  &scc_info_AutoRefRegistration_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,
+  &scc_info_AutoRefToController_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,
+  &scc_info_ControllerToAutoRef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto);
-  return descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_once;
+static bool descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto = {
+  &descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_initialized, descriptor_table_protodef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto, "ssl_game_controller_auto_ref.proto", 609,
+  &descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_once, descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_sccs, descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto_deps, 6, 2,
+  schemas, file_default_instances, TableStruct_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto::offsets,
+  file_level_metadata_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto, 6, file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto, file_level_service_descriptors_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto(&descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto);
+static bool dynamic_init_dummy_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto), true);
 
 // ===================================================================
 
+void AutoRefRegistration::InitAsDefaultInstance() {
+  ::_AutoRefRegistration_default_instance_._instance.get_mutable()->signature_ = const_cast< ::Signature*>(
+      ::Signature::internal_default_instance());
+}
 class AutoRefRegistration::_Internal {
  public:
   using HasBits = decltype(std::declval<AutoRefRegistration>()._has_bits_);
@@ -215,9 +275,6 @@ class AutoRefRegistration::_Internal {
   static const ::Signature& signature(const AutoRefRegistration* msg);
   static void set_has_signature(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
   }
 };
 
@@ -229,20 +286,19 @@ void AutoRefRegistration::clear_signature() {
   if (signature_ != nullptr) signature_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-AutoRefRegistration::AutoRefRegistration(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+AutoRefRegistration::AutoRefRegistration()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:AutoRefRegistration)
+  // @@protoc_insertion_point(constructor:AutoRefRegistration)
 }
 AutoRefRegistration::AutoRefRegistration(const AutoRefRegistration& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_identifier()) {
-    identifier_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_identifier(), 
-      GetArena());
+    identifier_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.identifier_);
   }
   if (from._internal_has_signature()) {
     signature_ = new ::Signature(*from.signature_);
@@ -253,31 +309,29 @@ AutoRefRegistration::AutoRefRegistration(const AutoRefRegistration& from)
 }
 
 void AutoRefRegistration::SharedCtor() {
-identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-signature_ = nullptr;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AutoRefRegistration_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  identifier_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  signature_ = nullptr;
 }
 
 AutoRefRegistration::~AutoRefRegistration() {
   // @@protoc_insertion_point(destructor:AutoRefRegistration)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AutoRefRegistration::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   identifier_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete signature_;
 }
 
-void AutoRefRegistration::ArenaDtor(void* object) {
-  AutoRefRegistration* _this = reinterpret_cast< AutoRefRegistration* >(object);
-  (void)_this;
-}
-void AutoRefRegistration::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AutoRefRegistration::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const AutoRefRegistration& AutoRefRegistration::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AutoRefRegistration_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void AutoRefRegistration::Clear() {
 // @@protoc_insertion_point(message_clear_start:AutoRefRegistration)
@@ -288,7 +342,7 @@ void AutoRefRegistration::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      identifier_.ClearNonDefaultToEmpty();
+      identifier_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
       GOOGLE_DCHECK(signature_ != nullptr);
@@ -296,7 +350,7 @@ void AutoRefRegistration::Clear() {
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* AutoRefRegistration::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -310,11 +364,7 @@ const char* AutoRefRegistration::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // required string identifier = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_identifier();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "AutoRefRegistration.identifier");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_identifier(), ptr, ctx, "AutoRefRegistration.identifier");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -331,9 +381,7 @@ const char* AutoRefRegistration::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -348,7 +396,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AutoRefRegistration::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* AutoRefRegistration::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AutoRefRegistration)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -367,15 +415,15 @@ failure:
 
   // optional .Signature signature = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::signature(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:AutoRefRegistration)
   return target;
@@ -386,7 +434,7 @@ size_t AutoRefRegistration::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required string identifier = 1;
-  if (_internal_has_identifier()) {
+  if (has_identifier()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_identifier());
@@ -430,14 +478,15 @@ void AutoRefRegistration::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from
 void AutoRefRegistration::MergeFrom(const AutoRefRegistration& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AutoRefRegistration)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_identifier(from._internal_identifier());
+      _has_bits_[0] |= 0x00000001u;
+      identifier_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.identifier_);
     }
     if (cached_has_bits & 0x00000002u) {
       _internal_mutable_signature()->::Signature::MergeFrom(from._internal_signature());
@@ -460,18 +509,19 @@ void AutoRefRegistration::CopyFrom(const AutoRefRegistration& from) {
 }
 
 bool AutoRefRegistration::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_signature()) {
-    if (!signature_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (has_signature()) {
+    if (!this->signature_->IsInitialized()) return false;
   }
   return true;
 }
 
 void AutoRefRegistration::InternalSwap(AutoRefRegistration* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  identifier_.Swap(&other->identifier_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  identifier_.Swap(&other->identifier_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(signature_, other->signature_);
 }
 
@@ -482,6 +532,14 @@ void AutoRefRegistration::InternalSwap(AutoRefRegistration* other) {
 
 // ===================================================================
 
+void AutoRefToController::InitAsDefaultInstance() {
+  ::_AutoRefToController_default_instance_._instance.get_mutable()->signature_ = const_cast< ::Signature*>(
+      ::Signature::internal_default_instance());
+  ::_AutoRefToController_default_instance_._instance.get_mutable()->game_event_ = const_cast< ::GameEvent*>(
+      ::GameEvent::internal_default_instance());
+  ::_AutoRefToController_default_instance_._instance.get_mutable()->auto_ref_message_ = const_cast< ::AutoRefMessage*>(
+      ::AutoRefMessage::internal_default_instance());
+}
 class AutoRefToController::_Internal {
  public:
   using HasBits = decltype(std::declval<AutoRefToController>()._has_bits_);
@@ -519,16 +577,16 @@ void AutoRefToController::clear_game_event() {
   if (game_event_ != nullptr) game_event_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-AutoRefToController::AutoRefToController(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+AutoRefToController::AutoRefToController()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:AutoRefToController)
+  // @@protoc_insertion_point(constructor:AutoRefToController)
 }
 AutoRefToController::AutoRefToController(const AutoRefToController& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_signature()) {
     signature_ = new ::Signature(*from.signature_);
   } else {
@@ -548,34 +606,31 @@ AutoRefToController::AutoRefToController(const AutoRefToController& from)
 }
 
 void AutoRefToController::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&signature_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&auto_ref_message_) -
-    reinterpret_cast<char*>(&signature_)) + sizeof(auto_ref_message_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AutoRefToController_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  ::memset(&signature_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&auto_ref_message_) -
+      reinterpret_cast<char*>(&signature_)) + sizeof(auto_ref_message_));
 }
 
 AutoRefToController::~AutoRefToController() {
   // @@protoc_insertion_point(destructor:AutoRefToController)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AutoRefToController::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete signature_;
   if (this != internal_default_instance()) delete game_event_;
   if (this != internal_default_instance()) delete auto_ref_message_;
 }
 
-void AutoRefToController::ArenaDtor(void* object) {
-  AutoRefToController* _this = reinterpret_cast< AutoRefToController* >(object);
-  (void)_this;
-}
-void AutoRefToController::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AutoRefToController::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const AutoRefToController& AutoRefToController::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AutoRefToController_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void AutoRefToController::Clear() {
 // @@protoc_insertion_point(message_clear_start:AutoRefToController)
@@ -599,7 +654,7 @@ void AutoRefToController::Clear() {
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* AutoRefToController::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -637,9 +692,7 @@ const char* AutoRefToController::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -654,7 +707,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AutoRefToController::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* AutoRefToController::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AutoRefToController)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -663,31 +716,31 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional .Signature signature = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::signature(this), target, stream);
   }
 
   // optional .GameEvent game_event = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::game_event(this), target, stream);
   }
 
   // optional .AutoRefMessage auto_ref_message = 3 [deprecated = true];
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::auto_ref_message(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:AutoRefToController)
   return target;
@@ -752,7 +805,7 @@ void AutoRefToController::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from
 void AutoRefToController::MergeFrom(const AutoRefToController& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AutoRefToController)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -785,28 +838,25 @@ void AutoRefToController::CopyFrom(const AutoRefToController& from) {
 }
 
 bool AutoRefToController::IsInitialized() const {
-  if (_internal_has_signature()) {
-    if (!signature_->IsInitialized()) return false;
+  if (has_signature()) {
+    if (!this->signature_->IsInitialized()) return false;
   }
-  if (_internal_has_game_event()) {
-    if (!game_event_->IsInitialized()) return false;
+  if (has_game_event()) {
+    if (!this->game_event_->IsInitialized()) return false;
   }
-  if (_internal_has_auto_ref_message()) {
-    if (!auto_ref_message_->IsInitialized()) return false;
+  if (has_auto_ref_message()) {
+    if (!this->auto_ref_message_->IsInitialized()) return false;
   }
   return true;
 }
 
 void AutoRefToController::InternalSwap(AutoRefToController* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AutoRefToController, auto_ref_message_)
-      + sizeof(AutoRefToController::auto_ref_message_)
-      - PROTOBUF_FIELD_OFFSET(AutoRefToController, signature_)>(
-          reinterpret_cast<char*>(&signature_),
-          reinterpret_cast<char*>(&other->signature_));
+  swap(signature_, other->signature_);
+  swap(game_event_, other->game_event_);
+  swap(auto_ref_message_, other->auto_ref_message_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AutoRefToController::GetMetadata() const {
@@ -816,8 +866,13 @@ void AutoRefToController::InternalSwap(AutoRefToController* other) {
 
 // ===================================================================
 
+void ControllerToAutoRef::InitAsDefaultInstance() {
+  ::_ControllerToAutoRef_default_instance_.controller_reply_ = const_cast< ::ControllerReply*>(
+      ::ControllerReply::internal_default_instance());
+}
 class ControllerToAutoRef::_Internal {
  public:
+  using HasBits = decltype(std::declval<ControllerToAutoRef>()._has_bits_);
   static const ::ControllerReply& controller_reply(const ControllerToAutoRef* msg);
 };
 
@@ -826,11 +881,10 @@ ControllerToAutoRef::_Internal::controller_reply(const ControllerToAutoRef* msg)
   return *msg->msg_.controller_reply_;
 }
 void ControllerToAutoRef::set_allocated_controller_reply(::ControllerReply* controller_reply) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_msg();
   if (controller_reply) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(controller_reply)->GetArena();
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       controller_reply = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, controller_reply, submessage_arena);
@@ -842,21 +896,20 @@ void ControllerToAutoRef::set_allocated_controller_reply(::ControllerReply* cont
 }
 void ControllerToAutoRef::clear_controller_reply() {
   if (_internal_has_controller_reply()) {
-    if (GetArena() == nullptr) {
-      delete msg_.controller_reply_;
-    }
+    delete msg_.controller_reply_;
     clear_has_msg();
   }
 }
-ControllerToAutoRef::ControllerToAutoRef(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ControllerToAutoRef::ControllerToAutoRef()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ControllerToAutoRef)
+  // @@protoc_insertion_point(constructor:ControllerToAutoRef)
 }
 ControllerToAutoRef::ControllerToAutoRef(const ControllerToAutoRef& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   clear_has_msg();
   switch (from.msg_case()) {
     case kControllerReply: {
@@ -871,39 +924,35 @@ ControllerToAutoRef::ControllerToAutoRef(const ControllerToAutoRef& from)
 }
 
 void ControllerToAutoRef::SharedCtor() {
-clear_has_msg();
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ControllerToAutoRef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  clear_has_msg();
 }
 
 ControllerToAutoRef::~ControllerToAutoRef() {
   // @@protoc_insertion_point(destructor:ControllerToAutoRef)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ControllerToAutoRef::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_msg()) {
     clear_msg();
   }
 }
 
-void ControllerToAutoRef::ArenaDtor(void* object) {
-  ControllerToAutoRef* _this = reinterpret_cast< ControllerToAutoRef* >(object);
-  (void)_this;
-}
-void ControllerToAutoRef::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ControllerToAutoRef::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const ControllerToAutoRef& ControllerToAutoRef::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ControllerToAutoRef_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ControllerToAutoRef::clear_msg() {
 // @@protoc_insertion_point(one_of_clear_start:ControllerToAutoRef)
   switch (msg_case()) {
     case kControllerReply: {
-      if (GetArena() == nullptr) {
-        delete msg_.controller_reply_;
-      }
+      delete msg_.controller_reply_;
       break;
     }
     case MSG_NOT_SET: {
@@ -921,7 +970,8 @@ void ControllerToAutoRef::Clear() {
   (void) cached_has_bits;
 
   clear_msg();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* ControllerToAutoRef::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -931,7 +981,7 @@ const char* ControllerToAutoRef::_InternalParse(const char* ptr, ::PROTOBUF_NAME
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .ControllerReply controller_reply = 1;
+      // optional .ControllerReply controller_reply = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_controller_reply(), ptr);
@@ -944,9 +994,7 @@ const char* ControllerToAutoRef::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -960,23 +1008,23 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ControllerToAutoRef::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* ControllerToAutoRef::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ControllerToAutoRef)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .ControllerReply controller_reply = 1;
-  if (_internal_has_controller_reply()) {
-    target = stream->EnsureSpace(target);
+  // optional .ControllerReply controller_reply = 1;
+  if (has_controller_reply()) {
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::controller_reply(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ControllerToAutoRef)
   return target;
@@ -991,7 +1039,7 @@ size_t ControllerToAutoRef::ByteSizeLong() const {
   (void) cached_has_bits;
 
   switch (msg_case()) {
-    // .ControllerReply controller_reply = 1;
+    // optional .ControllerReply controller_reply = 1;
     case kControllerReply: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -1029,7 +1077,7 @@ void ControllerToAutoRef::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from
 void ControllerToAutoRef::MergeFrom(const ControllerToAutoRef& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ControllerToAutoRef)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1064,7 +1112,8 @@ bool ControllerToAutoRef::IsInitialized() const {
 
 void ControllerToAutoRef::InternalSwap(ControllerToAutoRef* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(msg_, other->msg_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
@@ -1076,6 +1125,10 @@ void ControllerToAutoRef::InternalSwap(ControllerToAutoRef* other) {
 
 // ===================================================================
 
+void AutoRefMessage_WaitForBots_Violator::InitAsDefaultInstance() {
+  ::_AutoRefMessage_WaitForBots_Violator_default_instance_._instance.get_mutable()->bot_id_ = const_cast< ::BotId*>(
+      ::BotId::internal_default_instance());
+}
 class AutoRefMessage_WaitForBots_Violator::_Internal {
  public:
   using HasBits = decltype(std::declval<AutoRefMessage_WaitForBots_Violator>()._has_bits_);
@@ -1085,9 +1138,6 @@ class AutoRefMessage_WaitForBots_Violator::_Internal {
   }
   static void set_has_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
   }
 };
 
@@ -1099,16 +1149,16 @@ void AutoRefMessage_WaitForBots_Violator::clear_bot_id() {
   if (bot_id_ != nullptr) bot_id_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-AutoRefMessage_WaitForBots_Violator::AutoRefMessage_WaitForBots_Violator(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+AutoRefMessage_WaitForBots_Violator::AutoRefMessage_WaitForBots_Violator()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:AutoRefMessage.WaitForBots.Violator)
+  // @@protoc_insertion_point(constructor:AutoRefMessage.WaitForBots.Violator)
 }
 AutoRefMessage_WaitForBots_Violator::AutoRefMessage_WaitForBots_Violator(const AutoRefMessage_WaitForBots_Violator& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_bot_id()) {
     bot_id_ = new ::BotId(*from.bot_id_);
   } else {
@@ -1119,32 +1169,29 @@ AutoRefMessage_WaitForBots_Violator::AutoRefMessage_WaitForBots_Violator(const A
 }
 
 void AutoRefMessage_WaitForBots_Violator::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&bot_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
-    reinterpret_cast<char*>(&bot_id_)) + sizeof(distance_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  ::memset(&bot_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&distance_) -
+      reinterpret_cast<char*>(&bot_id_)) + sizeof(distance_));
 }
 
 AutoRefMessage_WaitForBots_Violator::~AutoRefMessage_WaitForBots_Violator() {
   // @@protoc_insertion_point(destructor:AutoRefMessage.WaitForBots.Violator)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AutoRefMessage_WaitForBots_Violator::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete bot_id_;
 }
 
-void AutoRefMessage_WaitForBots_Violator::ArenaDtor(void* object) {
-  AutoRefMessage_WaitForBots_Violator* _this = reinterpret_cast< AutoRefMessage_WaitForBots_Violator* >(object);
-  (void)_this;
-}
-void AutoRefMessage_WaitForBots_Violator::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AutoRefMessage_WaitForBots_Violator::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const AutoRefMessage_WaitForBots_Violator& AutoRefMessage_WaitForBots_Violator::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AutoRefMessage_WaitForBots_Violator_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void AutoRefMessage_WaitForBots_Violator::Clear() {
 // @@protoc_insertion_point(message_clear_start:AutoRefMessage.WaitForBots.Violator)
@@ -1159,7 +1206,7 @@ void AutoRefMessage_WaitForBots_Violator::Clear() {
   }
   distance_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* AutoRefMessage_WaitForBots_Violator::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1191,9 +1238,7 @@ const char* AutoRefMessage_WaitForBots_Violator::_InternalParse(const char* ptr,
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1208,7 +1253,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AutoRefMessage_WaitForBots_Violator::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* AutoRefMessage_WaitForBots_Violator::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AutoRefMessage.WaitForBots.Violator)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1217,21 +1262,21 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .BotId bot_id = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::bot_id(this), target, stream);
   }
 
   // required float distance = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:AutoRefMessage.WaitForBots.Violator)
   return target;
@@ -1241,14 +1286,14 @@ size_t AutoRefMessage_WaitForBots_Violator::RequiredFieldsByteSizeFallback() con
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:AutoRefMessage.WaitForBots.Violator)
   size_t total_size = 0;
 
-  if (_internal_has_bot_id()) {
+  if (has_bot_id()) {
     // required .BotId bot_id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *bot_id_);
   }
 
-  if (_internal_has_distance()) {
+  if (has_distance()) {
     // required float distance = 2;
     total_size += 1 + 4;
   }
@@ -1302,7 +1347,7 @@ void AutoRefMessage_WaitForBots_Violator::MergeFrom(const ::PROTOBUF_NAMESPACE_I
 void AutoRefMessage_WaitForBots_Violator::MergeFrom(const AutoRefMessage_WaitForBots_Violator& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AutoRefMessage.WaitForBots.Violator)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1333,20 +1378,16 @@ void AutoRefMessage_WaitForBots_Violator::CopyFrom(const AutoRefMessage_WaitForB
 }
 
 bool AutoRefMessage_WaitForBots_Violator::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void AutoRefMessage_WaitForBots_Violator::InternalSwap(AutoRefMessage_WaitForBots_Violator* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AutoRefMessage_WaitForBots_Violator, distance_)
-      + sizeof(AutoRefMessage_WaitForBots_Violator::distance_)
-      - PROTOBUF_FIELD_OFFSET(AutoRefMessage_WaitForBots_Violator, bot_id_)>(
-          reinterpret_cast<char*>(&bot_id_),
-          reinterpret_cast<char*>(&other->bot_id_));
+  swap(bot_id_, other->bot_id_);
+  swap(distance_, other->distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AutoRefMessage_WaitForBots_Violator::GetMetadata() const {
@@ -1356,46 +1397,47 @@ void AutoRefMessage_WaitForBots_Violator::InternalSwap(AutoRefMessage_WaitForBot
 
 // ===================================================================
 
+void AutoRefMessage_WaitForBots::InitAsDefaultInstance() {
+}
 class AutoRefMessage_WaitForBots::_Internal {
  public:
+  using HasBits = decltype(std::declval<AutoRefMessage_WaitForBots>()._has_bits_);
 };
 
-AutoRefMessage_WaitForBots::AutoRefMessage_WaitForBots(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  violators_(arena) {
+AutoRefMessage_WaitForBots::AutoRefMessage_WaitForBots()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:AutoRefMessage.WaitForBots)
+  // @@protoc_insertion_point(constructor:AutoRefMessage.WaitForBots)
 }
 AutoRefMessage_WaitForBots::AutoRefMessage_WaitForBots(const AutoRefMessage_WaitForBots& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_),
       violators_(from.violators_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:AutoRefMessage.WaitForBots)
 }
 
 void AutoRefMessage_WaitForBots::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
 }
 
 AutoRefMessage_WaitForBots::~AutoRefMessage_WaitForBots() {
   // @@protoc_insertion_point(destructor:AutoRefMessage.WaitForBots)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AutoRefMessage_WaitForBots::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void AutoRefMessage_WaitForBots::ArenaDtor(void* object) {
-  AutoRefMessage_WaitForBots* _this = reinterpret_cast< AutoRefMessage_WaitForBots* >(object);
-  (void)_this;
-}
-void AutoRefMessage_WaitForBots::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AutoRefMessage_WaitForBots::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const AutoRefMessage_WaitForBots& AutoRefMessage_WaitForBots::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AutoRefMessage_WaitForBots_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void AutoRefMessage_WaitForBots::Clear() {
 // @@protoc_insertion_point(message_clear_start:AutoRefMessage.WaitForBots)
@@ -1404,7 +1446,8 @@ void AutoRefMessage_WaitForBots::Clear() {
   (void) cached_has_bits;
 
   violators_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* AutoRefMessage_WaitForBots::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1432,9 +1475,7 @@ const char* AutoRefMessage_WaitForBots::_InternalParse(const char* ptr, ::PROTOB
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1448,7 +1489,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AutoRefMessage_WaitForBots::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* AutoRefMessage_WaitForBots::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AutoRefMessage.WaitForBots)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1457,14 +1498,14 @@ failure:
   // repeated .AutoRefMessage.WaitForBots.Violator violators = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_violators_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_violators(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_violators(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:AutoRefMessage.WaitForBots)
   return target;
@@ -1512,7 +1553,7 @@ void AutoRefMessage_WaitForBots::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Messag
 void AutoRefMessage_WaitForBots::MergeFrom(const AutoRefMessage_WaitForBots& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AutoRefMessage.WaitForBots)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1534,13 +1575,14 @@ void AutoRefMessage_WaitForBots::CopyFrom(const AutoRefMessage_WaitForBots& from
 }
 
 bool AutoRefMessage_WaitForBots::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(violators_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->violators())) return false;
   return true;
 }
 
 void AutoRefMessage_WaitForBots::InternalSwap(AutoRefMessage_WaitForBots* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   violators_.InternalSwap(&other->violators_);
 }
 
@@ -1551,8 +1593,15 @@ void AutoRefMessage_WaitForBots::InternalSwap(AutoRefMessage_WaitForBots* other)
 
 // ===================================================================
 
+void AutoRefMessage::InitAsDefaultInstance() {
+  ::_AutoRefMessage_default_instance_.custom_.UnsafeSetDefault(
+      &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::_AutoRefMessage_default_instance_.wait_for_bots_ = const_cast< ::AutoRefMessage_WaitForBots*>(
+      ::AutoRefMessage_WaitForBots::internal_default_instance());
+}
 class AutoRefMessage::_Internal {
  public:
+  using HasBits = decltype(std::declval<AutoRefMessage>()._has_bits_);
   static const ::AutoRefMessage_WaitForBots& wait_for_bots(const AutoRefMessage* msg);
 };
 
@@ -1561,11 +1610,10 @@ AutoRefMessage::_Internal::wait_for_bots(const AutoRefMessage* msg) {
   return *msg->message_.wait_for_bots_;
 }
 void AutoRefMessage::set_allocated_wait_for_bots(::AutoRefMessage_WaitForBots* wait_for_bots) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_message();
   if (wait_for_bots) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(wait_for_bots);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       wait_for_bots = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, wait_for_bots, submessage_arena);
@@ -1575,15 +1623,16 @@ void AutoRefMessage::set_allocated_wait_for_bots(::AutoRefMessage_WaitForBots* w
   }
   // @@protoc_insertion_point(field_set_allocated:AutoRefMessage.wait_for_bots)
 }
-AutoRefMessage::AutoRefMessage(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+AutoRefMessage::AutoRefMessage()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:AutoRefMessage)
+  // @@protoc_insertion_point(constructor:AutoRefMessage)
 }
 AutoRefMessage::AutoRefMessage(const AutoRefMessage& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   clear_has_message();
   switch (from.message_case()) {
     case kCustom: {
@@ -1602,43 +1651,39 @@ AutoRefMessage::AutoRefMessage(const AutoRefMessage& from)
 }
 
 void AutoRefMessage::SharedCtor() {
-clear_has_message();
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  clear_has_message();
 }
 
 AutoRefMessage::~AutoRefMessage() {
   // @@protoc_insertion_point(destructor:AutoRefMessage)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AutoRefMessage::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_message()) {
     clear_message();
   }
 }
 
-void AutoRefMessage::ArenaDtor(void* object) {
-  AutoRefMessage* _this = reinterpret_cast< AutoRefMessage* >(object);
-  (void)_this;
-}
-void AutoRefMessage::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AutoRefMessage::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const AutoRefMessage& AutoRefMessage::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AutoRefMessage_ssl_5fgame_5fcontroller_5fauto_5fref_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void AutoRefMessage::clear_message() {
 // @@protoc_insertion_point(one_of_clear_start:AutoRefMessage)
   switch (message_case()) {
     case kCustom: {
-      message_.custom_.Destroy(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, GetArena());
+      message_.custom_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
       break;
     }
     case kWaitForBots: {
-      if (GetArena() == nullptr) {
-        delete message_.wait_for_bots_;
-      }
+      delete message_.wait_for_bots_;
       break;
     }
     case MESSAGE_NOT_SET: {
@@ -1656,7 +1701,8 @@ void AutoRefMessage::Clear() {
   (void) cached_has_bits;
 
   clear_message();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* AutoRefMessage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1666,18 +1712,14 @@ const char* AutoRefMessage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // string custom = 1;
+      // optional string custom = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_custom();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "AutoRefMessage.custom");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_custom(), ptr, ctx, "AutoRefMessage.custom");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .AutoRefMessage.WaitForBots wait_for_bots = 2;
+      // optional .AutoRefMessage.WaitForBots wait_for_bots = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_wait_for_bots(), ptr);
@@ -1690,9 +1732,7 @@ const char* AutoRefMessage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1706,7 +1746,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AutoRefMessage::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* AutoRefMessage::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AutoRefMessage)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1723,9 +1763,9 @@ failure:
       break;
     }
     case kWaitForBots: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           2, _Internal::wait_for_bots(this), target, stream);
       break;
     }
@@ -1733,7 +1773,7 @@ failure:
   }
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:AutoRefMessage)
   return target;
@@ -1748,14 +1788,14 @@ size_t AutoRefMessage::ByteSizeLong() const {
   (void) cached_has_bits;
 
   switch (message_case()) {
-    // string custom = 1;
+    // optional string custom = 1;
     case kCustom: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
           this->_internal_custom());
       break;
     }
-    // .AutoRefMessage.WaitForBots wait_for_bots = 2;
+    // optional .AutoRefMessage.WaitForBots wait_for_bots = 2;
     case kWaitForBots: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -1793,7 +1833,7 @@ void AutoRefMessage::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void AutoRefMessage::MergeFrom(const AutoRefMessage& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AutoRefMessage)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1846,7 +1886,8 @@ bool AutoRefMessage::IsInitialized() const {
 
 void AutoRefMessage::InternalSwap(AutoRefMessage* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(message_, other->message_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
@@ -1859,22 +1900,22 @@ void AutoRefMessage::InternalSwap(AutoRefMessage* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::AutoRefRegistration* Arena::CreateMaybeMessage< ::AutoRefRegistration >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::AutoRefRegistration >(arena);
+  return Arena::CreateInternal< ::AutoRefRegistration >(arena);
 }
 template<> PROTOBUF_NOINLINE ::AutoRefToController* Arena::CreateMaybeMessage< ::AutoRefToController >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::AutoRefToController >(arena);
+  return Arena::CreateInternal< ::AutoRefToController >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ControllerToAutoRef* Arena::CreateMaybeMessage< ::ControllerToAutoRef >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ControllerToAutoRef >(arena);
+  return Arena::CreateInternal< ::ControllerToAutoRef >(arena);
 }
 template<> PROTOBUF_NOINLINE ::AutoRefMessage_WaitForBots_Violator* Arena::CreateMaybeMessage< ::AutoRefMessage_WaitForBots_Violator >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::AutoRefMessage_WaitForBots_Violator >(arena);
+  return Arena::CreateInternal< ::AutoRefMessage_WaitForBots_Violator >(arena);
 }
 template<> PROTOBUF_NOINLINE ::AutoRefMessage_WaitForBots* Arena::CreateMaybeMessage< ::AutoRefMessage_WaitForBots >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::AutoRefMessage_WaitForBots >(arena);
+  return Arena::CreateInternal< ::AutoRefMessage_WaitForBots >(arena);
 }
 template<> PROTOBUF_NOINLINE ::AutoRefMessage* Arena::CreateMaybeMessage< ::AutoRefMessage >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::AutoRefMessage >(arena);
+  return Arena::CreateInternal< ::AutoRefMessage >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

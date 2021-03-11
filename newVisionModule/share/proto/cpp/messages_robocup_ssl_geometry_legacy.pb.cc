@@ -14,50 +14,50 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
+extern PROTOBUF_INTERNAL_EXPORT_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSL_GeometryFieldSize_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_5frobocup_5fssl_5fgeometry_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSL_GeometryCameraCalibration_messages_5frobocup_5fssl_5fgeometry_2eproto;
 namespace RoboCup2014Legacy {
 namespace Geometry {
-constexpr SSL_GeometryFieldSize::SSL_GeometryFieldSize(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : line_width_(0)
-  , field_length_(0)
-  , field_width_(0)
-  , boundary_width_(0)
-  , referee_width_(0)
-  , goal_width_(0)
-  , goal_depth_(0)
-  , goal_wall_width_(0)
-  , center_circle_radius_(0)
-  , defense_radius_(0)
-  , defense_stretch_(0)
-  , free_kick_from_defense_dist_(0)
-  , penalty_spot_from_field_line_dist_(0)
-  , penalty_line_from_spot_dist_(0){}
-struct SSL_GeometryFieldSizeDefaultTypeInternal {
-  constexpr SSL_GeometryFieldSizeDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~SSL_GeometryFieldSizeDefaultTypeInternal() {}
-  union {
-    SSL_GeometryFieldSize _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SSL_GeometryFieldSizeDefaultTypeInternal _SSL_GeometryFieldSize_default_instance_;
-constexpr SSL_GeometryData::SSL_GeometryData(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : calib_()
-  , field_(nullptr){}
-struct SSL_GeometryDataDefaultTypeInternal {
-  constexpr SSL_GeometryDataDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~SSL_GeometryDataDefaultTypeInternal() {}
-  union {
-    SSL_GeometryData _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SSL_GeometryDataDefaultTypeInternal _SSL_GeometryData_default_instance_;
+class SSL_GeometryFieldSizeDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSL_GeometryFieldSize> _instance;
+} _SSL_GeometryFieldSize_default_instance_;
+class SSL_GeometryDataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSL_GeometryData> _instance;
+} _SSL_GeometryData_default_instance_;
 }  // namespace Geometry
 }  // namespace RoboCup2014Legacy
+static void InitDefaultsscc_info_SSL_GeometryData_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::RoboCup2014Legacy::Geometry::_SSL_GeometryData_default_instance_;
+    new (ptr) ::RoboCup2014Legacy::Geometry::SSL_GeometryData();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::RoboCup2014Legacy::Geometry::SSL_GeometryData::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SSL_GeometryData_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_SSL_GeometryData_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto}, {
+      &scc_info_SSL_GeometryFieldSize_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto.base,
+      &scc_info_SSL_GeometryCameraCalibration_messages_5frobocup_5fssl_5fgeometry_2eproto.base,}};
+
+static void InitDefaultsscc_info_SSL_GeometryFieldSize_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::RoboCup2014Legacy::Geometry::_SSL_GeometryFieldSize_default_instance_;
+    new (ptr) ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSL_GeometryFieldSize_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SSL_GeometryFieldSize_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto = nullptr;
@@ -137,26 +137,28 @@ const char descriptor_table_protodef_messages_5frobocup_5fssl_5fgeometry_5flegac
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_deps[1] = {
   &::descriptor_table_messages_5frobocup_5fssl_5fgeometry_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto = {
-  false, false, 640, descriptor_table_protodef_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto, "messages_robocup_ssl_geometry_legacy.proto", 
-  &descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_once, descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_deps, 1, 2,
-  schemas, file_default_instances, TableStruct_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto::offsets,
-  file_level_metadata_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto, file_level_enum_descriptors_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto, file_level_service_descriptors_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_sccs[2] = {
+  &scc_info_SSL_GeometryData_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto.base,
+  &scc_info_SSL_GeometryFieldSize_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto);
-  return descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_once;
+static bool descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto = {
+  &descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_initialized, descriptor_table_protodef_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto, "messages_robocup_ssl_geometry_legacy.proto", 640,
+  &descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_once, descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_sccs, descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto_deps, 2, 1,
+  schemas, file_default_instances, TableStruct_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto::offsets,
+  file_level_metadata_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto, 2, file_level_enum_descriptors_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto, file_level_service_descriptors_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto(&descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto);
+static bool dynamic_init_dummy_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto), true);
 namespace RoboCup2014Legacy {
 namespace Geometry {
 
 // ===================================================================
 
+void SSL_GeometryFieldSize::InitAsDefaultInstance() {
+}
 class SSL_GeometryFieldSize::_Internal {
  public:
   using HasBits = decltype(std::declval<SSL_GeometryFieldSize>()._has_bits_);
@@ -202,21 +204,18 @@ class SSL_GeometryFieldSize::_Internal {
   static void set_has_penalty_line_from_spot_dist(HasBits* has_bits) {
     (*has_bits)[0] |= 8192u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00003fff) ^ 0x00003fff) != 0;
-  }
 };
 
-SSL_GeometryFieldSize::SSL_GeometryFieldSize(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SSL_GeometryFieldSize::SSL_GeometryFieldSize()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
+  // @@protoc_insertion_point(constructor:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
 }
 SSL_GeometryFieldSize::SSL_GeometryFieldSize(const SSL_GeometryFieldSize& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&line_width_, &from.line_width_,
     static_cast<size_t>(reinterpret_cast<char*>(&penalty_line_from_spot_dist_) -
     reinterpret_cast<char*>(&line_width_)) + sizeof(penalty_line_from_spot_dist_));
@@ -224,31 +223,27 @@ SSL_GeometryFieldSize::SSL_GeometryFieldSize(const SSL_GeometryFieldSize& from)
 }
 
 void SSL_GeometryFieldSize::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&line_width_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&penalty_line_from_spot_dist_) -
-    reinterpret_cast<char*>(&line_width_)) + sizeof(penalty_line_from_spot_dist_));
+  ::memset(&line_width_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&penalty_line_from_spot_dist_) -
+      reinterpret_cast<char*>(&line_width_)) + sizeof(penalty_line_from_spot_dist_));
 }
 
 SSL_GeometryFieldSize::~SSL_GeometryFieldSize() {
   // @@protoc_insertion_point(destructor:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void SSL_GeometryFieldSize::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void SSL_GeometryFieldSize::ArenaDtor(void* object) {
-  SSL_GeometryFieldSize* _this = reinterpret_cast< SSL_GeometryFieldSize* >(object);
-  (void)_this;
-}
-void SSL_GeometryFieldSize::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSL_GeometryFieldSize::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const SSL_GeometryFieldSize& SSL_GeometryFieldSize::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSL_GeometryFieldSize_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SSL_GeometryFieldSize::Clear() {
 // @@protoc_insertion_point(message_clear_start:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
@@ -268,7 +263,7 @@ void SSL_GeometryFieldSize::Clear() {
         reinterpret_cast<char*>(&center_circle_radius_)) + sizeof(penalty_line_from_spot_dist_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -283,7 +278,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_line_width(&has_bits);
-          line_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          line_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -291,7 +286,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_field_length(&has_bits);
-          field_length_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          field_length_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -299,7 +294,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           _Internal::set_has_field_width(&has_bits);
-          field_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          field_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -307,7 +302,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_boundary_width(&has_bits);
-          boundary_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          boundary_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -315,7 +310,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           _Internal::set_has_referee_width(&has_bits);
-          referee_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          referee_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -323,7 +318,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           _Internal::set_has_goal_width(&has_bits);
-          goal_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          goal_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -331,7 +326,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           _Internal::set_has_goal_depth(&has_bits);
-          goal_depth_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          goal_depth_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -339,7 +334,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           _Internal::set_has_goal_wall_width(&has_bits);
-          goal_wall_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          goal_wall_width_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -347,7 +342,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           _Internal::set_has_center_circle_radius(&has_bits);
-          center_circle_radius_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          center_circle_radius_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -355,7 +350,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           _Internal::set_has_defense_radius(&has_bits);
-          defense_radius_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          defense_radius_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -363,7 +358,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 88)) {
           _Internal::set_has_defense_stretch(&has_bits);
-          defense_stretch_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          defense_stretch_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -371,7 +366,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
           _Internal::set_has_free_kick_from_defense_dist(&has_bits);
-          free_kick_from_defense_dist_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          free_kick_from_defense_dist_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -379,7 +374,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
           _Internal::set_has_penalty_spot_from_field_line_dist(&has_bits);
-          penalty_spot_from_field_line_dist_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          penalty_spot_from_field_line_dist_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -387,7 +382,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 14:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 112)) {
           _Internal::set_has_penalty_line_from_spot_dist(&has_bits);
-          penalty_line_from_spot_dist_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          penalty_line_from_spot_dist_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -397,9 +392,7 @@ const char* SSL_GeometryFieldSize::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -414,7 +407,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSL_GeometryFieldSize::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* SSL_GeometryFieldSize::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -423,91 +416,91 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required int32 line_width = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_line_width(), target);
   }
 
   // required int32 field_length = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_field_length(), target);
   }
 
   // required int32 field_width = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(3, this->_internal_field_width(), target);
   }
 
   // required int32 boundary_width = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_boundary_width(), target);
   }
 
   // required int32 referee_width = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(5, this->_internal_referee_width(), target);
   }
 
   // required int32 goal_width = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(6, this->_internal_goal_width(), target);
   }
 
   // required int32 goal_depth = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(7, this->_internal_goal_depth(), target);
   }
 
   // required int32 goal_wall_width = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(8, this->_internal_goal_wall_width(), target);
   }
 
   // required int32 center_circle_radius = 9;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(9, this->_internal_center_circle_radius(), target);
   }
 
   // required int32 defense_radius = 10;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_defense_radius(), target);
   }
 
   // required int32 defense_stretch = 11;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(11, this->_internal_defense_stretch(), target);
   }
 
   // required int32 free_kick_from_defense_dist = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(12, this->_internal_free_kick_from_defense_dist(), target);
   }
 
   // required int32 penalty_spot_from_field_line_dist = 13;
   if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(13, this->_internal_penalty_spot_from_field_line_dist(), target);
   }
 
   // required int32 penalty_line_from_spot_dist = 14;
   if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(14, this->_internal_penalty_line_from_spot_dist(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
   return target;
@@ -517,98 +510,98 @@ size_t SSL_GeometryFieldSize::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
   size_t total_size = 0;
 
-  if (_internal_has_line_width()) {
+  if (has_line_width()) {
     // required int32 line_width = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_line_width());
   }
 
-  if (_internal_has_field_length()) {
+  if (has_field_length()) {
     // required int32 field_length = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_field_length());
   }
 
-  if (_internal_has_field_width()) {
+  if (has_field_width()) {
     // required int32 field_width = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_field_width());
   }
 
-  if (_internal_has_boundary_width()) {
+  if (has_boundary_width()) {
     // required int32 boundary_width = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_boundary_width());
   }
 
-  if (_internal_has_referee_width()) {
+  if (has_referee_width()) {
     // required int32 referee_width = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_referee_width());
   }
 
-  if (_internal_has_goal_width()) {
+  if (has_goal_width()) {
     // required int32 goal_width = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_goal_width());
   }
 
-  if (_internal_has_goal_depth()) {
+  if (has_goal_depth()) {
     // required int32 goal_depth = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_goal_depth());
   }
 
-  if (_internal_has_goal_wall_width()) {
+  if (has_goal_wall_width()) {
     // required int32 goal_wall_width = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_goal_wall_width());
   }
 
-  if (_internal_has_center_circle_radius()) {
+  if (has_center_circle_radius()) {
     // required int32 center_circle_radius = 9;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_center_circle_radius());
   }
 
-  if (_internal_has_defense_radius()) {
+  if (has_defense_radius()) {
     // required int32 defense_radius = 10;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_defense_radius());
   }
 
-  if (_internal_has_defense_stretch()) {
+  if (has_defense_stretch()) {
     // required int32 defense_stretch = 11;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_defense_stretch());
   }
 
-  if (_internal_has_free_kick_from_defense_dist()) {
+  if (has_free_kick_from_defense_dist()) {
     // required int32 free_kick_from_defense_dist = 12;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_free_kick_from_defense_dist());
   }
 
-  if (_internal_has_penalty_spot_from_field_line_dist()) {
+  if (has_penalty_spot_from_field_line_dist()) {
     // required int32 penalty_spot_from_field_line_dist = 13;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_penalty_spot_from_field_line_dist());
   }
 
-  if (_internal_has_penalty_line_from_spot_dist()) {
+  if (has_penalty_line_from_spot_dist()) {
     // required int32 penalty_line_from_spot_dist = 14;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -726,7 +719,7 @@ void SSL_GeometryFieldSize::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void SSL_GeometryFieldSize::MergeFrom(const SSL_GeometryFieldSize& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -796,20 +789,28 @@ void SSL_GeometryFieldSize::CopyFrom(const SSL_GeometryFieldSize& from) {
 }
 
 bool SSL_GeometryFieldSize::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00003fff) != 0x00003fff) return false;
   return true;
 }
 
 void SSL_GeometryFieldSize::InternalSwap(SSL_GeometryFieldSize* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SSL_GeometryFieldSize, penalty_line_from_spot_dist_)
-      + sizeof(SSL_GeometryFieldSize::penalty_line_from_spot_dist_)
-      - PROTOBUF_FIELD_OFFSET(SSL_GeometryFieldSize, line_width_)>(
-          reinterpret_cast<char*>(&line_width_),
-          reinterpret_cast<char*>(&other->line_width_));
+  swap(line_width_, other->line_width_);
+  swap(field_length_, other->field_length_);
+  swap(field_width_, other->field_width_);
+  swap(boundary_width_, other->boundary_width_);
+  swap(referee_width_, other->referee_width_);
+  swap(goal_width_, other->goal_width_);
+  swap(goal_depth_, other->goal_depth_);
+  swap(goal_wall_width_, other->goal_wall_width_);
+  swap(center_circle_radius_, other->center_circle_radius_);
+  swap(defense_radius_, other->defense_radius_);
+  swap(defense_stretch_, other->defense_stretch_);
+  swap(free_kick_from_defense_dist_, other->free_kick_from_defense_dist_);
+  swap(penalty_spot_from_field_line_dist_, other->penalty_spot_from_field_line_dist_);
+  swap(penalty_line_from_spot_dist_, other->penalty_line_from_spot_dist_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SSL_GeometryFieldSize::GetMetadata() const {
@@ -819,15 +820,16 @@ void SSL_GeometryFieldSize::InternalSwap(SSL_GeometryFieldSize* other) {
 
 // ===================================================================
 
+void SSL_GeometryData::InitAsDefaultInstance() {
+  ::RoboCup2014Legacy::Geometry::_SSL_GeometryData_default_instance_._instance.get_mutable()->field_ = const_cast< ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize*>(
+      ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize::internal_default_instance());
+}
 class SSL_GeometryData::_Internal {
  public:
   using HasBits = decltype(std::declval<SSL_GeometryData>()._has_bits_);
   static const ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize& field(const SSL_GeometryData* msg);
   static void set_has_field(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
   }
 };
 
@@ -838,18 +840,17 @@ SSL_GeometryData::_Internal::field(const SSL_GeometryData* msg) {
 void SSL_GeometryData::clear_calib() {
   calib_.Clear();
 }
-SSL_GeometryData::SSL_GeometryData(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  calib_(arena) {
+SSL_GeometryData::SSL_GeometryData()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:RoboCup2014Legacy.Geometry.SSL_GeometryData)
+  // @@protoc_insertion_point(constructor:RoboCup2014Legacy.Geometry.SSL_GeometryData)
 }
 SSL_GeometryData::SSL_GeometryData(const SSL_GeometryData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       calib_(from.calib_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_field()) {
     field_ = new ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize(*from.field_);
   } else {
@@ -859,29 +860,27 @@ SSL_GeometryData::SSL_GeometryData(const SSL_GeometryData& from)
 }
 
 void SSL_GeometryData::SharedCtor() {
-field_ = nullptr;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SSL_GeometryData_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto.base);
+  field_ = nullptr;
 }
 
 SSL_GeometryData::~SSL_GeometryData() {
   // @@protoc_insertion_point(destructor:RoboCup2014Legacy.Geometry.SSL_GeometryData)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void SSL_GeometryData::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete field_;
 }
 
-void SSL_GeometryData::ArenaDtor(void* object) {
-  SSL_GeometryData* _this = reinterpret_cast< SSL_GeometryData* >(object);
-  (void)_this;
-}
-void SSL_GeometryData::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSL_GeometryData::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const SSL_GeometryData& SSL_GeometryData::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSL_GeometryData_messages_5frobocup_5fssl_5fgeometry_5flegacy_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SSL_GeometryData::Clear() {
 // @@protoc_insertion_point(message_clear_start:RoboCup2014Legacy.Geometry.SSL_GeometryData)
@@ -896,7 +895,7 @@ void SSL_GeometryData::Clear() {
     field_->Clear();
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* SSL_GeometryData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -932,9 +931,7 @@ const char* SSL_GeometryData::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -949,7 +946,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSL_GeometryData::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* SSL_GeometryData::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:RoboCup2014Legacy.Geometry.SSL_GeometryData)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -958,23 +955,23 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize field = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::field(this), target, stream);
   }
 
   // repeated .SSL_GeometryCameraCalibration calib = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_calib_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_calib(i), target, stream);
+      InternalWriteMessageToArray(2, this->_internal_calib(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:RoboCup2014Legacy.Geometry.SSL_GeometryData)
   return target;
@@ -985,7 +982,7 @@ size_t SSL_GeometryData::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .RoboCup2014Legacy.Geometry.SSL_GeometryFieldSize field = 1;
-  if (_internal_has_field()) {
+  if (has_field()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *field_);
@@ -1028,7 +1025,7 @@ void SSL_GeometryData::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void SSL_GeometryData::MergeFrom(const SSL_GeometryData& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:RoboCup2014Legacy.Geometry.SSL_GeometryData)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1053,17 +1050,17 @@ void SSL_GeometryData::CopyFrom(const SSL_GeometryData& from) {
 }
 
 bool SSL_GeometryData::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(calib_)) return false;
-  if (_internal_has_field()) {
-    if (!field_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->calib())) return false;
+  if (has_field()) {
+    if (!this->field_->IsInitialized()) return false;
   }
   return true;
 }
 
 void SSL_GeometryData::InternalSwap(SSL_GeometryData* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   calib_.InternalSwap(&other->calib_);
   swap(field_, other->field_);
@@ -1079,10 +1076,10 @@ void SSL_GeometryData::InternalSwap(SSL_GeometryData* other) {
 }  // namespace RoboCup2014Legacy
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize* Arena::CreateMaybeMessage< ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize >(arena);
+  return Arena::CreateInternal< ::RoboCup2014Legacy::Geometry::SSL_GeometryFieldSize >(arena);
 }
 template<> PROTOBUF_NOINLINE ::RoboCup2014Legacy::Geometry::SSL_GeometryData* Arena::CreateMaybeMessage< ::RoboCup2014Legacy::Geometry::SSL_GeometryData >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::RoboCup2014Legacy::Geometry::SSL_GeometryData >(arena);
+  return Arena::CreateInternal< ::RoboCup2014Legacy::Geometry::SSL_GeometryData >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

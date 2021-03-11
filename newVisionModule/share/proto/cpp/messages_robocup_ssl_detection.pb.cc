@@ -14,63 +14,64 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_messages_5frobocup_5fssl_5fdetection_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSL_DetectionBall_messages_5frobocup_5fssl_5fdetection_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_5frobocup_5fssl_5fdetection_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSL_DetectionRobot_messages_5frobocup_5fssl_5fdetection_2eproto;
+class SSL_DetectionBallDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSL_DetectionBall> _instance;
+} _SSL_DetectionBall_default_instance_;
+class SSL_DetectionRobotDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSL_DetectionRobot> _instance;
+} _SSL_DetectionRobot_default_instance_;
+class SSL_DetectionFrameDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SSL_DetectionFrame> _instance;
+} _SSL_DetectionFrame_default_instance_;
+static void InitDefaultsscc_info_SSL_DetectionBall_messages_5frobocup_5fssl_5fdetection_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr SSL_DetectionBall::SSL_DetectionBall(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : confidence_(0)
-  , area_(0u)
-  , x_(0)
-  , y_(0)
-  , z_(0)
-  , pixel_x_(0)
-  , pixel_y_(0){}
-struct SSL_DetectionBallDefaultTypeInternal {
-  constexpr SSL_DetectionBallDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~SSL_DetectionBallDefaultTypeInternal() {}
-  union {
-    SSL_DetectionBall _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SSL_DetectionBallDefaultTypeInternal _SSL_DetectionBall_default_instance_;
-constexpr SSL_DetectionRobot::SSL_DetectionRobot(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : confidence_(0)
-  , robot_id_(0u)
-  , x_(0)
-  , y_(0)
-  , orientation_(0)
-  , pixel_x_(0)
-  , pixel_y_(0)
-  , height_(0){}
-struct SSL_DetectionRobotDefaultTypeInternal {
-  constexpr SSL_DetectionRobotDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~SSL_DetectionRobotDefaultTypeInternal() {}
-  union {
-    SSL_DetectionRobot _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SSL_DetectionRobotDefaultTypeInternal _SSL_DetectionRobot_default_instance_;
-constexpr SSL_DetectionFrame::SSL_DetectionFrame(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : balls_()
-  , robots_yellow_()
-  , robots_blue_()
-  , t_capture_(0)
-  , frame_number_(0u)
-  , camera_id_(0u)
-  , t_sent_(0){}
-struct SSL_DetectionFrameDefaultTypeInternal {
-  constexpr SSL_DetectionFrameDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~SSL_DetectionFrameDefaultTypeInternal() {}
-  union {
-    SSL_DetectionFrame _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SSL_DetectionFrameDefaultTypeInternal _SSL_DetectionFrame_default_instance_;
+  {
+    void* ptr = &::_SSL_DetectionBall_default_instance_;
+    new (ptr) ::SSL_DetectionBall();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::SSL_DetectionBall::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSL_DetectionBall_messages_5frobocup_5fssl_5fdetection_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SSL_DetectionBall_messages_5frobocup_5fssl_5fdetection_2eproto}, {}};
+
+static void InitDefaultsscc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_SSL_DetectionFrame_default_instance_;
+    new (ptr) ::SSL_DetectionFrame();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::SSL_DetectionFrame::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto}, {
+      &scc_info_SSL_DetectionBall_messages_5frobocup_5fssl_5fdetection_2eproto.base,
+      &scc_info_SSL_DetectionRobot_messages_5frobocup_5fssl_5fdetection_2eproto.base,}};
+
+static void InitDefaultsscc_info_SSL_DetectionRobot_messages_5frobocup_5fssl_5fdetection_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_SSL_DetectionRobot_default_instance_;
+    new (ptr) ::SSL_DetectionRobot();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::SSL_DetectionRobot::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SSL_DetectionRobot_messages_5frobocup_5fssl_5fdetection_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SSL_DetectionRobot_messages_5frobocup_5fssl_5fdetection_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_messages_5frobocup_5fssl_5fdetection_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_messages_5frobocup_5fssl_5fdetection_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_messages_5frobocup_5fssl_5fdetection_2eproto = nullptr;
@@ -164,24 +165,29 @@ const char descriptor_table_protodef_messages_5frobocup_5fssl_5fdetection_2eprot
   "tectionRobot\022(\n\013robots_blue\030\007 \003(\0132\023.SSL_"
   "DetectionRobot"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto = {
-  false, false, 534, descriptor_table_protodef_messages_5frobocup_5fssl_5fdetection_2eproto, "messages_robocup_ssl_detection.proto", 
-  &descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_once, nullptr, 0, 3,
-  schemas, file_default_instances, TableStruct_messages_5frobocup_5fssl_5fdetection_2eproto::offsets,
-  file_level_metadata_messages_5frobocup_5fssl_5fdetection_2eproto, file_level_enum_descriptors_messages_5frobocup_5fssl_5fdetection_2eproto, file_level_service_descriptors_messages_5frobocup_5fssl_5fdetection_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto);
-  return descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_sccs[3] = {
+  &scc_info_SSL_DetectionBall_messages_5frobocup_5fssl_5fdetection_2eproto.base,
+  &scc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto.base,
+  &scc_info_SSL_DetectionRobot_messages_5frobocup_5fssl_5fdetection_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_once;
+static bool descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto = {
+  &descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_initialized, descriptor_table_protodef_messages_5frobocup_5fssl_5fdetection_2eproto, "messages_robocup_ssl_detection.proto", 534,
+  &descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_once, descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_sccs, descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto_deps, 3, 0,
+  schemas, file_default_instances, TableStruct_messages_5frobocup_5fssl_5fdetection_2eproto::offsets,
+  file_level_metadata_messages_5frobocup_5fssl_5fdetection_2eproto, 3, file_level_enum_descriptors_messages_5frobocup_5fssl_5fdetection_2eproto, file_level_service_descriptors_messages_5frobocup_5fssl_5fdetection_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_messages_5frobocup_5fssl_5fdetection_2eproto(&descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto);
+static bool dynamic_init_dummy_messages_5frobocup_5fssl_5fdetection_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_messages_5frobocup_5fssl_5fdetection_2eproto), true);
 
 // ===================================================================
 
+void SSL_DetectionBall::InitAsDefaultInstance() {
+}
 class SSL_DetectionBall::_Internal {
  public:
   using HasBits = decltype(std::declval<SSL_DetectionBall>()._has_bits_);
@@ -206,21 +212,18 @@ class SSL_DetectionBall::_Internal {
   static void set_has_pixel_y(HasBits* has_bits) {
     (*has_bits)[0] |= 64u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000006d) ^ 0x0000006d) != 0;
-  }
 };
 
-SSL_DetectionBall::SSL_DetectionBall(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SSL_DetectionBall::SSL_DetectionBall()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:SSL_DetectionBall)
+  // @@protoc_insertion_point(constructor:SSL_DetectionBall)
 }
 SSL_DetectionBall::SSL_DetectionBall(const SSL_DetectionBall& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&confidence_, &from.confidence_,
     static_cast<size_t>(reinterpret_cast<char*>(&pixel_y_) -
     reinterpret_cast<char*>(&confidence_)) + sizeof(pixel_y_));
@@ -228,31 +231,27 @@ SSL_DetectionBall::SSL_DetectionBall(const SSL_DetectionBall& from)
 }
 
 void SSL_DetectionBall::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&confidence_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&pixel_y_) -
-    reinterpret_cast<char*>(&confidence_)) + sizeof(pixel_y_));
+  ::memset(&confidence_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&pixel_y_) -
+      reinterpret_cast<char*>(&confidence_)) + sizeof(pixel_y_));
 }
 
 SSL_DetectionBall::~SSL_DetectionBall() {
   // @@protoc_insertion_point(destructor:SSL_DetectionBall)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void SSL_DetectionBall::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void SSL_DetectionBall::ArenaDtor(void* object) {
-  SSL_DetectionBall* _this = reinterpret_cast< SSL_DetectionBall* >(object);
-  (void)_this;
-}
-void SSL_DetectionBall::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSL_DetectionBall::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const SSL_DetectionBall& SSL_DetectionBall::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSL_DetectionBall_messages_5frobocup_5fssl_5fdetection_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SSL_DetectionBall::Clear() {
 // @@protoc_insertion_point(message_clear_start:SSL_DetectionBall)
@@ -267,7 +266,7 @@ void SSL_DetectionBall::Clear() {
         reinterpret_cast<char*>(&confidence_)) + sizeof(pixel_y_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* SSL_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -290,7 +289,7 @@ const char* SSL_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_area(&has_bits);
-          area_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          area_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -340,9 +339,7 @@ const char* SSL_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -357,7 +354,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSL_DetectionBall::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* SSL_DetectionBall::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SSL_DetectionBall)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -366,49 +363,49 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required float confidence = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_confidence(), target);
   }
 
   // optional uint32 area = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_area(), target);
   }
 
   // required float x = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_x(), target);
   }
 
   // required float y = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_y(), target);
   }
 
   // optional float z = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_z(), target);
   }
 
   // required float pixel_x = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_pixel_x(), target);
   }
 
   // required float pixel_y = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(7, this->_internal_pixel_y(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SSL_DetectionBall)
   return target;
@@ -418,27 +415,27 @@ size_t SSL_DetectionBall::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:SSL_DetectionBall)
   size_t total_size = 0;
 
-  if (_internal_has_confidence()) {
+  if (has_confidence()) {
     // required float confidence = 1;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required float x = 3;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required float y = 4;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_pixel_x()) {
+  if (has_pixel_x()) {
     // required float pixel_x = 6;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_pixel_y()) {
+  if (has_pixel_y()) {
     // required float pixel_y = 7;
     total_size += 1 + 4;
   }
@@ -512,7 +509,7 @@ void SSL_DetectionBall::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void SSL_DetectionBall::MergeFrom(const SSL_DetectionBall& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SSL_DetectionBall)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -558,20 +555,21 @@ void SSL_DetectionBall::CopyFrom(const SSL_DetectionBall& from) {
 }
 
 bool SSL_DetectionBall::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000006d) != 0x0000006d) return false;
   return true;
 }
 
 void SSL_DetectionBall::InternalSwap(SSL_DetectionBall* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SSL_DetectionBall, pixel_y_)
-      + sizeof(SSL_DetectionBall::pixel_y_)
-      - PROTOBUF_FIELD_OFFSET(SSL_DetectionBall, confidence_)>(
-          reinterpret_cast<char*>(&confidence_),
-          reinterpret_cast<char*>(&other->confidence_));
+  swap(confidence_, other->confidence_);
+  swap(area_, other->area_);
+  swap(x_, other->x_);
+  swap(y_, other->y_);
+  swap(z_, other->z_);
+  swap(pixel_x_, other->pixel_x_);
+  swap(pixel_y_, other->pixel_y_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SSL_DetectionBall::GetMetadata() const {
@@ -581,6 +579,8 @@ void SSL_DetectionBall::InternalSwap(SSL_DetectionBall* other) {
 
 // ===================================================================
 
+void SSL_DetectionRobot::InitAsDefaultInstance() {
+}
 class SSL_DetectionRobot::_Internal {
  public:
   using HasBits = decltype(std::declval<SSL_DetectionRobot>()._has_bits_);
@@ -608,21 +608,18 @@ class SSL_DetectionRobot::_Internal {
   static void set_has_height(HasBits* has_bits) {
     (*has_bits)[0] |= 128u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000006d) ^ 0x0000006d) != 0;
-  }
 };
 
-SSL_DetectionRobot::SSL_DetectionRobot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+SSL_DetectionRobot::SSL_DetectionRobot()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:SSL_DetectionRobot)
+  // @@protoc_insertion_point(constructor:SSL_DetectionRobot)
 }
 SSL_DetectionRobot::SSL_DetectionRobot(const SSL_DetectionRobot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&confidence_, &from.confidence_,
     static_cast<size_t>(reinterpret_cast<char*>(&height_) -
     reinterpret_cast<char*>(&confidence_)) + sizeof(height_));
@@ -630,31 +627,27 @@ SSL_DetectionRobot::SSL_DetectionRobot(const SSL_DetectionRobot& from)
 }
 
 void SSL_DetectionRobot::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&confidence_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&height_) -
-    reinterpret_cast<char*>(&confidence_)) + sizeof(height_));
+  ::memset(&confidence_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&height_) -
+      reinterpret_cast<char*>(&confidence_)) + sizeof(height_));
 }
 
 SSL_DetectionRobot::~SSL_DetectionRobot() {
   // @@protoc_insertion_point(destructor:SSL_DetectionRobot)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void SSL_DetectionRobot::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void SSL_DetectionRobot::ArenaDtor(void* object) {
-  SSL_DetectionRobot* _this = reinterpret_cast< SSL_DetectionRobot* >(object);
-  (void)_this;
-}
-void SSL_DetectionRobot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSL_DetectionRobot::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const SSL_DetectionRobot& SSL_DetectionRobot::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSL_DetectionRobot_messages_5frobocup_5fssl_5fdetection_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SSL_DetectionRobot::Clear() {
 // @@protoc_insertion_point(message_clear_start:SSL_DetectionRobot)
@@ -669,7 +662,7 @@ void SSL_DetectionRobot::Clear() {
         reinterpret_cast<char*>(&confidence_)) + sizeof(height_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* SSL_DetectionRobot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -692,7 +685,7 @@ const char* SSL_DetectionRobot::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_robot_id(&has_bits);
-          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -750,9 +743,7 @@ const char* SSL_DetectionRobot::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -767,7 +758,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSL_DetectionRobot::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* SSL_DetectionRobot::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SSL_DetectionRobot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -776,55 +767,55 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required float confidence = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_confidence(), target);
   }
 
   // optional uint32 robot_id = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_robot_id(), target);
   }
 
   // required float x = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_x(), target);
   }
 
   // required float y = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_y(), target);
   }
 
   // optional float orientation = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_orientation(), target);
   }
 
   // required float pixel_x = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_pixel_x(), target);
   }
 
   // required float pixel_y = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(7, this->_internal_pixel_y(), target);
   }
 
   // optional float height = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(8, this->_internal_height(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SSL_DetectionRobot)
   return target;
@@ -834,27 +825,27 @@ size_t SSL_DetectionRobot::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:SSL_DetectionRobot)
   size_t total_size = 0;
 
-  if (_internal_has_confidence()) {
+  if (has_confidence()) {
     // required float confidence = 1;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required float x = 3;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required float y = 4;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_pixel_x()) {
+  if (has_pixel_x()) {
     // required float pixel_x = 6;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_pixel_y()) {
+  if (has_pixel_y()) {
     // required float pixel_y = 7;
     total_size += 1 + 4;
   }
@@ -933,7 +924,7 @@ void SSL_DetectionRobot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from)
 void SSL_DetectionRobot::MergeFrom(const SSL_DetectionRobot& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SSL_DetectionRobot)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -982,20 +973,22 @@ void SSL_DetectionRobot::CopyFrom(const SSL_DetectionRobot& from) {
 }
 
 bool SSL_DetectionRobot::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000006d) != 0x0000006d) return false;
   return true;
 }
 
 void SSL_DetectionRobot::InternalSwap(SSL_DetectionRobot* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SSL_DetectionRobot, height_)
-      + sizeof(SSL_DetectionRobot::height_)
-      - PROTOBUF_FIELD_OFFSET(SSL_DetectionRobot, confidence_)>(
-          reinterpret_cast<char*>(&confidence_),
-          reinterpret_cast<char*>(&other->confidence_));
+  swap(confidence_, other->confidence_);
+  swap(robot_id_, other->robot_id_);
+  swap(x_, other->x_);
+  swap(y_, other->y_);
+  swap(orientation_, other->orientation_);
+  swap(pixel_x_, other->pixel_x_);
+  swap(pixel_y_, other->pixel_y_);
+  swap(height_, other->height_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SSL_DetectionRobot::GetMetadata() const {
@@ -1005,6 +998,8 @@ void SSL_DetectionRobot::InternalSwap(SSL_DetectionRobot* other) {
 
 // ===================================================================
 
+void SSL_DetectionFrame::InitAsDefaultInstance() {
+}
 class SSL_DetectionFrame::_Internal {
  public:
   using HasBits = decltype(std::declval<SSL_DetectionFrame>()._has_bits_);
@@ -1020,27 +1015,21 @@ class SSL_DetectionFrame::_Internal {
   static void set_has_camera_id(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000000f) ^ 0x0000000f) != 0;
-  }
 };
 
-SSL_DetectionFrame::SSL_DetectionFrame(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  balls_(arena),
-  robots_yellow_(arena),
-  robots_blue_(arena) {
+SSL_DetectionFrame::SSL_DetectionFrame()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:SSL_DetectionFrame)
+  // @@protoc_insertion_point(constructor:SSL_DetectionFrame)
 }
 SSL_DetectionFrame::SSL_DetectionFrame(const SSL_DetectionFrame& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       balls_(from.balls_),
       robots_yellow_(from.robots_yellow_),
       robots_blue_(from.robots_blue_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&t_capture_, &from.t_capture_,
     static_cast<size_t>(reinterpret_cast<char*>(&t_sent_) -
     reinterpret_cast<char*>(&t_capture_)) + sizeof(t_sent_));
@@ -1048,31 +1037,28 @@ SSL_DetectionFrame::SSL_DetectionFrame(const SSL_DetectionFrame& from)
 }
 
 void SSL_DetectionFrame::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&t_capture_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&t_sent_) -
-    reinterpret_cast<char*>(&t_capture_)) + sizeof(t_sent_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto.base);
+  ::memset(&t_capture_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&t_sent_) -
+      reinterpret_cast<char*>(&t_capture_)) + sizeof(t_sent_));
 }
 
 SSL_DetectionFrame::~SSL_DetectionFrame() {
   // @@protoc_insertion_point(destructor:SSL_DetectionFrame)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void SSL_DetectionFrame::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void SSL_DetectionFrame::ArenaDtor(void* object) {
-  SSL_DetectionFrame* _this = reinterpret_cast< SSL_DetectionFrame* >(object);
-  (void)_this;
-}
-void SSL_DetectionFrame::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SSL_DetectionFrame::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const SSL_DetectionFrame& SSL_DetectionFrame::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SSL_DetectionFrame_messages_5frobocup_5fssl_5fdetection_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void SSL_DetectionFrame::Clear() {
 // @@protoc_insertion_point(message_clear_start:SSL_DetectionFrame)
@@ -1090,7 +1076,7 @@ void SSL_DetectionFrame::Clear() {
         reinterpret_cast<char*>(&t_capture_)) + sizeof(t_sent_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* SSL_DetectionFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1105,7 +1091,7 @@ const char* SSL_DetectionFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_frame_number(&has_bits);
-          frame_number_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          frame_number_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1129,7 +1115,7 @@ const char* SSL_DetectionFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_camera_id(&has_bits);
-          camera_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          camera_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1175,9 +1161,7 @@ const char* SSL_DetectionFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1192,7 +1176,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SSL_DetectionFrame::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* SSL_DetectionFrame::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:SSL_DetectionFrame)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1201,55 +1185,55 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required uint32 frame_number = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_frame_number(), target);
   }
 
   // required double t_capture = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_t_capture(), target);
   }
 
   // required double t_sent = 3;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_t_sent(), target);
   }
 
   // required uint32 camera_id = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_camera_id(), target);
   }
 
   // repeated .SSL_DetectionBall balls = 5;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_balls_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, this->_internal_balls(i), target, stream);
+      InternalWriteMessageToArray(5, this->_internal_balls(i), target, stream);
   }
 
   // repeated .SSL_DetectionRobot robots_yellow = 6;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_robots_yellow_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, this->_internal_robots_yellow(i), target, stream);
+      InternalWriteMessageToArray(6, this->_internal_robots_yellow(i), target, stream);
   }
 
   // repeated .SSL_DetectionRobot robots_blue = 7;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_robots_blue_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(7, this->_internal_robots_blue(i), target, stream);
+      InternalWriteMessageToArray(7, this->_internal_robots_blue(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:SSL_DetectionFrame)
   return target;
@@ -1259,26 +1243,26 @@ size_t SSL_DetectionFrame::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:SSL_DetectionFrame)
   size_t total_size = 0;
 
-  if (_internal_has_t_capture()) {
+  if (has_t_capture()) {
     // required double t_capture = 2;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_frame_number()) {
+  if (has_frame_number()) {
     // required uint32 frame_number = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_frame_number());
   }
 
-  if (_internal_has_camera_id()) {
+  if (has_camera_id()) {
     // required uint32 camera_id = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_camera_id());
   }
 
-  if (_internal_has_t_sent()) {
+  if (has_t_sent()) {
     // required double t_sent = 3;
     total_size += 1 + 8;
   }
@@ -1361,7 +1345,7 @@ void SSL_DetectionFrame::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from)
 void SSL_DetectionFrame::MergeFrom(const SSL_DetectionFrame& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:SSL_DetectionFrame)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1401,26 +1385,24 @@ void SSL_DetectionFrame::CopyFrom(const SSL_DetectionFrame& from) {
 }
 
 bool SSL_DetectionFrame::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(balls_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(robots_yellow_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(robots_blue_)) return false;
+  if ((_has_bits_[0] & 0x0000000f) != 0x0000000f) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->balls())) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->robots_yellow())) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->robots_blue())) return false;
   return true;
 }
 
 void SSL_DetectionFrame::InternalSwap(SSL_DetectionFrame* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   balls_.InternalSwap(&other->balls_);
   robots_yellow_.InternalSwap(&other->robots_yellow_);
   robots_blue_.InternalSwap(&other->robots_blue_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(SSL_DetectionFrame, t_sent_)
-      + sizeof(SSL_DetectionFrame::t_sent_)
-      - PROTOBUF_FIELD_OFFSET(SSL_DetectionFrame, t_capture_)>(
-          reinterpret_cast<char*>(&t_capture_),
-          reinterpret_cast<char*>(&other->t_capture_));
+  swap(t_capture_, other->t_capture_);
+  swap(frame_number_, other->frame_number_);
+  swap(camera_id_, other->camera_id_);
+  swap(t_sent_, other->t_sent_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SSL_DetectionFrame::GetMetadata() const {
@@ -1431,13 +1413,13 @@ void SSL_DetectionFrame::InternalSwap(SSL_DetectionFrame* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::SSL_DetectionBall* Arena::CreateMaybeMessage< ::SSL_DetectionBall >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SSL_DetectionBall >(arena);
+  return Arena::CreateInternal< ::SSL_DetectionBall >(arena);
 }
 template<> PROTOBUF_NOINLINE ::SSL_DetectionRobot* Arena::CreateMaybeMessage< ::SSL_DetectionRobot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SSL_DetectionRobot >(arena);
+  return Arena::CreateInternal< ::SSL_DetectionRobot >(arena);
 }
 template<> PROTOBUF_NOINLINE ::SSL_DetectionFrame* Arena::CreateMaybeMessage< ::SSL_DetectionFrame >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SSL_DetectionFrame >(arena);
+  return Arena::CreateInternal< ::SSL_DetectionFrame >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -14,47 +14,68 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_log_5flabeler_5fdata_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_LabelerFrame_log_5flabeler_5fdata_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5freferee_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_Referee_ssl_5freferee_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_messages_5frobocup_5fssl_5fwrapper_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_SSL_WrapperPacket_messages_5frobocup_5fssl_5fwrapper_2eproto;
+class LabelerMetadataDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LabelerMetadata> _instance;
+} _LabelerMetadata_default_instance_;
+class LabelerFrameDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LabelerFrame> _instance;
+  const ::SSL_WrapperPacket* vision_frame_;
+  const ::Referee* referee_frame_;
+} _LabelerFrame_default_instance_;
+class LabelerFrameGroupDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<LabelerFrameGroup> _instance;
+} _LabelerFrameGroup_default_instance_;
+static void InitDefaultsscc_info_LabelerFrame_log_5flabeler_5fdata_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr LabelerMetadata::LabelerMetadata(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : message_offsets_()
-  , _message_offsets_cached_byte_size_()
-  , num_cameras_(0u){}
-struct LabelerMetadataDefaultTypeInternal {
-  constexpr LabelerMetadataDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~LabelerMetadataDefaultTypeInternal() {}
-  union {
-    LabelerMetadata _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LabelerMetadataDefaultTypeInternal _LabelerMetadata_default_instance_;
-constexpr LabelerFrame::LabelerFrame(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : timestamp_(PROTOBUF_ULONGLONG(0))
-  , _oneof_case_{}{}
-struct LabelerFrameDefaultTypeInternal {
-  constexpr LabelerFrameDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~LabelerFrameDefaultTypeInternal() {}
-  union {
-    LabelerFrame _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LabelerFrameDefaultTypeInternal _LabelerFrame_default_instance_;
-constexpr LabelerFrameGroup::LabelerFrameGroup(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : frames_(){}
-struct LabelerFrameGroupDefaultTypeInternal {
-  constexpr LabelerFrameGroupDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~LabelerFrameGroupDefaultTypeInternal() {}
-  union {
-    LabelerFrameGroup _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LabelerFrameGroupDefaultTypeInternal _LabelerFrameGroup_default_instance_;
+  {
+    void* ptr = &::_LabelerFrame_default_instance_;
+    new (ptr) ::LabelerFrame();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::LabelerFrame::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_LabelerFrame_log_5flabeler_5fdata_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_LabelerFrame_log_5flabeler_5fdata_2eproto}, {
+      &scc_info_SSL_WrapperPacket_messages_5frobocup_5fssl_5fwrapper_2eproto.base,
+      &scc_info_Referee_ssl_5freferee_2eproto.base,}};
+
+static void InitDefaultsscc_info_LabelerFrameGroup_log_5flabeler_5fdata_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_LabelerFrameGroup_default_instance_;
+    new (ptr) ::LabelerFrameGroup();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::LabelerFrameGroup::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_LabelerFrameGroup_log_5flabeler_5fdata_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_LabelerFrameGroup_log_5flabeler_5fdata_2eproto}, {
+      &scc_info_LabelerFrame_log_5flabeler_5fdata_2eproto.base,}};
+
+static void InitDefaultsscc_info_LabelerMetadata_log_5flabeler_5fdata_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_LabelerMetadata_default_instance_;
+    new (ptr) ::LabelerMetadata();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::LabelerMetadata::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_LabelerMetadata_log_5flabeler_5fdata_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_LabelerMetadata_log_5flabeler_5fdata_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_log_5flabeler_5fdata_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_log_5flabeler_5fdata_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_log_5flabeler_5fdata_2eproto = nullptr;
@@ -73,8 +94,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_log_5flabeler_5fdata_2eproto::
   PROTOBUF_FIELD_OFFSET(::LabelerFrame, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::LabelerFrame, timestamp_),
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  offsetof(::LabelerFrameDefaultTypeInternal, vision_frame_),
+  offsetof(::LabelerFrameDefaultTypeInternal, referee_frame_),
   PROTOBUF_FIELD_OFFSET(::LabelerFrame, frame_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::LabelerFrameGroup, _internal_metadata_),
@@ -110,66 +131,65 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_messages_5frobocup_5fssl_5fwrapper_2eproto,
   &::descriptor_table_ssl_5freferee_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_log_5flabeler_5fdata_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_log_5flabeler_5fdata_2eproto = {
-  false, false, 327, descriptor_table_protodef_log_5flabeler_5fdata_2eproto, "log_labeler_data.proto", 
-  &descriptor_table_log_5flabeler_5fdata_2eproto_once, descriptor_table_log_5flabeler_5fdata_2eproto_deps, 2, 3,
-  schemas, file_default_instances, TableStruct_log_5flabeler_5fdata_2eproto::offsets,
-  file_level_metadata_log_5flabeler_5fdata_2eproto, file_level_enum_descriptors_log_5flabeler_5fdata_2eproto, file_level_service_descriptors_log_5flabeler_5fdata_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_log_5flabeler_5fdata_2eproto_sccs[3] = {
+  &scc_info_LabelerFrame_log_5flabeler_5fdata_2eproto.base,
+  &scc_info_LabelerFrameGroup_log_5flabeler_5fdata_2eproto.base,
+  &scc_info_LabelerMetadata_log_5flabeler_5fdata_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_log_5flabeler_5fdata_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_log_5flabeler_5fdata_2eproto);
-  return descriptor_table_log_5flabeler_5fdata_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_log_5flabeler_5fdata_2eproto_once;
+static bool descriptor_table_log_5flabeler_5fdata_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_log_5flabeler_5fdata_2eproto = {
+  &descriptor_table_log_5flabeler_5fdata_2eproto_initialized, descriptor_table_protodef_log_5flabeler_5fdata_2eproto, "log_labeler_data.proto", 327,
+  &descriptor_table_log_5flabeler_5fdata_2eproto_once, descriptor_table_log_5flabeler_5fdata_2eproto_sccs, descriptor_table_log_5flabeler_5fdata_2eproto_deps, 3, 2,
+  schemas, file_default_instances, TableStruct_log_5flabeler_5fdata_2eproto::offsets,
+  file_level_metadata_log_5flabeler_5fdata_2eproto, 3, file_level_enum_descriptors_log_5flabeler_5fdata_2eproto, file_level_service_descriptors_log_5flabeler_5fdata_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_log_5flabeler_5fdata_2eproto(&descriptor_table_log_5flabeler_5fdata_2eproto);
+static bool dynamic_init_dummy_log_5flabeler_5fdata_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_log_5flabeler_5fdata_2eproto), true);
 
 // ===================================================================
 
+void LabelerMetadata::InitAsDefaultInstance() {
+}
 class LabelerMetadata::_Internal {
  public:
 };
 
-LabelerMetadata::LabelerMetadata(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  message_offsets_(arena) {
+LabelerMetadata::LabelerMetadata()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:LabelerMetadata)
+  // @@protoc_insertion_point(constructor:LabelerMetadata)
 }
 LabelerMetadata::LabelerMetadata(const LabelerMetadata& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       message_offsets_(from.message_offsets_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   num_cameras_ = from.num_cameras_;
   // @@protoc_insertion_point(copy_constructor:LabelerMetadata)
 }
 
 void LabelerMetadata::SharedCtor() {
-num_cameras_ = 0u;
+  num_cameras_ = 0u;
 }
 
 LabelerMetadata::~LabelerMetadata() {
   // @@protoc_insertion_point(destructor:LabelerMetadata)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void LabelerMetadata::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void LabelerMetadata::ArenaDtor(void* object) {
-  LabelerMetadata* _this = reinterpret_cast< LabelerMetadata* >(object);
-  (void)_this;
-}
-void LabelerMetadata::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void LabelerMetadata::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const LabelerMetadata& LabelerMetadata::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LabelerMetadata_log_5flabeler_5fdata_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void LabelerMetadata::Clear() {
 // @@protoc_insertion_point(message_clear_start:LabelerMetadata)
@@ -179,7 +199,7 @@ void LabelerMetadata::Clear() {
 
   message_offsets_.Clear();
   num_cameras_ = 0u;
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* LabelerMetadata::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -192,7 +212,7 @@ const char* LabelerMetadata::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // uint32 num_cameras = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          num_cameras_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          num_cameras_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -202,7 +222,7 @@ const char* LabelerMetadata::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt64Parser(_internal_mutable_message_offsets(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16) {
-          _internal_add_message_offsets(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          _internal_add_message_offsets(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -212,9 +232,7 @@ const char* LabelerMetadata::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -228,7 +246,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* LabelerMetadata::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* LabelerMetadata::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:LabelerMetadata)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -236,7 +254,7 @@ failure:
 
   // uint32 num_cameras = 1;
   if (this->num_cameras() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_num_cameras(), target);
   }
 
@@ -251,7 +269,7 @@ failure:
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:LabelerMetadata)
   return target;
@@ -314,7 +332,7 @@ void LabelerMetadata::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void LabelerMetadata::MergeFrom(const LabelerMetadata& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:LabelerMetadata)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -344,7 +362,7 @@ bool LabelerMetadata::IsInitialized() const {
 
 void LabelerMetadata::InternalSwap(LabelerMetadata* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   message_offsets_.InternalSwap(&other->message_offsets_);
   swap(num_cameras_, other->num_cameras_);
 }
@@ -356,6 +374,12 @@ void LabelerMetadata::InternalSwap(LabelerMetadata* other) {
 
 // ===================================================================
 
+void LabelerFrame::InitAsDefaultInstance() {
+  ::_LabelerFrame_default_instance_.vision_frame_ = const_cast< ::SSL_WrapperPacket*>(
+      ::SSL_WrapperPacket::internal_default_instance());
+  ::_LabelerFrame_default_instance_.referee_frame_ = const_cast< ::Referee*>(
+      ::Referee::internal_default_instance());
+}
 class LabelerFrame::_Internal {
  public:
   static const ::SSL_WrapperPacket& vision_frame(const LabelerFrame* msg);
@@ -371,11 +395,10 @@ LabelerFrame::_Internal::referee_frame(const LabelerFrame* msg) {
   return *msg->frame_.referee_frame_;
 }
 void LabelerFrame::set_allocated_vision_frame(::SSL_WrapperPacket* vision_frame) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_frame();
   if (vision_frame) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(vision_frame)->GetArena();
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       vision_frame = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, vision_frame, submessage_arena);
@@ -387,18 +410,15 @@ void LabelerFrame::set_allocated_vision_frame(::SSL_WrapperPacket* vision_frame)
 }
 void LabelerFrame::clear_vision_frame() {
   if (_internal_has_vision_frame()) {
-    if (GetArena() == nullptr) {
-      delete frame_.vision_frame_;
-    }
+    delete frame_.vision_frame_;
     clear_has_frame();
   }
 }
 void LabelerFrame::set_allocated_referee_frame(::Referee* referee_frame) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_frame();
   if (referee_frame) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(referee_frame)->GetArena();
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       referee_frame = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, referee_frame, submessage_arena);
@@ -410,21 +430,19 @@ void LabelerFrame::set_allocated_referee_frame(::Referee* referee_frame) {
 }
 void LabelerFrame::clear_referee_frame() {
   if (_internal_has_referee_frame()) {
-    if (GetArena() == nullptr) {
-      delete frame_.referee_frame_;
-    }
+    delete frame_.referee_frame_;
     clear_has_frame();
   }
 }
-LabelerFrame::LabelerFrame(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+LabelerFrame::LabelerFrame()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:LabelerFrame)
+  // @@protoc_insertion_point(constructor:LabelerFrame)
 }
 LabelerFrame::LabelerFrame(const LabelerFrame& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   timestamp_ = from.timestamp_;
   clear_has_frame();
   switch (from.frame_case()) {
@@ -444,46 +462,40 @@ LabelerFrame::LabelerFrame(const LabelerFrame& from)
 }
 
 void LabelerFrame::SharedCtor() {
-timestamp_ = PROTOBUF_ULONGLONG(0);
-clear_has_frame();
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LabelerFrame_log_5flabeler_5fdata_2eproto.base);
+  timestamp_ = PROTOBUF_ULONGLONG(0);
+  clear_has_frame();
 }
 
 LabelerFrame::~LabelerFrame() {
   // @@protoc_insertion_point(destructor:LabelerFrame)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void LabelerFrame::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_frame()) {
     clear_frame();
   }
 }
 
-void LabelerFrame::ArenaDtor(void* object) {
-  LabelerFrame* _this = reinterpret_cast< LabelerFrame* >(object);
-  (void)_this;
-}
-void LabelerFrame::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void LabelerFrame::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const LabelerFrame& LabelerFrame::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LabelerFrame_log_5flabeler_5fdata_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void LabelerFrame::clear_frame() {
 // @@protoc_insertion_point(one_of_clear_start:LabelerFrame)
   switch (frame_case()) {
     case kVisionFrame: {
-      if (GetArena() == nullptr) {
-        delete frame_.vision_frame_;
-      }
+      delete frame_.vision_frame_;
       break;
     }
     case kRefereeFrame: {
-      if (GetArena() == nullptr) {
-        delete frame_.referee_frame_;
-      }
+      delete frame_.referee_frame_;
       break;
     }
     case FRAME_NOT_SET: {
@@ -502,7 +514,7 @@ void LabelerFrame::Clear() {
 
   timestamp_ = PROTOBUF_ULONGLONG(0);
   clear_frame();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* LabelerFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -515,7 +527,7 @@ const char* LabelerFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       // uint64 timestamp = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -539,9 +551,7 @@ const char* LabelerFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -555,7 +565,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* LabelerFrame::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* LabelerFrame::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:LabelerFrame)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -563,29 +573,29 @@ failure:
 
   // uint64 timestamp = 1;
   if (this->timestamp() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_timestamp(), target);
   }
 
   // .SSL_WrapperPacket vision_frame = 2;
   if (_internal_has_vision_frame()) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::vision_frame(this), target, stream);
   }
 
   // .Referee referee_frame = 3;
   if (_internal_has_referee_frame()) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::referee_frame(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:LabelerFrame)
   return target;
@@ -652,7 +662,7 @@ void LabelerFrame::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void LabelerFrame::MergeFrom(const LabelerFrame& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:LabelerFrame)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -711,7 +721,7 @@ bool LabelerFrame::IsInitialized() const {
 
 void LabelerFrame::InternalSwap(LabelerFrame* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(timestamp_, other->timestamp_);
   swap(frame_, other->frame_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
@@ -724,46 +734,45 @@ void LabelerFrame::InternalSwap(LabelerFrame* other) {
 
 // ===================================================================
 
+void LabelerFrameGroup::InitAsDefaultInstance() {
+}
 class LabelerFrameGroup::_Internal {
  public:
 };
 
-LabelerFrameGroup::LabelerFrameGroup(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  frames_(arena) {
+LabelerFrameGroup::LabelerFrameGroup()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:LabelerFrameGroup)
+  // @@protoc_insertion_point(constructor:LabelerFrameGroup)
 }
 LabelerFrameGroup::LabelerFrameGroup(const LabelerFrameGroup& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       frames_(from.frames_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:LabelerFrameGroup)
 }
 
 void LabelerFrameGroup::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_LabelerFrameGroup_log_5flabeler_5fdata_2eproto.base);
 }
 
 LabelerFrameGroup::~LabelerFrameGroup() {
   // @@protoc_insertion_point(destructor:LabelerFrameGroup)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void LabelerFrameGroup::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void LabelerFrameGroup::ArenaDtor(void* object) {
-  LabelerFrameGroup* _this = reinterpret_cast< LabelerFrameGroup* >(object);
-  (void)_this;
-}
-void LabelerFrameGroup::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void LabelerFrameGroup::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const LabelerFrameGroup& LabelerFrameGroup::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_LabelerFrameGroup_log_5flabeler_5fdata_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void LabelerFrameGroup::Clear() {
 // @@protoc_insertion_point(message_clear_start:LabelerFrameGroup)
@@ -772,7 +781,7 @@ void LabelerFrameGroup::Clear() {
   (void) cached_has_bits;
 
   frames_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* LabelerFrameGroup::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -800,9 +809,7 @@ const char* LabelerFrameGroup::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -816,7 +823,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* LabelerFrameGroup::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* LabelerFrameGroup::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:LabelerFrameGroup)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -825,14 +832,14 @@ failure:
   // repeated .LabelerFrame frames = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_frames_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_frames(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_frames(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:LabelerFrameGroup)
   return target;
@@ -880,7 +887,7 @@ void LabelerFrameGroup::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void LabelerFrameGroup::MergeFrom(const LabelerFrameGroup& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:LabelerFrameGroup)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -902,13 +909,13 @@ void LabelerFrameGroup::CopyFrom(const LabelerFrameGroup& from) {
 }
 
 bool LabelerFrameGroup::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(frames_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->frames())) return false;
   return true;
 }
 
 void LabelerFrameGroup::InternalSwap(LabelerFrameGroup* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   frames_.InternalSwap(&other->frames_);
 }
 
@@ -920,13 +927,13 @@ void LabelerFrameGroup::InternalSwap(LabelerFrameGroup* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::LabelerMetadata* Arena::CreateMaybeMessage< ::LabelerMetadata >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LabelerMetadata >(arena);
+  return Arena::CreateInternal< ::LabelerMetadata >(arena);
 }
 template<> PROTOBUF_NOINLINE ::LabelerFrame* Arena::CreateMaybeMessage< ::LabelerFrame >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LabelerFrame >(arena);
+  return Arena::CreateInternal< ::LabelerFrame >(arena);
 }
 template<> PROTOBUF_NOINLINE ::LabelerFrameGroup* Arena::CreateMaybeMessage< ::LabelerFrameGroup >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LabelerFrameGroup >(arena);
+  return Arena::CreateInternal< ::LabelerFrameGroup >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

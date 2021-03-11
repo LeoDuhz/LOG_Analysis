@@ -14,37 +14,44 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Game_Event_Originator_ssl_5fgame_5fevent_2eproto;
+class Game_Event_OriginatorDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Game_Event_Originator> _instance;
+} _Game_Event_Originator_default_instance_;
+class Game_EventDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Game_Event> _instance;
+} _Game_Event_default_instance_;
+static void InitDefaultsscc_info_Game_Event_ssl_5fgame_5fevent_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr Game_Event_Originator::Game_Event_Originator(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : team_(0)
+  {
+    void* ptr = &::_Game_Event_default_instance_;
+    new (ptr) ::Game_Event();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game_Event::InitAsDefaultInstance();
+}
 
-  , botid_(0u){}
-struct Game_Event_OriginatorDefaultTypeInternal {
-  constexpr Game_Event_OriginatorDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Game_Event_OriginatorDefaultTypeInternal() {}
-  union {
-    Game_Event_Originator _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Game_Event_OriginatorDefaultTypeInternal _Game_Event_Originator_default_instance_;
-constexpr Game_Event::Game_Event(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : message_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , originator_(nullptr)
-  , gameeventtype_(0)
-{}
-struct Game_EventDefaultTypeInternal {
-  constexpr Game_EventDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Game_EventDefaultTypeInternal() {}
-  union {
-    Game_Event _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Game_EventDefaultTypeInternal _Game_Event_default_instance_;
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Game_Event_ssl_5fgame_5fevent_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Game_Event_ssl_5fgame_5fevent_2eproto}, {
+      &scc_info_Game_Event_Originator_ssl_5fgame_5fevent_2eproto.base,}};
+
+static void InitDefaultsscc_info_Game_Event_Originator_ssl_5fgame_5fevent_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Game_Event_Originator_default_instance_;
+    new (ptr) ::Game_Event_Originator();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Game_Event_Originator::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Game_Event_Originator_ssl_5fgame_5fevent_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Game_Event_Originator_ssl_5fgame_5fevent_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ssl_5fgame_5fevent_2eproto[2];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_ssl_5fgame_5fevent_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ssl_5fgame_5fevent_2eproto = nullptr;
@@ -103,21 +110,23 @@ const char descriptor_table_protodef_ssl_5fgame_5fevent_2eproto[] PROTOBUF_SECTI
   "\004Team\022\020\n\014TEAM_UNKNOWN\020\000\022\017\n\013TEAM_YELLOW\020\001"
   "\022\r\n\tTEAM_BLUE\020\002"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fevent_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fevent_2eproto = {
-  false, false, 775, descriptor_table_protodef_ssl_5fgame_5fevent_2eproto, "ssl_game_event.proto", 
-  &descriptor_table_ssl_5fgame_5fevent_2eproto_once, nullptr, 0, 2,
-  schemas, file_default_instances, TableStruct_ssl_5fgame_5fevent_2eproto::offsets,
-  file_level_metadata_ssl_5fgame_5fevent_2eproto, file_level_enum_descriptors_ssl_5fgame_5fevent_2eproto, file_level_service_descriptors_ssl_5fgame_5fevent_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ssl_5fgame_5fevent_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_ssl_5fgame_5fevent_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fevent_2eproto);
-  return descriptor_table_ssl_5fgame_5fevent_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ssl_5fgame_5fevent_2eproto_sccs[2] = {
+  &scc_info_Game_Event_ssl_5fgame_5fevent_2eproto.base,
+  &scc_info_Game_Event_Originator_ssl_5fgame_5fevent_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fevent_2eproto_once;
+static bool descriptor_table_ssl_5fgame_5fevent_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fevent_2eproto = {
+  &descriptor_table_ssl_5fgame_5fevent_2eproto_initialized, descriptor_table_protodef_ssl_5fgame_5fevent_2eproto, "ssl_game_event.proto", 775,
+  &descriptor_table_ssl_5fgame_5fevent_2eproto_once, descriptor_table_ssl_5fgame_5fevent_2eproto_sccs, descriptor_table_ssl_5fgame_5fevent_2eproto_deps, 2, 0,
+  schemas, file_default_instances, TableStruct_ssl_5fgame_5fevent_2eproto::offsets,
+  file_level_metadata_ssl_5fgame_5fevent_2eproto, 2, file_level_enum_descriptors_ssl_5fgame_5fevent_2eproto, file_level_service_descriptors_ssl_5fgame_5fevent_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ssl_5fgame_5fevent_2eproto(&descriptor_table_ssl_5fgame_5fevent_2eproto);
+static bool dynamic_init_dummy_ssl_5fgame_5fevent_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ssl_5fgame_5fevent_2eproto), true);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Game_Event_GameEventType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fevent_2eproto);
   return file_level_enum_descriptors_ssl_5fgame_5fevent_2eproto[0];
@@ -207,6 +216,8 @@ constexpr int Game_Event::Team_ARRAYSIZE;
 
 // ===================================================================
 
+void Game_Event_Originator::InitAsDefaultInstance() {
+}
 class Game_Event_Originator::_Internal {
  public:
   using HasBits = decltype(std::declval<Game_Event_Originator>()._has_bits_);
@@ -216,21 +227,18 @@ class Game_Event_Originator::_Internal {
   static void set_has_botid(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-Game_Event_Originator::Game_Event_Originator(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Game_Event_Originator::Game_Event_Originator()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Game_Event.Originator)
+  // @@protoc_insertion_point(constructor:Game_Event.Originator)
 }
 Game_Event_Originator::Game_Event_Originator(const Game_Event_Originator& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&team_, &from.team_,
     static_cast<size_t>(reinterpret_cast<char*>(&botid_) -
     reinterpret_cast<char*>(&team_)) + sizeof(botid_));
@@ -238,31 +246,27 @@ Game_Event_Originator::Game_Event_Originator(const Game_Event_Originator& from)
 }
 
 void Game_Event_Originator::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&team_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&botid_) -
-    reinterpret_cast<char*>(&team_)) + sizeof(botid_));
+  ::memset(&team_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&botid_) -
+      reinterpret_cast<char*>(&team_)) + sizeof(botid_));
 }
 
 Game_Event_Originator::~Game_Event_Originator() {
   // @@protoc_insertion_point(destructor:Game_Event.Originator)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Game_Event_Originator::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Game_Event_Originator::ArenaDtor(void* object) {
-  Game_Event_Originator* _this = reinterpret_cast< Game_Event_Originator* >(object);
-  (void)_this;
-}
-void Game_Event_Originator::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Game_Event_Originator::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Game_Event_Originator& Game_Event_Originator::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Game_Event_Originator_ssl_5fgame_5fevent_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Game_Event_Originator::Clear() {
 // @@protoc_insertion_point(message_clear_start:Game_Event.Originator)
@@ -277,7 +281,7 @@ void Game_Event_Originator::Clear() {
         reinterpret_cast<char*>(&team_)) + sizeof(botid_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Game_Event_Originator::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -291,7 +295,7 @@ const char* Game_Event_Originator::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // required .Game_Event.Team team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Game_Event_Team_IsValid(val))) {
             _internal_set_team(static_cast<::Game_Event_Team>(val));
@@ -304,7 +308,7 @@ const char* Game_Event_Originator::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_botid(&has_bits);
-          botid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          botid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -314,9 +318,7 @@ const char* Game_Event_Originator::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -331,7 +333,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Game_Event_Originator::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Game_Event_Originator::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Game_Event.Originator)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -340,20 +342,20 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Game_Event.Team team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_team(), target);
   }
 
   // optional uint32 botId = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_botid(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Game_Event.Originator)
   return target;
@@ -364,7 +366,7 @@ size_t Game_Event_Originator::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Game_Event.Team team = 1;
-  if (_internal_has_team()) {
+  if (has_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_team());
   }
@@ -407,7 +409,7 @@ void Game_Event_Originator::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void Game_Event_Originator::MergeFrom(const Game_Event_Originator& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Game_Event.Originator)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -438,20 +440,16 @@ void Game_Event_Originator::CopyFrom(const Game_Event_Originator& from) {
 }
 
 bool Game_Event_Originator::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void Game_Event_Originator::InternalSwap(Game_Event_Originator* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Game_Event_Originator, botid_)
-      + sizeof(Game_Event_Originator::botid_)
-      - PROTOBUF_FIELD_OFFSET(Game_Event_Originator, team_)>(
-          reinterpret_cast<char*>(&team_),
-          reinterpret_cast<char*>(&other->team_));
+  swap(team_, other->team_);
+  swap(botid_, other->botid_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Game_Event_Originator::GetMetadata() const {
@@ -461,6 +459,10 @@ void Game_Event_Originator::InternalSwap(Game_Event_Originator* other) {
 
 // ===================================================================
 
+void Game_Event::InitAsDefaultInstance() {
+  ::_Game_Event_default_instance_._instance.get_mutable()->originator_ = const_cast< ::Game_Event_Originator*>(
+      ::Game_Event_Originator::internal_default_instance());
+}
 class Game_Event::_Internal {
  public:
   using HasBits = decltype(std::declval<Game_Event>()._has_bits_);
@@ -474,29 +476,25 @@ class Game_Event::_Internal {
   static void set_has_message(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000004) ^ 0x00000004) != 0;
-  }
 };
 
 const ::Game_Event_Originator&
 Game_Event::_Internal::originator(const Game_Event* msg) {
   return *msg->originator_;
 }
-Game_Event::Game_Event(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Game_Event::Game_Event()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Game_Event)
+  // @@protoc_insertion_point(constructor:Game_Event)
 }
 Game_Event::Game_Event(const Game_Event& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_message()) {
-    message_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_message(), 
-      GetArena());
+    message_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.message_);
   }
   if (from._internal_has_originator()) {
     originator_ = new ::Game_Event_Originator(*from.originator_);
@@ -508,34 +506,31 @@ Game_Event::Game_Event(const Game_Event& from)
 }
 
 void Game_Event::SharedCtor() {
-message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&originator_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&gameeventtype_) -
-    reinterpret_cast<char*>(&originator_)) + sizeof(gameeventtype_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Game_Event_ssl_5fgame_5fevent_2eproto.base);
+  message_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&originator_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&gameeventtype_) -
+      reinterpret_cast<char*>(&originator_)) + sizeof(gameeventtype_));
 }
 
 Game_Event::~Game_Event() {
   // @@protoc_insertion_point(destructor:Game_Event)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Game_Event::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   message_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete originator_;
 }
 
-void Game_Event::ArenaDtor(void* object) {
-  Game_Event* _this = reinterpret_cast< Game_Event* >(object);
-  (void)_this;
-}
-void Game_Event::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Game_Event::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Game_Event& Game_Event::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Game_Event_ssl_5fgame_5fevent_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Game_Event::Clear() {
 // @@protoc_insertion_point(message_clear_start:Game_Event)
@@ -546,7 +541,7 @@ void Game_Event::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      message_.ClearNonDefaultToEmpty();
+      message_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
       GOOGLE_DCHECK(originator_ != nullptr);
@@ -555,7 +550,7 @@ void Game_Event::Clear() {
   }
   gameeventtype_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Game_Event::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -569,7 +564,7 @@ const char* Game_Event::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       // required .Game_Event.GameEventType gameEventType = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Game_Event_GameEventType_IsValid(val))) {
             _internal_set_gameeventtype(static_cast<::Game_Event_GameEventType>(val));
@@ -588,11 +583,7 @@ const char* Game_Event::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       // optional string message = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_message();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Game_Event.message");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_message(), ptr, ctx, "Game_Event.message");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -602,9 +593,7 @@ const char* Game_Event::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -619,7 +608,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Game_Event::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Game_Event::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Game_Event)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -628,16 +617,16 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Game_Event.GameEventType gameEventType = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_gameeventtype(), target);
   }
 
   // optional .Game_Event.Originator originator = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::originator(this), target, stream);
   }
 
@@ -653,7 +642,7 @@ failure:
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Game_Event)
   return target;
@@ -664,7 +653,7 @@ size_t Game_Event::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Game_Event.GameEventType gameEventType = 1;
-  if (_internal_has_gameeventtype()) {
+  if (has_gameeventtype()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_gameeventtype());
   }
@@ -716,14 +705,15 @@ void Game_Event::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Game_Event::MergeFrom(const Game_Event& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Game_Event)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_message(from._internal_message());
+      _has_bits_[0] |= 0x00000001u;
+      message_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.message_);
     }
     if (cached_has_bits & 0x00000002u) {
       _internal_mutable_originator()->::Game_Event_Originator::MergeFrom(from._internal_originator());
@@ -750,24 +740,21 @@ void Game_Event::CopyFrom(const Game_Event& from) {
 }
 
 bool Game_Event::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_originator()) {
-    if (!originator_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000004) != 0x00000004) return false;
+  if (has_originator()) {
+    if (!this->originator_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Game_Event::InternalSwap(Game_Event* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  message_.Swap(&other->message_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Game_Event, gameeventtype_)
-      + sizeof(Game_Event::gameeventtype_)
-      - PROTOBUF_FIELD_OFFSET(Game_Event, originator_)>(
-          reinterpret_cast<char*>(&originator_),
-          reinterpret_cast<char*>(&other->originator_));
+  message_.Swap(&other->message_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(originator_, other->originator_);
+  swap(gameeventtype_, other->gameeventtype_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Game_Event::GetMetadata() const {
@@ -778,10 +765,10 @@ void Game_Event::InternalSwap(Game_Event* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::Game_Event_Originator* Arena::CreateMaybeMessage< ::Game_Event_Originator >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Game_Event_Originator >(arena);
+  return Arena::CreateInternal< ::Game_Event_Originator >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Game_Event* Arena::CreateMaybeMessage< ::Game_Event >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Game_Event >(arena);
+  return Arena::CreateInternal< ::Game_Event >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

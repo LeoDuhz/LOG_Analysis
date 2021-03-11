@@ -14,210 +14,291 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Arc_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Debug_Curve__zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Line_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<7> scc_info_Debug_Msg_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Points_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Polygon_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Robot_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Score_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Text_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Point_zss_5fdebug_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fdebug_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Rectangle_zss_5fdebug_2eproto;
 namespace ZSS {
 namespace Protocol {
-constexpr Point::Point(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0){}
-struct PointDefaultTypeInternal {
-  constexpr PointDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~PointDefaultTypeInternal() {}
-  union {
-    Point _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PointDefaultTypeInternal _Point_default_instance_;
-constexpr Rectangle::Rectangle(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : point1_(nullptr)
-  , point2_(nullptr){}
-struct RectangleDefaultTypeInternal {
-  constexpr RectangleDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~RectangleDefaultTypeInternal() {}
-  union {
-    Rectangle _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RectangleDefaultTypeInternal _Rectangle_default_instance_;
-constexpr Debug_Robot::Debug_Robot(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : pos_(nullptr)
-  , dir_(0){}
-struct Debug_RobotDefaultTypeInternal {
-  constexpr Debug_RobotDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_RobotDefaultTypeInternal() {}
-  union {
-    Debug_Robot _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_RobotDefaultTypeInternal _Debug_Robot_default_instance_;
-constexpr Debug_Line::Debug_Line(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : start_(nullptr)
-  , end_(nullptr)
-  , forward_(false)
-  , back_(false){}
-struct Debug_LineDefaultTypeInternal {
-  constexpr Debug_LineDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_LineDefaultTypeInternal() {}
-  union {
-    Debug_Line _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_LineDefaultTypeInternal _Debug_Line_default_instance_;
-constexpr Debug_Arc::Debug_Arc(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : rectangle_(nullptr)
-  , start_(0)
-  , end_(0)
-  , fill_(false){}
-struct Debug_ArcDefaultTypeInternal {
-  constexpr Debug_ArcDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_ArcDefaultTypeInternal() {}
-  union {
-    Debug_Arc _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_ArcDefaultTypeInternal _Debug_Arc_default_instance_;
-constexpr Debug_Polygon::Debug_Polygon(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : vertex_()
-  , fill_(false){}
-struct Debug_PolygonDefaultTypeInternal {
-  constexpr Debug_PolygonDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_PolygonDefaultTypeInternal() {}
-  union {
-    Debug_Polygon _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_PolygonDefaultTypeInternal _Debug_Polygon_default_instance_;
-constexpr Debug_Text::Debug_Text(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : text_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , pos_(nullptr)
-  , size_(0)
-  , weight_(0){}
-struct Debug_TextDefaultTypeInternal {
-  constexpr Debug_TextDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_TextDefaultTypeInternal() {}
-  union {
-    Debug_Text _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_TextDefaultTypeInternal _Debug_Text_default_instance_;
-constexpr Debug_Curve_::Debug_Curve_(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : num_(0)
-  , maxlimit_(0)
-  , minlimit_(0){}
-struct Debug_Curve_DefaultTypeInternal {
-  constexpr Debug_Curve_DefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_Curve_DefaultTypeInternal() {}
-  union {
-    Debug_Curve_ _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_Curve_DefaultTypeInternal _Debug_Curve__default_instance_;
-constexpr Debug_Curve::Debug_Curve(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : start_(nullptr)
-  , p1_(nullptr)
-  , p2_(nullptr)
-  , end_(nullptr){}
-struct Debug_CurveDefaultTypeInternal {
-  constexpr Debug_CurveDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_CurveDefaultTypeInternal() {}
-  union {
-    Debug_Curve _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_CurveDefaultTypeInternal _Debug_Curve_default_instance_;
-constexpr Debug_Points::Debug_Points(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : point_(){}
-struct Debug_PointsDefaultTypeInternal {
-  constexpr Debug_PointsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_PointsDefaultTypeInternal() {}
-  union {
-    Debug_Points _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_PointsDefaultTypeInternal _Debug_Points_default_instance_;
-constexpr Debug_Msg::Debug_Msg(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : arc_(nullptr)
-  , line_(nullptr)
-  , text_(nullptr)
-  , robot_(nullptr)
-  , curve_(nullptr)
-  , polygon_(nullptr)
-  , points_(nullptr)
-  , type_(0)
-
-  , color_(0)
-
-  , rgb_value_(0){}
-struct Debug_MsgDefaultTypeInternal {
-  constexpr Debug_MsgDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_MsgDefaultTypeInternal() {}
-  union {
-    Debug_Msg _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_MsgDefaultTypeInternal _Debug_Msg_default_instance_;
-constexpr Debug_Msgs::Debug_Msgs(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : msgs_(){}
-struct Debug_MsgsDefaultTypeInternal {
-  constexpr Debug_MsgsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_MsgsDefaultTypeInternal() {}
-  union {
-    Debug_Msgs _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_MsgsDefaultTypeInternal _Debug_Msgs_default_instance_;
-constexpr Debug_Score::Debug_Score(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : p_()
-  , color_(0){}
-struct Debug_ScoreDefaultTypeInternal {
-  constexpr Debug_ScoreDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_ScoreDefaultTypeInternal() {}
-  union {
-    Debug_Score _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_ScoreDefaultTypeInternal _Debug_Score_default_instance_;
-constexpr Debug_Scores::Debug_Scores(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : scores_(){}
-struct Debug_ScoresDefaultTypeInternal {
-  constexpr Debug_ScoresDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Debug_ScoresDefaultTypeInternal() {}
-  union {
-    Debug_Scores _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Debug_ScoresDefaultTypeInternal _Debug_Scores_default_instance_;
+class PointDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Point> _instance;
+} _Point_default_instance_;
+class RectangleDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Rectangle> _instance;
+} _Rectangle_default_instance_;
+class Debug_RobotDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Robot> _instance;
+} _Debug_Robot_default_instance_;
+class Debug_LineDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Line> _instance;
+} _Debug_Line_default_instance_;
+class Debug_ArcDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Arc> _instance;
+} _Debug_Arc_default_instance_;
+class Debug_PolygonDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Polygon> _instance;
+} _Debug_Polygon_default_instance_;
+class Debug_TextDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Text> _instance;
+} _Debug_Text_default_instance_;
+class Debug_Curve_DefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Curve_> _instance;
+} _Debug_Curve__default_instance_;
+class Debug_CurveDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Curve> _instance;
+} _Debug_Curve_default_instance_;
+class Debug_PointsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Points> _instance;
+} _Debug_Points_default_instance_;
+class Debug_MsgDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Msg> _instance;
+} _Debug_Msg_default_instance_;
+class Debug_MsgsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Msgs> _instance;
+} _Debug_Msgs_default_instance_;
+class Debug_ScoreDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Score> _instance;
+} _Debug_Score_default_instance_;
+class Debug_ScoresDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Debug_Scores> _instance;
+} _Debug_Scores_default_instance_;
 }  // namespace Protocol
 }  // namespace ZSS
+static void InitDefaultsscc_info_Debug_Arc_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Arc_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Arc();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Arc::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Arc_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Arc_zss_5fdebug_2eproto}, {
+      &scc_info_Rectangle_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Curve_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Curve_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Curve();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Curve::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Curve_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Curve_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Curve__zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Curve__default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Curve_();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Curve_::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Debug_Curve__zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Debug_Curve__zss_5fdebug_2eproto}, {}};
+
+static void InitDefaultsscc_info_Debug_Line_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Line_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Line();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Line::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Line_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Line_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Msg_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Msg_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Msg();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Msg::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<7> scc_info_Debug_Msg_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 7, 0, InitDefaultsscc_info_Debug_Msg_zss_5fdebug_2eproto}, {
+      &scc_info_Debug_Arc_zss_5fdebug_2eproto.base,
+      &scc_info_Debug_Line_zss_5fdebug_2eproto.base,
+      &scc_info_Debug_Text_zss_5fdebug_2eproto.base,
+      &scc_info_Debug_Robot_zss_5fdebug_2eproto.base,
+      &scc_info_Debug_Curve__zss_5fdebug_2eproto.base,
+      &scc_info_Debug_Polygon_zss_5fdebug_2eproto.base,
+      &scc_info_Debug_Points_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Msgs_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Msgs_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Msgs();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Msgs::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Msgs_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Msgs_zss_5fdebug_2eproto}, {
+      &scc_info_Debug_Msg_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Points_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Points_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Points();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Points::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Points_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Points_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Polygon_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Polygon_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Polygon();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Polygon::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Polygon_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Polygon_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Robot_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Robot_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Robot();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Robot::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Robot_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Robot_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Score_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Score_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Score();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Score::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Score_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Score_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Scores_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Scores_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Scores();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Scores::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Scores_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Scores_zss_5fdebug_2eproto}, {
+      &scc_info_Debug_Score_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Debug_Text_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Debug_Text_default_instance_;
+    new (ptr) ::ZSS::Protocol::Debug_Text();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Debug_Text::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Debug_Text_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Debug_Text_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
+static void InitDefaultsscc_info_Point_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Point_default_instance_;
+    new (ptr) ::ZSS::Protocol::Point();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Point::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Point_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Point_zss_5fdebug_2eproto}, {}};
+
+static void InitDefaultsscc_info_Rectangle_zss_5fdebug_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Rectangle_default_instance_;
+    new (ptr) ::ZSS::Protocol::Rectangle();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Rectangle::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Rectangle_zss_5fdebug_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Rectangle_zss_5fdebug_2eproto}, {
+      &scc_info_Point_zss_5fdebug_2eproto.base,}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_zss_5fdebug_2eproto[14];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_zss_5fdebug_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_zss_5fdebug_2eproto = nullptr;
@@ -322,12 +403,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_zss_5fdebug_2eproto::offsets[]
   1,
   2,
   3,
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Points, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Points, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Points, point_),
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Msg, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Msg, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -353,12 +435,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_zss_5fdebug_2eproto::offsets[]
   5,
   6,
   9,
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Msgs, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Msgs, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Msgs, msgs_),
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Score, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Score, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -368,12 +451,13 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_zss_5fdebug_2eproto::offsets[]
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Score, p_),
   0,
   ~0u,
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Scores, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Scores, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Debug_Scores, scores_),
+  ~0u,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::ZSS::Protocol::Point)},
@@ -385,11 +469,11 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOB
   { 62, 71, sizeof(::ZSS::Protocol::Debug_Text)},
   { 75, 83, sizeof(::ZSS::Protocol::Debug_Curve_)},
   { 86, 95, sizeof(::ZSS::Protocol::Debug_Curve)},
-  { 99, -1, sizeof(::ZSS::Protocol::Debug_Points)},
-  { 105, 120, sizeof(::ZSS::Protocol::Debug_Msg)},
-  { 130, -1, sizeof(::ZSS::Protocol::Debug_Msgs)},
-  { 136, 143, sizeof(::ZSS::Protocol::Debug_Score)},
-  { 145, -1, sizeof(::ZSS::Protocol::Debug_Scores)},
+  { 99, 105, sizeof(::ZSS::Protocol::Debug_Points)},
+  { 106, 121, sizeof(::ZSS::Protocol::Debug_Msg)},
+  { 131, 137, sizeof(::ZSS::Protocol::Debug_Msgs)},
+  { 138, 145, sizeof(::ZSS::Protocol::Debug_Score)},
+  { 147, 153, sizeof(::ZSS::Protocol::Debug_Scores)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -453,21 +537,35 @@ const char descriptor_table_protodef_zss_5fdebug_2eproto[] PROTOBUF_SECTION_VARI
   "otocol.Point\"9\n\014Debug_Scores\022)\n\006scores\030\001"
   " \003(\0132\031.ZSS.Protocol.Debug_Score"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_zss_5fdebug_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_zss_5fdebug_2eproto = {
-  false, false, 1671, descriptor_table_protodef_zss_5fdebug_2eproto, "zss_debug.proto", 
-  &descriptor_table_zss_5fdebug_2eproto_once, nullptr, 0, 14,
-  schemas, file_default_instances, TableStruct_zss_5fdebug_2eproto::offsets,
-  file_level_metadata_zss_5fdebug_2eproto, file_level_enum_descriptors_zss_5fdebug_2eproto, file_level_service_descriptors_zss_5fdebug_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_zss_5fdebug_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_zss_5fdebug_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_zss_5fdebug_2eproto);
-  return descriptor_table_zss_5fdebug_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_zss_5fdebug_2eproto_sccs[14] = {
+  &scc_info_Debug_Arc_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Curve_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Curve__zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Line_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Msg_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Msgs_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Points_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Polygon_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Robot_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Score_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Scores_zss_5fdebug_2eproto.base,
+  &scc_info_Debug_Text_zss_5fdebug_2eproto.base,
+  &scc_info_Point_zss_5fdebug_2eproto.base,
+  &scc_info_Rectangle_zss_5fdebug_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_zss_5fdebug_2eproto_once;
+static bool descriptor_table_zss_5fdebug_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_zss_5fdebug_2eproto = {
+  &descriptor_table_zss_5fdebug_2eproto_initialized, descriptor_table_protodef_zss_5fdebug_2eproto, "zss_debug.proto", 1671,
+  &descriptor_table_zss_5fdebug_2eproto_once, descriptor_table_zss_5fdebug_2eproto_sccs, descriptor_table_zss_5fdebug_2eproto_deps, 14, 0,
+  schemas, file_default_instances, TableStruct_zss_5fdebug_2eproto::offsets,
+  file_level_metadata_zss_5fdebug_2eproto, 14, file_level_enum_descriptors_zss_5fdebug_2eproto, file_level_service_descriptors_zss_5fdebug_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_zss_5fdebug_2eproto(&descriptor_table_zss_5fdebug_2eproto);
+static bool dynamic_init_dummy_zss_5fdebug_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_zss_5fdebug_2eproto), true);
 namespace ZSS {
 namespace Protocol {
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Debug_Msg_Debug_Type_descriptor() {
@@ -543,6 +641,8 @@ constexpr int Debug_Msg::Color_ARRAYSIZE;
 
 // ===================================================================
 
+void Point::InitAsDefaultInstance() {
+}
 class Point::_Internal {
  public:
   using HasBits = decltype(std::declval<Point>()._has_bits_);
@@ -552,21 +652,18 @@ class Point::_Internal {
   static void set_has_y(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-Point::Point(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Point::Point()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Point)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Point)
 }
 Point::Point(const Point& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&y_) -
     reinterpret_cast<char*>(&x_)) + sizeof(y_));
@@ -574,31 +671,27 @@ Point::Point(const Point& from)
 }
 
 void Point::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&y_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(y_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(y_));
 }
 
 Point::~Point() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Point)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Point::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Point::ArenaDtor(void* object) {
-  Point* _this = reinterpret_cast< Point* >(object);
-  (void)_this;
-}
-void Point::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Point::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Point& Point::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Point_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Point::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Point)
@@ -613,7 +706,7 @@ void Point::Clear() {
         reinterpret_cast<char*>(&x_)) + sizeof(y_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Point::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -646,9 +739,7 @@ const char* Point::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -663,7 +754,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Point::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Point::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Point)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -672,19 +763,19 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required float x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_x(), target);
   }
 
   // required float y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_y(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Point)
   return target;
@@ -694,12 +785,12 @@ size_t Point::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Point)
   size_t total_size = 0;
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required float x = 1;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required float y = 2;
     total_size += 1 + 4;
   }
@@ -751,7 +842,7 @@ void Point::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Point::MergeFrom(const Point& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Point)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -782,20 +873,16 @@ void Point::CopyFrom(const Point& from) {
 }
 
 bool Point::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void Point::InternalSwap(Point* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Point, y_)
-      + sizeof(Point::y_)
-      - PROTOBUF_FIELD_OFFSET(Point, x_)>(
-          reinterpret_cast<char*>(&x_),
-          reinterpret_cast<char*>(&other->x_));
+  swap(x_, other->x_);
+  swap(y_, other->y_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Point::GetMetadata() const {
@@ -805,6 +892,12 @@ void Point::InternalSwap(Point* other) {
 
 // ===================================================================
 
+void Rectangle::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Rectangle_default_instance_._instance.get_mutable()->point1_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+  ::ZSS::Protocol::_Rectangle_default_instance_._instance.get_mutable()->point2_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+}
 class Rectangle::_Internal {
  public:
   using HasBits = decltype(std::declval<Rectangle>()._has_bits_);
@@ -816,9 +909,6 @@ class Rectangle::_Internal {
   static void set_has_point2(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Point&
@@ -829,16 +919,16 @@ const ::ZSS::Protocol::Point&
 Rectangle::_Internal::point2(const Rectangle* msg) {
   return *msg->point2_;
 }
-Rectangle::Rectangle(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Rectangle::Rectangle()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Rectangle)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Rectangle)
 }
 Rectangle::Rectangle(const Rectangle& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_point1()) {
     point1_ = new ::ZSS::Protocol::Point(*from.point1_);
   } else {
@@ -853,33 +943,30 @@ Rectangle::Rectangle(const Rectangle& from)
 }
 
 void Rectangle::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&point1_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&point2_) -
-    reinterpret_cast<char*>(&point1_)) + sizeof(point2_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Rectangle_zss_5fdebug_2eproto.base);
+  ::memset(&point1_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&point2_) -
+      reinterpret_cast<char*>(&point1_)) + sizeof(point2_));
 }
 
 Rectangle::~Rectangle() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Rectangle)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Rectangle::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete point1_;
   if (this != internal_default_instance()) delete point2_;
 }
 
-void Rectangle::ArenaDtor(void* object) {
-  Rectangle* _this = reinterpret_cast< Rectangle* >(object);
-  (void)_this;
-}
-void Rectangle::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Rectangle::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Rectangle& Rectangle::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Rectangle_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Rectangle::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Rectangle)
@@ -899,7 +986,7 @@ void Rectangle::Clear() {
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Rectangle::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -930,9 +1017,7 @@ const char* Rectangle::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -947,7 +1032,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Rectangle::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Rectangle::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Rectangle)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -956,23 +1041,23 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Point point1 = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::point1(this), target, stream);
   }
 
   // required .ZSS.Protocol.Point point2 = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::point2(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Rectangle)
   return target;
@@ -982,14 +1067,14 @@ size_t Rectangle::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Rectangle)
   size_t total_size = 0;
 
-  if (_internal_has_point1()) {
+  if (has_point1()) {
     // required .ZSS.Protocol.Point point1 = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *point1_);
   }
 
-  if (_internal_has_point2()) {
+  if (has_point2()) {
     // required .ZSS.Protocol.Point point2 = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -1047,7 +1132,7 @@ void Rectangle::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Rectangle::MergeFrom(const Rectangle& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Rectangle)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1077,26 +1162,22 @@ void Rectangle::CopyFrom(const Rectangle& from) {
 }
 
 bool Rectangle::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_point1()) {
-    if (!point1_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (has_point1()) {
+    if (!this->point1_->IsInitialized()) return false;
   }
-  if (_internal_has_point2()) {
-    if (!point2_->IsInitialized()) return false;
+  if (has_point2()) {
+    if (!this->point2_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Rectangle::InternalSwap(Rectangle* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Rectangle, point2_)
-      + sizeof(Rectangle::point2_)
-      - PROTOBUF_FIELD_OFFSET(Rectangle, point1_)>(
-          reinterpret_cast<char*>(&point1_),
-          reinterpret_cast<char*>(&other->point1_));
+  swap(point1_, other->point1_);
+  swap(point2_, other->point2_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Rectangle::GetMetadata() const {
@@ -1106,6 +1187,10 @@ void Rectangle::InternalSwap(Rectangle* other) {
 
 // ===================================================================
 
+void Debug_Robot::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Debug_Robot_default_instance_._instance.get_mutable()->pos_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+}
 class Debug_Robot::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Robot>()._has_bits_);
@@ -1116,25 +1201,22 @@ class Debug_Robot::_Internal {
   static void set_has_dir(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Point&
 Debug_Robot::_Internal::pos(const Debug_Robot* msg) {
   return *msg->pos_;
 }
-Debug_Robot::Debug_Robot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Debug_Robot::Debug_Robot()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Robot)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Robot)
 }
 Debug_Robot::Debug_Robot(const Debug_Robot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_pos()) {
     pos_ = new ::ZSS::Protocol::Point(*from.pos_);
   } else {
@@ -1145,32 +1227,29 @@ Debug_Robot::Debug_Robot(const Debug_Robot& from)
 }
 
 void Debug_Robot::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&pos_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&dir_) -
-    reinterpret_cast<char*>(&pos_)) + sizeof(dir_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Robot_zss_5fdebug_2eproto.base);
+  ::memset(&pos_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&dir_) -
+      reinterpret_cast<char*>(&pos_)) + sizeof(dir_));
 }
 
 Debug_Robot::~Debug_Robot() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Robot)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Robot::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete pos_;
 }
 
-void Debug_Robot::ArenaDtor(void* object) {
-  Debug_Robot* _this = reinterpret_cast< Debug_Robot* >(object);
-  (void)_this;
-}
-void Debug_Robot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Robot::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Robot& Debug_Robot::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Robot_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Robot::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Robot)
@@ -1185,7 +1264,7 @@ void Debug_Robot::Clear() {
   }
   dir_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Robot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1217,9 +1296,7 @@ const char* Debug_Robot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1234,7 +1311,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Robot::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Robot::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Robot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1243,21 +1320,21 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Point pos = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::pos(this), target, stream);
   }
 
   // required float dir = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_dir(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Robot)
   return target;
@@ -1267,14 +1344,14 @@ size_t Debug_Robot::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Debug_Robot)
   size_t total_size = 0;
 
-  if (_internal_has_pos()) {
+  if (has_pos()) {
     // required .ZSS.Protocol.Point pos = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *pos_);
   }
 
-  if (_internal_has_dir()) {
+  if (has_dir()) {
     // required float dir = 2;
     total_size += 1 + 4;
   }
@@ -1328,7 +1405,7 @@ void Debug_Robot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Robot::MergeFrom(const Debug_Robot& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Robot)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1359,23 +1436,19 @@ void Debug_Robot::CopyFrom(const Debug_Robot& from) {
 }
 
 bool Debug_Robot::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_pos()) {
-    if (!pos_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (has_pos()) {
+    if (!this->pos_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Debug_Robot::InternalSwap(Debug_Robot* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Debug_Robot, dir_)
-      + sizeof(Debug_Robot::dir_)
-      - PROTOBUF_FIELD_OFFSET(Debug_Robot, pos_)>(
-          reinterpret_cast<char*>(&pos_),
-          reinterpret_cast<char*>(&other->pos_));
+  swap(pos_, other->pos_);
+  swap(dir_, other->dir_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Debug_Robot::GetMetadata() const {
@@ -1385,6 +1458,12 @@ void Debug_Robot::InternalSwap(Debug_Robot* other) {
 
 // ===================================================================
 
+void Debug_Line::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Debug_Line_default_instance_._instance.get_mutable()->start_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Line_default_instance_._instance.get_mutable()->end_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+}
 class Debug_Line::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Line>()._has_bits_);
@@ -1402,9 +1481,6 @@ class Debug_Line::_Internal {
   static void set_has_back(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000000f) ^ 0x0000000f) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Point&
@@ -1415,16 +1491,16 @@ const ::ZSS::Protocol::Point&
 Debug_Line::_Internal::end(const Debug_Line* msg) {
   return *msg->end_;
 }
-Debug_Line::Debug_Line(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Debug_Line::Debug_Line()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Line)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Line)
 }
 Debug_Line::Debug_Line(const Debug_Line& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_start()) {
     start_ = new ::ZSS::Protocol::Point(*from.start_);
   } else {
@@ -1442,33 +1518,30 @@ Debug_Line::Debug_Line(const Debug_Line& from)
 }
 
 void Debug_Line::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&start_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&back_) -
-    reinterpret_cast<char*>(&start_)) + sizeof(back_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Line_zss_5fdebug_2eproto.base);
+  ::memset(&start_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&back_) -
+      reinterpret_cast<char*>(&start_)) + sizeof(back_));
 }
 
 Debug_Line::~Debug_Line() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Line)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Line::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete start_;
   if (this != internal_default_instance()) delete end_;
 }
 
-void Debug_Line::ArenaDtor(void* object) {
-  Debug_Line* _this = reinterpret_cast< Debug_Line* >(object);
-  (void)_this;
-}
-void Debug_Line::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Line::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Line& Debug_Line::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Line_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Line::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Line)
@@ -1491,7 +1564,7 @@ void Debug_Line::Clear() {
       reinterpret_cast<char*>(&back_) -
       reinterpret_cast<char*>(&forward_)) + sizeof(back_));
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Line::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1520,7 +1593,7 @@ const char* Debug_Line::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           _Internal::set_has_forward(&has_bits);
-          forward_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          forward_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1528,7 +1601,7 @@ const char* Debug_Line::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_back(&has_bits);
-          back_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          back_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1538,9 +1611,7 @@ const char* Debug_Line::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1555,7 +1626,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Line::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Line::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Line)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1564,35 +1635,35 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Point start = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::start(this), target, stream);
   }
 
   // required .ZSS.Protocol.Point end = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::end(this), target, stream);
   }
 
   // required bool FORWARD = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_forward(), target);
   }
 
   // required bool BACK = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_back(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Line)
   return target;
@@ -1602,26 +1673,26 @@ size_t Debug_Line::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Debug_Line)
   size_t total_size = 0;
 
-  if (_internal_has_start()) {
+  if (has_start()) {
     // required .ZSS.Protocol.Point start = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *start_);
   }
 
-  if (_internal_has_end()) {
+  if (has_end()) {
     // required .ZSS.Protocol.Point end = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *end_);
   }
 
-  if (_internal_has_forward()) {
+  if (has_forward()) {
     // required bool FORWARD = 3;
     total_size += 1 + 1;
   }
 
-  if (_internal_has_back()) {
+  if (has_back()) {
     // required bool BACK = 4;
     total_size += 1 + 1;
   }
@@ -1683,7 +1754,7 @@ void Debug_Line::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Line::MergeFrom(const Debug_Line& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Line)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1720,26 +1791,24 @@ void Debug_Line::CopyFrom(const Debug_Line& from) {
 }
 
 bool Debug_Line::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_start()) {
-    if (!start_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x0000000f) != 0x0000000f) return false;
+  if (has_start()) {
+    if (!this->start_->IsInitialized()) return false;
   }
-  if (_internal_has_end()) {
-    if (!end_->IsInitialized()) return false;
+  if (has_end()) {
+    if (!this->end_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Debug_Line::InternalSwap(Debug_Line* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Debug_Line, back_)
-      + sizeof(Debug_Line::back_)
-      - PROTOBUF_FIELD_OFFSET(Debug_Line, start_)>(
-          reinterpret_cast<char*>(&start_),
-          reinterpret_cast<char*>(&other->start_));
+  swap(start_, other->start_);
+  swap(end_, other->end_);
+  swap(forward_, other->forward_);
+  swap(back_, other->back_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Debug_Line::GetMetadata() const {
@@ -1749,6 +1818,10 @@ void Debug_Line::InternalSwap(Debug_Line* other) {
 
 // ===================================================================
 
+void Debug_Arc::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Debug_Arc_default_instance_._instance.get_mutable()->rectangle_ = const_cast< ::ZSS::Protocol::Rectangle*>(
+      ::ZSS::Protocol::Rectangle::internal_default_instance());
+}
 class Debug_Arc::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Arc>()._has_bits_);
@@ -1765,25 +1838,22 @@ class Debug_Arc::_Internal {
   static void set_has_fill(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000000f) ^ 0x0000000f) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Rectangle&
 Debug_Arc::_Internal::rectangle(const Debug_Arc* msg) {
   return *msg->rectangle_;
 }
-Debug_Arc::Debug_Arc(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Debug_Arc::Debug_Arc()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Arc)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Arc)
 }
 Debug_Arc::Debug_Arc(const Debug_Arc& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_rectangle()) {
     rectangle_ = new ::ZSS::Protocol::Rectangle(*from.rectangle_);
   } else {
@@ -1796,32 +1866,29 @@ Debug_Arc::Debug_Arc(const Debug_Arc& from)
 }
 
 void Debug_Arc::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&rectangle_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&fill_) -
-    reinterpret_cast<char*>(&rectangle_)) + sizeof(fill_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Arc_zss_5fdebug_2eproto.base);
+  ::memset(&rectangle_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&fill_) -
+      reinterpret_cast<char*>(&rectangle_)) + sizeof(fill_));
 }
 
 Debug_Arc::~Debug_Arc() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Arc)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Arc::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete rectangle_;
 }
 
-void Debug_Arc::ArenaDtor(void* object) {
-  Debug_Arc* _this = reinterpret_cast< Debug_Arc* >(object);
-  (void)_this;
-}
-void Debug_Arc::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Arc::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Arc& Debug_Arc::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Arc_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Arc::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Arc)
@@ -1840,7 +1907,7 @@ void Debug_Arc::Clear() {
         reinterpret_cast<char*>(&start_)) + sizeof(fill_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Arc::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1878,7 +1945,7 @@ const char* Debug_Arc::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_fill(&has_bits);
-          fill_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          fill_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1888,9 +1955,7 @@ const char* Debug_Arc::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1905,7 +1970,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Arc::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Arc::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Arc)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1914,33 +1979,33 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Rectangle rectangle = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::rectangle(this), target, stream);
   }
 
   // required float start = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_start(), target);
   }
 
   // required float end = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_end(), target);
   }
 
   // required bool FILL = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_fill(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Arc)
   return target;
@@ -1950,24 +2015,24 @@ size_t Debug_Arc::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Debug_Arc)
   size_t total_size = 0;
 
-  if (_internal_has_rectangle()) {
+  if (has_rectangle()) {
     // required .ZSS.Protocol.Rectangle rectangle = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *rectangle_);
   }
 
-  if (_internal_has_start()) {
+  if (has_start()) {
     // required float start = 2;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_end()) {
+  if (has_end()) {
     // required float end = 3;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_fill()) {
+  if (has_fill()) {
     // required bool FILL = 4;
     total_size += 1 + 1;
   }
@@ -2027,7 +2092,7 @@ void Debug_Arc::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Arc::MergeFrom(const Debug_Arc& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Arc)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2064,23 +2129,21 @@ void Debug_Arc::CopyFrom(const Debug_Arc& from) {
 }
 
 bool Debug_Arc::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_rectangle()) {
-    if (!rectangle_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x0000000f) != 0x0000000f) return false;
+  if (has_rectangle()) {
+    if (!this->rectangle_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Debug_Arc::InternalSwap(Debug_Arc* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Debug_Arc, fill_)
-      + sizeof(Debug_Arc::fill_)
-      - PROTOBUF_FIELD_OFFSET(Debug_Arc, rectangle_)>(
-          reinterpret_cast<char*>(&rectangle_),
-          reinterpret_cast<char*>(&other->rectangle_));
+  swap(rectangle_, other->rectangle_);
+  swap(start_, other->start_);
+  swap(end_, other->end_);
+  swap(fill_, other->fill_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Debug_Arc::GetMetadata() const {
@@ -2090,56 +2153,52 @@ void Debug_Arc::InternalSwap(Debug_Arc* other) {
 
 // ===================================================================
 
+void Debug_Polygon::InitAsDefaultInstance() {
+}
 class Debug_Polygon::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Polygon>()._has_bits_);
   static void set_has_fill(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-Debug_Polygon::Debug_Polygon(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  vertex_(arena) {
+Debug_Polygon::Debug_Polygon()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Polygon)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Polygon)
 }
 Debug_Polygon::Debug_Polygon(const Debug_Polygon& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       vertex_(from.vertex_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   fill_ = from.fill_;
   // @@protoc_insertion_point(copy_constructor:ZSS.Protocol.Debug_Polygon)
 }
 
 void Debug_Polygon::SharedCtor() {
-fill_ = false;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Polygon_zss_5fdebug_2eproto.base);
+  fill_ = false;
 }
 
 Debug_Polygon::~Debug_Polygon() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Polygon)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Polygon::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Debug_Polygon::ArenaDtor(void* object) {
-  Debug_Polygon* _this = reinterpret_cast< Debug_Polygon* >(object);
-  (void)_this;
-}
-void Debug_Polygon::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Polygon::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Polygon& Debug_Polygon::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Polygon_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Polygon::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Polygon)
@@ -2150,7 +2209,7 @@ void Debug_Polygon::Clear() {
   vertex_.Clear();
   fill_ = false;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Polygon::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -2177,7 +2236,7 @@ const char* Debug_Polygon::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_fill(&has_bits);
-          fill_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          fill_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2187,9 +2246,7 @@ const char* Debug_Polygon::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2204,7 +2261,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Polygon::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Polygon::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Polygon)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2213,21 +2270,21 @@ failure:
   // repeated .ZSS.Protocol.Point vertex = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_vertex_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_vertex(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_vertex(i), target, stream);
   }
 
   cached_has_bits = _has_bits_[0];
   // required bool FILL = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_fill(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Polygon)
   return target;
@@ -2238,7 +2295,7 @@ size_t Debug_Polygon::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required bool FILL = 2;
-  if (_internal_has_fill()) {
+  if (has_fill()) {
     total_size += 1 + 1;
   }
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2279,7 +2336,7 @@ void Debug_Polygon::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Polygon::MergeFrom(const Debug_Polygon& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Polygon)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2304,14 +2361,14 @@ void Debug_Polygon::CopyFrom(const Debug_Polygon& from) {
 }
 
 bool Debug_Polygon::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(vertex_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->vertex())) return false;
   return true;
 }
 
 void Debug_Polygon::InternalSwap(Debug_Polygon* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   vertex_.InternalSwap(&other->vertex_);
   swap(fill_, other->fill_);
@@ -2324,6 +2381,10 @@ void Debug_Polygon::InternalSwap(Debug_Polygon* other) {
 
 // ===================================================================
 
+void Debug_Text::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Debug_Text_default_instance_._instance.get_mutable()->pos_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+}
 class Debug_Text::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Text>()._has_bits_);
@@ -2340,29 +2401,25 @@ class Debug_Text::_Internal {
   static void set_has_weight(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Point&
 Debug_Text::_Internal::pos(const Debug_Text* msg) {
   return *msg->pos_;
 }
-Debug_Text::Debug_Text(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Debug_Text::Debug_Text()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Text)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Text)
 }
 Debug_Text::Debug_Text(const Debug_Text& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_text()) {
-    text_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_text(), 
-      GetArena());
+    text_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.text_);
   }
   if (from._internal_has_pos()) {
     pos_ = new ::ZSS::Protocol::Point(*from.pos_);
@@ -2376,34 +2433,31 @@ Debug_Text::Debug_Text(const Debug_Text& from)
 }
 
 void Debug_Text::SharedCtor() {
-text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&pos_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&weight_) -
-    reinterpret_cast<char*>(&pos_)) + sizeof(weight_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Text_zss_5fdebug_2eproto.base);
+  text_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&pos_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&weight_) -
+      reinterpret_cast<char*>(&pos_)) + sizeof(weight_));
 }
 
 Debug_Text::~Debug_Text() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Text)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Text::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   text_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete pos_;
 }
 
-void Debug_Text::ArenaDtor(void* object) {
-  Debug_Text* _this = reinterpret_cast< Debug_Text* >(object);
-  (void)_this;
-}
-void Debug_Text::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Text::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Text& Debug_Text::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Text_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Text::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Text)
@@ -2414,7 +2468,7 @@ void Debug_Text::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      text_.ClearNonDefaultToEmpty();
+      text_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
       GOOGLE_DCHECK(pos_ != nullptr);
@@ -2427,7 +2481,7 @@ void Debug_Text::Clear() {
         reinterpret_cast<char*>(&size_)) + sizeof(weight_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Text::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -2448,11 +2502,7 @@ const char* Debug_Text::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       // required string text = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_text();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ZSS.Protocol.Debug_Text.text");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_text(), ptr, ctx, "ZSS.Protocol.Debug_Text.text");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2468,7 +2518,7 @@ const char* Debug_Text::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_weight(&has_bits);
-          weight_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          weight_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2478,9 +2528,7 @@ const char* Debug_Text::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2495,7 +2543,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Text::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Text::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Text)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2504,9 +2552,9 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Point pos = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::pos(this), target, stream);
   }
 
@@ -2522,19 +2570,19 @@ failure:
 
   // optional float size = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_size(), target);
   }
 
   // optional int32 weight = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(4, this->_internal_weight(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Text)
   return target;
@@ -2544,14 +2592,14 @@ size_t Debug_Text::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Debug_Text)
   size_t total_size = 0;
 
-  if (_internal_has_text()) {
+  if (has_text()) {
     // required string text = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_text());
   }
 
-  if (_internal_has_pos()) {
+  if (has_pos()) {
     // required .ZSS.Protocol.Point pos = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -2624,14 +2672,15 @@ void Debug_Text::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Text::MergeFrom(const Debug_Text& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Text)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_text(from._internal_text());
+      _has_bits_[0] |= 0x00000001u;
+      text_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.text_);
     }
     if (cached_has_bits & 0x00000002u) {
       _internal_mutable_pos()->::ZSS::Protocol::Point::MergeFrom(from._internal_pos());
@@ -2661,24 +2710,22 @@ void Debug_Text::CopyFrom(const Debug_Text& from) {
 }
 
 bool Debug_Text::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_pos()) {
-    if (!pos_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (has_pos()) {
+    if (!this->pos_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Debug_Text::InternalSwap(Debug_Text* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  text_.Swap(&other->text_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Debug_Text, weight_)
-      + sizeof(Debug_Text::weight_)
-      - PROTOBUF_FIELD_OFFSET(Debug_Text, pos_)>(
-          reinterpret_cast<char*>(&pos_),
-          reinterpret_cast<char*>(&other->pos_));
+  text_.Swap(&other->text_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(pos_, other->pos_);
+  swap(size_, other->size_);
+  swap(weight_, other->weight_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Debug_Text::GetMetadata() const {
@@ -2688,6 +2735,8 @@ void Debug_Text::InternalSwap(Debug_Text* other) {
 
 // ===================================================================
 
+void Debug_Curve_::InitAsDefaultInstance() {
+}
 class Debug_Curve_::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Curve_>()._has_bits_);
@@ -2700,21 +2749,18 @@ class Debug_Curve_::_Internal {
   static void set_has_minlimit(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
-  }
 };
 
-Debug_Curve_::Debug_Curve_(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Debug_Curve_::Debug_Curve_()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Curve_)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Curve_)
 }
 Debug_Curve_::Debug_Curve_(const Debug_Curve_& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&num_, &from.num_,
     static_cast<size_t>(reinterpret_cast<char*>(&minlimit_) -
     reinterpret_cast<char*>(&num_)) + sizeof(minlimit_));
@@ -2722,31 +2768,27 @@ Debug_Curve_::Debug_Curve_(const Debug_Curve_& from)
 }
 
 void Debug_Curve_::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&num_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&minlimit_) -
-    reinterpret_cast<char*>(&num_)) + sizeof(minlimit_));
+  ::memset(&num_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&minlimit_) -
+      reinterpret_cast<char*>(&num_)) + sizeof(minlimit_));
 }
 
 Debug_Curve_::~Debug_Curve_() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Curve_)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Curve_::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Debug_Curve_::ArenaDtor(void* object) {
-  Debug_Curve_* _this = reinterpret_cast< Debug_Curve_* >(object);
-  (void)_this;
-}
-void Debug_Curve_::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Curve_::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Curve_& Debug_Curve_::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Curve__zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Curve_::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Curve_)
@@ -2761,7 +2803,7 @@ void Debug_Curve_::Clear() {
         reinterpret_cast<char*>(&num_)) + sizeof(minlimit_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Curve_::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -2802,9 +2844,7 @@ const char* Debug_Curve_::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2819,7 +2859,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Curve_::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Curve_::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Curve_)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2828,25 +2868,25 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required float num = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_num(), target);
   }
 
   // required float maxLimit = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_maxlimit(), target);
   }
 
   // required float minLimit = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_minlimit(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Curve_)
   return target;
@@ -2856,17 +2896,17 @@ size_t Debug_Curve_::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Debug_Curve_)
   size_t total_size = 0;
 
-  if (_internal_has_num()) {
+  if (has_num()) {
     // required float num = 1;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_maxlimit()) {
+  if (has_maxlimit()) {
     // required float maxLimit = 2;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_minlimit()) {
+  if (has_minlimit()) {
     // required float minLimit = 3;
     total_size += 1 + 4;
   }
@@ -2921,7 +2961,7 @@ void Debug_Curve_::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Curve_::MergeFrom(const Debug_Curve_& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Curve_)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2955,20 +2995,17 @@ void Debug_Curve_::CopyFrom(const Debug_Curve_& from) {
 }
 
 bool Debug_Curve_::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
   return true;
 }
 
 void Debug_Curve_::InternalSwap(Debug_Curve_* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Debug_Curve_, minlimit_)
-      + sizeof(Debug_Curve_::minlimit_)
-      - PROTOBUF_FIELD_OFFSET(Debug_Curve_, num_)>(
-          reinterpret_cast<char*>(&num_),
-          reinterpret_cast<char*>(&other->num_));
+  swap(num_, other->num_);
+  swap(maxlimit_, other->maxlimit_);
+  swap(minlimit_, other->minlimit_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Debug_Curve_::GetMetadata() const {
@@ -2978,6 +3015,16 @@ void Debug_Curve_::InternalSwap(Debug_Curve_* other) {
 
 // ===================================================================
 
+void Debug_Curve::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Debug_Curve_default_instance_._instance.get_mutable()->start_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Curve_default_instance_._instance.get_mutable()->p1_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Curve_default_instance_._instance.get_mutable()->p2_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Curve_default_instance_._instance.get_mutable()->end_ = const_cast< ::ZSS::Protocol::Point*>(
+      ::ZSS::Protocol::Point::internal_default_instance());
+}
 class Debug_Curve::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Curve>()._has_bits_);
@@ -2997,9 +3044,6 @@ class Debug_Curve::_Internal {
   static void set_has_end(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000000f) ^ 0x0000000f) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Point&
@@ -3018,16 +3062,16 @@ const ::ZSS::Protocol::Point&
 Debug_Curve::_Internal::end(const Debug_Curve* msg) {
   return *msg->end_;
 }
-Debug_Curve::Debug_Curve(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Debug_Curve::Debug_Curve()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Curve)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Curve)
 }
 Debug_Curve::Debug_Curve(const Debug_Curve& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_start()) {
     start_ = new ::ZSS::Protocol::Point(*from.start_);
   } else {
@@ -3052,35 +3096,32 @@ Debug_Curve::Debug_Curve(const Debug_Curve& from)
 }
 
 void Debug_Curve::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&start_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&end_) -
-    reinterpret_cast<char*>(&start_)) + sizeof(end_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Curve_zss_5fdebug_2eproto.base);
+  ::memset(&start_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&end_) -
+      reinterpret_cast<char*>(&start_)) + sizeof(end_));
 }
 
 Debug_Curve::~Debug_Curve() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Curve)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Curve::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete start_;
   if (this != internal_default_instance()) delete p1_;
   if (this != internal_default_instance()) delete p2_;
   if (this != internal_default_instance()) delete end_;
 }
 
-void Debug_Curve::ArenaDtor(void* object) {
-  Debug_Curve* _this = reinterpret_cast< Debug_Curve* >(object);
-  (void)_this;
-}
-void Debug_Curve::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Curve::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Curve& Debug_Curve::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Curve_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Curve::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Curve)
@@ -3108,7 +3149,7 @@ void Debug_Curve::Clear() {
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Curve::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -3153,9 +3194,7 @@ const char* Debug_Curve::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -3170,7 +3209,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Curve::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Curve::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Curve)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3179,39 +3218,39 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Point start = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::start(this), target, stream);
   }
 
   // required .ZSS.Protocol.Point p1 = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::p1(this), target, stream);
   }
 
   // required .ZSS.Protocol.Point p2 = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::p2(this), target, stream);
   }
 
   // required .ZSS.Protocol.Point end = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::end(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Curve)
   return target;
@@ -3221,28 +3260,28 @@ size_t Debug_Curve::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Debug_Curve)
   size_t total_size = 0;
 
-  if (_internal_has_start()) {
+  if (has_start()) {
     // required .ZSS.Protocol.Point start = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *start_);
   }
 
-  if (_internal_has_p1()) {
+  if (has_p1()) {
     // required .ZSS.Protocol.Point p1 = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *p1_);
   }
 
-  if (_internal_has_p2()) {
+  if (has_p2()) {
     // required .ZSS.Protocol.Point p2 = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *p2_);
   }
 
-  if (_internal_has_end()) {
+  if (has_end()) {
     // required .ZSS.Protocol.Point end = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -3310,7 +3349,7 @@ void Debug_Curve::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Curve::MergeFrom(const Debug_Curve& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Curve)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3346,32 +3385,30 @@ void Debug_Curve::CopyFrom(const Debug_Curve& from) {
 }
 
 bool Debug_Curve::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_start()) {
-    if (!start_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x0000000f) != 0x0000000f) return false;
+  if (has_start()) {
+    if (!this->start_->IsInitialized()) return false;
   }
-  if (_internal_has_p1()) {
-    if (!p1_->IsInitialized()) return false;
+  if (has_p1()) {
+    if (!this->p1_->IsInitialized()) return false;
   }
-  if (_internal_has_p2()) {
-    if (!p2_->IsInitialized()) return false;
+  if (has_p2()) {
+    if (!this->p2_->IsInitialized()) return false;
   }
-  if (_internal_has_end()) {
-    if (!end_->IsInitialized()) return false;
+  if (has_end()) {
+    if (!this->end_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Debug_Curve::InternalSwap(Debug_Curve* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Debug_Curve, end_)
-      + sizeof(Debug_Curve::end_)
-      - PROTOBUF_FIELD_OFFSET(Debug_Curve, start_)>(
-          reinterpret_cast<char*>(&start_),
-          reinterpret_cast<char*>(&other->start_));
+  swap(start_, other->start_);
+  swap(p1_, other->p1_);
+  swap(p2_, other->p2_);
+  swap(end_, other->end_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Debug_Curve::GetMetadata() const {
@@ -3381,46 +3418,47 @@ void Debug_Curve::InternalSwap(Debug_Curve* other) {
 
 // ===================================================================
 
+void Debug_Points::InitAsDefaultInstance() {
+}
 class Debug_Points::_Internal {
  public:
+  using HasBits = decltype(std::declval<Debug_Points>()._has_bits_);
 };
 
-Debug_Points::Debug_Points(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  point_(arena) {
+Debug_Points::Debug_Points()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Points)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Points)
 }
 Debug_Points::Debug_Points(const Debug_Points& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_),
       point_(from.point_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:ZSS.Protocol.Debug_Points)
 }
 
 void Debug_Points::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Points_zss_5fdebug_2eproto.base);
 }
 
 Debug_Points::~Debug_Points() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Points)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Points::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Debug_Points::ArenaDtor(void* object) {
-  Debug_Points* _this = reinterpret_cast< Debug_Points* >(object);
-  (void)_this;
-}
-void Debug_Points::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Points::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Points& Debug_Points::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Points_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Points::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Points)
@@ -3429,7 +3467,8 @@ void Debug_Points::Clear() {
   (void) cached_has_bits;
 
   point_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Points::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -3457,9 +3496,7 @@ const char* Debug_Points::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -3473,7 +3510,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Points::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Points::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Points)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3482,14 +3519,14 @@ failure:
   // repeated .ZSS.Protocol.Point point = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_point_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_point(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_point(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Points)
   return target;
@@ -3537,7 +3574,7 @@ void Debug_Points::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Points::MergeFrom(const Debug_Points& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Points)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3559,13 +3596,14 @@ void Debug_Points::CopyFrom(const Debug_Points& from) {
 }
 
 bool Debug_Points::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(point_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->point())) return false;
   return true;
 }
 
 void Debug_Points::InternalSwap(Debug_Points* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   point_.InternalSwap(&other->point_);
 }
 
@@ -3576,6 +3614,22 @@ void Debug_Points::InternalSwap(Debug_Points* other) {
 
 // ===================================================================
 
+void Debug_Msg::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Debug_Msg_default_instance_._instance.get_mutable()->arc_ = const_cast< ::ZSS::Protocol::Debug_Arc*>(
+      ::ZSS::Protocol::Debug_Arc::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Msg_default_instance_._instance.get_mutable()->line_ = const_cast< ::ZSS::Protocol::Debug_Line*>(
+      ::ZSS::Protocol::Debug_Line::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Msg_default_instance_._instance.get_mutable()->text_ = const_cast< ::ZSS::Protocol::Debug_Text*>(
+      ::ZSS::Protocol::Debug_Text::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Msg_default_instance_._instance.get_mutable()->robot_ = const_cast< ::ZSS::Protocol::Debug_Robot*>(
+      ::ZSS::Protocol::Debug_Robot::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Msg_default_instance_._instance.get_mutable()->curve_ = const_cast< ::ZSS::Protocol::Debug_Curve_*>(
+      ::ZSS::Protocol::Debug_Curve_::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Msg_default_instance_._instance.get_mutable()->polygon_ = const_cast< ::ZSS::Protocol::Debug_Polygon*>(
+      ::ZSS::Protocol::Debug_Polygon::internal_default_instance());
+  ::ZSS::Protocol::_Debug_Msg_default_instance_._instance.get_mutable()->points_ = const_cast< ::ZSS::Protocol::Debug_Points*>(
+      ::ZSS::Protocol::Debug_Points::internal_default_instance());
+}
 class Debug_Msg::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Msg>()._has_bits_);
@@ -3616,9 +3670,6 @@ class Debug_Msg::_Internal {
   static void set_has_rgb_value(HasBits* has_bits) {
     (*has_bits)[0] |= 512u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000180) ^ 0x00000180) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Debug_Arc&
@@ -3649,16 +3700,16 @@ const ::ZSS::Protocol::Debug_Points&
 Debug_Msg::_Internal::points(const Debug_Msg* msg) {
   return *msg->points_;
 }
-Debug_Msg::Debug_Msg(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Debug_Msg::Debug_Msg()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Msg)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Msg)
 }
 Debug_Msg::Debug_Msg(const Debug_Msg& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_arc()) {
     arc_ = new ::ZSS::Protocol::Debug_Arc(*from.arc_);
   } else {
@@ -3701,20 +3752,18 @@ Debug_Msg::Debug_Msg(const Debug_Msg& from)
 }
 
 void Debug_Msg::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&arc_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&rgb_value_) -
-    reinterpret_cast<char*>(&arc_)) + sizeof(rgb_value_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Msg_zss_5fdebug_2eproto.base);
+  ::memset(&arc_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&rgb_value_) -
+      reinterpret_cast<char*>(&arc_)) + sizeof(rgb_value_));
 }
 
 Debug_Msg::~Debug_Msg() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Msg)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Msg::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete arc_;
   if (this != internal_default_instance()) delete line_;
   if (this != internal_default_instance()) delete text_;
@@ -3724,15 +3773,14 @@ void Debug_Msg::SharedDtor() {
   if (this != internal_default_instance()) delete points_;
 }
 
-void Debug_Msg::ArenaDtor(void* object) {
-  Debug_Msg* _this = reinterpret_cast< Debug_Msg* >(object);
-  (void)_this;
-}
-void Debug_Msg::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Msg::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Msg& Debug_Msg::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Msg_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Msg::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Msg)
@@ -3778,7 +3826,7 @@ void Debug_Msg::Clear() {
         reinterpret_cast<char*>(&color_)) + sizeof(rgb_value_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Msg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -3792,7 +3840,7 @@ const char* Debug_Msg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // required .ZSS.Protocol.Debug_Msg.Debug_Type type = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::ZSS::Protocol::Debug_Msg_Debug_Type_IsValid(val))) {
             _internal_set_type(static_cast<::ZSS::Protocol::Debug_Msg_Debug_Type>(val));
@@ -3804,7 +3852,7 @@ const char* Debug_Msg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // required .ZSS.Protocol.Debug_Msg.Color color = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::ZSS::Protocol::Debug_Msg_Color_IsValid(val))) {
             _internal_set_color(static_cast<::ZSS::Protocol::Debug_Msg_Color>(val));
@@ -3866,7 +3914,7 @@ const char* Debug_Msg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           _Internal::set_has_rgb_value(&has_bits);
-          rgb_value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          rgb_value_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3876,9 +3924,7 @@ const char* Debug_Msg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -3893,7 +3939,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Msg::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Msg::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Msg)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3902,83 +3948,83 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Debug_Msg.Debug_Type type = 1;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_type(), target);
   }
 
   // required .ZSS.Protocol.Debug_Msg.Color color = 2;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       2, this->_internal_color(), target);
   }
 
   // optional .ZSS.Protocol.Debug_Arc arc = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::arc(this), target, stream);
   }
 
   // optional .ZSS.Protocol.Debug_Line line = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::line(this), target, stream);
   }
 
   // optional .ZSS.Protocol.Debug_Text text = 5;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         5, _Internal::text(this), target, stream);
   }
 
   // optional .ZSS.Protocol.Debug_Robot robot = 6;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         6, _Internal::robot(this), target, stream);
   }
 
   // optional .ZSS.Protocol.Debug_Curve_ curve = 7;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         7, _Internal::curve(this), target, stream);
   }
 
   // optional .ZSS.Protocol.Debug_Polygon polygon = 8;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         8, _Internal::polygon(this), target, stream);
   }
 
   // optional .ZSS.Protocol.Debug_Points points = 9;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         9, _Internal::points(this), target, stream);
   }
 
   // optional int32 RGB_value = 10;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(10, this->_internal_rgb_value(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Msg)
   return target;
@@ -3988,13 +4034,13 @@ size_t Debug_Msg::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Debug_Msg)
   size_t total_size = 0;
 
-  if (_internal_has_type()) {
+  if (has_type()) {
     // required .ZSS.Protocol.Debug_Msg.Debug_Type type = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_type());
   }
 
-  if (_internal_has_color()) {
+  if (has_color()) {
     // required .ZSS.Protocol.Debug_Msg.Color color = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_color());
@@ -4108,7 +4154,7 @@ void Debug_Msg::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Msg::MergeFrom(const Debug_Msg& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Msg)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4166,41 +4212,45 @@ void Debug_Msg::CopyFrom(const Debug_Msg& from) {
 }
 
 bool Debug_Msg::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_arc()) {
-    if (!arc_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000180) != 0x00000180) return false;
+  if (has_arc()) {
+    if (!this->arc_->IsInitialized()) return false;
   }
-  if (_internal_has_line()) {
-    if (!line_->IsInitialized()) return false;
+  if (has_line()) {
+    if (!this->line_->IsInitialized()) return false;
   }
-  if (_internal_has_text()) {
-    if (!text_->IsInitialized()) return false;
+  if (has_text()) {
+    if (!this->text_->IsInitialized()) return false;
   }
-  if (_internal_has_robot()) {
-    if (!robot_->IsInitialized()) return false;
+  if (has_robot()) {
+    if (!this->robot_->IsInitialized()) return false;
   }
-  if (_internal_has_curve()) {
-    if (!curve_->IsInitialized()) return false;
+  if (has_curve()) {
+    if (!this->curve_->IsInitialized()) return false;
   }
-  if (_internal_has_polygon()) {
-    if (!polygon_->IsInitialized()) return false;
+  if (has_polygon()) {
+    if (!this->polygon_->IsInitialized()) return false;
   }
-  if (_internal_has_points()) {
-    if (!points_->IsInitialized()) return false;
+  if (has_points()) {
+    if (!this->points_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Debug_Msg::InternalSwap(Debug_Msg* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Debug_Msg, rgb_value_)
-      + sizeof(Debug_Msg::rgb_value_)
-      - PROTOBUF_FIELD_OFFSET(Debug_Msg, arc_)>(
-          reinterpret_cast<char*>(&arc_),
-          reinterpret_cast<char*>(&other->arc_));
+  swap(arc_, other->arc_);
+  swap(line_, other->line_);
+  swap(text_, other->text_);
+  swap(robot_, other->robot_);
+  swap(curve_, other->curve_);
+  swap(polygon_, other->polygon_);
+  swap(points_, other->points_);
+  swap(type_, other->type_);
+  swap(color_, other->color_);
+  swap(rgb_value_, other->rgb_value_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Debug_Msg::GetMetadata() const {
@@ -4210,46 +4260,47 @@ void Debug_Msg::InternalSwap(Debug_Msg* other) {
 
 // ===================================================================
 
+void Debug_Msgs::InitAsDefaultInstance() {
+}
 class Debug_Msgs::_Internal {
  public:
+  using HasBits = decltype(std::declval<Debug_Msgs>()._has_bits_);
 };
 
-Debug_Msgs::Debug_Msgs(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  msgs_(arena) {
+Debug_Msgs::Debug_Msgs()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Msgs)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Msgs)
 }
 Debug_Msgs::Debug_Msgs(const Debug_Msgs& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_),
       msgs_(from.msgs_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:ZSS.Protocol.Debug_Msgs)
 }
 
 void Debug_Msgs::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Msgs_zss_5fdebug_2eproto.base);
 }
 
 Debug_Msgs::~Debug_Msgs() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Msgs)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Msgs::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Debug_Msgs::ArenaDtor(void* object) {
-  Debug_Msgs* _this = reinterpret_cast< Debug_Msgs* >(object);
-  (void)_this;
-}
-void Debug_Msgs::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Msgs::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Msgs& Debug_Msgs::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Msgs_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Msgs::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Msgs)
@@ -4258,7 +4309,8 @@ void Debug_Msgs::Clear() {
   (void) cached_has_bits;
 
   msgs_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Msgs::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -4286,9 +4338,7 @@ const char* Debug_Msgs::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -4302,7 +4352,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Msgs::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Msgs::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Msgs)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4311,14 +4361,14 @@ failure:
   // repeated .ZSS.Protocol.Debug_Msg msgs = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_msgs_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_msgs(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_msgs(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Msgs)
   return target;
@@ -4366,7 +4416,7 @@ void Debug_Msgs::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Msgs::MergeFrom(const Debug_Msgs& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Msgs)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4388,13 +4438,14 @@ void Debug_Msgs::CopyFrom(const Debug_Msgs& from) {
 }
 
 bool Debug_Msgs::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(msgs_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->msgs())) return false;
   return true;
 }
 
 void Debug_Msgs::InternalSwap(Debug_Msgs* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   msgs_.InternalSwap(&other->msgs_);
 }
 
@@ -4405,56 +4456,52 @@ void Debug_Msgs::InternalSwap(Debug_Msgs* other) {
 
 // ===================================================================
 
+void Debug_Score::InitAsDefaultInstance() {
+}
 class Debug_Score::_Internal {
  public:
   using HasBits = decltype(std::declval<Debug_Score>()._has_bits_);
   static void set_has_color(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-Debug_Score::Debug_Score(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  p_(arena) {
+Debug_Score::Debug_Score()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Score)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Score)
 }
 Debug_Score::Debug_Score(const Debug_Score& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       p_(from.p_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   color_ = from.color_;
   // @@protoc_insertion_point(copy_constructor:ZSS.Protocol.Debug_Score)
 }
 
 void Debug_Score::SharedCtor() {
-color_ = 0;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Score_zss_5fdebug_2eproto.base);
+  color_ = 0;
 }
 
 Debug_Score::~Debug_Score() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Score)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Score::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Debug_Score::ArenaDtor(void* object) {
-  Debug_Score* _this = reinterpret_cast< Debug_Score* >(object);
-  (void)_this;
-}
-void Debug_Score::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Score::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Score& Debug_Score::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Score_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Score::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Score)
@@ -4465,7 +4512,7 @@ void Debug_Score::Clear() {
   p_.Clear();
   color_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Score::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -4480,7 +4527,7 @@ const char* Debug_Score::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_color(&has_bits);
-          color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          color_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4502,9 +4549,7 @@ const char* Debug_Score::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -4519,7 +4564,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Score::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Score::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Score)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4528,21 +4573,21 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required int32 color = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_color(), target);
   }
 
   // repeated .ZSS.Protocol.Point p = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_p_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_p(i), target, stream);
+      InternalWriteMessageToArray(2, this->_internal_p(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Score)
   return target;
@@ -4553,7 +4598,7 @@ size_t Debug_Score::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required int32 color = 1;
-  if (_internal_has_color()) {
+  if (has_color()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_color());
@@ -4596,7 +4641,7 @@ void Debug_Score::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Score::MergeFrom(const Debug_Score& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Score)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4621,14 +4666,14 @@ void Debug_Score::CopyFrom(const Debug_Score& from) {
 }
 
 bool Debug_Score::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(p_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->p())) return false;
   return true;
 }
 
 void Debug_Score::InternalSwap(Debug_Score* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   p_.InternalSwap(&other->p_);
   swap(color_, other->color_);
@@ -4641,46 +4686,47 @@ void Debug_Score::InternalSwap(Debug_Score* other) {
 
 // ===================================================================
 
+void Debug_Scores::InitAsDefaultInstance() {
+}
 class Debug_Scores::_Internal {
  public:
+  using HasBits = decltype(std::declval<Debug_Scores>()._has_bits_);
 };
 
-Debug_Scores::Debug_Scores(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  scores_(arena) {
+Debug_Scores::Debug_Scores()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Debug_Scores)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Debug_Scores)
 }
 Debug_Scores::Debug_Scores(const Debug_Scores& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_),
       scores_(from.scores_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:ZSS.Protocol.Debug_Scores)
 }
 
 void Debug_Scores::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Debug_Scores_zss_5fdebug_2eproto.base);
 }
 
 Debug_Scores::~Debug_Scores() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Debug_Scores)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Debug_Scores::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Debug_Scores::ArenaDtor(void* object) {
-  Debug_Scores* _this = reinterpret_cast< Debug_Scores* >(object);
-  (void)_this;
-}
-void Debug_Scores::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Debug_Scores::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Debug_Scores& Debug_Scores::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Debug_Scores_zss_5fdebug_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Debug_Scores::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Debug_Scores)
@@ -4689,7 +4735,8 @@ void Debug_Scores::Clear() {
   (void) cached_has_bits;
 
   scores_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* Debug_Scores::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -4717,9 +4764,7 @@ const char* Debug_Scores::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -4733,7 +4778,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Debug_Scores::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Debug_Scores::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Debug_Scores)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4742,14 +4787,14 @@ failure:
   // repeated .ZSS.Protocol.Debug_Score scores = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_scores_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_scores(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_scores(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Debug_Scores)
   return target;
@@ -4797,7 +4842,7 @@ void Debug_Scores::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Debug_Scores::MergeFrom(const Debug_Scores& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Debug_Scores)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4819,13 +4864,14 @@ void Debug_Scores::CopyFrom(const Debug_Scores& from) {
 }
 
 bool Debug_Scores::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(scores_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->scores())) return false;
   return true;
 }
 
 void Debug_Scores::InternalSwap(Debug_Scores* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   scores_.InternalSwap(&other->scores_);
 }
 
@@ -4839,46 +4885,46 @@ void Debug_Scores::InternalSwap(Debug_Scores* other) {
 }  // namespace ZSS
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Point* Arena::CreateMaybeMessage< ::ZSS::Protocol::Point >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Point >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Point >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Rectangle* Arena::CreateMaybeMessage< ::ZSS::Protocol::Rectangle >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Rectangle >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Rectangle >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Robot* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Robot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Robot >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Robot >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Line* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Line >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Line >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Line >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Arc* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Arc >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Arc >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Arc >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Polygon* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Polygon >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Polygon >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Polygon >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Text* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Text >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Text >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Text >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Curve_* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Curve_ >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Curve_ >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Curve_ >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Curve* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Curve >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Curve >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Curve >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Points* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Points >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Points >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Points >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Msg* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Msg >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Msg >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Msg >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Msgs* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Msgs >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Msgs >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Msgs >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Score* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Score >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Score >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Score >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Debug_Scores* Arena::CreateMaybeMessage< ::ZSS::Protocol::Debug_Scores >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Debug_Scores >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Debug_Scores >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

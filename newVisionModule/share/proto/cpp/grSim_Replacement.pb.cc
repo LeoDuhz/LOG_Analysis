@@ -14,53 +14,64 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_grSim_5fReplacement_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_grSim_BallReplacement_grSim_5fReplacement_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_grSim_5fReplacement_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_grSim_RobotReplacement_grSim_5fReplacement_2eproto;
+class grSim_RobotReplacementDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<grSim_RobotReplacement> _instance;
+} _grSim_RobotReplacement_default_instance_;
+class grSim_BallReplacementDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<grSim_BallReplacement> _instance;
+} _grSim_BallReplacement_default_instance_;
+class grSim_ReplacementDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<grSim_Replacement> _instance;
+} _grSim_Replacement_default_instance_;
+static void InitDefaultsscc_info_grSim_BallReplacement_grSim_5fReplacement_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr grSim_RobotReplacement::grSim_RobotReplacement(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0)
-  , dir_(0)
-  , id_(0u)
-  , yellowteam_(false)
-  , turnon_(false){}
-struct grSim_RobotReplacementDefaultTypeInternal {
-  constexpr grSim_RobotReplacementDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~grSim_RobotReplacementDefaultTypeInternal() {}
-  union {
-    grSim_RobotReplacement _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT grSim_RobotReplacementDefaultTypeInternal _grSim_RobotReplacement_default_instance_;
-constexpr grSim_BallReplacement::grSim_BallReplacement(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0)
-  , vx_(0)
-  , vy_(0){}
-struct grSim_BallReplacementDefaultTypeInternal {
-  constexpr grSim_BallReplacementDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~grSim_BallReplacementDefaultTypeInternal() {}
-  union {
-    grSim_BallReplacement _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT grSim_BallReplacementDefaultTypeInternal _grSim_BallReplacement_default_instance_;
-constexpr grSim_Replacement::grSim_Replacement(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : robots_()
-  , ball_(nullptr){}
-struct grSim_ReplacementDefaultTypeInternal {
-  constexpr grSim_ReplacementDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~grSim_ReplacementDefaultTypeInternal() {}
-  union {
-    grSim_Replacement _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT grSim_ReplacementDefaultTypeInternal _grSim_Replacement_default_instance_;
+  {
+    void* ptr = &::_grSim_BallReplacement_default_instance_;
+    new (ptr) ::grSim_BallReplacement();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::grSim_BallReplacement::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_grSim_BallReplacement_grSim_5fReplacement_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_grSim_BallReplacement_grSim_5fReplacement_2eproto}, {}};
+
+static void InitDefaultsscc_info_grSim_Replacement_grSim_5fReplacement_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_grSim_Replacement_default_instance_;
+    new (ptr) ::grSim_Replacement();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::grSim_Replacement::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_grSim_Replacement_grSim_5fReplacement_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_grSim_Replacement_grSim_5fReplacement_2eproto}, {
+      &scc_info_grSim_BallReplacement_grSim_5fReplacement_2eproto.base,
+      &scc_info_grSim_RobotReplacement_grSim_5fReplacement_2eproto.base,}};
+
+static void InitDefaultsscc_info_grSim_RobotReplacement_grSim_5fReplacement_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_grSim_RobotReplacement_default_instance_;
+    new (ptr) ::grSim_RobotReplacement();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::grSim_RobotReplacement::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_grSim_RobotReplacement_grSim_5fReplacement_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_grSim_RobotReplacement_grSim_5fReplacement_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_grSim_5fReplacement_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_grSim_5fReplacement_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_grSim_5fReplacement_2eproto = nullptr;
@@ -128,24 +139,29 @@ const char descriptor_table_protodef_grSim_5fReplacement_2eproto[] PROTOBUF_SECT
   "2\026.grSim_BallReplacement\022\'\n\006robots\030\002 \003(\013"
   "2\027.grSim_RobotReplacement"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_grSim_5fReplacement_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_grSim_5fReplacement_2eproto = {
-  false, false, 305, descriptor_table_protodef_grSim_5fReplacement_2eproto, "grSim_Replacement.proto", 
-  &descriptor_table_grSim_5fReplacement_2eproto_once, nullptr, 0, 3,
-  schemas, file_default_instances, TableStruct_grSim_5fReplacement_2eproto::offsets,
-  file_level_metadata_grSim_5fReplacement_2eproto, file_level_enum_descriptors_grSim_5fReplacement_2eproto, file_level_service_descriptors_grSim_5fReplacement_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_grSim_5fReplacement_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_grSim_5fReplacement_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_grSim_5fReplacement_2eproto);
-  return descriptor_table_grSim_5fReplacement_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_grSim_5fReplacement_2eproto_sccs[3] = {
+  &scc_info_grSim_BallReplacement_grSim_5fReplacement_2eproto.base,
+  &scc_info_grSim_Replacement_grSim_5fReplacement_2eproto.base,
+  &scc_info_grSim_RobotReplacement_grSim_5fReplacement_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_grSim_5fReplacement_2eproto_once;
+static bool descriptor_table_grSim_5fReplacement_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_grSim_5fReplacement_2eproto = {
+  &descriptor_table_grSim_5fReplacement_2eproto_initialized, descriptor_table_protodef_grSim_5fReplacement_2eproto, "grSim_Replacement.proto", 305,
+  &descriptor_table_grSim_5fReplacement_2eproto_once, descriptor_table_grSim_5fReplacement_2eproto_sccs, descriptor_table_grSim_5fReplacement_2eproto_deps, 3, 0,
+  schemas, file_default_instances, TableStruct_grSim_5fReplacement_2eproto::offsets,
+  file_level_metadata_grSim_5fReplacement_2eproto, 3, file_level_enum_descriptors_grSim_5fReplacement_2eproto, file_level_service_descriptors_grSim_5fReplacement_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_grSim_5fReplacement_2eproto(&descriptor_table_grSim_5fReplacement_2eproto);
+static bool dynamic_init_dummy_grSim_5fReplacement_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_grSim_5fReplacement_2eproto), true);
 
 // ===================================================================
 
+void grSim_RobotReplacement::InitAsDefaultInstance() {
+}
 class grSim_RobotReplacement::_Internal {
  public:
   using HasBits = decltype(std::declval<grSim_RobotReplacement>()._has_bits_);
@@ -167,21 +183,18 @@ class grSim_RobotReplacement::_Internal {
   static void set_has_turnon(HasBits* has_bits) {
     (*has_bits)[0] |= 32u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000001f) ^ 0x0000001f) != 0;
-  }
 };
 
-grSim_RobotReplacement::grSim_RobotReplacement(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+grSim_RobotReplacement::grSim_RobotReplacement()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:grSim_RobotReplacement)
+  // @@protoc_insertion_point(constructor:grSim_RobotReplacement)
 }
 grSim_RobotReplacement::grSim_RobotReplacement(const grSim_RobotReplacement& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&turnon_) -
     reinterpret_cast<char*>(&x_)) + sizeof(turnon_));
@@ -189,31 +202,27 @@ grSim_RobotReplacement::grSim_RobotReplacement(const grSim_RobotReplacement& fro
 }
 
 void grSim_RobotReplacement::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&turnon_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(turnon_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&turnon_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(turnon_));
 }
 
 grSim_RobotReplacement::~grSim_RobotReplacement() {
   // @@protoc_insertion_point(destructor:grSim_RobotReplacement)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void grSim_RobotReplacement::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void grSim_RobotReplacement::ArenaDtor(void* object) {
-  grSim_RobotReplacement* _this = reinterpret_cast< grSim_RobotReplacement* >(object);
-  (void)_this;
-}
-void grSim_RobotReplacement::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void grSim_RobotReplacement::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const grSim_RobotReplacement& grSim_RobotReplacement::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_grSim_RobotReplacement_grSim_5fReplacement_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void grSim_RobotReplacement::Clear() {
 // @@protoc_insertion_point(message_clear_start:grSim_RobotReplacement)
@@ -228,7 +237,7 @@ void grSim_RobotReplacement::Clear() {
         reinterpret_cast<char*>(&x_)) + sizeof(turnon_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* grSim_RobotReplacement::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -267,7 +276,7 @@ const char* grSim_RobotReplacement::_InternalParse(const char* ptr, ::PROTOBUF_N
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_id(&has_bits);
-          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -275,7 +284,7 @@ const char* grSim_RobotReplacement::_InternalParse(const char* ptr, ::PROTOBUF_N
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           _Internal::set_has_yellowteam(&has_bits);
-          yellowteam_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          yellowteam_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -283,7 +292,7 @@ const char* grSim_RobotReplacement::_InternalParse(const char* ptr, ::PROTOBUF_N
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           _Internal::set_has_turnon(&has_bits);
-          turnon_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          turnon_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -293,9 +302,7 @@ const char* grSim_RobotReplacement::_InternalParse(const char* ptr, ::PROTOBUF_N
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -310,7 +317,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* grSim_RobotReplacement::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* grSim_RobotReplacement::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:grSim_RobotReplacement)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -319,43 +326,43 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required double x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_x(), target);
   }
 
   // required double y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_y(), target);
   }
 
   // required double dir = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_dir(), target);
   }
 
   // required uint32 id = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_id(), target);
   }
 
   // required bool yellowteam = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_yellowteam(), target);
   }
 
   // optional bool turnon = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(6, this->_internal_turnon(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:grSim_RobotReplacement)
   return target;
@@ -365,29 +372,29 @@ size_t grSim_RobotReplacement::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:grSim_RobotReplacement)
   size_t total_size = 0;
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required double x = 1;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required double y = 2;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_dir()) {
+  if (has_dir()) {
     // required double dir = 3;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_id()) {
+  if (has_id()) {
     // required uint32 id = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_id());
   }
 
-  if (_internal_has_yellowteam()) {
+  if (has_yellowteam()) {
     // required bool yellowteam = 5;
     total_size += 1 + 1;
   }
@@ -456,7 +463,7 @@ void grSim_RobotReplacement::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& f
 void grSim_RobotReplacement::MergeFrom(const grSim_RobotReplacement& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:grSim_RobotReplacement)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -499,20 +506,20 @@ void grSim_RobotReplacement::CopyFrom(const grSim_RobotReplacement& from) {
 }
 
 bool grSim_RobotReplacement::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000001f) != 0x0000001f) return false;
   return true;
 }
 
 void grSim_RobotReplacement::InternalSwap(grSim_RobotReplacement* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(grSim_RobotReplacement, turnon_)
-      + sizeof(grSim_RobotReplacement::turnon_)
-      - PROTOBUF_FIELD_OFFSET(grSim_RobotReplacement, x_)>(
-          reinterpret_cast<char*>(&x_),
-          reinterpret_cast<char*>(&other->x_));
+  swap(x_, other->x_);
+  swap(y_, other->y_);
+  swap(dir_, other->dir_);
+  swap(id_, other->id_);
+  swap(yellowteam_, other->yellowteam_);
+  swap(turnon_, other->turnon_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata grSim_RobotReplacement::GetMetadata() const {
@@ -522,6 +529,8 @@ void grSim_RobotReplacement::InternalSwap(grSim_RobotReplacement* other) {
 
 // ===================================================================
 
+void grSim_BallReplacement::InitAsDefaultInstance() {
+}
 class grSim_BallReplacement::_Internal {
  public:
   using HasBits = decltype(std::declval<grSim_BallReplacement>()._has_bits_);
@@ -537,21 +546,18 @@ class grSim_BallReplacement::_Internal {
   static void set_has_vy(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000000f) ^ 0x0000000f) != 0;
-  }
 };
 
-grSim_BallReplacement::grSim_BallReplacement(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+grSim_BallReplacement::grSim_BallReplacement()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:grSim_BallReplacement)
+  // @@protoc_insertion_point(constructor:grSim_BallReplacement)
 }
 grSim_BallReplacement::grSim_BallReplacement(const grSim_BallReplacement& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&vy_) -
     reinterpret_cast<char*>(&x_)) + sizeof(vy_));
@@ -559,31 +565,27 @@ grSim_BallReplacement::grSim_BallReplacement(const grSim_BallReplacement& from)
 }
 
 void grSim_BallReplacement::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&vy_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(vy_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&vy_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(vy_));
 }
 
 grSim_BallReplacement::~grSim_BallReplacement() {
   // @@protoc_insertion_point(destructor:grSim_BallReplacement)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void grSim_BallReplacement::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void grSim_BallReplacement::ArenaDtor(void* object) {
-  grSim_BallReplacement* _this = reinterpret_cast< grSim_BallReplacement* >(object);
-  (void)_this;
-}
-void grSim_BallReplacement::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void grSim_BallReplacement::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const grSim_BallReplacement& grSim_BallReplacement::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_grSim_BallReplacement_grSim_5fReplacement_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void grSim_BallReplacement::Clear() {
 // @@protoc_insertion_point(message_clear_start:grSim_BallReplacement)
@@ -598,7 +600,7 @@ void grSim_BallReplacement::Clear() {
         reinterpret_cast<char*>(&x_)) + sizeof(vy_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* grSim_BallReplacement::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -647,9 +649,7 @@ const char* grSim_BallReplacement::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -664,7 +664,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* grSim_BallReplacement::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* grSim_BallReplacement::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:grSim_BallReplacement)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -673,31 +673,31 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required double x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_x(), target);
   }
 
   // required double y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_y(), target);
   }
 
   // required double vx = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_vx(), target);
   }
 
   // required double vy = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_vy(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:grSim_BallReplacement)
   return target;
@@ -707,22 +707,22 @@ size_t grSim_BallReplacement::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:grSim_BallReplacement)
   size_t total_size = 0;
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required double x = 1;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required double y = 2;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_vx()) {
+  if (has_vx()) {
     // required double vx = 3;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_vy()) {
+  if (has_vy()) {
     // required double vy = 4;
     total_size += 1 + 8;
   }
@@ -780,7 +780,7 @@ void grSim_BallReplacement::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void grSim_BallReplacement::MergeFrom(const grSim_BallReplacement& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:grSim_BallReplacement)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -817,20 +817,18 @@ void grSim_BallReplacement::CopyFrom(const grSim_BallReplacement& from) {
 }
 
 bool grSim_BallReplacement::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000000f) != 0x0000000f) return false;
   return true;
 }
 
 void grSim_BallReplacement::InternalSwap(grSim_BallReplacement* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(grSim_BallReplacement, vy_)
-      + sizeof(grSim_BallReplacement::vy_)
-      - PROTOBUF_FIELD_OFFSET(grSim_BallReplacement, x_)>(
-          reinterpret_cast<char*>(&x_),
-          reinterpret_cast<char*>(&other->x_));
+  swap(x_, other->x_);
+  swap(y_, other->y_);
+  swap(vx_, other->vx_);
+  swap(vy_, other->vy_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata grSim_BallReplacement::GetMetadata() const {
@@ -840,6 +838,10 @@ void grSim_BallReplacement::InternalSwap(grSim_BallReplacement* other) {
 
 // ===================================================================
 
+void grSim_Replacement::InitAsDefaultInstance() {
+  ::_grSim_Replacement_default_instance_._instance.get_mutable()->ball_ = const_cast< ::grSim_BallReplacement*>(
+      ::grSim_BallReplacement::internal_default_instance());
+}
 class grSim_Replacement::_Internal {
  public:
   using HasBits = decltype(std::declval<grSim_Replacement>()._has_bits_);
@@ -853,18 +855,17 @@ const ::grSim_BallReplacement&
 grSim_Replacement::_Internal::ball(const grSim_Replacement* msg) {
   return *msg->ball_;
 }
-grSim_Replacement::grSim_Replacement(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  robots_(arena) {
+grSim_Replacement::grSim_Replacement()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:grSim_Replacement)
+  // @@protoc_insertion_point(constructor:grSim_Replacement)
 }
 grSim_Replacement::grSim_Replacement(const grSim_Replacement& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       robots_(from.robots_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_ball()) {
     ball_ = new ::grSim_BallReplacement(*from.ball_);
   } else {
@@ -874,29 +875,27 @@ grSim_Replacement::grSim_Replacement(const grSim_Replacement& from)
 }
 
 void grSim_Replacement::SharedCtor() {
-ball_ = nullptr;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_grSim_Replacement_grSim_5fReplacement_2eproto.base);
+  ball_ = nullptr;
 }
 
 grSim_Replacement::~grSim_Replacement() {
   // @@protoc_insertion_point(destructor:grSim_Replacement)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void grSim_Replacement::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete ball_;
 }
 
-void grSim_Replacement::ArenaDtor(void* object) {
-  grSim_Replacement* _this = reinterpret_cast< grSim_Replacement* >(object);
-  (void)_this;
-}
-void grSim_Replacement::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void grSim_Replacement::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const grSim_Replacement& grSim_Replacement::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_grSim_Replacement_grSim_5fReplacement_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void grSim_Replacement::Clear() {
 // @@protoc_insertion_point(message_clear_start:grSim_Replacement)
@@ -911,7 +910,7 @@ void grSim_Replacement::Clear() {
     ball_->Clear();
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* grSim_Replacement::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -947,9 +946,7 @@ const char* grSim_Replacement::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -964,7 +961,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* grSim_Replacement::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* grSim_Replacement::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:grSim_Replacement)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -973,23 +970,23 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional .grSim_BallReplacement ball = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::ball(this), target, stream);
   }
 
   // repeated .grSim_RobotReplacement robots = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_robots_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_robots(i), target, stream);
+      InternalWriteMessageToArray(2, this->_internal_robots(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:grSim_Replacement)
   return target;
@@ -1045,7 +1042,7 @@ void grSim_Replacement::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void grSim_Replacement::MergeFrom(const grSim_Replacement& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:grSim_Replacement)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1070,16 +1067,16 @@ void grSim_Replacement::CopyFrom(const grSim_Replacement& from) {
 }
 
 bool grSim_Replacement::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(robots_)) return false;
-  if (_internal_has_ball()) {
-    if (!ball_->IsInitialized()) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->robots())) return false;
+  if (has_ball()) {
+    if (!this->ball_->IsInitialized()) return false;
   }
   return true;
 }
 
 void grSim_Replacement::InternalSwap(grSim_Replacement* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   robots_.InternalSwap(&other->robots_);
   swap(ball_, other->ball_);
@@ -1093,13 +1090,13 @@ void grSim_Replacement::InternalSwap(grSim_Replacement* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::grSim_RobotReplacement* Arena::CreateMaybeMessage< ::grSim_RobotReplacement >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::grSim_RobotReplacement >(arena);
+  return Arena::CreateInternal< ::grSim_RobotReplacement >(arena);
 }
 template<> PROTOBUF_NOINLINE ::grSim_BallReplacement* Arena::CreateMaybeMessage< ::grSim_BallReplacement >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::grSim_BallReplacement >(arena);
+  return Arena::CreateInternal< ::grSim_BallReplacement >(arena);
 }
 template<> PROTOBUF_NOINLINE ::grSim_Replacement* Arena::CreateMaybeMessage< ::grSim_Replacement >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::grSim_Replacement >(arena);
+  return Arena::CreateInternal< ::grSim_Replacement >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

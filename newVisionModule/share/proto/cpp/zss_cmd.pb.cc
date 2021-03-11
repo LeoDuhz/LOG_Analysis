@@ -14,84 +14,98 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fcmd_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Robot_Command_zss_5fcmd_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fcmd_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Robot_Status_zss_5fcmd_2eproto;
 namespace ZSS {
 namespace Protocol {
-constexpr Robots_Status::Robots_Status(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : robots_status_(){}
-struct Robots_StatusDefaultTypeInternal {
-  constexpr Robots_StatusDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Robots_StatusDefaultTypeInternal() {}
-  union {
-    Robots_Status _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Robots_StatusDefaultTypeInternal _Robots_Status_default_instance_;
-constexpr Robot_Status::Robot_Status(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : robot_id_(0)
-  , infrared_(false)
-  , flat_kick_(false)
-  , chip_kick_(false){}
-struct Robot_StatusDefaultTypeInternal {
-  constexpr Robot_StatusDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Robot_StatusDefaultTypeInternal() {}
-  union {
-    Robot_Status _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Robot_StatusDefaultTypeInternal _Robot_Status_default_instance_;
-constexpr Robots_Command::Robots_Command(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : command_()
-  , delay_(0){}
-struct Robots_CommandDefaultTypeInternal {
-  constexpr Robots_CommandDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Robots_CommandDefaultTypeInternal() {}
-  union {
-    Robots_Command _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Robots_CommandDefaultTypeInternal _Robots_Command_default_instance_;
-constexpr Robot_Command::Robot_Command(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : robot_id_(0)
-  , velocity_x_(0)
-  , velocity_y_(0)
-  , velocity_r_(0)
-  , power_(0)
-  , dribbler_spin_(0)
-  , kick_(false)
-  , use_dir_(false)
-  , current_angle_(0)
-  , target_angle_(0){}
-struct Robot_CommandDefaultTypeInternal {
-  constexpr Robot_CommandDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Robot_CommandDefaultTypeInternal() {}
-  union {
-    Robot_Command _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Robot_CommandDefaultTypeInternal _Robot_Command_default_instance_;
+class Robots_StatusDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Robots_Status> _instance;
+} _Robots_Status_default_instance_;
+class Robot_StatusDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Robot_Status> _instance;
+} _Robot_Status_default_instance_;
+class Robots_CommandDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Robots_Command> _instance;
+} _Robots_Command_default_instance_;
+class Robot_CommandDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Robot_Command> _instance;
+} _Robot_Command_default_instance_;
 }  // namespace Protocol
 }  // namespace ZSS
+static void InitDefaultsscc_info_Robot_Command_zss_5fcmd_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Robot_Command_default_instance_;
+    new (ptr) ::ZSS::Protocol::Robot_Command();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Robot_Command::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Robot_Command_zss_5fcmd_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Robot_Command_zss_5fcmd_2eproto}, {}};
+
+static void InitDefaultsscc_info_Robot_Status_zss_5fcmd_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Robot_Status_default_instance_;
+    new (ptr) ::ZSS::Protocol::Robot_Status();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Robot_Status::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Robot_Status_zss_5fcmd_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Robot_Status_zss_5fcmd_2eproto}, {}};
+
+static void InitDefaultsscc_info_Robots_Command_zss_5fcmd_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Robots_Command_default_instance_;
+    new (ptr) ::ZSS::Protocol::Robots_Command();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Robots_Command::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Robots_Command_zss_5fcmd_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Robots_Command_zss_5fcmd_2eproto}, {
+      &scc_info_Robot_Command_zss_5fcmd_2eproto.base,}};
+
+static void InitDefaultsscc_info_Robots_Status_zss_5fcmd_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Robots_Status_default_instance_;
+    new (ptr) ::ZSS::Protocol::Robots_Status();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Robots_Status::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Robots_Status_zss_5fcmd_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_Robots_Status_zss_5fcmd_2eproto}, {
+      &scc_info_Robot_Status_zss_5fcmd_2eproto.base,}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_zss_5fcmd_2eproto[4];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_zss_5fcmd_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_zss_5fcmd_2eproto = nullptr;
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_zss_5fcmd_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Robots_Status, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Robots_Status, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Robots_Status, robots_status_),
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Robot_Status, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ZSS::Protocol::Robot_Status, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -141,10 +155,10 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_zss_5fcmd_2eproto::offsets[] P
   7,
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::ZSS::Protocol::Robots_Status)},
-  { 6, 15, sizeof(::ZSS::Protocol::Robot_Status)},
-  { 19, 26, sizeof(::ZSS::Protocol::Robots_Command)},
-  { 28, 43, sizeof(::ZSS::Protocol::Robot_Command)},
+  { 0, 6, sizeof(::ZSS::Protocol::Robots_Status)},
+  { 7, 16, sizeof(::ZSS::Protocol::Robot_Status)},
+  { 20, 27, sizeof(::ZSS::Protocol::Robots_Command)},
+  { 29, 44, sizeof(::ZSS::Protocol::Robot_Command)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -168,66 +182,71 @@ const char descriptor_table_protodef_zss_5fcmd_2eproto[] PROTOBUF_SECTION_VARIAB
   "ler_spin\030\007 \002(\002\022\025\n\rcurrent_angle\030\010 \001(\002\022\024\n"
   "\014target_angle\030\t \001(\002\022\017\n\007use_dir\030\n \002(\010"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_zss_5fcmd_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_zss_5fcmd_2eproto = {
-  false, false, 476, descriptor_table_protodef_zss_5fcmd_2eproto, "zss_cmd.proto", 
-  &descriptor_table_zss_5fcmd_2eproto_once, nullptr, 0, 4,
-  schemas, file_default_instances, TableStruct_zss_5fcmd_2eproto::offsets,
-  file_level_metadata_zss_5fcmd_2eproto, file_level_enum_descriptors_zss_5fcmd_2eproto, file_level_service_descriptors_zss_5fcmd_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_zss_5fcmd_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_zss_5fcmd_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_zss_5fcmd_2eproto);
-  return descriptor_table_zss_5fcmd_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_zss_5fcmd_2eproto_sccs[4] = {
+  &scc_info_Robot_Command_zss_5fcmd_2eproto.base,
+  &scc_info_Robot_Status_zss_5fcmd_2eproto.base,
+  &scc_info_Robots_Command_zss_5fcmd_2eproto.base,
+  &scc_info_Robots_Status_zss_5fcmd_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_zss_5fcmd_2eproto_once;
+static bool descriptor_table_zss_5fcmd_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_zss_5fcmd_2eproto = {
+  &descriptor_table_zss_5fcmd_2eproto_initialized, descriptor_table_protodef_zss_5fcmd_2eproto, "zss_cmd.proto", 476,
+  &descriptor_table_zss_5fcmd_2eproto_once, descriptor_table_zss_5fcmd_2eproto_sccs, descriptor_table_zss_5fcmd_2eproto_deps, 4, 0,
+  schemas, file_default_instances, TableStruct_zss_5fcmd_2eproto::offsets,
+  file_level_metadata_zss_5fcmd_2eproto, 4, file_level_enum_descriptors_zss_5fcmd_2eproto, file_level_service_descriptors_zss_5fcmd_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_zss_5fcmd_2eproto(&descriptor_table_zss_5fcmd_2eproto);
+static bool dynamic_init_dummy_zss_5fcmd_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_zss_5fcmd_2eproto), true);
 namespace ZSS {
 namespace Protocol {
 
 // ===================================================================
 
+void Robots_Status::InitAsDefaultInstance() {
+}
 class Robots_Status::_Internal {
  public:
+  using HasBits = decltype(std::declval<Robots_Status>()._has_bits_);
 };
 
-Robots_Status::Robots_Status(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  robots_status_(arena) {
+Robots_Status::Robots_Status()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Robots_Status)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Robots_Status)
 }
 Robots_Status::Robots_Status(const Robots_Status& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_),
       robots_status_(from.robots_status_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:ZSS.Protocol.Robots_Status)
 }
 
 void Robots_Status::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Robots_Status_zss_5fcmd_2eproto.base);
 }
 
 Robots_Status::~Robots_Status() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Robots_Status)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Robots_Status::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Robots_Status::ArenaDtor(void* object) {
-  Robots_Status* _this = reinterpret_cast< Robots_Status* >(object);
-  (void)_this;
-}
-void Robots_Status::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Robots_Status::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Robots_Status& Robots_Status::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Robots_Status_zss_5fcmd_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Robots_Status::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Robots_Status)
@@ -236,7 +255,8 @@ void Robots_Status::Clear() {
   (void) cached_has_bits;
 
   robots_status_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* Robots_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -264,9 +284,7 @@ const char* Robots_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -280,7 +298,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Robots_Status::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Robots_Status::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Robots_Status)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -289,14 +307,14 @@ failure:
   // repeated .ZSS.Protocol.Robot_Status robots_status = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_robots_status_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_robots_status(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_robots_status(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Robots_Status)
   return target;
@@ -344,7 +362,7 @@ void Robots_Status::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Robots_Status::MergeFrom(const Robots_Status& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Robots_Status)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -366,13 +384,14 @@ void Robots_Status::CopyFrom(const Robots_Status& from) {
 }
 
 bool Robots_Status::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(robots_status_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->robots_status())) return false;
   return true;
 }
 
 void Robots_Status::InternalSwap(Robots_Status* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   robots_status_.InternalSwap(&other->robots_status_);
 }
 
@@ -383,6 +402,8 @@ void Robots_Status::InternalSwap(Robots_Status* other) {
 
 // ===================================================================
 
+void Robot_Status::InitAsDefaultInstance() {
+}
 class Robot_Status::_Internal {
  public:
   using HasBits = decltype(std::declval<Robot_Status>()._has_bits_);
@@ -398,21 +419,18 @@ class Robot_Status::_Internal {
   static void set_has_chip_kick(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000000f) ^ 0x0000000f) != 0;
-  }
 };
 
-Robot_Status::Robot_Status(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Robot_Status::Robot_Status()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Robot_Status)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Robot_Status)
 }
 Robot_Status::Robot_Status(const Robot_Status& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&robot_id_, &from.robot_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&chip_kick_) -
     reinterpret_cast<char*>(&robot_id_)) + sizeof(chip_kick_));
@@ -420,31 +438,27 @@ Robot_Status::Robot_Status(const Robot_Status& from)
 }
 
 void Robot_Status::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&robot_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&chip_kick_) -
-    reinterpret_cast<char*>(&robot_id_)) + sizeof(chip_kick_));
+  ::memset(&robot_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&chip_kick_) -
+      reinterpret_cast<char*>(&robot_id_)) + sizeof(chip_kick_));
 }
 
 Robot_Status::~Robot_Status() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Robot_Status)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Robot_Status::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Robot_Status::ArenaDtor(void* object) {
-  Robot_Status* _this = reinterpret_cast< Robot_Status* >(object);
-  (void)_this;
-}
-void Robot_Status::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Robot_Status::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Robot_Status& Robot_Status::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Robot_Status_zss_5fcmd_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Robot_Status::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Robot_Status)
@@ -459,7 +473,7 @@ void Robot_Status::Clear() {
         reinterpret_cast<char*>(&robot_id_)) + sizeof(chip_kick_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Robot_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -474,7 +488,7 @@ const char* Robot_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_robot_id(&has_bits);
-          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -482,7 +496,7 @@ const char* Robot_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_infrared(&has_bits);
-          infrared_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          infrared_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -490,7 +504,7 @@ const char* Robot_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           _Internal::set_has_flat_kick(&has_bits);
-          flat_kick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          flat_kick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -498,7 +512,7 @@ const char* Robot_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_chip_kick(&has_bits);
-          chip_kick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          chip_kick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -508,9 +522,7 @@ const char* Robot_Status::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -525,7 +537,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Robot_Status::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Robot_Status::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Robot_Status)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -534,31 +546,31 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required int32 robot_id = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_robot_id(), target);
   }
 
   // required bool infrared = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_infrared(), target);
   }
 
   // required bool flat_kick = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_flat_kick(), target);
   }
 
   // required bool chip_kick = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_chip_kick(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Robot_Status)
   return target;
@@ -568,24 +580,24 @@ size_t Robot_Status::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Robot_Status)
   size_t total_size = 0;
 
-  if (_internal_has_robot_id()) {
+  if (has_robot_id()) {
     // required int32 robot_id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_robot_id());
   }
 
-  if (_internal_has_infrared()) {
+  if (has_infrared()) {
     // required bool infrared = 2;
     total_size += 1 + 1;
   }
 
-  if (_internal_has_flat_kick()) {
+  if (has_flat_kick()) {
     // required bool flat_kick = 3;
     total_size += 1 + 1;
   }
 
-  if (_internal_has_chip_kick()) {
+  if (has_chip_kick()) {
     // required bool chip_kick = 4;
     total_size += 1 + 1;
   }
@@ -645,7 +657,7 @@ void Robot_Status::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Robot_Status::MergeFrom(const Robot_Status& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Robot_Status)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -682,20 +694,18 @@ void Robot_Status::CopyFrom(const Robot_Status& from) {
 }
 
 bool Robot_Status::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000000f) != 0x0000000f) return false;
   return true;
 }
 
 void Robot_Status::InternalSwap(Robot_Status* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Robot_Status, chip_kick_)
-      + sizeof(Robot_Status::chip_kick_)
-      - PROTOBUF_FIELD_OFFSET(Robot_Status, robot_id_)>(
-          reinterpret_cast<char*>(&robot_id_),
-          reinterpret_cast<char*>(&other->robot_id_));
+  swap(robot_id_, other->robot_id_);
+  swap(infrared_, other->infrared_);
+  swap(flat_kick_, other->flat_kick_);
+  swap(chip_kick_, other->chip_kick_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Robot_Status::GetMetadata() const {
@@ -705,6 +715,8 @@ void Robot_Status::InternalSwap(Robot_Status* other) {
 
 // ===================================================================
 
+void Robots_Command::InitAsDefaultInstance() {
+}
 class Robots_Command::_Internal {
  public:
   using HasBits = decltype(std::declval<Robots_Command>()._has_bits_);
@@ -713,45 +725,42 @@ class Robots_Command::_Internal {
   }
 };
 
-Robots_Command::Robots_Command(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  command_(arena) {
+Robots_Command::Robots_Command()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Robots_Command)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Robots_Command)
 }
 Robots_Command::Robots_Command(const Robots_Command& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       command_(from.command_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   delay_ = from.delay_;
   // @@protoc_insertion_point(copy_constructor:ZSS.Protocol.Robots_Command)
 }
 
 void Robots_Command::SharedCtor() {
-delay_ = 0;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Robots_Command_zss_5fcmd_2eproto.base);
+  delay_ = 0;
 }
 
 Robots_Command::~Robots_Command() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Robots_Command)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Robots_Command::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Robots_Command::ArenaDtor(void* object) {
-  Robots_Command* _this = reinterpret_cast< Robots_Command* >(object);
-  (void)_this;
-}
-void Robots_Command::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Robots_Command::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Robots_Command& Robots_Command::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Robots_Command_zss_5fcmd_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Robots_Command::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Robots_Command)
@@ -762,7 +771,7 @@ void Robots_Command::Clear() {
   command_.Clear();
   delay_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Robots_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -789,7 +798,7 @@ const char* Robots_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_delay(&has_bits);
-          delay_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          delay_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -799,9 +808,7 @@ const char* Robots_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -816,7 +823,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Robots_Command::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Robots_Command::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Robots_Command)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -825,21 +832,21 @@ failure:
   // repeated .ZSS.Protocol.Robot_Command command = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_command_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_command(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_command(i), target, stream);
   }
 
   cached_has_bits = _has_bits_[0];
   // optional int32 delay = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_delay(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Robots_Command)
   return target;
@@ -895,7 +902,7 @@ void Robots_Command::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Robots_Command::MergeFrom(const Robots_Command& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Robots_Command)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -920,13 +927,13 @@ void Robots_Command::CopyFrom(const Robots_Command& from) {
 }
 
 bool Robots_Command::IsInitialized() const {
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(command_)) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->command())) return false;
   return true;
 }
 
 void Robots_Command::InternalSwap(Robots_Command* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   command_.InternalSwap(&other->command_);
   swap(delay_, other->delay_);
@@ -939,6 +946,8 @@ void Robots_Command::InternalSwap(Robots_Command* other) {
 
 // ===================================================================
 
+void Robot_Command::InitAsDefaultInstance() {
+}
 class Robot_Command::_Internal {
  public:
   using HasBits = decltype(std::declval<Robot_Command>()._has_bits_);
@@ -972,21 +981,18 @@ class Robot_Command::_Internal {
   static void set_has_use_dir(HasBits* has_bits) {
     (*has_bits)[0] |= 128u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x000000ff) ^ 0x000000ff) != 0;
-  }
 };
 
-Robot_Command::Robot_Command(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Robot_Command::Robot_Command()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Robot_Command)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Robot_Command)
 }
 Robot_Command::Robot_Command(const Robot_Command& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&robot_id_, &from.robot_id_,
     static_cast<size_t>(reinterpret_cast<char*>(&target_angle_) -
     reinterpret_cast<char*>(&robot_id_)) + sizeof(target_angle_));
@@ -994,31 +1000,27 @@ Robot_Command::Robot_Command(const Robot_Command& from)
 }
 
 void Robot_Command::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&robot_id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&target_angle_) -
-    reinterpret_cast<char*>(&robot_id_)) + sizeof(target_angle_));
+  ::memset(&robot_id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&target_angle_) -
+      reinterpret_cast<char*>(&robot_id_)) + sizeof(target_angle_));
 }
 
 Robot_Command::~Robot_Command() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Robot_Command)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Robot_Command::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Robot_Command::ArenaDtor(void* object) {
-  Robot_Command* _this = reinterpret_cast< Robot_Command* >(object);
-  (void)_this;
-}
-void Robot_Command::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Robot_Command::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Robot_Command& Robot_Command::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Robot_Command_zss_5fcmd_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Robot_Command::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Robot_Command)
@@ -1038,7 +1040,7 @@ void Robot_Command::Clear() {
         reinterpret_cast<char*>(&current_angle_)) + sizeof(target_angle_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1053,7 +1055,7 @@ const char* Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_robot_id(&has_bits);
-          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1085,7 +1087,7 @@ const char* Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           _Internal::set_has_kick(&has_bits);
-          kick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          kick_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1125,7 +1127,7 @@ const char* Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           _Internal::set_has_use_dir(&has_bits);
-          use_dir_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          use_dir_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1135,9 +1137,7 @@ const char* Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1152,7 +1152,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Robot_Command::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Robot_Command::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Robot_Command)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1161,67 +1161,67 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required int32 robot_id = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_robot_id(), target);
   }
 
   // required float velocity_x = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_velocity_x(), target);
   }
 
   // required float velocity_y = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_velocity_y(), target);
   }
 
   // required float velocity_r = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_velocity_r(), target);
   }
 
   // required bool kick = 5;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_kick(), target);
   }
 
   // required float power = 6;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_power(), target);
   }
 
   // required float dribbler_spin = 7;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(7, this->_internal_dribbler_spin(), target);
   }
 
   // optional float current_angle = 8;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(8, this->_internal_current_angle(), target);
   }
 
   // optional float target_angle = 9;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(9, this->_internal_target_angle(), target);
   }
 
   // required bool use_dir = 10;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->_internal_use_dir(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Robot_Command)
   return target;
@@ -1231,44 +1231,44 @@ size_t Robot_Command::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Robot_Command)
   size_t total_size = 0;
 
-  if (_internal_has_robot_id()) {
+  if (has_robot_id()) {
     // required int32 robot_id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_robot_id());
   }
 
-  if (_internal_has_velocity_x()) {
+  if (has_velocity_x()) {
     // required float velocity_x = 2;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_velocity_y()) {
+  if (has_velocity_y()) {
     // required float velocity_y = 3;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_velocity_r()) {
+  if (has_velocity_r()) {
     // required float velocity_r = 4;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_power()) {
+  if (has_power()) {
     // required float power = 6;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_dribbler_spin()) {
+  if (has_dribbler_spin()) {
     // required float dribbler_spin = 7;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_kick()) {
+  if (has_kick()) {
     // required bool kick = 5;
     total_size += 1 + 1;
   }
 
-  if (_internal_has_use_dir()) {
+  if (has_use_dir()) {
     // required bool use_dir = 10;
     total_size += 1 + 1;
   }
@@ -1353,7 +1353,7 @@ void Robot_Command::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Robot_Command::MergeFrom(const Robot_Command& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Robot_Command)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1411,20 +1411,24 @@ void Robot_Command::CopyFrom(const Robot_Command& from) {
 }
 
 bool Robot_Command::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x000000ff) != 0x000000ff) return false;
   return true;
 }
 
 void Robot_Command::InternalSwap(Robot_Command* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Robot_Command, target_angle_)
-      + sizeof(Robot_Command::target_angle_)
-      - PROTOBUF_FIELD_OFFSET(Robot_Command, robot_id_)>(
-          reinterpret_cast<char*>(&robot_id_),
-          reinterpret_cast<char*>(&other->robot_id_));
+  swap(robot_id_, other->robot_id_);
+  swap(velocity_x_, other->velocity_x_);
+  swap(velocity_y_, other->velocity_y_);
+  swap(velocity_r_, other->velocity_r_);
+  swap(power_, other->power_);
+  swap(dribbler_spin_, other->dribbler_spin_);
+  swap(kick_, other->kick_);
+  swap(use_dir_, other->use_dir_);
+  swap(current_angle_, other->current_angle_);
+  swap(target_angle_, other->target_angle_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Robot_Command::GetMetadata() const {
@@ -1437,16 +1441,16 @@ void Robot_Command::InternalSwap(Robot_Command* other) {
 }  // namespace ZSS
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Robots_Status* Arena::CreateMaybeMessage< ::ZSS::Protocol::Robots_Status >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Robots_Status >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Robots_Status >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Robot_Status* Arena::CreateMaybeMessage< ::ZSS::Protocol::Robot_Status >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Robot_Status >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Robot_Status >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Robots_Command* Arena::CreateMaybeMessage< ::ZSS::Protocol::Robots_Command >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Robots_Command >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Robots_Command >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Robot_Command* Arena::CreateMaybeMessage< ::ZSS::Protocol::Robot_Command >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Robot_Command >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Robot_Command >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -14,88 +14,89 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<34> scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_Game_Event_ssl_5fgame_5fevent_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5freferee_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProposedGameEvent_ssl_5freferee_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5freferee_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Referee_Point_ssl_5freferee_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5freferee_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Referee_TeamInfo_ssl_5freferee_2eproto;
+class Referee_TeamInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Referee_TeamInfo> _instance;
+} _Referee_TeamInfo_default_instance_;
+class Referee_PointDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Referee_Point> _instance;
+} _Referee_Point_default_instance_;
+class RefereeDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Referee> _instance;
+} _Referee_default_instance_;
+class ProposedGameEventDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ProposedGameEvent> _instance;
+} _ProposedGameEvent_default_instance_;
+static void InitDefaultsscc_info_ProposedGameEvent_ssl_5freferee_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr Referee_TeamInfo::Referee_TeamInfo(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : yellow_card_times_()
-  , _yellow_card_times_cached_byte_size_()
-  , name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , score_(0u)
-  , red_cards_(0u)
-  , yellow_cards_(0u)
-  , timeouts_(0u)
-  , timeout_time_(0u)
-  , goalkeeper_(0u)
-  , foul_counter_(0u)
-  , ball_placement_failures_(0u)
-  , can_place_ball_(false)
-  , max_allowed_bots_(0u){}
-struct Referee_TeamInfoDefaultTypeInternal {
-  constexpr Referee_TeamInfoDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Referee_TeamInfoDefaultTypeInternal() {}
-  union {
-    Referee_TeamInfo _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Referee_TeamInfoDefaultTypeInternal _Referee_TeamInfo_default_instance_;
-constexpr Referee_Point::Referee_Point(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0){}
-struct Referee_PointDefaultTypeInternal {
-  constexpr Referee_PointDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Referee_PointDefaultTypeInternal() {}
-  union {
-    Referee_Point _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Referee_PointDefaultTypeInternal _Referee_Point_default_instance_;
-constexpr Referee::Referee(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : game_events_()
-  , proposed_game_events_()
-  , yellow_(nullptr)
-  , blue_(nullptr)
-  , designated_position_(nullptr)
-  , game_event_(nullptr)
-  , packet_timestamp_(PROTOBUF_ULONGLONG(0))
-  , stage_(0)
+  {
+    void* ptr = &::_ProposedGameEvent_default_instance_;
+    new (ptr) ::ProposedGameEvent();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ProposedGameEvent::InitAsDefaultInstance();
+}
 
-  , stage_time_left_(0)
-  , command_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_ProposedGameEvent_ssl_5freferee_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_ProposedGameEvent_ssl_5freferee_2eproto}, {
+      &scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto.base,}};
 
-  , command_counter_(0u)
-  , command_timestamp_(PROTOBUF_ULONGLONG(0))
-  , blue_team_on_positive_half_(false)
-  , next_command_(0)
+static void InitDefaultsscc_info_Referee_ssl_5freferee_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , current_action_time_remaining_(0){}
-struct RefereeDefaultTypeInternal {
-  constexpr RefereeDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~RefereeDefaultTypeInternal() {}
-  union {
-    Referee _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RefereeDefaultTypeInternal _Referee_default_instance_;
-constexpr ProposedGameEvent::ProposedGameEvent(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : proposer_id_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , game_event_(nullptr)
-  , valid_until_(PROTOBUF_ULONGLONG(0)){}
-struct ProposedGameEventDefaultTypeInternal {
-  constexpr ProposedGameEventDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~ProposedGameEventDefaultTypeInternal() {}
-  union {
-    ProposedGameEvent _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ProposedGameEventDefaultTypeInternal _ProposedGameEvent_default_instance_;
+  {
+    void* ptr = &::_Referee_default_instance_;
+    new (ptr) ::Referee();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Referee::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<5> scc_info_Referee_ssl_5freferee_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 5, 0, InitDefaultsscc_info_Referee_ssl_5freferee_2eproto}, {
+      &scc_info_Referee_TeamInfo_ssl_5freferee_2eproto.base,
+      &scc_info_Referee_Point_ssl_5freferee_2eproto.base,
+      &scc_info_Game_Event_ssl_5fgame_5fevent_2eproto.base,
+      &scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_ProposedGameEvent_ssl_5freferee_2eproto.base,}};
+
+static void InitDefaultsscc_info_Referee_Point_ssl_5freferee_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Referee_Point_default_instance_;
+    new (ptr) ::Referee_Point();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Referee_Point::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Referee_Point_ssl_5freferee_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Referee_Point_ssl_5freferee_2eproto}, {}};
+
+static void InitDefaultsscc_info_Referee_TeamInfo_ssl_5freferee_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Referee_TeamInfo_default_instance_;
+    new (ptr) ::Referee_TeamInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Referee_TeamInfo::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Referee_TeamInfo_ssl_5freferee_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Referee_TeamInfo_ssl_5freferee_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ssl_5freferee_2eproto[4];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_ssl_5freferee_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ssl_5freferee_2eproto = nullptr;
@@ -250,21 +251,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_ssl_5fgame_5fevent_2eproto,
   &::descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5freferee_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5freferee_2eproto = {
-  false, false, 1743, descriptor_table_protodef_ssl_5freferee_2eproto, "ssl_referee.proto", 
-  &descriptor_table_ssl_5freferee_2eproto_once, descriptor_table_ssl_5freferee_2eproto_deps, 2, 4,
-  schemas, file_default_instances, TableStruct_ssl_5freferee_2eproto::offsets,
-  file_level_metadata_ssl_5freferee_2eproto, file_level_enum_descriptors_ssl_5freferee_2eproto, file_level_service_descriptors_ssl_5freferee_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ssl_5freferee_2eproto_sccs[4] = {
+  &scc_info_ProposedGameEvent_ssl_5freferee_2eproto.base,
+  &scc_info_Referee_ssl_5freferee_2eproto.base,
+  &scc_info_Referee_Point_ssl_5freferee_2eproto.base,
+  &scc_info_Referee_TeamInfo_ssl_5freferee_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_ssl_5freferee_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5freferee_2eproto);
-  return descriptor_table_ssl_5freferee_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5freferee_2eproto_once;
+static bool descriptor_table_ssl_5freferee_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5freferee_2eproto = {
+  &descriptor_table_ssl_5freferee_2eproto_initialized, descriptor_table_protodef_ssl_5freferee_2eproto, "ssl_referee.proto", 1743,
+  &descriptor_table_ssl_5freferee_2eproto_once, descriptor_table_ssl_5freferee_2eproto_sccs, descriptor_table_ssl_5freferee_2eproto_deps, 4, 2,
+  schemas, file_default_instances, TableStruct_ssl_5freferee_2eproto::offsets,
+  file_level_metadata_ssl_5freferee_2eproto, 4, file_level_enum_descriptors_ssl_5freferee_2eproto, file_level_service_descriptors_ssl_5freferee_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ssl_5freferee_2eproto(&descriptor_table_ssl_5freferee_2eproto);
+static bool dynamic_init_dummy_ssl_5freferee_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ssl_5freferee_2eproto), true);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Referee_Stage_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5freferee_2eproto);
   return file_level_enum_descriptors_ssl_5freferee_2eproto[0];
@@ -366,6 +369,8 @@ constexpr int Referee::Command_ARRAYSIZE;
 
 // ===================================================================
 
+void Referee_TeamInfo::InitAsDefaultInstance() {
+}
 class Referee_TeamInfo::_Internal {
  public:
   using HasBits = decltype(std::declval<Referee_TeamInfo>()._has_bits_);
@@ -402,27 +407,22 @@ class Referee_TeamInfo::_Internal {
   static void set_has_max_allowed_bots(HasBits* has_bits) {
     (*has_bits)[0] |= 1024u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000007f) ^ 0x0000007f) != 0;
-  }
 };
 
-Referee_TeamInfo::Referee_TeamInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  yellow_card_times_(arena) {
+Referee_TeamInfo::Referee_TeamInfo()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Referee.TeamInfo)
+  // @@protoc_insertion_point(constructor:Referee.TeamInfo)
 }
 Referee_TeamInfo::Referee_TeamInfo(const Referee_TeamInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       yellow_card_times_(from.yellow_card_times_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_name()) {
-    name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_name(), 
-      GetArena());
+    name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
   }
   ::memcpy(&score_, &from.score_,
     static_cast<size_t>(reinterpret_cast<char*>(&max_allowed_bots_) -
@@ -431,33 +431,30 @@ Referee_TeamInfo::Referee_TeamInfo(const Referee_TeamInfo& from)
 }
 
 void Referee_TeamInfo::SharedCtor() {
-name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&score_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&max_allowed_bots_) -
-    reinterpret_cast<char*>(&score_)) + sizeof(max_allowed_bots_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Referee_TeamInfo_ssl_5freferee_2eproto.base);
+  name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&score_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_allowed_bots_) -
+      reinterpret_cast<char*>(&score_)) + sizeof(max_allowed_bots_));
 }
 
 Referee_TeamInfo::~Referee_TeamInfo() {
   // @@protoc_insertion_point(destructor:Referee.TeamInfo)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Referee_TeamInfo::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void Referee_TeamInfo::ArenaDtor(void* object) {
-  Referee_TeamInfo* _this = reinterpret_cast< Referee_TeamInfo* >(object);
-  (void)_this;
-}
-void Referee_TeamInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Referee_TeamInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Referee_TeamInfo& Referee_TeamInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Referee_TeamInfo_ssl_5freferee_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Referee_TeamInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:Referee.TeamInfo)
@@ -468,7 +465,7 @@ void Referee_TeamInfo::Clear() {
   yellow_card_times_.Clear();
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    name_.ClearNonDefaultToEmpty();
+    name_.ClearNonDefaultToEmptyNoArena();
   }
   if (cached_has_bits & 0x000000feu) {
     ::memset(&score_, 0, static_cast<size_t>(
@@ -481,7 +478,7 @@ void Referee_TeamInfo::Clear() {
         reinterpret_cast<char*>(&ball_placement_failures_)) + sizeof(max_allowed_bots_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -495,11 +492,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // required string name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Referee.TeamInfo.name");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_name(), ptr, ctx, "Referee.TeamInfo.name");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -507,7 +500,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_score(&has_bits);
-          score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          score_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -515,7 +508,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           _Internal::set_has_red_cards(&has_bits);
-          red_cards_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          red_cards_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -525,7 +518,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::PackedUInt32Parser(_internal_mutable_yellow_card_times(), ptr, ctx);
           CHK_(ptr);
         } else if (static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32) {
-          _internal_add_yellow_card_times(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr));
+          _internal_add_yellow_card_times(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -533,7 +526,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           _Internal::set_has_yellow_cards(&has_bits);
-          yellow_cards_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          yellow_cards_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -541,7 +534,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           _Internal::set_has_timeouts(&has_bits);
-          timeouts_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          timeouts_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -549,7 +542,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           _Internal::set_has_timeout_time(&has_bits);
-          timeout_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          timeout_time_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -557,7 +550,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           _Internal::set_has_goalkeeper(&has_bits);
-          goalkeeper_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          goalkeeper_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -565,7 +558,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           _Internal::set_has_foul_counter(&has_bits);
-          foul_counter_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          foul_counter_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -573,7 +566,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           _Internal::set_has_ball_placement_failures(&has_bits);
-          ball_placement_failures_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          ball_placement_failures_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -581,7 +574,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
           _Internal::set_has_can_place_ball(&has_bits);
-          can_place_ball_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          can_place_ball_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -589,7 +582,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 104)) {
           _Internal::set_has_max_allowed_bots(&has_bits);
-          max_allowed_bots_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          max_allowed_bots_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -599,9 +592,7 @@ const char* Referee_TeamInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -616,7 +607,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Referee_TeamInfo::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Referee_TeamInfo::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Referee.TeamInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -635,13 +626,13 @@ failure:
 
   // required uint32 score = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_score(), target);
   }
 
   // required uint32 red_cards = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_red_cards(), target);
   }
 
@@ -656,55 +647,55 @@ failure:
 
   // required uint32 yellow_cards = 5;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_yellow_cards(), target);
   }
 
   // required uint32 timeouts = 6;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_timeouts(), target);
   }
 
   // required uint32 timeout_time = 7;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(7, this->_internal_timeout_time(), target);
   }
 
   // required uint32 goalkeeper = 8;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(8, this->_internal_goalkeeper(), target);
   }
 
   // optional uint32 foul_counter = 9;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(9, this->_internal_foul_counter(), target);
   }
 
   // optional uint32 ball_placement_failures = 10;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(10, this->_internal_ball_placement_failures(), target);
   }
 
   // optional bool can_place_ball = 12;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(12, this->_internal_can_place_ball(), target);
   }
 
   // optional uint32 max_allowed_bots = 13;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(13, this->_internal_max_allowed_bots(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Referee.TeamInfo)
   return target;
@@ -714,49 +705,49 @@ size_t Referee_TeamInfo::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Referee.TeamInfo)
   size_t total_size = 0;
 
-  if (_internal_has_name()) {
+  if (has_name()) {
     // required string name = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_name());
   }
 
-  if (_internal_has_score()) {
+  if (has_score()) {
     // required uint32 score = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_score());
   }
 
-  if (_internal_has_red_cards()) {
+  if (has_red_cards()) {
     // required uint32 red_cards = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_red_cards());
   }
 
-  if (_internal_has_yellow_cards()) {
+  if (has_yellow_cards()) {
     // required uint32 yellow_cards = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_yellow_cards());
   }
 
-  if (_internal_has_timeouts()) {
+  if (has_timeouts()) {
     // required uint32 timeouts = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_timeouts());
   }
 
-  if (_internal_has_timeout_time()) {
+  if (has_timeout_time()) {
     // required uint32 timeout_time = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_timeout_time());
   }
 
-  if (_internal_has_goalkeeper()) {
+  if (has_goalkeeper()) {
     // required uint32 goalkeeper = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
@@ -883,7 +874,7 @@ void Referee_TeamInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Referee_TeamInfo::MergeFrom(const Referee_TeamInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Referee.TeamInfo)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -891,7 +882,8 @@ void Referee_TeamInfo::MergeFrom(const Referee_TeamInfo& from) {
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x000000ffu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_name(from._internal_name());
+      _has_bits_[0] |= 0x00000001u;
+      name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.name_);
     }
     if (cached_has_bits & 0x00000002u) {
       score_ = from.score_;
@@ -945,22 +937,27 @@ void Referee_TeamInfo::CopyFrom(const Referee_TeamInfo& from) {
 }
 
 bool Referee_TeamInfo::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000007f) != 0x0000007f) return false;
   return true;
 }
 
 void Referee_TeamInfo::InternalSwap(Referee_TeamInfo* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   yellow_card_times_.InternalSwap(&other->yellow_card_times_);
-  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Referee_TeamInfo, max_allowed_bots_)
-      + sizeof(Referee_TeamInfo::max_allowed_bots_)
-      - PROTOBUF_FIELD_OFFSET(Referee_TeamInfo, score_)>(
-          reinterpret_cast<char*>(&score_),
-          reinterpret_cast<char*>(&other->score_));
+  name_.Swap(&other->name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(score_, other->score_);
+  swap(red_cards_, other->red_cards_);
+  swap(yellow_cards_, other->yellow_cards_);
+  swap(timeouts_, other->timeouts_);
+  swap(timeout_time_, other->timeout_time_);
+  swap(goalkeeper_, other->goalkeeper_);
+  swap(foul_counter_, other->foul_counter_);
+  swap(ball_placement_failures_, other->ball_placement_failures_);
+  swap(can_place_ball_, other->can_place_ball_);
+  swap(max_allowed_bots_, other->max_allowed_bots_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Referee_TeamInfo::GetMetadata() const {
@@ -970,6 +967,8 @@ void Referee_TeamInfo::InternalSwap(Referee_TeamInfo* other) {
 
 // ===================================================================
 
+void Referee_Point::InitAsDefaultInstance() {
+}
 class Referee_Point::_Internal {
  public:
   using HasBits = decltype(std::declval<Referee_Point>()._has_bits_);
@@ -979,21 +978,18 @@ class Referee_Point::_Internal {
   static void set_has_y(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-Referee_Point::Referee_Point(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Referee_Point::Referee_Point()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Referee.Point)
+  // @@protoc_insertion_point(constructor:Referee.Point)
 }
 Referee_Point::Referee_Point(const Referee_Point& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&y_) -
     reinterpret_cast<char*>(&x_)) + sizeof(y_));
@@ -1001,31 +997,27 @@ Referee_Point::Referee_Point(const Referee_Point& from)
 }
 
 void Referee_Point::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&y_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(y_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(y_));
 }
 
 Referee_Point::~Referee_Point() {
   // @@protoc_insertion_point(destructor:Referee.Point)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Referee_Point::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Referee_Point::ArenaDtor(void* object) {
-  Referee_Point* _this = reinterpret_cast< Referee_Point* >(object);
-  (void)_this;
-}
-void Referee_Point::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Referee_Point::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Referee_Point& Referee_Point::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Referee_Point_ssl_5freferee_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Referee_Point::Clear() {
 // @@protoc_insertion_point(message_clear_start:Referee.Point)
@@ -1040,7 +1032,7 @@ void Referee_Point::Clear() {
         reinterpret_cast<char*>(&x_)) + sizeof(y_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Referee_Point::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1073,9 +1065,7 @@ const char* Referee_Point::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1090,7 +1080,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Referee_Point::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Referee_Point::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Referee.Point)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1099,19 +1089,19 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required float x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_x(), target);
   }
 
   // required float y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_y(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Referee.Point)
   return target;
@@ -1121,12 +1111,12 @@ size_t Referee_Point::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Referee.Point)
   size_t total_size = 0;
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required float x = 1;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required float y = 2;
     total_size += 1 + 4;
   }
@@ -1178,7 +1168,7 @@ void Referee_Point::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Referee_Point::MergeFrom(const Referee_Point& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Referee.Point)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1209,20 +1199,16 @@ void Referee_Point::CopyFrom(const Referee_Point& from) {
 }
 
 bool Referee_Point::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void Referee_Point::InternalSwap(Referee_Point* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Referee_Point, y_)
-      + sizeof(Referee_Point::y_)
-      - PROTOBUF_FIELD_OFFSET(Referee_Point, x_)>(
-          reinterpret_cast<char*>(&x_),
-          reinterpret_cast<char*>(&other->x_));
+  swap(x_, other->x_);
+  swap(y_, other->y_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Referee_Point::GetMetadata() const {
@@ -1232,6 +1218,16 @@ void Referee_Point::InternalSwap(Referee_Point* other) {
 
 // ===================================================================
 
+void Referee::InitAsDefaultInstance() {
+  ::_Referee_default_instance_._instance.get_mutable()->yellow_ = const_cast< ::Referee_TeamInfo*>(
+      ::Referee_TeamInfo::internal_default_instance());
+  ::_Referee_default_instance_._instance.get_mutable()->blue_ = const_cast< ::Referee_TeamInfo*>(
+      ::Referee_TeamInfo::internal_default_instance());
+  ::_Referee_default_instance_._instance.get_mutable()->designated_position_ = const_cast< ::Referee_Point*>(
+      ::Referee_Point::internal_default_instance());
+  ::_Referee_default_instance_._instance.get_mutable()->game_event_ = const_cast< ::Game_Event*>(
+      ::Game_Event::internal_default_instance());
+}
 class Referee::_Internal {
  public:
   using HasBits = decltype(std::declval<Referee>()._has_bits_);
@@ -1278,9 +1274,6 @@ class Referee::_Internal {
   static void set_has_current_action_time_remaining(HasBits* has_bits) {
     (*has_bits)[0] |= 4096u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x000003b3) ^ 0x000003b3) != 0;
-  }
 };
 
 const ::Referee_TeamInfo&
@@ -1306,20 +1299,18 @@ void Referee::clear_game_event() {
 void Referee::clear_game_events() {
   game_events_.Clear();
 }
-Referee::Referee(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  game_events_(arena),
-  proposed_game_events_(arena) {
+Referee::Referee()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Referee)
+  // @@protoc_insertion_point(constructor:Referee)
 }
 Referee::Referee(const Referee& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       game_events_(from.game_events_),
       proposed_game_events_(from.proposed_game_events_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_yellow()) {
     yellow_ = new ::Referee_TeamInfo(*from.yellow_);
   } else {
@@ -1347,35 +1338,32 @@ Referee::Referee(const Referee& from)
 }
 
 void Referee::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&yellow_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&current_action_time_remaining_) -
-    reinterpret_cast<char*>(&yellow_)) + sizeof(current_action_time_remaining_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Referee_ssl_5freferee_2eproto.base);
+  ::memset(&yellow_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&current_action_time_remaining_) -
+      reinterpret_cast<char*>(&yellow_)) + sizeof(current_action_time_remaining_));
 }
 
 Referee::~Referee() {
   // @@protoc_insertion_point(destructor:Referee)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Referee::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete yellow_;
   if (this != internal_default_instance()) delete blue_;
   if (this != internal_default_instance()) delete designated_position_;
   if (this != internal_default_instance()) delete game_event_;
 }
 
-void Referee::ArenaDtor(void* object) {
-  Referee* _this = reinterpret_cast< Referee* >(object);
-  (void)_this;
-}
-void Referee::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Referee::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Referee& Referee::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Referee_ssl_5freferee_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Referee::Clear() {
 // @@protoc_insertion_point(message_clear_start:Referee)
@@ -1415,7 +1403,7 @@ void Referee::Clear() {
         reinterpret_cast<char*>(&command_counter_)) + sizeof(current_action_time_remaining_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1430,14 +1418,14 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_packet_timestamp(&has_bits);
-          packet_timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          packet_timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // required .Referee.Stage stage = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Referee_Stage_IsValid(val))) {
             _internal_set_stage(static_cast<::Referee_Stage>(val));
@@ -1457,7 +1445,7 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       // required .Referee.Command command = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Referee_Command_IsValid(val))) {
             _internal_set_command(static_cast<::Referee_Command>(val));
@@ -1470,7 +1458,7 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           _Internal::set_has_command_counter(&has_bits);
-          command_counter_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          command_counter_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1478,7 +1466,7 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
           _Internal::set_has_command_timestamp(&has_bits);
-          command_timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          command_timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1507,7 +1495,7 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 80)) {
           _Internal::set_has_blue_team_on_positive_half(&has_bits);
-          blue_team_on_positive_half_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          blue_team_on_positive_half_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1521,7 +1509,7 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       // optional .Referee.Command next_command = 12;
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 96)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Referee_Command_IsValid(val))) {
             _internal_set_next_command(static_cast<::Referee_Command>(val));
@@ -1558,7 +1546,7 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
       case 15:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 120)) {
           _Internal::set_has_current_action_time_remaining(&has_bits);
-          current_action_time_remaining_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          current_action_time_remaining_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1568,9 +1556,7 @@ const char* Referee::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::in
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1585,7 +1571,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Referee::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Referee::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Referee)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1594,83 +1580,83 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required uint64 packet_timestamp = 1;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_packet_timestamp(), target);
   }
 
   // required .Referee.Stage stage = 2;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       2, this->_internal_stage(), target);
   }
 
   // optional sint32 stage_time_left = 3;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteSInt32ToArray(3, this->_internal_stage_time_left(), target);
   }
 
   // required .Referee.Command command = 4;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       4, this->_internal_command(), target);
   }
 
   // required uint32 command_counter = 5;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(5, this->_internal_command_counter(), target);
   }
 
   // required uint64 command_timestamp = 6;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(6, this->_internal_command_timestamp(), target);
   }
 
   // required .Referee.TeamInfo yellow = 7;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         7, _Internal::yellow(this), target, stream);
   }
 
   // required .Referee.TeamInfo blue = 8;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         8, _Internal::blue(this), target, stream);
   }
 
   // optional .Referee.Point designated_position = 9;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         9, _Internal::designated_position(this), target, stream);
   }
 
   // optional bool blue_team_on_positive_half = 10;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(10, this->_internal_blue_team_on_positive_half(), target);
   }
 
   // optional .Game_Event game_event = 11 [deprecated = true];
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         11, _Internal::game_event(this), target, stream);
   }
 
   // optional .Referee.Command next_command = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       12, this->_internal_next_command(), target);
   }
@@ -1678,28 +1664,28 @@ failure:
   // repeated .GameEvent game_events = 13;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_game_events_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(13, this->_internal_game_events(i), target, stream);
+      InternalWriteMessageToArray(13, this->_internal_game_events(i), target, stream);
   }
 
   // repeated .ProposedGameEvent proposed_game_events = 14;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_proposed_game_events_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(14, this->_internal_proposed_game_events(i), target, stream);
+      InternalWriteMessageToArray(14, this->_internal_proposed_game_events(i), target, stream);
   }
 
   // optional int32 current_action_time_remaining = 15;
   if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(15, this->_internal_current_action_time_remaining(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Referee)
   return target;
@@ -1709,47 +1695,47 @@ size_t Referee::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Referee)
   size_t total_size = 0;
 
-  if (_internal_has_yellow()) {
+  if (has_yellow()) {
     // required .Referee.TeamInfo yellow = 7;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *yellow_);
   }
 
-  if (_internal_has_blue()) {
+  if (has_blue()) {
     // required .Referee.TeamInfo blue = 8;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *blue_);
   }
 
-  if (_internal_has_packet_timestamp()) {
+  if (has_packet_timestamp()) {
     // required uint64 packet_timestamp = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
         this->_internal_packet_timestamp());
   }
 
-  if (_internal_has_stage()) {
+  if (has_stage()) {
     // required .Referee.Stage stage = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_stage());
   }
 
-  if (_internal_has_command()) {
+  if (has_command()) {
     // required .Referee.Command command = 4;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_command());
   }
 
-  if (_internal_has_command_counter()) {
+  if (has_command_counter()) {
     // required uint32 command_counter = 5;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_command_counter());
   }
 
-  if (_internal_has_command_timestamp()) {
+  if (has_command_timestamp()) {
     // required uint64 command_timestamp = 6;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
@@ -1888,7 +1874,7 @@ void Referee::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Referee::MergeFrom(const Referee& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Referee)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1957,36 +1943,43 @@ void Referee::CopyFrom(const Referee& from) {
 }
 
 bool Referee::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(game_events_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(proposed_game_events_)) return false;
-  if (_internal_has_yellow()) {
-    if (!yellow_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x000003b3) != 0x000003b3) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->game_events())) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->proposed_game_events())) return false;
+  if (has_yellow()) {
+    if (!this->yellow_->IsInitialized()) return false;
   }
-  if (_internal_has_blue()) {
-    if (!blue_->IsInitialized()) return false;
+  if (has_blue()) {
+    if (!this->blue_->IsInitialized()) return false;
   }
-  if (_internal_has_designated_position()) {
-    if (!designated_position_->IsInitialized()) return false;
+  if (has_designated_position()) {
+    if (!this->designated_position_->IsInitialized()) return false;
   }
-  if (_internal_has_game_event()) {
-    if (!game_event_->IsInitialized()) return false;
+  if (has_game_event()) {
+    if (!this->game_event_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Referee::InternalSwap(Referee* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   game_events_.InternalSwap(&other->game_events_);
   proposed_game_events_.InternalSwap(&other->proposed_game_events_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Referee, current_action_time_remaining_)
-      + sizeof(Referee::current_action_time_remaining_)
-      - PROTOBUF_FIELD_OFFSET(Referee, yellow_)>(
-          reinterpret_cast<char*>(&yellow_),
-          reinterpret_cast<char*>(&other->yellow_));
+  swap(yellow_, other->yellow_);
+  swap(blue_, other->blue_);
+  swap(designated_position_, other->designated_position_);
+  swap(game_event_, other->game_event_);
+  swap(packet_timestamp_, other->packet_timestamp_);
+  swap(stage_, other->stage_);
+  swap(stage_time_left_, other->stage_time_left_);
+  swap(command_, other->command_);
+  swap(command_counter_, other->command_counter_);
+  swap(command_timestamp_, other->command_timestamp_);
+  swap(blue_team_on_positive_half_, other->blue_team_on_positive_half_);
+  swap(next_command_, other->next_command_);
+  swap(current_action_time_remaining_, other->current_action_time_remaining_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Referee::GetMetadata() const {
@@ -1996,6 +1989,10 @@ void Referee::InternalSwap(Referee* other) {
 
 // ===================================================================
 
+void ProposedGameEvent::InitAsDefaultInstance() {
+  ::_ProposedGameEvent_default_instance_._instance.get_mutable()->game_event_ = const_cast< ::GameEvent*>(
+      ::GameEvent::internal_default_instance());
+}
 class ProposedGameEvent::_Internal {
  public:
   using HasBits = decltype(std::declval<ProposedGameEvent>()._has_bits_);
@@ -2009,9 +2006,6 @@ class ProposedGameEvent::_Internal {
   static void set_has_game_event(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
-  }
 };
 
 const ::GameEvent&
@@ -2022,20 +2016,19 @@ void ProposedGameEvent::clear_game_event() {
   if (game_event_ != nullptr) game_event_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-ProposedGameEvent::ProposedGameEvent(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ProposedGameEvent::ProposedGameEvent()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ProposedGameEvent)
+  // @@protoc_insertion_point(constructor:ProposedGameEvent)
 }
 ProposedGameEvent::ProposedGameEvent(const ProposedGameEvent& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   proposer_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_proposer_id()) {
-    proposer_id_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_proposer_id(), 
-      GetArena());
+    proposer_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.proposer_id_);
   }
   if (from._internal_has_game_event()) {
     game_event_ = new ::GameEvent(*from.game_event_);
@@ -2047,34 +2040,31 @@ ProposedGameEvent::ProposedGameEvent(const ProposedGameEvent& from)
 }
 
 void ProposedGameEvent::SharedCtor() {
-proposer_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&game_event_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&valid_until_) -
-    reinterpret_cast<char*>(&game_event_)) + sizeof(valid_until_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ProposedGameEvent_ssl_5freferee_2eproto.base);
+  proposer_id_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&game_event_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&valid_until_) -
+      reinterpret_cast<char*>(&game_event_)) + sizeof(valid_until_));
 }
 
 ProposedGameEvent::~ProposedGameEvent() {
   // @@protoc_insertion_point(destructor:ProposedGameEvent)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ProposedGameEvent::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   proposer_id_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete game_event_;
 }
 
-void ProposedGameEvent::ArenaDtor(void* object) {
-  ProposedGameEvent* _this = reinterpret_cast< ProposedGameEvent* >(object);
-  (void)_this;
-}
-void ProposedGameEvent::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ProposedGameEvent::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const ProposedGameEvent& ProposedGameEvent::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ProposedGameEvent_ssl_5freferee_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ProposedGameEvent::Clear() {
 // @@protoc_insertion_point(message_clear_start:ProposedGameEvent)
@@ -2085,7 +2075,7 @@ void ProposedGameEvent::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      proposer_id_.ClearNonDefaultToEmpty();
+      proposer_id_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
       GOOGLE_DCHECK(game_event_ != nullptr);
@@ -2094,7 +2084,7 @@ void ProposedGameEvent::Clear() {
   }
   valid_until_ = PROTOBUF_ULONGLONG(0);
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* ProposedGameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -2109,18 +2099,14 @@ const char* ProposedGameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_valid_until(&has_bits);
-          valid_until_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          valid_until_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // required string proposer_id = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_proposer_id();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ProposedGameEvent.proposer_id");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_proposer_id(), ptr, ctx, "ProposedGameEvent.proposer_id");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2137,9 +2123,7 @@ const char* ProposedGameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESP
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2154,7 +2138,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ProposedGameEvent::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* ProposedGameEvent::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ProposedGameEvent)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2163,7 +2147,7 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required uint64 valid_until = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_valid_until(), target);
   }
 
@@ -2179,15 +2163,15 @@ failure:
 
   // required .GameEvent game_event = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::game_event(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ProposedGameEvent)
   return target;
@@ -2197,21 +2181,21 @@ size_t ProposedGameEvent::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ProposedGameEvent)
   size_t total_size = 0;
 
-  if (_internal_has_proposer_id()) {
+  if (has_proposer_id()) {
     // required string proposer_id = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_proposer_id());
   }
 
-  if (_internal_has_game_event()) {
+  if (has_game_event()) {
     // required .GameEvent game_event = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *game_event_);
   }
 
-  if (_internal_has_valid_until()) {
+  if (has_valid_until()) {
     // required uint64 valid_until = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
@@ -2274,14 +2258,15 @@ void ProposedGameEvent::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) 
 void ProposedGameEvent::MergeFrom(const ProposedGameEvent& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ProposedGameEvent)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000007u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_proposer_id(from._internal_proposer_id());
+      _has_bits_[0] |= 0x00000001u;
+      proposer_id_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.proposer_id_);
     }
     if (cached_has_bits & 0x00000002u) {
       _internal_mutable_game_event()->::GameEvent::MergeFrom(from._internal_game_event());
@@ -2308,24 +2293,21 @@ void ProposedGameEvent::CopyFrom(const ProposedGameEvent& from) {
 }
 
 bool ProposedGameEvent::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_game_event()) {
-    if (!game_event_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (has_game_event()) {
+    if (!this->game_event_->IsInitialized()) return false;
   }
   return true;
 }
 
 void ProposedGameEvent::InternalSwap(ProposedGameEvent* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  proposer_id_.Swap(&other->proposer_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ProposedGameEvent, valid_until_)
-      + sizeof(ProposedGameEvent::valid_until_)
-      - PROTOBUF_FIELD_OFFSET(ProposedGameEvent, game_event_)>(
-          reinterpret_cast<char*>(&game_event_),
-          reinterpret_cast<char*>(&other->game_event_));
+  proposer_id_.Swap(&other->proposer_id_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(game_event_, other->game_event_);
+  swap(valid_until_, other->valid_until_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ProposedGameEvent::GetMetadata() const {
@@ -2336,16 +2318,16 @@ void ProposedGameEvent::InternalSwap(ProposedGameEvent* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::Referee_TeamInfo* Arena::CreateMaybeMessage< ::Referee_TeamInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Referee_TeamInfo >(arena);
+  return Arena::CreateInternal< ::Referee_TeamInfo >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Referee_Point* Arena::CreateMaybeMessage< ::Referee_Point >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Referee_Point >(arena);
+  return Arena::CreateInternal< ::Referee_Point >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Referee* Arena::CreateMaybeMessage< ::Referee >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Referee >(arena);
+  return Arena::CreateInternal< ::Referee >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ProposedGameEvent* Arena::CreateMaybeMessage< ::ProposedGameEvent >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ProposedGameEvent >(arena);
+  return Arena::CreateInternal< ::ProposedGameEvent >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

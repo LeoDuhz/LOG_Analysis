@@ -14,23 +14,26 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
 namespace grSimMessage {
-constexpr grSimInfo::grSimInfo(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : id_(0u)
-  , isinfrared_(false){}
-struct grSimInfoDefaultTypeInternal {
-  constexpr grSimInfoDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~grSimInfoDefaultTypeInternal() {}
-  union {
-    grSimInfo _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT grSimInfoDefaultTypeInternal _grSimInfo_default_instance_;
+class grSimInfoDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<grSimInfo> _instance;
+} _grSimInfo_default_instance_;
 }  // namespace grSimMessage
+static void InitDefaultsscc_info_grSimInfo_grSimMessage_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::grSimMessage::_grSimInfo_default_instance_;
+    new (ptr) ::grSimMessage::grSimInfo();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::grSimMessage::grSimInfo::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_grSimInfo_grSimMessage_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_grSimInfo_grSimMessage_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_grSimMessage_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_grSimMessage_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_grSimMessage_2eproto = nullptr;
@@ -58,25 +61,28 @@ const char descriptor_table_protodef_grSimMessage_2eproto[] PROTOBUF_SECTION_VAR
   "\n\022grSimMessage.proto\022\014grSimMessage\"+\n\tgr"
   "SimInfo\022\n\n\002id\030\001 \002(\r\022\022\n\nisInfrared\030\002 \001(\010"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_grSimMessage_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_grSimMessage_2eproto = {
-  false, false, 79, descriptor_table_protodef_grSimMessage_2eproto, "grSimMessage.proto", 
-  &descriptor_table_grSimMessage_2eproto_once, nullptr, 0, 1,
-  schemas, file_default_instances, TableStruct_grSimMessage_2eproto::offsets,
-  file_level_metadata_grSimMessage_2eproto, file_level_enum_descriptors_grSimMessage_2eproto, file_level_service_descriptors_grSimMessage_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_grSimMessage_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_grSimMessage_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_grSimMessage_2eproto);
-  return descriptor_table_grSimMessage_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_grSimMessage_2eproto_sccs[1] = {
+  &scc_info_grSimInfo_grSimMessage_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_grSimMessage_2eproto_once;
+static bool descriptor_table_grSimMessage_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_grSimMessage_2eproto = {
+  &descriptor_table_grSimMessage_2eproto_initialized, descriptor_table_protodef_grSimMessage_2eproto, "grSimMessage.proto", 79,
+  &descriptor_table_grSimMessage_2eproto_once, descriptor_table_grSimMessage_2eproto_sccs, descriptor_table_grSimMessage_2eproto_deps, 1, 0,
+  schemas, file_default_instances, TableStruct_grSimMessage_2eproto::offsets,
+  file_level_metadata_grSimMessage_2eproto, 1, file_level_enum_descriptors_grSimMessage_2eproto, file_level_service_descriptors_grSimMessage_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_grSimMessage_2eproto(&descriptor_table_grSimMessage_2eproto);
+static bool dynamic_init_dummy_grSimMessage_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_grSimMessage_2eproto), true);
 namespace grSimMessage {
 
 // ===================================================================
 
+void grSimInfo::InitAsDefaultInstance() {
+}
 class grSimInfo::_Internal {
  public:
   using HasBits = decltype(std::declval<grSimInfo>()._has_bits_);
@@ -86,21 +92,18 @@ class grSimInfo::_Internal {
   static void set_has_isinfrared(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-grSimInfo::grSimInfo(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+grSimInfo::grSimInfo()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:grSimMessage.grSimInfo)
+  // @@protoc_insertion_point(constructor:grSimMessage.grSimInfo)
 }
 grSimInfo::grSimInfo(const grSimInfo& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&isinfrared_) -
     reinterpret_cast<char*>(&id_)) + sizeof(isinfrared_));
@@ -108,31 +111,27 @@ grSimInfo::grSimInfo(const grSimInfo& from)
 }
 
 void grSimInfo::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&isinfrared_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(isinfrared_));
+  ::memset(&id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&isinfrared_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(isinfrared_));
 }
 
 grSimInfo::~grSimInfo() {
   // @@protoc_insertion_point(destructor:grSimMessage.grSimInfo)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void grSimInfo::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void grSimInfo::ArenaDtor(void* object) {
-  grSimInfo* _this = reinterpret_cast< grSimInfo* >(object);
-  (void)_this;
-}
-void grSimInfo::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void grSimInfo::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const grSimInfo& grSimInfo::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_grSimInfo_grSimMessage_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void grSimInfo::Clear() {
 // @@protoc_insertion_point(message_clear_start:grSimMessage.grSimInfo)
@@ -147,7 +146,7 @@ void grSimInfo::Clear() {
         reinterpret_cast<char*>(&id_)) + sizeof(isinfrared_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* grSimInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -162,7 +161,7 @@ const char* grSimInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_id(&has_bits);
-          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -170,7 +169,7 @@ const char* grSimInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_isinfrared(&has_bits);
-          isinfrared_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          isinfrared_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -180,9 +179,7 @@ const char* grSimInfo::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -197,7 +194,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* grSimInfo::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* grSimInfo::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:grSimMessage.grSimInfo)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -206,19 +203,19 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required uint32 id = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_id(), target);
   }
 
   // optional bool isInfrared = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_isinfrared(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:grSimMessage.grSimInfo)
   return target;
@@ -229,7 +226,7 @@ size_t grSimInfo::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required uint32 id = 1;
-  if (_internal_has_id()) {
+  if (has_id()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_id());
@@ -271,7 +268,7 @@ void grSimInfo::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void grSimInfo::MergeFrom(const grSimInfo& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:grSimMessage.grSimInfo)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -302,20 +299,16 @@ void grSimInfo::CopyFrom(const grSimInfo& from) {
 }
 
 bool grSimInfo::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void grSimInfo::InternalSwap(grSimInfo* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(grSimInfo, isinfrared_)
-      + sizeof(grSimInfo::isinfrared_)
-      - PROTOBUF_FIELD_OFFSET(grSimInfo, id_)>(
-          reinterpret_cast<char*>(&id_),
-          reinterpret_cast<char*>(&other->id_));
+  swap(id_, other->id_);
+  swap(isinfrared_, other->isinfrared_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata grSimInfo::GetMetadata() const {
@@ -327,7 +320,7 @@ void grSimInfo::InternalSwap(grSimInfo* other) {
 }  // namespace grSimMessage
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::grSimMessage::grSimInfo* Arena::CreateMaybeMessage< ::grSimMessage::grSimInfo >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::grSimMessage::grSimInfo >(arena);
+  return Arena::CreateInternal< ::grSimMessage::grSimInfo >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

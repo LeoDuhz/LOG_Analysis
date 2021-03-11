@@ -14,62 +14,97 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fteam_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fcommon_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fcommon_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto;
+class TeamRegistrationDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TeamRegistration> _instance;
+} _TeamRegistration_default_instance_;
+class TeamToControllerDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<TeamToController> _instance;
+  ::PROTOBUF_NAMESPACE_ID::int32 desired_keeper_;
+  int advantage_response_;
+  bool substitute_bot_;
+  bool ping_;
+} _TeamToController_default_instance_;
+class ControllerToTeamDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ControllerToTeam> _instance;
+  const ::ControllerReply* controller_reply_;
+  const ::AdvantageChoice* advantage_choice_;
+} _ControllerToTeam_default_instance_;
+class AdvantageChoiceDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<AdvantageChoice> _instance;
+} _AdvantageChoice_default_instance_;
+static void InitDefaultsscc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr TeamRegistration::TeamRegistration(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : team_name_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , signature_(nullptr){}
-struct TeamRegistrationDefaultTypeInternal {
-  constexpr TeamRegistrationDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~TeamRegistrationDefaultTypeInternal() {}
-  union {
-    TeamRegistration _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TeamRegistrationDefaultTypeInternal _TeamRegistration_default_instance_;
-constexpr TeamToController::TeamToController(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : signature_(nullptr)
-  , _oneof_case_{}{}
-struct TeamToControllerDefaultTypeInternal {
-  constexpr TeamToControllerDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~TeamToControllerDefaultTypeInternal() {}
-  union {
-    TeamToController _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT TeamToControllerDefaultTypeInternal _TeamToController_default_instance_;
-constexpr ControllerToTeam::ControllerToTeam(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : _oneof_case_{}{}
-struct ControllerToTeamDefaultTypeInternal {
-  constexpr ControllerToTeamDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~ControllerToTeamDefaultTypeInternal() {}
-  union {
-    ControllerToTeam _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ControllerToTeamDefaultTypeInternal _ControllerToTeam_default_instance_;
-constexpr AdvantageChoice::AdvantageChoice(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : bot_crash_unique_(nullptr)
-  , bot_pushed_bot_(nullptr)
-  , attacker_touched_opponent_in_defense_area_(nullptr)
-  , foul_(0)
-{}
-struct AdvantageChoiceDefaultTypeInternal {
-  constexpr AdvantageChoiceDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~AdvantageChoiceDefaultTypeInternal() {}
-  union {
-    AdvantageChoice _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT AdvantageChoiceDefaultTypeInternal _AdvantageChoice_default_instance_;
+  {
+    void* ptr = &::_AdvantageChoice_default_instance_;
+    new (ptr) ::AdvantageChoice();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::AdvantageChoice::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto}, {
+      &scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,}};
+
+static void InitDefaultsscc_info_ControllerToTeam_ssl_5fgame_5fcontroller_5fteam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ControllerToTeam_default_instance_;
+    new (ptr) ::ControllerToTeam();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ControllerToTeam::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_ControllerToTeam_ssl_5fgame_5fcontroller_5fteam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_ControllerToTeam_ssl_5fgame_5fcontroller_5fteam_2eproto}, {
+      &scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,
+      &scc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto.base,}};
+
+static void InitDefaultsscc_info_TeamRegistration_ssl_5fgame_5fcontroller_5fteam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_TeamRegistration_default_instance_;
+    new (ptr) ::TeamRegistration();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::TeamRegistration::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TeamRegistration_ssl_5fgame_5fcontroller_5fteam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_TeamRegistration_ssl_5fgame_5fcontroller_5fteam_2eproto}, {
+      &scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_TeamToController_ssl_5fgame_5fcontroller_5fteam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_TeamToController_default_instance_;
+    new (ptr) ::TeamToController();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::TeamToController::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_TeamToController_ssl_5fgame_5fcontroller_5fteam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_TeamToController_ssl_5fgame_5fcontroller_5fteam_2eproto}, {
+      &scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ssl_5fgame_5fcontroller_5fteam_2eproto[4];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fteam_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ssl_5fgame_5fcontroller_5fteam_2eproto = nullptr;
@@ -90,24 +125,26 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ssl_5fgame_5fcontroller_5fteam
   PROTOBUF_FIELD_OFFSET(::TeamToController, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::TeamToController, signature_),
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  offsetof(::TeamToControllerDefaultTypeInternal, desired_keeper_),
+  offsetof(::TeamToControllerDefaultTypeInternal, advantage_response_),
+  offsetof(::TeamToControllerDefaultTypeInternal, substitute_bot_),
+  offsetof(::TeamToControllerDefaultTypeInternal, ping_),
   PROTOBUF_FIELD_OFFSET(::TeamToController, msg_),
   0,
   ~0u,
   ~0u,
   ~0u,
   ~0u,
-  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::ControllerToTeam, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::ControllerToTeam, _internal_metadata_),
   ~0u,  // no _extensions_
   PROTOBUF_FIELD_OFFSET(::ControllerToTeam, _oneof_case_[0]),
   ~0u,  // no _weak_field_map_
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  offsetof(::ControllerToTeamDefaultTypeInternal, controller_reply_),
+  offsetof(::ControllerToTeamDefaultTypeInternal, advantage_choice_),
   PROTOBUF_FIELD_OFFSET(::ControllerToTeam, msg_),
+  ~0u,
+  ~0u,
   PROTOBUF_FIELD_OFFSET(::AdvantageChoice, _has_bits_),
   PROTOBUF_FIELD_OFFSET(::AdvantageChoice, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -125,8 +162,8 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ssl_5fgame_5fcontroller_5fteam
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   { 0, 7, sizeof(::TeamRegistration)},
   { 9, 20, sizeof(::TeamToController)},
-  { 25, -1, sizeof(::ControllerToTeam)},
-  { 33, 42, sizeof(::AdvantageChoice)},
+  { 25, 33, sizeof(::ControllerToTeam)},
+  { 35, 44, sizeof(::AdvantageChoice)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
@@ -165,21 +202,23 @@ static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor
   &::descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto,
   &::descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto = {
-  false, false, 895, descriptor_table_protodef_ssl_5fgame_5fcontroller_5fteam_2eproto, "ssl_game_controller_team.proto", 
-  &descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_once, descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_deps, 2, 4,
-  schemas, file_default_instances, TableStruct_ssl_5fgame_5fcontroller_5fteam_2eproto::offsets,
-  file_level_metadata_ssl_5fgame_5fcontroller_5fteam_2eproto, file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fteam_2eproto, file_level_service_descriptors_ssl_5fgame_5fcontroller_5fteam_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_sccs[4] = {
+  &scc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto.base,
+  &scc_info_ControllerToTeam_ssl_5fgame_5fcontroller_5fteam_2eproto.base,
+  &scc_info_TeamRegistration_ssl_5fgame_5fcontroller_5fteam_2eproto.base,
+  &scc_info_TeamToController_ssl_5fgame_5fcontroller_5fteam_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto);
-  return descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_once;
+static bool descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto = {
+  &descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_initialized, descriptor_table_protodef_ssl_5fgame_5fcontroller_5fteam_2eproto, "ssl_game_controller_team.proto", 895,
+  &descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_once, descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_sccs, descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto_deps, 4, 2,
+  schemas, file_default_instances, TableStruct_ssl_5fgame_5fcontroller_5fteam_2eproto::offsets,
+  file_level_metadata_ssl_5fgame_5fcontroller_5fteam_2eproto, 4, file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fteam_2eproto, file_level_service_descriptors_ssl_5fgame_5fcontroller_5fteam_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ssl_5fgame_5fcontroller_5fteam_2eproto(&descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto);
+static bool dynamic_init_dummy_ssl_5fgame_5fcontroller_5fteam_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto), true);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* TeamToController_AdvantageResponse_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fteam_2eproto);
   return file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fteam_2eproto[0];
@@ -230,6 +269,10 @@ constexpr int AdvantageChoice::Foul_ARRAYSIZE;
 
 // ===================================================================
 
+void TeamRegistration::InitAsDefaultInstance() {
+  ::_TeamRegistration_default_instance_._instance.get_mutable()->signature_ = const_cast< ::Signature*>(
+      ::Signature::internal_default_instance());
+}
 class TeamRegistration::_Internal {
  public:
   using HasBits = decltype(std::declval<TeamRegistration>()._has_bits_);
@@ -239,9 +282,6 @@ class TeamRegistration::_Internal {
   static const ::Signature& signature(const TeamRegistration* msg);
   static void set_has_signature(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
   }
 };
 
@@ -253,20 +293,19 @@ void TeamRegistration::clear_signature() {
   if (signature_ != nullptr) signature_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-TeamRegistration::TeamRegistration(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+TeamRegistration::TeamRegistration()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:TeamRegistration)
+  // @@protoc_insertion_point(constructor:TeamRegistration)
 }
 TeamRegistration::TeamRegistration(const TeamRegistration& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   team_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_team_name()) {
-    team_name_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_team_name(), 
-      GetArena());
+    team_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.team_name_);
   }
   if (from._internal_has_signature()) {
     signature_ = new ::Signature(*from.signature_);
@@ -277,31 +316,29 @@ TeamRegistration::TeamRegistration(const TeamRegistration& from)
 }
 
 void TeamRegistration::SharedCtor() {
-team_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-signature_ = nullptr;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TeamRegistration_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  team_name_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  signature_ = nullptr;
 }
 
 TeamRegistration::~TeamRegistration() {
   // @@protoc_insertion_point(destructor:TeamRegistration)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void TeamRegistration::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   team_name_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (this != internal_default_instance()) delete signature_;
 }
 
-void TeamRegistration::ArenaDtor(void* object) {
-  TeamRegistration* _this = reinterpret_cast< TeamRegistration* >(object);
-  (void)_this;
-}
-void TeamRegistration::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TeamRegistration::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const TeamRegistration& TeamRegistration::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TeamRegistration_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TeamRegistration::Clear() {
 // @@protoc_insertion_point(message_clear_start:TeamRegistration)
@@ -312,7 +349,7 @@ void TeamRegistration::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      team_name_.ClearNonDefaultToEmpty();
+      team_name_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
       GOOGLE_DCHECK(signature_ != nullptr);
@@ -320,7 +357,7 @@ void TeamRegistration::Clear() {
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* TeamRegistration::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -334,11 +371,7 @@ const char* TeamRegistration::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
       // required string team_name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_team_name();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TeamRegistration.team_name");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_team_name(), ptr, ctx, "TeamRegistration.team_name");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -355,9 +388,7 @@ const char* TeamRegistration::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -372,7 +403,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TeamRegistration::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* TeamRegistration::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TeamRegistration)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -391,15 +422,15 @@ failure:
 
   // optional .Signature signature = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::signature(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TeamRegistration)
   return target;
@@ -410,7 +441,7 @@ size_t TeamRegistration::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required string team_name = 1;
-  if (_internal_has_team_name()) {
+  if (has_team_name()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_team_name());
@@ -454,14 +485,15 @@ void TeamRegistration::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void TeamRegistration::MergeFrom(const TeamRegistration& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TeamRegistration)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_team_name(from._internal_team_name());
+      _has_bits_[0] |= 0x00000001u;
+      team_name_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.team_name_);
     }
     if (cached_has_bits & 0x00000002u) {
       _internal_mutable_signature()->::Signature::MergeFrom(from._internal_signature());
@@ -484,18 +516,19 @@ void TeamRegistration::CopyFrom(const TeamRegistration& from) {
 }
 
 bool TeamRegistration::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_signature()) {
-    if (!signature_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (has_signature()) {
+    if (!this->signature_->IsInitialized()) return false;
   }
   return true;
 }
 
 void TeamRegistration::InternalSwap(TeamRegistration* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  team_name_.Swap(&other->team_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  team_name_.Swap(&other->team_name_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(signature_, other->signature_);
 }
 
@@ -506,6 +539,14 @@ void TeamRegistration::InternalSwap(TeamRegistration* other) {
 
 // ===================================================================
 
+void TeamToController::InitAsDefaultInstance() {
+  ::_TeamToController_default_instance_._instance.get_mutable()->signature_ = const_cast< ::Signature*>(
+      ::Signature::internal_default_instance());
+  ::_TeamToController_default_instance_.desired_keeper_ = 0;
+  ::_TeamToController_default_instance_.advantage_response_ = 0;
+  ::_TeamToController_default_instance_.substitute_bot_ = false;
+  ::_TeamToController_default_instance_.ping_ = false;
+}
 class TeamToController::_Internal {
  public:
   using HasBits = decltype(std::declval<TeamToController>()._has_bits_);
@@ -523,16 +564,16 @@ void TeamToController::clear_signature() {
   if (signature_ != nullptr) signature_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-TeamToController::TeamToController(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+TeamToController::TeamToController()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:TeamToController)
+  // @@protoc_insertion_point(constructor:TeamToController)
 }
 TeamToController::TeamToController(const TeamToController& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_signature()) {
     signature_ = new ::Signature(*from.signature_);
   } else {
@@ -564,33 +605,31 @@ TeamToController::TeamToController(const TeamToController& from)
 }
 
 void TeamToController::SharedCtor() {
-signature_ = nullptr;
-clear_has_msg();
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_TeamToController_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  signature_ = nullptr;
+  clear_has_msg();
 }
 
 TeamToController::~TeamToController() {
   // @@protoc_insertion_point(destructor:TeamToController)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void TeamToController::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete signature_;
   if (has_msg()) {
     clear_msg();
   }
 }
 
-void TeamToController::ArenaDtor(void* object) {
-  TeamToController* _this = reinterpret_cast< TeamToController* >(object);
-  (void)_this;
-}
-void TeamToController::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void TeamToController::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const TeamToController& TeamToController::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_TeamToController_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void TeamToController::clear_msg() {
 // @@protoc_insertion_point(one_of_clear_start:TeamToController)
@@ -632,7 +671,7 @@ void TeamToController::Clear() {
   }
   clear_msg();
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* TeamToController::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -650,17 +689,17 @@ const char* TeamToController::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // int32 desired_keeper = 2;
+      // optional int32 desired_keeper = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          _internal_set_desired_keeper(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          _internal_set_desired_keeper(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .TeamToController.AdvantageResponse advantage_response = 3;
+      // optional .TeamToController.AdvantageResponse advantage_response = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::TeamToController_AdvantageResponse_IsValid(val))) {
             _internal_set_advantage_response(static_cast<::TeamToController_AdvantageResponse>(val));
@@ -669,17 +708,17 @@ const char* TeamToController::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           }
         } else goto handle_unusual;
         continue;
-      // bool substitute_bot = 4;
+      // optional bool substitute_bot = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          _internal_set_substitute_bot(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          _internal_set_substitute_bot(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // bool ping = 5;
+      // optional bool ping = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          _internal_set_ping(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          _internal_set_ping(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -689,9 +728,7 @@ const char* TeamToController::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -706,7 +743,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* TeamToController::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* TeamToController::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TeamToController)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -715,31 +752,31 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional .Signature signature = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::signature(this), target, stream);
   }
 
   switch (msg_case()) {
     case kDesiredKeeper: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_desired_keeper(), target);
       break;
     }
     case kAdvantageResponse: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
         3, this->_internal_advantage_response(), target);
       break;
     }
     case kSubstituteBot: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(4, this->_internal_substitute_bot(), target);
       break;
     }
     case kPing: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_ping(), target);
       break;
     }
@@ -747,7 +784,7 @@ failure:
   }
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TeamToController)
   return target;
@@ -770,25 +807,25 @@ size_t TeamToController::ByteSizeLong() const {
   }
 
   switch (msg_case()) {
-    // int32 desired_keeper = 2;
+    // optional int32 desired_keeper = 2;
     case kDesiredKeeper: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
           this->_internal_desired_keeper());
       break;
     }
-    // .TeamToController.AdvantageResponse advantage_response = 3;
+    // optional .TeamToController.AdvantageResponse advantage_response = 3;
     case kAdvantageResponse: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_advantage_response());
       break;
     }
-    // bool substitute_bot = 4;
+    // optional bool substitute_bot = 4;
     case kSubstituteBot: {
       total_size += 1 + 1;
       break;
     }
-    // bool ping = 5;
+    // optional bool ping = 5;
     case kPing: {
       total_size += 1 + 1;
       break;
@@ -824,7 +861,7 @@ void TeamToController::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void TeamToController::MergeFrom(const TeamToController& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:TeamToController)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -869,15 +906,15 @@ void TeamToController::CopyFrom(const TeamToController& from) {
 }
 
 bool TeamToController::IsInitialized() const {
-  if (_internal_has_signature()) {
-    if (!signature_->IsInitialized()) return false;
+  if (has_signature()) {
+    if (!this->signature_->IsInitialized()) return false;
   }
   return true;
 }
 
 void TeamToController::InternalSwap(TeamToController* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(signature_, other->signature_);
   swap(msg_, other->msg_);
@@ -891,8 +928,15 @@ void TeamToController::InternalSwap(TeamToController* other) {
 
 // ===================================================================
 
+void ControllerToTeam::InitAsDefaultInstance() {
+  ::_ControllerToTeam_default_instance_.controller_reply_ = const_cast< ::ControllerReply*>(
+      ::ControllerReply::internal_default_instance());
+  ::_ControllerToTeam_default_instance_.advantage_choice_ = const_cast< ::AdvantageChoice*>(
+      ::AdvantageChoice::internal_default_instance());
+}
 class ControllerToTeam::_Internal {
  public:
+  using HasBits = decltype(std::declval<ControllerToTeam>()._has_bits_);
   static const ::ControllerReply& controller_reply(const ControllerToTeam* msg);
   static const ::AdvantageChoice& advantage_choice(const ControllerToTeam* msg);
 };
@@ -906,11 +950,10 @@ ControllerToTeam::_Internal::advantage_choice(const ControllerToTeam* msg) {
   return *msg->msg_.advantage_choice_;
 }
 void ControllerToTeam::set_allocated_controller_reply(::ControllerReply* controller_reply) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_msg();
   if (controller_reply) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(controller_reply)->GetArena();
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       controller_reply = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, controller_reply, submessage_arena);
@@ -922,18 +965,15 @@ void ControllerToTeam::set_allocated_controller_reply(::ControllerReply* control
 }
 void ControllerToTeam::clear_controller_reply() {
   if (_internal_has_controller_reply()) {
-    if (GetArena() == nullptr) {
-      delete msg_.controller_reply_;
-    }
+    delete msg_.controller_reply_;
     clear_has_msg();
   }
 }
 void ControllerToTeam::set_allocated_advantage_choice(::AdvantageChoice* advantage_choice) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_msg();
   if (advantage_choice) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(advantage_choice);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       advantage_choice = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, advantage_choice, submessage_arena);
@@ -943,15 +983,16 @@ void ControllerToTeam::set_allocated_advantage_choice(::AdvantageChoice* advanta
   }
   // @@protoc_insertion_point(field_set_allocated:ControllerToTeam.advantage_choice)
 }
-ControllerToTeam::ControllerToTeam(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ControllerToTeam::ControllerToTeam()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ControllerToTeam)
+  // @@protoc_insertion_point(constructor:ControllerToTeam)
 }
 ControllerToTeam::ControllerToTeam(const ControllerToTeam& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
+      _has_bits_(from._has_bits_) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   clear_has_msg();
   switch (from.msg_case()) {
     case kControllerReply: {
@@ -970,45 +1011,39 @@ ControllerToTeam::ControllerToTeam(const ControllerToTeam& from)
 }
 
 void ControllerToTeam::SharedCtor() {
-clear_has_msg();
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ControllerToTeam_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  clear_has_msg();
 }
 
 ControllerToTeam::~ControllerToTeam() {
   // @@protoc_insertion_point(destructor:ControllerToTeam)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ControllerToTeam::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_msg()) {
     clear_msg();
   }
 }
 
-void ControllerToTeam::ArenaDtor(void* object) {
-  ControllerToTeam* _this = reinterpret_cast< ControllerToTeam* >(object);
-  (void)_this;
-}
-void ControllerToTeam::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ControllerToTeam::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const ControllerToTeam& ControllerToTeam::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ControllerToTeam_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ControllerToTeam::clear_msg() {
 // @@protoc_insertion_point(one_of_clear_start:ControllerToTeam)
   switch (msg_case()) {
     case kControllerReply: {
-      if (GetArena() == nullptr) {
-        delete msg_.controller_reply_;
-      }
+      delete msg_.controller_reply_;
       break;
     }
     case kAdvantageChoice: {
-      if (GetArena() == nullptr) {
-        delete msg_.advantage_choice_;
-      }
+      delete msg_.advantage_choice_;
       break;
     }
     case MSG_NOT_SET: {
@@ -1026,7 +1061,8 @@ void ControllerToTeam::Clear() {
   (void) cached_has_bits;
 
   clear_msg();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _has_bits_.Clear();
+  _internal_metadata_.Clear();
 }
 
 const char* ControllerToTeam::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1036,14 +1072,14 @@ const char* ControllerToTeam::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .ControllerReply controller_reply = 1;
+      // optional .ControllerReply controller_reply = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_controller_reply(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .AdvantageChoice advantage_choice = 2;
+      // optional .AdvantageChoice advantage_choice = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_advantage_choice(), ptr);
@@ -1056,9 +1092,7 @@ const char* ControllerToTeam::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1072,7 +1106,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ControllerToTeam::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* ControllerToTeam::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ControllerToTeam)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1080,16 +1114,16 @@ failure:
 
   switch (msg_case()) {
     case kControllerReply: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           1, _Internal::controller_reply(this), target, stream);
       break;
     }
     case kAdvantageChoice: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           2, _Internal::advantage_choice(this), target, stream);
       break;
     }
@@ -1097,7 +1131,7 @@ failure:
   }
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ControllerToTeam)
   return target;
@@ -1112,14 +1146,14 @@ size_t ControllerToTeam::ByteSizeLong() const {
   (void) cached_has_bits;
 
   switch (msg_case()) {
-    // .ControllerReply controller_reply = 1;
+    // optional .ControllerReply controller_reply = 1;
     case kControllerReply: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *msg_.controller_reply_);
       break;
     }
-    // .AdvantageChoice advantage_choice = 2;
+    // optional .AdvantageChoice advantage_choice = 2;
     case kAdvantageChoice: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -1157,7 +1191,7 @@ void ControllerToTeam::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ControllerToTeam::MergeFrom(const ControllerToTeam& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ControllerToTeam)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1210,7 +1244,8 @@ bool ControllerToTeam::IsInitialized() const {
 
 void ControllerToTeam::InternalSwap(ControllerToTeam* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(_has_bits_[0], other->_has_bits_[0]);
   swap(msg_, other->msg_);
   swap(_oneof_case_[0], other->_oneof_case_[0]);
 }
@@ -1222,6 +1257,14 @@ void ControllerToTeam::InternalSwap(ControllerToTeam* other) {
 
 // ===================================================================
 
+void AdvantageChoice::InitAsDefaultInstance() {
+  ::_AdvantageChoice_default_instance_._instance.get_mutable()->bot_crash_unique_ = const_cast< ::GameEvent_BotCrashUnique*>(
+      ::GameEvent_BotCrashUnique::internal_default_instance());
+  ::_AdvantageChoice_default_instance_._instance.get_mutable()->bot_pushed_bot_ = const_cast< ::GameEvent_BotPushedBot*>(
+      ::GameEvent_BotPushedBot::internal_default_instance());
+  ::_AdvantageChoice_default_instance_._instance.get_mutable()->attacker_touched_opponent_in_defense_area_ = const_cast< ::GameEvent_AttackerTouchedOpponentInDefenseArea*>(
+      ::GameEvent_AttackerTouchedOpponentInDefenseArea::internal_default_instance());
+}
 class AdvantageChoice::_Internal {
  public:
   using HasBits = decltype(std::declval<AdvantageChoice>()._has_bits_);
@@ -1239,9 +1282,6 @@ class AdvantageChoice::_Internal {
   static const ::GameEvent_AttackerTouchedOpponentInDefenseArea& attacker_touched_opponent_in_defense_area(const AdvantageChoice* msg);
   static void set_has_attacker_touched_opponent_in_defense_area(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000008) ^ 0x00000008) != 0;
   }
 };
 
@@ -1269,16 +1309,16 @@ void AdvantageChoice::clear_attacker_touched_opponent_in_defense_area() {
   if (attacker_touched_opponent_in_defense_area_ != nullptr) attacker_touched_opponent_in_defense_area_->Clear();
   _has_bits_[0] &= ~0x00000004u;
 }
-AdvantageChoice::AdvantageChoice(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+AdvantageChoice::AdvantageChoice()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:AdvantageChoice)
+  // @@protoc_insertion_point(constructor:AdvantageChoice)
 }
 AdvantageChoice::AdvantageChoice(const AdvantageChoice& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_bot_crash_unique()) {
     bot_crash_unique_ = new ::GameEvent_BotCrashUnique(*from.bot_crash_unique_);
   } else {
@@ -1299,34 +1339,31 @@ AdvantageChoice::AdvantageChoice(const AdvantageChoice& from)
 }
 
 void AdvantageChoice::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&bot_crash_unique_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&foul_) -
-    reinterpret_cast<char*>(&bot_crash_unique_)) + sizeof(foul_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  ::memset(&bot_crash_unique_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&foul_) -
+      reinterpret_cast<char*>(&bot_crash_unique_)) + sizeof(foul_));
 }
 
 AdvantageChoice::~AdvantageChoice() {
   // @@protoc_insertion_point(destructor:AdvantageChoice)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void AdvantageChoice::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete bot_crash_unique_;
   if (this != internal_default_instance()) delete bot_pushed_bot_;
   if (this != internal_default_instance()) delete attacker_touched_opponent_in_defense_area_;
 }
 
-void AdvantageChoice::ArenaDtor(void* object) {
-  AdvantageChoice* _this = reinterpret_cast< AdvantageChoice* >(object);
-  (void)_this;
-}
-void AdvantageChoice::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void AdvantageChoice::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const AdvantageChoice& AdvantageChoice::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_AdvantageChoice_ssl_5fgame_5fcontroller_5fteam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void AdvantageChoice::Clear() {
 // @@protoc_insertion_point(message_clear_start:AdvantageChoice)
@@ -1351,7 +1388,7 @@ void AdvantageChoice::Clear() {
   }
   foul_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* AdvantageChoice::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1365,7 +1402,7 @@ const char* AdvantageChoice::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // required .AdvantageChoice.Foul foul = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::AdvantageChoice_Foul_IsValid(val))) {
             _internal_set_foul(static_cast<::AdvantageChoice_Foul>(val));
@@ -1401,9 +1438,7 @@ const char* AdvantageChoice::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1418,7 +1453,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* AdvantageChoice::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* AdvantageChoice::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:AdvantageChoice)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1427,38 +1462,38 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .AdvantageChoice.Foul foul = 1;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_foul(), target);
   }
 
   // optional .GameEvent.BotCrashUnique bot_crash_unique = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::bot_crash_unique(this), target, stream);
   }
 
   // optional .GameEvent.BotPushedBot bot_pushed_bot = 3;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::bot_pushed_bot(this), target, stream);
   }
 
   // optional .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area = 4;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::attacker_touched_opponent_in_defense_area(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:AdvantageChoice)
   return target;
@@ -1469,7 +1504,7 @@ size_t AdvantageChoice::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .AdvantageChoice.Foul foul = 1;
-  if (_internal_has_foul()) {
+  if (has_foul()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_foul());
   }
@@ -1528,7 +1563,7 @@ void AdvantageChoice::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void AdvantageChoice::MergeFrom(const AdvantageChoice& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:AdvantageChoice)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1565,29 +1600,27 @@ void AdvantageChoice::CopyFrom(const AdvantageChoice& from) {
 }
 
 bool AdvantageChoice::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_bot_crash_unique()) {
-    if (!bot_crash_unique_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000008) != 0x00000008) return false;
+  if (has_bot_crash_unique()) {
+    if (!this->bot_crash_unique_->IsInitialized()) return false;
   }
-  if (_internal_has_bot_pushed_bot()) {
-    if (!bot_pushed_bot_->IsInitialized()) return false;
+  if (has_bot_pushed_bot()) {
+    if (!this->bot_pushed_bot_->IsInitialized()) return false;
   }
-  if (_internal_has_attacker_touched_opponent_in_defense_area()) {
-    if (!attacker_touched_opponent_in_defense_area_->IsInitialized()) return false;
+  if (has_attacker_touched_opponent_in_defense_area()) {
+    if (!this->attacker_touched_opponent_in_defense_area_->IsInitialized()) return false;
   }
   return true;
 }
 
 void AdvantageChoice::InternalSwap(AdvantageChoice* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(AdvantageChoice, foul_)
-      + sizeof(AdvantageChoice::foul_)
-      - PROTOBUF_FIELD_OFFSET(AdvantageChoice, bot_crash_unique_)>(
-          reinterpret_cast<char*>(&bot_crash_unique_),
-          reinterpret_cast<char*>(&other->bot_crash_unique_));
+  swap(bot_crash_unique_, other->bot_crash_unique_);
+  swap(bot_pushed_bot_, other->bot_pushed_bot_);
+  swap(attacker_touched_opponent_in_defense_area_, other->attacker_touched_opponent_in_defense_area_);
+  swap(foul_, other->foul_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata AdvantageChoice::GetMetadata() const {
@@ -1598,16 +1631,16 @@ void AdvantageChoice::InternalSwap(AdvantageChoice* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::TeamRegistration* Arena::CreateMaybeMessage< ::TeamRegistration >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::TeamRegistration >(arena);
+  return Arena::CreateInternal< ::TeamRegistration >(arena);
 }
 template<> PROTOBUF_NOINLINE ::TeamToController* Arena::CreateMaybeMessage< ::TeamToController >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::TeamToController >(arena);
+  return Arena::CreateInternal< ::TeamToController >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ControllerToTeam* Arena::CreateMaybeMessage< ::ControllerToTeam >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ControllerToTeam >(arena);
+  return Arena::CreateInternal< ::ControllerToTeam >(arena);
 }
 template<> PROTOBUF_NOINLINE ::AdvantageChoice* Arena::CreateMaybeMessage< ::AdvantageChoice >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::AdvantageChoice >(arena);
+  return Arena::CreateInternal< ::AdvantageChoice >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

@@ -14,79 +14,96 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+class BotIdDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<BotId> _instance;
+} _BotId_default_instance_;
+class LocationDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Location> _instance;
+} _Location_default_instance_;
+class ControllerReplyDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<ControllerReply> _instance;
+} _ControllerReply_default_instance_;
+class SignatureDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Signature> _instance;
+} _Signature_default_instance_;
+class BallSpeedMeasurementDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<BallSpeedMeasurement> _instance;
+} _BallSpeedMeasurement_default_instance_;
+static void InitDefaultsscc_info_BallSpeedMeasurement_ssl_5fgame_5fcontroller_5fcommon_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr BotId::BotId(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : id_(0)
-  , team_(0)
-{}
-struct BotIdDefaultTypeInternal {
-  constexpr BotIdDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~BotIdDefaultTypeInternal() {}
-  union {
-    BotId _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT BotIdDefaultTypeInternal _BotId_default_instance_;
-constexpr Location::Location(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : x_(0)
-  , y_(0){}
-struct LocationDefaultTypeInternal {
-  constexpr LocationDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~LocationDefaultTypeInternal() {}
-  union {
-    Location _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LocationDefaultTypeInternal _Location_default_instance_;
-constexpr ControllerReply::ControllerReply(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : reason_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , next_token_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , status_code_(0)
+  {
+    void* ptr = &::_BallSpeedMeasurement_default_instance_;
+    new (ptr) ::BallSpeedMeasurement();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::BallSpeedMeasurement::InitAsDefaultInstance();
+}
 
-  , verification_(0)
-{}
-struct ControllerReplyDefaultTypeInternal {
-  constexpr ControllerReplyDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~ControllerReplyDefaultTypeInternal() {}
-  union {
-    ControllerReply _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT ControllerReplyDefaultTypeInternal _ControllerReply_default_instance_;
-constexpr Signature::Signature(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : token_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , pkcs1v15_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string){}
-struct SignatureDefaultTypeInternal {
-  constexpr SignatureDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~SignatureDefaultTypeInternal() {}
-  union {
-    Signature _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT SignatureDefaultTypeInternal _Signature_default_instance_;
-constexpr BallSpeedMeasurement::BallSpeedMeasurement(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : timestamp_(PROTOBUF_ULONGLONG(0))
-  , ball_speed_(0)
-  , initial_ball_speed_(0){}
-struct BallSpeedMeasurementDefaultTypeInternal {
-  constexpr BallSpeedMeasurementDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~BallSpeedMeasurementDefaultTypeInternal() {}
-  union {
-    BallSpeedMeasurement _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT BallSpeedMeasurementDefaultTypeInternal _BallSpeedMeasurement_default_instance_;
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BallSpeedMeasurement_ssl_5fgame_5fcontroller_5fcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_BallSpeedMeasurement_ssl_5fgame_5fcontroller_5fcommon_2eproto}, {}};
+
+static void InitDefaultsscc_info_BotId_ssl_5fgame_5fcontroller_5fcommon_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_BotId_default_instance_;
+    new (ptr) ::BotId();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::BotId::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BotId_ssl_5fgame_5fcontroller_5fcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_BotId_ssl_5fgame_5fcontroller_5fcommon_2eproto}, {}};
+
+static void InitDefaultsscc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_ControllerReply_default_instance_;
+    new (ptr) ::ControllerReply();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ControllerReply::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto}, {}};
+
+static void InitDefaultsscc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Location_default_instance_;
+    new (ptr) ::Location();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Location::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto}, {}};
+
+static void InitDefaultsscc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Signature_default_instance_;
+    new (ptr) ::Signature();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Signature::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ssl_5fgame_5fcontroller_5fcommon_2eproto[5];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fcommon_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ssl_5fgame_5fcontroller_5fcommon_2eproto = nullptr;
@@ -177,21 +194,26 @@ const char descriptor_table_protodef_ssl_5fgame_5fcontroller_5fcommon_2eproto[] 
   "al_ball_speed\030\003 \001(\002*)\n\004Team\022\013\n\007UNKNOWN\020\000"
   "\022\n\n\006YELLOW\020\001\022\010\n\004BLUE\020\002"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto = {
-  false, false, 582, descriptor_table_protodef_ssl_5fgame_5fcontroller_5fcommon_2eproto, "ssl_game_controller_common.proto", 
-  &descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_once, nullptr, 0, 5,
-  schemas, file_default_instances, TableStruct_ssl_5fgame_5fcontroller_5fcommon_2eproto::offsets,
-  file_level_metadata_ssl_5fgame_5fcontroller_5fcommon_2eproto, file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fcommon_2eproto, file_level_service_descriptors_ssl_5fgame_5fcontroller_5fcommon_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto);
-  return descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_sccs[5] = {
+  &scc_info_BallSpeedMeasurement_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,
+  &scc_info_BotId_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,
+  &scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,
+  &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,
+  &scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_once;
+static bool descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto = {
+  &descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_initialized, descriptor_table_protodef_ssl_5fgame_5fcontroller_5fcommon_2eproto, "ssl_game_controller_common.proto", 582,
+  &descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_once, descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_sccs, descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto_deps, 5, 0,
+  schemas, file_default_instances, TableStruct_ssl_5fgame_5fcontroller_5fcommon_2eproto::offsets,
+  file_level_metadata_ssl_5fgame_5fcontroller_5fcommon_2eproto, 5, file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fcommon_2eproto, file_level_service_descriptors_ssl_5fgame_5fcontroller_5fcommon_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ssl_5fgame_5fcontroller_5fcommon_2eproto(&descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto);
+static bool dynamic_init_dummy_ssl_5fgame_5fcontroller_5fcommon_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto), true);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* ControllerReply_StatusCode_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto);
   return file_level_enum_descriptors_ssl_5fgame_5fcontroller_5fcommon_2eproto[0];
@@ -256,6 +278,8 @@ bool Team_IsValid(int value) {
 
 // ===================================================================
 
+void BotId::InitAsDefaultInstance() {
+}
 class BotId::_Internal {
  public:
   using HasBits = decltype(std::declval<BotId>()._has_bits_);
@@ -267,16 +291,16 @@ class BotId::_Internal {
   }
 };
 
-BotId::BotId(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+BotId::BotId()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:BotId)
+  // @@protoc_insertion_point(constructor:BotId)
 }
 BotId::BotId(const BotId& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&team_) -
     reinterpret_cast<char*>(&id_)) + sizeof(team_));
@@ -284,31 +308,27 @@ BotId::BotId(const BotId& from)
 }
 
 void BotId::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&team_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(team_));
+  ::memset(&id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&team_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(team_));
 }
 
 BotId::~BotId() {
   // @@protoc_insertion_point(destructor:BotId)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void BotId::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void BotId::ArenaDtor(void* object) {
-  BotId* _this = reinterpret_cast< BotId* >(object);
-  (void)_this;
-}
-void BotId::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void BotId::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const BotId& BotId::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_BotId_ssl_5fgame_5fcontroller_5fcommon_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void BotId::Clear() {
 // @@protoc_insertion_point(message_clear_start:BotId)
@@ -323,7 +343,7 @@ void BotId::Clear() {
         reinterpret_cast<char*>(&id_)) + sizeof(team_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* BotId::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -338,14 +358,14 @@ const char* BotId::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_id(&has_bits);
-          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // optional .Team team = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_team(static_cast<::Team>(val));
@@ -360,9 +380,7 @@ const char* BotId::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -377,7 +395,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* BotId::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* BotId::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:BotId)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -386,20 +404,20 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional int32 id = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_id(), target);
   }
 
   // optional .Team team = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       2, this->_internal_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:BotId)
   return target;
@@ -456,7 +474,7 @@ void BotId::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void BotId::MergeFrom(const BotId& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:BotId)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -492,14 +510,10 @@ bool BotId::IsInitialized() const {
 
 void BotId::InternalSwap(BotId* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(BotId, team_)
-      + sizeof(BotId::team_)
-      - PROTOBUF_FIELD_OFFSET(BotId, id_)>(
-          reinterpret_cast<char*>(&id_),
-          reinterpret_cast<char*>(&other->id_));
+  swap(id_, other->id_);
+  swap(team_, other->team_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata BotId::GetMetadata() const {
@@ -509,6 +523,8 @@ void BotId::InternalSwap(BotId* other) {
 
 // ===================================================================
 
+void Location::InitAsDefaultInstance() {
+}
 class Location::_Internal {
  public:
   using HasBits = decltype(std::declval<Location>()._has_bits_);
@@ -518,21 +534,18 @@ class Location::_Internal {
   static void set_has_y(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-Location::Location(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Location::Location()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Location)
+  // @@protoc_insertion_point(constructor:Location)
 }
 Location::Location(const Location& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&x_, &from.x_,
     static_cast<size_t>(reinterpret_cast<char*>(&y_) -
     reinterpret_cast<char*>(&x_)) + sizeof(y_));
@@ -540,31 +553,27 @@ Location::Location(const Location& from)
 }
 
 void Location::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&y_) -
-    reinterpret_cast<char*>(&x_)) + sizeof(y_));
+  ::memset(&x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&y_) -
+      reinterpret_cast<char*>(&x_)) + sizeof(y_));
 }
 
 Location::~Location() {
   // @@protoc_insertion_point(destructor:Location)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Location::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Location::ArenaDtor(void* object) {
-  Location* _this = reinterpret_cast< Location* >(object);
-  (void)_this;
-}
-void Location::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Location::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Location& Location::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Location::Clear() {
 // @@protoc_insertion_point(message_clear_start:Location)
@@ -579,7 +588,7 @@ void Location::Clear() {
         reinterpret_cast<char*>(&x_)) + sizeof(y_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Location::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -612,9 +621,7 @@ const char* Location::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::i
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -629,7 +636,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Location::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Location::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Location)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -638,19 +645,19 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required float x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_x(), target);
   }
 
   // required float y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_y(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Location)
   return target;
@@ -660,12 +667,12 @@ size_t Location::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Location)
   size_t total_size = 0;
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required float x = 1;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required float y = 2;
     total_size += 1 + 4;
   }
@@ -717,7 +724,7 @@ void Location::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Location::MergeFrom(const Location& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Location)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -748,20 +755,16 @@ void Location::CopyFrom(const Location& from) {
 }
 
 bool Location::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void Location::InternalSwap(Location* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Location, y_)
-      + sizeof(Location::y_)
-      - PROTOBUF_FIELD_OFFSET(Location, x_)>(
-          reinterpret_cast<char*>(&x_),
-          reinterpret_cast<char*>(&other->x_));
+  swap(x_, other->x_);
+  swap(y_, other->y_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Location::GetMetadata() const {
@@ -771,6 +774,8 @@ void Location::InternalSwap(Location* other) {
 
 // ===================================================================
 
+void ControllerReply::InitAsDefaultInstance() {
+}
 class ControllerReply::_Internal {
  public:
   using HasBits = decltype(std::declval<ControllerReply>()._has_bits_);
@@ -788,25 +793,23 @@ class ControllerReply::_Internal {
   }
 };
 
-ControllerReply::ControllerReply(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+ControllerReply::ControllerReply()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ControllerReply)
+  // @@protoc_insertion_point(constructor:ControllerReply)
 }
 ControllerReply::ControllerReply(const ControllerReply& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_reason()) {
-    reason_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_reason(), 
-      GetArena());
+    reason_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.reason_);
   }
   next_token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_next_token()) {
-    next_token_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_next_token(), 
-      GetArena());
+    next_token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.next_token_);
   }
   ::memcpy(&status_code_, &from.status_code_,
     static_cast<size_t>(reinterpret_cast<char*>(&verification_) -
@@ -815,35 +818,32 @@ ControllerReply::ControllerReply(const ControllerReply& from)
 }
 
 void ControllerReply::SharedCtor() {
-reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-next_token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&status_code_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&verification_) -
-    reinterpret_cast<char*>(&status_code_)) + sizeof(verification_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto.base);
+  reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  next_token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::memset(&status_code_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&verification_) -
+      reinterpret_cast<char*>(&status_code_)) + sizeof(verification_));
 }
 
 ControllerReply::~ControllerReply() {
   // @@protoc_insertion_point(destructor:ControllerReply)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void ControllerReply::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   reason_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   next_token_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void ControllerReply::ArenaDtor(void* object) {
-  ControllerReply* _this = reinterpret_cast< ControllerReply* >(object);
-  (void)_this;
-}
-void ControllerReply::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void ControllerReply::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const ControllerReply& ControllerReply::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_ControllerReply_ssl_5fgame_5fcontroller_5fcommon_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void ControllerReply::Clear() {
 // @@protoc_insertion_point(message_clear_start:ControllerReply)
@@ -854,10 +854,10 @@ void ControllerReply::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      reason_.ClearNonDefaultToEmpty();
+      reason_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      next_token_.ClearNonDefaultToEmpty();
+      next_token_.ClearNonDefaultToEmptyNoArena();
     }
   }
   if (cached_has_bits & 0x0000000cu) {
@@ -866,7 +866,7 @@ void ControllerReply::Clear() {
         reinterpret_cast<char*>(&status_code_)) + sizeof(verification_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* ControllerReply::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -880,7 +880,7 @@ const char* ControllerReply::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // optional .ControllerReply.StatusCode status_code = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::ControllerReply_StatusCode_IsValid(val))) {
             _internal_set_status_code(static_cast<::ControllerReply_StatusCode>(val));
@@ -892,29 +892,21 @@ const char* ControllerReply::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
       // optional string reason = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_reason();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ControllerReply.reason");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_reason(), ptr, ctx, "ControllerReply.reason");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // optional string next_token = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
-          auto str = _internal_mutable_next_token();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "ControllerReply.next_token");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_next_token(), ptr, ctx, "ControllerReply.next_token");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // optional .ControllerReply.Verification verification = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::ControllerReply_Verification_IsValid(val))) {
             _internal_set_verification(static_cast<::ControllerReply_Verification>(val));
@@ -929,9 +921,7 @@ const char* ControllerReply::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPAC
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -946,7 +936,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* ControllerReply::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* ControllerReply::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ControllerReply)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -955,7 +945,7 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional .ControllerReply.StatusCode status_code = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_status_code(), target);
   }
@@ -982,14 +972,14 @@ failure:
 
   // optional .ControllerReply.Verification verification = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       4, this->_internal_verification(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ControllerReply)
   return target;
@@ -1059,17 +1049,19 @@ void ControllerReply::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void ControllerReply::MergeFrom(const ControllerReply& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ControllerReply)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_reason(from._internal_reason());
+      _has_bits_[0] |= 0x00000001u;
+      reason_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.reason_);
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_next_token(from._internal_next_token());
+      _has_bits_[0] |= 0x00000002u;
+      next_token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.next_token_);
     }
     if (cached_has_bits & 0x00000004u) {
       status_code_ = from.status_code_;
@@ -1101,16 +1093,14 @@ bool ControllerReply::IsInitialized() const {
 
 void ControllerReply::InternalSwap(ControllerReply* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  reason_.Swap(&other->reason_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  next_token_.Swap(&other->next_token_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(ControllerReply, verification_)
-      + sizeof(ControllerReply::verification_)
-      - PROTOBUF_FIELD_OFFSET(ControllerReply, status_code_)>(
-          reinterpret_cast<char*>(&status_code_),
-          reinterpret_cast<char*>(&other->status_code_));
+  reason_.Swap(&other->reason_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  next_token_.Swap(&other->next_token_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  swap(status_code_, other->status_code_);
+  swap(verification_, other->verification_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata ControllerReply::GetMetadata() const {
@@ -1120,6 +1110,8 @@ void ControllerReply::InternalSwap(ControllerReply* other) {
 
 // ===================================================================
 
+void Signature::InitAsDefaultInstance() {
+}
 class Signature::_Internal {
  public:
   using HasBits = decltype(std::declval<Signature>()._has_bits_);
@@ -1129,60 +1121,53 @@ class Signature::_Internal {
   static void set_has_pkcs1v15(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-Signature::Signature(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Signature::Signature()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Signature)
+  // @@protoc_insertion_point(constructor:Signature)
 }
 Signature::Signature(const Signature& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_token()) {
-    token_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_token(), 
-      GetArena());
+    token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.token_);
   }
   pkcs1v15_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_pkcs1v15()) {
-    pkcs1v15_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_pkcs1v15(), 
-      GetArena());
+    pkcs1v15_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.pkcs1v15_);
   }
   // @@protoc_insertion_point(copy_constructor:Signature)
 }
 
 void Signature::SharedCtor() {
-token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-pkcs1v15_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto.base);
+  token_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  pkcs1v15_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
 Signature::~Signature() {
   // @@protoc_insertion_point(destructor:Signature)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Signature::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   token_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   pkcs1v15_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void Signature::ArenaDtor(void* object) {
-  Signature* _this = reinterpret_cast< Signature* >(object);
-  (void)_this;
-}
-void Signature::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Signature::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Signature& Signature::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Signature_ssl_5fgame_5fcontroller_5fcommon_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Signature::Clear() {
 // @@protoc_insertion_point(message_clear_start:Signature)
@@ -1193,14 +1178,14 @@ void Signature::Clear() {
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      token_.ClearNonDefaultToEmpty();
+      token_.ClearNonDefaultToEmptyNoArena();
     }
     if (cached_has_bits & 0x00000002u) {
-      pkcs1v15_.ClearNonDefaultToEmpty();
+      pkcs1v15_.ClearNonDefaultToEmptyNoArena();
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Signature::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1214,19 +1199,14 @@ const char* Signature::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // required string token = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
-          auto str = _internal_mutable_token();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "Signature.token");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_token(), ptr, ctx, "Signature.token");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // required bytes pkcs1v15 = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_pkcs1v15();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(_internal_mutable_pkcs1v15(), ptr, ctx);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1236,9 +1216,7 @@ const char* Signature::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1253,7 +1231,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Signature::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Signature::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Signature)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1278,7 +1256,7 @@ failure:
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Signature)
   return target;
@@ -1288,14 +1266,14 @@ size_t Signature::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Signature)
   size_t total_size = 0;
 
-  if (_internal_has_token()) {
+  if (has_token()) {
     // required string token = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_token());
   }
 
-  if (_internal_has_pkcs1v15()) {
+  if (has_pkcs1v15()) {
     // required bytes pkcs1v15 = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
@@ -1353,17 +1331,19 @@ void Signature::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Signature::MergeFrom(const Signature& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Signature)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_token(from._internal_token());
+      _has_bits_[0] |= 0x00000001u;
+      token_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.token_);
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_set_pkcs1v15(from._internal_pkcs1v15());
+      _has_bits_[0] |= 0x00000002u;
+      pkcs1v15_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.pkcs1v15_);
     }
   }
 }
@@ -1383,16 +1363,18 @@ void Signature::CopyFrom(const Signature& from) {
 }
 
 bool Signature::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void Signature::InternalSwap(Signature* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  token_.Swap(&other->token_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
-  pkcs1v15_.Swap(&other->pkcs1v15_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  token_.Swap(&other->token_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
+  pkcs1v15_.Swap(&other->pkcs1v15_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Signature::GetMetadata() const {
@@ -1402,6 +1384,8 @@ void Signature::InternalSwap(Signature* other) {
 
 // ===================================================================
 
+void BallSpeedMeasurement::InitAsDefaultInstance() {
+}
 class BallSpeedMeasurement::_Internal {
  public:
   using HasBits = decltype(std::declval<BallSpeedMeasurement>()._has_bits_);
@@ -1414,21 +1398,18 @@ class BallSpeedMeasurement::_Internal {
   static void set_has_initial_ball_speed(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-BallSpeedMeasurement::BallSpeedMeasurement(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+BallSpeedMeasurement::BallSpeedMeasurement()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:BallSpeedMeasurement)
+  // @@protoc_insertion_point(constructor:BallSpeedMeasurement)
 }
 BallSpeedMeasurement::BallSpeedMeasurement(const BallSpeedMeasurement& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&timestamp_, &from.timestamp_,
     static_cast<size_t>(reinterpret_cast<char*>(&initial_ball_speed_) -
     reinterpret_cast<char*>(&timestamp_)) + sizeof(initial_ball_speed_));
@@ -1436,31 +1417,27 @@ BallSpeedMeasurement::BallSpeedMeasurement(const BallSpeedMeasurement& from)
 }
 
 void BallSpeedMeasurement::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&timestamp_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&initial_ball_speed_) -
-    reinterpret_cast<char*>(&timestamp_)) + sizeof(initial_ball_speed_));
+  ::memset(&timestamp_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&initial_ball_speed_) -
+      reinterpret_cast<char*>(&timestamp_)) + sizeof(initial_ball_speed_));
 }
 
 BallSpeedMeasurement::~BallSpeedMeasurement() {
   // @@protoc_insertion_point(destructor:BallSpeedMeasurement)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void BallSpeedMeasurement::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void BallSpeedMeasurement::ArenaDtor(void* object) {
-  BallSpeedMeasurement* _this = reinterpret_cast< BallSpeedMeasurement* >(object);
-  (void)_this;
-}
-void BallSpeedMeasurement::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void BallSpeedMeasurement::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const BallSpeedMeasurement& BallSpeedMeasurement::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_BallSpeedMeasurement_ssl_5fgame_5fcontroller_5fcommon_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void BallSpeedMeasurement::Clear() {
 // @@protoc_insertion_point(message_clear_start:BallSpeedMeasurement)
@@ -1475,7 +1452,7 @@ void BallSpeedMeasurement::Clear() {
         reinterpret_cast<char*>(&timestamp_)) + sizeof(initial_ball_speed_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* BallSpeedMeasurement::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1490,7 +1467,7 @@ const char* BallSpeedMeasurement::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_timestamp(&has_bits);
-          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          timestamp_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1516,9 +1493,7 @@ const char* BallSpeedMeasurement::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1533,7 +1508,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* BallSpeedMeasurement::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* BallSpeedMeasurement::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:BallSpeedMeasurement)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1542,25 +1517,25 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required uint64 timestamp = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_timestamp(), target);
   }
 
   // required float ball_speed = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_ball_speed(), target);
   }
 
   // optional float initial_ball_speed = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_initial_ball_speed(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:BallSpeedMeasurement)
   return target;
@@ -1570,14 +1545,14 @@ size_t BallSpeedMeasurement::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:BallSpeedMeasurement)
   size_t total_size = 0;
 
-  if (_internal_has_timestamp()) {
+  if (has_timestamp()) {
     // required uint64 timestamp = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt64Size(
         this->_internal_timestamp());
   }
 
-  if (_internal_has_ball_speed()) {
+  if (has_ball_speed()) {
     // required float ball_speed = 2;
     total_size += 1 + 4;
   }
@@ -1637,7 +1612,7 @@ void BallSpeedMeasurement::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fro
 void BallSpeedMeasurement::MergeFrom(const BallSpeedMeasurement& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:BallSpeedMeasurement)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1671,20 +1646,17 @@ void BallSpeedMeasurement::CopyFrom(const BallSpeedMeasurement& from) {
 }
 
 bool BallSpeedMeasurement::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void BallSpeedMeasurement::InternalSwap(BallSpeedMeasurement* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(BallSpeedMeasurement, initial_ball_speed_)
-      + sizeof(BallSpeedMeasurement::initial_ball_speed_)
-      - PROTOBUF_FIELD_OFFSET(BallSpeedMeasurement, timestamp_)>(
-          reinterpret_cast<char*>(&timestamp_),
-          reinterpret_cast<char*>(&other->timestamp_));
+  swap(timestamp_, other->timestamp_);
+  swap(ball_speed_, other->ball_speed_);
+  swap(initial_ball_speed_, other->initial_ball_speed_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata BallSpeedMeasurement::GetMetadata() const {
@@ -1695,19 +1667,19 @@ void BallSpeedMeasurement::InternalSwap(BallSpeedMeasurement* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::BotId* Arena::CreateMaybeMessage< ::BotId >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::BotId >(arena);
+  return Arena::CreateInternal< ::BotId >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Location* Arena::CreateMaybeMessage< ::Location >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Location >(arena);
+  return Arena::CreateInternal< ::Location >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ControllerReply* Arena::CreateMaybeMessage< ::ControllerReply >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ControllerReply >(arena);
+  return Arena::CreateInternal< ::ControllerReply >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Signature* Arena::CreateMaybeMessage< ::Signature >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Signature >(arena);
+  return Arena::CreateInternal< ::Signature >(arena);
 }
 template<> PROTOBUF_NOINLINE ::BallSpeedMeasurement* Arena::CreateMaybeMessage< ::BallSpeedMeasurement >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::BallSpeedMeasurement >(arena);
+  return Arena::CreateInternal< ::BallSpeedMeasurement >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

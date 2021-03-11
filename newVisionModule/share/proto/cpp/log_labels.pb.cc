@@ -14,87 +14,104 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_log_5flabels_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BallPossessionLabel_log_5flabels_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_log_5flabels_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DribblingLabel_log_5flabels_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_log_5flabels_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GoalShotLabel_log_5flabels_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_log_5flabels_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PassingLabel_log_5flabels_2eproto;
+class DribblingLabelDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<DribblingLabel> _instance;
+} _DribblingLabel_default_instance_;
+class BallPossessionLabelDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<BallPossessionLabel> _instance;
+} _BallPossessionLabel_default_instance_;
+class PassingLabelDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<PassingLabel> _instance;
+} _PassingLabel_default_instance_;
+class GoalShotLabelDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GoalShotLabel> _instance;
+} _GoalShotLabel_default_instance_;
+class LabelsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Labels> _instance;
+} _Labels_default_instance_;
+static void InitDefaultsscc_info_BallPossessionLabel_log_5flabels_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr DribblingLabel::DribblingLabel(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : is_dribbling_(false)
-  , robot_id_(0u)
-  , team_(0)
-{}
-struct DribblingLabelDefaultTypeInternal {
-  constexpr DribblingLabelDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~DribblingLabelDefaultTypeInternal() {}
-  union {
-    DribblingLabel _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT DribblingLabelDefaultTypeInternal _DribblingLabel_default_instance_;
-constexpr BallPossessionLabel::BallPossessionLabel(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : state_(0)
+  {
+    void* ptr = &::_BallPossessionLabel_default_instance_;
+    new (ptr) ::BallPossessionLabel();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::BallPossessionLabel::InitAsDefaultInstance();
+}
 
-  , robot_id_(0u){}
-struct BallPossessionLabelDefaultTypeInternal {
-  constexpr BallPossessionLabelDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~BallPossessionLabelDefaultTypeInternal() {}
-  union {
-    BallPossessionLabel _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT BallPossessionLabelDefaultTypeInternal _BallPossessionLabel_default_instance_;
-constexpr PassingLabel::PassingLabel(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : start_frame_(PROTOBUF_ULONGLONG(0))
-  , end_frame_(PROTOBUF_ULONGLONG(0))
-  , successful_(false)
-  , passer_id_(0u)
-  , passer_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_BallPossessionLabel_log_5flabels_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_BallPossessionLabel_log_5flabels_2eproto}, {}};
 
-  , receiver_id_(0u){}
-struct PassingLabelDefaultTypeInternal {
-  constexpr PassingLabelDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~PassingLabelDefaultTypeInternal() {}
-  union {
-    PassingLabel _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PassingLabelDefaultTypeInternal _PassingLabel_default_instance_;
-constexpr GoalShotLabel::GoalShotLabel(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : start_frame_(PROTOBUF_ULONGLONG(0))
-  , end_frame_(PROTOBUF_ULONGLONG(0))
-  , successful_(false)
-  , shooter_id_(0u)
-  , shooter_team_(0)
-{}
-struct GoalShotLabelDefaultTypeInternal {
-  constexpr GoalShotLabelDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GoalShotLabelDefaultTypeInternal() {}
-  union {
-    GoalShotLabel _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GoalShotLabelDefaultTypeInternal _GoalShotLabel_default_instance_;
-constexpr Labels::Labels(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : dribbling_labels_()
-  , ball_possession_labels_()
-  , passing_labels_()
-  , goal_shot_labels_(){}
-struct LabelsDefaultTypeInternal {
-  constexpr LabelsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~LabelsDefaultTypeInternal() {}
-  union {
-    Labels _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT LabelsDefaultTypeInternal _Labels_default_instance_;
+static void InitDefaultsscc_info_DribblingLabel_log_5flabels_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_DribblingLabel_default_instance_;
+    new (ptr) ::DribblingLabel();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::DribblingLabel::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_DribblingLabel_log_5flabels_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_DribblingLabel_log_5flabels_2eproto}, {}};
+
+static void InitDefaultsscc_info_GoalShotLabel_log_5flabels_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GoalShotLabel_default_instance_;
+    new (ptr) ::GoalShotLabel();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GoalShotLabel::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GoalShotLabel_log_5flabels_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GoalShotLabel_log_5flabels_2eproto}, {}};
+
+static void InitDefaultsscc_info_Labels_log_5flabels_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Labels_default_instance_;
+    new (ptr) ::Labels();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Labels::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_Labels_log_5flabels_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_Labels_log_5flabels_2eproto}, {
+      &scc_info_DribblingLabel_log_5flabels_2eproto.base,
+      &scc_info_BallPossessionLabel_log_5flabels_2eproto.base,
+      &scc_info_PassingLabel_log_5flabels_2eproto.base,
+      &scc_info_GoalShotLabel_log_5flabels_2eproto.base,}};
+
+static void InitDefaultsscc_info_PassingLabel_log_5flabels_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_PassingLabel_default_instance_;
+    new (ptr) ::PassingLabel();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::PassingLabel::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_PassingLabel_log_5flabels_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_PassingLabel_log_5flabels_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_log_5flabels_2eproto[5];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_log_5flabels_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_log_5flabels_2eproto = nullptr;
@@ -184,21 +201,26 @@ const char descriptor_table_protodef_log_5flabels_2eproto[] PROTOBUF_SECTION_VAR
   "mColor\022\016\n\nTeamYELLOW\020\000\022\014\n\010TeamBLUE\020\001b\006pr"
   "oto3"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_log_5flabels_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_log_5flabels_2eproto = {
-  false, false, 764, descriptor_table_protodef_log_5flabels_2eproto, "log_labels.proto", 
-  &descriptor_table_log_5flabels_2eproto_once, nullptr, 0, 5,
-  schemas, file_default_instances, TableStruct_log_5flabels_2eproto::offsets,
-  file_level_metadata_log_5flabels_2eproto, file_level_enum_descriptors_log_5flabels_2eproto, file_level_service_descriptors_log_5flabels_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_log_5flabels_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_log_5flabels_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_log_5flabels_2eproto);
-  return descriptor_table_log_5flabels_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_log_5flabels_2eproto_sccs[5] = {
+  &scc_info_BallPossessionLabel_log_5flabels_2eproto.base,
+  &scc_info_DribblingLabel_log_5flabels_2eproto.base,
+  &scc_info_GoalShotLabel_log_5flabels_2eproto.base,
+  &scc_info_Labels_log_5flabels_2eproto.base,
+  &scc_info_PassingLabel_log_5flabels_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_log_5flabels_2eproto_once;
+static bool descriptor_table_log_5flabels_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_log_5flabels_2eproto = {
+  &descriptor_table_log_5flabels_2eproto_initialized, descriptor_table_protodef_log_5flabels_2eproto, "log_labels.proto", 764,
+  &descriptor_table_log_5flabels_2eproto_once, descriptor_table_log_5flabels_2eproto_sccs, descriptor_table_log_5flabels_2eproto_deps, 5, 0,
+  schemas, file_default_instances, TableStruct_log_5flabels_2eproto::offsets,
+  file_level_metadata_log_5flabels_2eproto, 5, file_level_enum_descriptors_log_5flabels_2eproto, file_level_service_descriptors_log_5flabels_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_log_5flabels_2eproto(&descriptor_table_log_5flabels_2eproto);
+static bool dynamic_init_dummy_log_5flabels_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_log_5flabels_2eproto), true);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* BallPossessionLabel_State_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_log_5flabels_2eproto);
   return file_level_enum_descriptors_log_5flabels_2eproto[0];
@@ -239,19 +261,21 @@ bool TeamColor_IsValid(int value) {
 
 // ===================================================================
 
+void DribblingLabel::InitAsDefaultInstance() {
+}
 class DribblingLabel::_Internal {
  public:
 };
 
-DribblingLabel::DribblingLabel(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+DribblingLabel::DribblingLabel()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:DribblingLabel)
+  // @@protoc_insertion_point(constructor:DribblingLabel)
 }
 DribblingLabel::DribblingLabel(const DribblingLabel& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&is_dribbling_, &from.is_dribbling_,
     static_cast<size_t>(reinterpret_cast<char*>(&team_) -
     reinterpret_cast<char*>(&is_dribbling_)) + sizeof(team_));
@@ -259,31 +283,27 @@ DribblingLabel::DribblingLabel(const DribblingLabel& from)
 }
 
 void DribblingLabel::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&is_dribbling_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&team_) -
-    reinterpret_cast<char*>(&is_dribbling_)) + sizeof(team_));
+  ::memset(&is_dribbling_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&team_) -
+      reinterpret_cast<char*>(&is_dribbling_)) + sizeof(team_));
 }
 
 DribblingLabel::~DribblingLabel() {
   // @@protoc_insertion_point(destructor:DribblingLabel)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void DribblingLabel::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void DribblingLabel::ArenaDtor(void* object) {
-  DribblingLabel* _this = reinterpret_cast< DribblingLabel* >(object);
-  (void)_this;
-}
-void DribblingLabel::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void DribblingLabel::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const DribblingLabel& DribblingLabel::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_DribblingLabel_log_5flabels_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void DribblingLabel::Clear() {
 // @@protoc_insertion_point(message_clear_start:DribblingLabel)
@@ -294,7 +314,7 @@ void DribblingLabel::Clear() {
   ::memset(&is_dribbling_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&team_) -
       reinterpret_cast<char*>(&is_dribbling_)) + sizeof(team_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* DribblingLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -307,21 +327,21 @@ const char* DribblingLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // bool is_dribbling = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          is_dribbling_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          is_dribbling_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint32 robot_id = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .TeamColor team = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           _internal_set_team(static_cast<::TeamColor>(val));
         } else goto handle_unusual;
@@ -332,9 +352,7 @@ const char* DribblingLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -348,7 +366,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* DribblingLabel::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* DribblingLabel::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:DribblingLabel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -356,26 +374,26 @@ failure:
 
   // bool is_dribbling = 1;
   if (this->is_dribbling() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_is_dribbling(), target);
   }
 
   // uint32 robot_id = 2;
   if (this->robot_id() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_robot_id(), target);
   }
 
   // .TeamColor team = 3;
   if (this->team() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       3, this->_internal_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:DribblingLabel)
   return target;
@@ -434,7 +452,7 @@ void DribblingLabel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void DribblingLabel::MergeFrom(const DribblingLabel& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:DribblingLabel)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -469,13 +487,10 @@ bool DribblingLabel::IsInitialized() const {
 
 void DribblingLabel::InternalSwap(DribblingLabel* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(DribblingLabel, team_)
-      + sizeof(DribblingLabel::team_)
-      - PROTOBUF_FIELD_OFFSET(DribblingLabel, is_dribbling_)>(
-          reinterpret_cast<char*>(&is_dribbling_),
-          reinterpret_cast<char*>(&other->is_dribbling_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(is_dribbling_, other->is_dribbling_);
+  swap(robot_id_, other->robot_id_);
+  swap(team_, other->team_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata DribblingLabel::GetMetadata() const {
@@ -485,19 +500,21 @@ void DribblingLabel::InternalSwap(DribblingLabel* other) {
 
 // ===================================================================
 
+void BallPossessionLabel::InitAsDefaultInstance() {
+}
 class BallPossessionLabel::_Internal {
  public:
 };
 
-BallPossessionLabel::BallPossessionLabel(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+BallPossessionLabel::BallPossessionLabel()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:BallPossessionLabel)
+  // @@protoc_insertion_point(constructor:BallPossessionLabel)
 }
 BallPossessionLabel::BallPossessionLabel(const BallPossessionLabel& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&state_, &from.state_,
     static_cast<size_t>(reinterpret_cast<char*>(&robot_id_) -
     reinterpret_cast<char*>(&state_)) + sizeof(robot_id_));
@@ -505,31 +522,27 @@ BallPossessionLabel::BallPossessionLabel(const BallPossessionLabel& from)
 }
 
 void BallPossessionLabel::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&state_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&robot_id_) -
-    reinterpret_cast<char*>(&state_)) + sizeof(robot_id_));
+  ::memset(&state_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&robot_id_) -
+      reinterpret_cast<char*>(&state_)) + sizeof(robot_id_));
 }
 
 BallPossessionLabel::~BallPossessionLabel() {
   // @@protoc_insertion_point(destructor:BallPossessionLabel)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void BallPossessionLabel::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void BallPossessionLabel::ArenaDtor(void* object) {
-  BallPossessionLabel* _this = reinterpret_cast< BallPossessionLabel* >(object);
-  (void)_this;
-}
-void BallPossessionLabel::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void BallPossessionLabel::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const BallPossessionLabel& BallPossessionLabel::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_BallPossessionLabel_log_5flabels_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void BallPossessionLabel::Clear() {
 // @@protoc_insertion_point(message_clear_start:BallPossessionLabel)
@@ -540,7 +553,7 @@ void BallPossessionLabel::Clear() {
   ::memset(&state_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&robot_id_) -
       reinterpret_cast<char*>(&state_)) + sizeof(robot_id_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* BallPossessionLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -553,7 +566,7 @@ const char* BallPossessionLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // .BallPossessionLabel.State state = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           _internal_set_state(static_cast<::BallPossessionLabel_State>(val));
         } else goto handle_unusual;
@@ -561,7 +574,7 @@ const char* BallPossessionLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       // uint32 robot_id = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -571,9 +584,7 @@ const char* BallPossessionLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -587,7 +598,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* BallPossessionLabel::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* BallPossessionLabel::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:BallPossessionLabel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -595,20 +606,20 @@ failure:
 
   // .BallPossessionLabel.State state = 1;
   if (this->state() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_state(), target);
   }
 
   // uint32 robot_id = 2;
   if (this->robot_id() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_robot_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:BallPossessionLabel)
   return target;
@@ -662,7 +673,7 @@ void BallPossessionLabel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from
 void BallPossessionLabel::MergeFrom(const BallPossessionLabel& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:BallPossessionLabel)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -694,13 +705,9 @@ bool BallPossessionLabel::IsInitialized() const {
 
 void BallPossessionLabel::InternalSwap(BallPossessionLabel* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(BallPossessionLabel, robot_id_)
-      + sizeof(BallPossessionLabel::robot_id_)
-      - PROTOBUF_FIELD_OFFSET(BallPossessionLabel, state_)>(
-          reinterpret_cast<char*>(&state_),
-          reinterpret_cast<char*>(&other->state_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(state_, other->state_);
+  swap(robot_id_, other->robot_id_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata BallPossessionLabel::GetMetadata() const {
@@ -710,19 +717,21 @@ void BallPossessionLabel::InternalSwap(BallPossessionLabel* other) {
 
 // ===================================================================
 
+void PassingLabel::InitAsDefaultInstance() {
+}
 class PassingLabel::_Internal {
  public:
 };
 
-PassingLabel::PassingLabel(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+PassingLabel::PassingLabel()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:PassingLabel)
+  // @@protoc_insertion_point(constructor:PassingLabel)
 }
 PassingLabel::PassingLabel(const PassingLabel& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&start_frame_, &from.start_frame_,
     static_cast<size_t>(reinterpret_cast<char*>(&receiver_id_) -
     reinterpret_cast<char*>(&start_frame_)) + sizeof(receiver_id_));
@@ -730,31 +739,27 @@ PassingLabel::PassingLabel(const PassingLabel& from)
 }
 
 void PassingLabel::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&start_frame_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&receiver_id_) -
-    reinterpret_cast<char*>(&start_frame_)) + sizeof(receiver_id_));
+  ::memset(&start_frame_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&receiver_id_) -
+      reinterpret_cast<char*>(&start_frame_)) + sizeof(receiver_id_));
 }
 
 PassingLabel::~PassingLabel() {
   // @@protoc_insertion_point(destructor:PassingLabel)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void PassingLabel::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void PassingLabel::ArenaDtor(void* object) {
-  PassingLabel* _this = reinterpret_cast< PassingLabel* >(object);
-  (void)_this;
-}
-void PassingLabel::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void PassingLabel::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const PassingLabel& PassingLabel::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_PassingLabel_log_5flabels_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void PassingLabel::Clear() {
 // @@protoc_insertion_point(message_clear_start:PassingLabel)
@@ -765,7 +770,7 @@ void PassingLabel::Clear() {
   ::memset(&start_frame_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&receiver_id_) -
       reinterpret_cast<char*>(&start_frame_)) + sizeof(receiver_id_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* PassingLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -778,35 +783,35 @@ const char* PassingLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       // uint64 start_frame = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          start_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          start_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint64 end_frame = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          end_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          end_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool successful = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          successful_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          successful_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint32 passer_id = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          passer_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          passer_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .TeamColor passer_team = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           _internal_set_passer_team(static_cast<::TeamColor>(val));
         } else goto handle_unusual;
@@ -814,7 +819,7 @@ const char* PassingLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
       // uint32 receiver_id = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          receiver_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          receiver_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -824,9 +829,7 @@ const char* PassingLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_I
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -840,7 +843,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* PassingLabel::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* PassingLabel::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:PassingLabel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -848,44 +851,44 @@ failure:
 
   // uint64 start_frame = 1;
   if (this->start_frame() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_start_frame(), target);
   }
 
   // uint64 end_frame = 2;
   if (this->end_frame() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_end_frame(), target);
   }
 
   // bool successful = 3;
   if (this->successful() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_successful(), target);
   }
 
   // uint32 passer_id = 4;
   if (this->passer_id() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_passer_id(), target);
   }
 
   // .TeamColor passer_team = 5;
   if (this->passer_team() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       5, this->_internal_passer_team(), target);
   }
 
   // uint32 receiver_id = 6;
   if (this->receiver_id() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(6, this->_internal_receiver_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:PassingLabel)
   return target;
@@ -965,7 +968,7 @@ void PassingLabel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void PassingLabel::MergeFrom(const PassingLabel& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:PassingLabel)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1009,13 +1012,13 @@ bool PassingLabel::IsInitialized() const {
 
 void PassingLabel::InternalSwap(PassingLabel* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(PassingLabel, receiver_id_)
-      + sizeof(PassingLabel::receiver_id_)
-      - PROTOBUF_FIELD_OFFSET(PassingLabel, start_frame_)>(
-          reinterpret_cast<char*>(&start_frame_),
-          reinterpret_cast<char*>(&other->start_frame_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(start_frame_, other->start_frame_);
+  swap(end_frame_, other->end_frame_);
+  swap(successful_, other->successful_);
+  swap(passer_id_, other->passer_id_);
+  swap(passer_team_, other->passer_team_);
+  swap(receiver_id_, other->receiver_id_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata PassingLabel::GetMetadata() const {
@@ -1025,19 +1028,21 @@ void PassingLabel::InternalSwap(PassingLabel* other) {
 
 // ===================================================================
 
+void GoalShotLabel::InitAsDefaultInstance() {
+}
 class GoalShotLabel::_Internal {
  public:
 };
 
-GoalShotLabel::GoalShotLabel(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GoalShotLabel::GoalShotLabel()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GoalShotLabel)
+  // @@protoc_insertion_point(constructor:GoalShotLabel)
 }
 GoalShotLabel::GoalShotLabel(const GoalShotLabel& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr) {
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&start_frame_, &from.start_frame_,
     static_cast<size_t>(reinterpret_cast<char*>(&shooter_team_) -
     reinterpret_cast<char*>(&start_frame_)) + sizeof(shooter_team_));
@@ -1045,31 +1050,27 @@ GoalShotLabel::GoalShotLabel(const GoalShotLabel& from)
 }
 
 void GoalShotLabel::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&start_frame_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&shooter_team_) -
-    reinterpret_cast<char*>(&start_frame_)) + sizeof(shooter_team_));
+  ::memset(&start_frame_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&shooter_team_) -
+      reinterpret_cast<char*>(&start_frame_)) + sizeof(shooter_team_));
 }
 
 GoalShotLabel::~GoalShotLabel() {
   // @@protoc_insertion_point(destructor:GoalShotLabel)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GoalShotLabel::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GoalShotLabel::ArenaDtor(void* object) {
-  GoalShotLabel* _this = reinterpret_cast< GoalShotLabel* >(object);
-  (void)_this;
-}
-void GoalShotLabel::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GoalShotLabel::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GoalShotLabel& GoalShotLabel::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GoalShotLabel_log_5flabels_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GoalShotLabel::Clear() {
 // @@protoc_insertion_point(message_clear_start:GoalShotLabel)
@@ -1080,7 +1081,7 @@ void GoalShotLabel::Clear() {
   ::memset(&start_frame_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&shooter_team_) -
       reinterpret_cast<char*>(&start_frame_)) + sizeof(shooter_team_));
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GoalShotLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1093,35 +1094,35 @@ const char* GoalShotLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
       // uint64 start_frame = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          start_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          start_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint64 end_frame = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
-          end_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          end_frame_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // bool successful = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
-          successful_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          successful_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // uint32 shooter_id = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
-          shooter_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          shooter_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
       // .TeamColor shooter_team = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           _internal_set_shooter_team(static_cast<::TeamColor>(val));
         } else goto handle_unusual;
@@ -1132,9 +1133,7 @@ const char* GoalShotLabel::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1148,7 +1147,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GoalShotLabel::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GoalShotLabel::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GoalShotLabel)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1156,38 +1155,38 @@ failure:
 
   // uint64 start_frame = 1;
   if (this->start_frame() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(1, this->_internal_start_frame(), target);
   }
 
   // uint64 end_frame = 2;
   if (this->end_frame() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt64ToArray(2, this->_internal_end_frame(), target);
   }
 
   // bool successful = 3;
   if (this->successful() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(3, this->_internal_successful(), target);
   }
 
   // uint32 shooter_id = 4;
   if (this->shooter_id() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_shooter_id(), target);
   }
 
   // .TeamColor shooter_team = 5;
   if (this->shooter_team() != 0) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       5, this->_internal_shooter_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GoalShotLabel)
   return target;
@@ -1260,7 +1259,7 @@ void GoalShotLabel::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void GoalShotLabel::MergeFrom(const GoalShotLabel& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GoalShotLabel)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1301,13 +1300,12 @@ bool GoalShotLabel::IsInitialized() const {
 
 void GoalShotLabel::InternalSwap(GoalShotLabel* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GoalShotLabel, shooter_team_)
-      + sizeof(GoalShotLabel::shooter_team_)
-      - PROTOBUF_FIELD_OFFSET(GoalShotLabel, start_frame_)>(
-          reinterpret_cast<char*>(&start_frame_),
-          reinterpret_cast<char*>(&other->start_frame_));
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  swap(start_frame_, other->start_frame_);
+  swap(end_frame_, other->end_frame_);
+  swap(successful_, other->successful_);
+  swap(shooter_id_, other->shooter_id_);
+  swap(shooter_team_, other->shooter_team_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GoalShotLabel::GetMetadata() const {
@@ -1317,52 +1315,48 @@ void GoalShotLabel::InternalSwap(GoalShotLabel* other) {
 
 // ===================================================================
 
+void Labels::InitAsDefaultInstance() {
+}
 class Labels::_Internal {
  public:
 };
 
-Labels::Labels(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  dribbling_labels_(arena),
-  ball_possession_labels_(arena),
-  passing_labels_(arena),
-  goal_shot_labels_(arena) {
+Labels::Labels()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Labels)
+  // @@protoc_insertion_point(constructor:Labels)
 }
 Labels::Labels(const Labels& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       dribbling_labels_(from.dribbling_labels_),
       ball_possession_labels_(from.ball_possession_labels_),
       passing_labels_(from.passing_labels_),
       goal_shot_labels_(from.goal_shot_labels_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:Labels)
 }
 
 void Labels::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Labels_log_5flabels_2eproto.base);
 }
 
 Labels::~Labels() {
   // @@protoc_insertion_point(destructor:Labels)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Labels::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Labels::ArenaDtor(void* object) {
-  Labels* _this = reinterpret_cast< Labels* >(object);
-  (void)_this;
-}
-void Labels::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Labels::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Labels& Labels::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Labels_log_5flabels_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Labels::Clear() {
 // @@protoc_insertion_point(message_clear_start:Labels)
@@ -1374,7 +1368,7 @@ void Labels::Clear() {
   ball_possession_labels_.Clear();
   passing_labels_.Clear();
   goal_shot_labels_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Labels::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1438,9 +1432,7 @@ const char* Labels::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::int
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1454,7 +1446,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Labels::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Labels::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Labels)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1463,38 +1455,38 @@ failure:
   // repeated .DribblingLabel dribbling_labels = 1;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_dribbling_labels_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, this->_internal_dribbling_labels(i), target, stream);
+      InternalWriteMessageToArray(1, this->_internal_dribbling_labels(i), target, stream);
   }
 
   // repeated .BallPossessionLabel ball_possession_labels = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_ball_possession_labels_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_ball_possession_labels(i), target, stream);
+      InternalWriteMessageToArray(2, this->_internal_ball_possession_labels(i), target, stream);
   }
 
   // repeated .PassingLabel passing_labels = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_passing_labels_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_passing_labels(i), target, stream);
+      InternalWriteMessageToArray(3, this->_internal_passing_labels(i), target, stream);
   }
 
   // repeated .GoalShotLabel goal_shot_labels = 4;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_goal_shot_labels_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(4, this->_internal_goal_shot_labels(i), target, stream);
+      InternalWriteMessageToArray(4, this->_internal_goal_shot_labels(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Labels)
   return target;
@@ -1563,7 +1555,7 @@ void Labels::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Labels::MergeFrom(const Labels& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Labels)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1593,7 +1585,7 @@ bool Labels::IsInitialized() const {
 
 void Labels::InternalSwap(Labels* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   dribbling_labels_.InternalSwap(&other->dribbling_labels_);
   ball_possession_labels_.InternalSwap(&other->ball_possession_labels_);
   passing_labels_.InternalSwap(&other->passing_labels_);
@@ -1608,19 +1600,19 @@ void Labels::InternalSwap(Labels* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::DribblingLabel* Arena::CreateMaybeMessage< ::DribblingLabel >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::DribblingLabel >(arena);
+  return Arena::CreateInternal< ::DribblingLabel >(arena);
 }
 template<> PROTOBUF_NOINLINE ::BallPossessionLabel* Arena::CreateMaybeMessage< ::BallPossessionLabel >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::BallPossessionLabel >(arena);
+  return Arena::CreateInternal< ::BallPossessionLabel >(arena);
 }
 template<> PROTOBUF_NOINLINE ::PassingLabel* Arena::CreateMaybeMessage< ::PassingLabel >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::PassingLabel >(arena);
+  return Arena::CreateInternal< ::PassingLabel >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GoalShotLabel* Arena::CreateMaybeMessage< ::GoalShotLabel >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GoalShotLabel >(arena);
+  return Arena::CreateInternal< ::GoalShotLabel >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Labels* Arena::CreateMaybeMessage< ::Labels >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Labels >(arena);
+  return Arena::CreateInternal< ::Labels >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

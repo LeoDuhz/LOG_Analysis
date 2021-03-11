@@ -14,87 +14,64 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_vision_5fdetection_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vision_DetectionBall_vision_5fdetection_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_vision_5fdetection_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vision_DetectionRobot_vision_5fdetection_2eproto;
+class Vision_DetectionBallDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Vision_DetectionBall> _instance;
+} _Vision_DetectionBall_default_instance_;
+class Vision_DetectionRobotDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Vision_DetectionRobot> _instance;
+} _Vision_DetectionRobot_default_instance_;
+class Vision_DetectionFrameDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Vision_DetectionFrame> _instance;
+} _Vision_DetectionFrame_default_instance_;
+static void InitDefaultsscc_info_Vision_DetectionBall_vision_5fdetection_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr Vision_DetectionBall::Vision_DetectionBall(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : vel_x_(0)
-  , vel_y_(0)
-  , area_(0u)
-  , x_(0)
-  , y_(0)
-  , height_(0)
-  , ball_state_(0u)
-  , last_touch_(0u)
-  , valid_(false)
-  , raw_x_(0)
-  , raw_y_(0)
-  , chip_predict_x_(0)
-  , chip_predict_y_(0)
-  , chip_best_predict_x_(0)
-  , chip_best_predict_y_(0)
-  , real_x_(0)
-  , real_y_(0)
-  , real_z_(0)
-  , chip_vel_x_(0)
-  , chip_vel_y_(0)
-  , chip_vel_z_(0)
-  , chip_second_pos_x_(0)
-  , chip_second_pos_y_(0)
-  , chip_fly_time_(0)
-  , chip_rest_fly_time_(0){}
-struct Vision_DetectionBallDefaultTypeInternal {
-  constexpr Vision_DetectionBallDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Vision_DetectionBallDefaultTypeInternal() {}
-  union {
-    Vision_DetectionBall _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Vision_DetectionBallDefaultTypeInternal _Vision_DetectionBall_default_instance_;
-constexpr Vision_DetectionRobot::Vision_DetectionRobot(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : valid_(false)
-  , robot_id_(0u)
-  , x_(0)
-  , y_(0)
-  , orientation_(0)
-  , vel_x_(0)
-  , vel_y_(0)
-  , rotate_vel_(0)
-  , accelerate_x_(0)
-  , accelerate_y_(0)
-  , raw_x_(0)
-  , raw_y_(0)
-  , raw_orientation_(0)
-  , raw_vel_x_(0)
-  , raw_vel_y_(0)
-  , raw_rotate_vel_(0)
-  , imu_dir_(0)
-  , imu_rotate_vel_(0){}
-struct Vision_DetectionRobotDefaultTypeInternal {
-  constexpr Vision_DetectionRobotDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Vision_DetectionRobotDefaultTypeInternal() {}
-  union {
-    Vision_DetectionRobot _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Vision_DetectionRobotDefaultTypeInternal _Vision_DetectionRobot_default_instance_;
-constexpr Vision_DetectionFrame::Vision_DetectionFrame(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : robots_yellow_()
-  , robots_blue_()
-  , balls_(nullptr){}
-struct Vision_DetectionFrameDefaultTypeInternal {
-  constexpr Vision_DetectionFrameDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Vision_DetectionFrameDefaultTypeInternal() {}
-  union {
-    Vision_DetectionFrame _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Vision_DetectionFrameDefaultTypeInternal _Vision_DetectionFrame_default_instance_;
+  {
+    void* ptr = &::_Vision_DetectionBall_default_instance_;
+    new (ptr) ::Vision_DetectionBall();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Vision_DetectionBall::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vision_DetectionBall_vision_5fdetection_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Vision_DetectionBall_vision_5fdetection_2eproto}, {}};
+
+static void InitDefaultsscc_info_Vision_DetectionFrame_vision_5fdetection_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Vision_DetectionFrame_default_instance_;
+    new (ptr) ::Vision_DetectionFrame();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Vision_DetectionFrame::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<2> scc_info_Vision_DetectionFrame_vision_5fdetection_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 2, 0, InitDefaultsscc_info_Vision_DetectionFrame_vision_5fdetection_2eproto}, {
+      &scc_info_Vision_DetectionBall_vision_5fdetection_2eproto.base,
+      &scc_info_Vision_DetectionRobot_vision_5fdetection_2eproto.base,}};
+
+static void InitDefaultsscc_info_Vision_DetectionRobot_vision_5fdetection_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_Vision_DetectionRobot_default_instance_;
+    new (ptr) ::Vision_DetectionRobot();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::Vision_DetectionRobot::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Vision_DetectionRobot_vision_5fdetection_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Vision_DetectionRobot_vision_5fdetection_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_vision_5fdetection_2eproto[3];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_vision_5fdetection_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_vision_5fdetection_2eproto = nullptr;
@@ -249,24 +226,29 @@ const char descriptor_table_protodef_vision_5fdetection_2eproto[] PROTOBUF_SECTI
   "\022+\n\013robots_blue\030\003 \003(\0132\026.Vision_Detection"
   "Robot"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_vision_5fdetection_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_vision_5fdetection_2eproto = {
-  false, false, 1045, descriptor_table_protodef_vision_5fdetection_2eproto, "vision_detection.proto", 
-  &descriptor_table_vision_5fdetection_2eproto_once, nullptr, 0, 3,
-  schemas, file_default_instances, TableStruct_vision_5fdetection_2eproto::offsets,
-  file_level_metadata_vision_5fdetection_2eproto, file_level_enum_descriptors_vision_5fdetection_2eproto, file_level_service_descriptors_vision_5fdetection_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_vision_5fdetection_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_vision_5fdetection_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_vision_5fdetection_2eproto);
-  return descriptor_table_vision_5fdetection_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_vision_5fdetection_2eproto_sccs[3] = {
+  &scc_info_Vision_DetectionBall_vision_5fdetection_2eproto.base,
+  &scc_info_Vision_DetectionFrame_vision_5fdetection_2eproto.base,
+  &scc_info_Vision_DetectionRobot_vision_5fdetection_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_vision_5fdetection_2eproto_once;
+static bool descriptor_table_vision_5fdetection_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_vision_5fdetection_2eproto = {
+  &descriptor_table_vision_5fdetection_2eproto_initialized, descriptor_table_protodef_vision_5fdetection_2eproto, "vision_detection.proto", 1045,
+  &descriptor_table_vision_5fdetection_2eproto_once, descriptor_table_vision_5fdetection_2eproto_sccs, descriptor_table_vision_5fdetection_2eproto_deps, 3, 0,
+  schemas, file_default_instances, TableStruct_vision_5fdetection_2eproto::offsets,
+  file_level_metadata_vision_5fdetection_2eproto, 3, file_level_enum_descriptors_vision_5fdetection_2eproto, file_level_service_descriptors_vision_5fdetection_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_vision_5fdetection_2eproto(&descriptor_table_vision_5fdetection_2eproto);
+static bool dynamic_init_dummy_vision_5fdetection_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_vision_5fdetection_2eproto), true);
 
 // ===================================================================
 
+void Vision_DetectionBall::InitAsDefaultInstance() {
+}
 class Vision_DetectionBall::_Internal {
  public:
   using HasBits = decltype(std::declval<Vision_DetectionBall>()._has_bits_);
@@ -345,21 +327,18 @@ class Vision_DetectionBall::_Internal {
   static void set_has_chip_rest_fly_time(HasBits* has_bits) {
     (*has_bits)[0] |= 16777216u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000718) ^ 0x00000718) != 0;
-  }
 };
 
-Vision_DetectionBall::Vision_DetectionBall(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Vision_DetectionBall::Vision_DetectionBall()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Vision_DetectionBall)
+  // @@protoc_insertion_point(constructor:Vision_DetectionBall)
 }
 Vision_DetectionBall::Vision_DetectionBall(const Vision_DetectionBall& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&vel_x_, &from.vel_x_,
     static_cast<size_t>(reinterpret_cast<char*>(&chip_rest_fly_time_) -
     reinterpret_cast<char*>(&vel_x_)) + sizeof(chip_rest_fly_time_));
@@ -367,31 +346,27 @@ Vision_DetectionBall::Vision_DetectionBall(const Vision_DetectionBall& from)
 }
 
 void Vision_DetectionBall::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&vel_x_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&chip_rest_fly_time_) -
-    reinterpret_cast<char*>(&vel_x_)) + sizeof(chip_rest_fly_time_));
+  ::memset(&vel_x_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&chip_rest_fly_time_) -
+      reinterpret_cast<char*>(&vel_x_)) + sizeof(chip_rest_fly_time_));
 }
 
 Vision_DetectionBall::~Vision_DetectionBall() {
   // @@protoc_insertion_point(destructor:Vision_DetectionBall)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Vision_DetectionBall::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Vision_DetectionBall::ArenaDtor(void* object) {
-  Vision_DetectionBall* _this = reinterpret_cast< Vision_DetectionBall* >(object);
-  (void)_this;
-}
-void Vision_DetectionBall::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Vision_DetectionBall::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Vision_DetectionBall& Vision_DetectionBall::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Vision_DetectionBall_vision_5fdetection_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Vision_DetectionBall::Clear() {
 // @@protoc_insertion_point(message_clear_start:Vision_DetectionBall)
@@ -417,7 +392,7 @@ void Vision_DetectionBall::Clear() {
   }
   chip_rest_fly_time_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Vision_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -448,7 +423,7 @@ const char* Vision_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           _Internal::set_has_area(&has_bits);
-          area_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          area_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -480,7 +455,7 @@ const char* Vision_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           _Internal::set_has_ball_state(&has_bits);
-          ball_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          ball_state_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -488,7 +463,7 @@ const char* Vision_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           _Internal::set_has_last_touch(&has_bits);
-          last_touch_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          last_touch_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -496,7 +471,7 @@ const char* Vision_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAM
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 72)) {
           _Internal::set_has_valid(&has_bits);
-          valid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          valid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -634,9 +609,7 @@ const char* Vision_DetectionBall::_InternalParse(const char* ptr, ::PROTOBUF_NAM
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -651,7 +624,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Vision_DetectionBall::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Vision_DetectionBall::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Vision_DetectionBall)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -660,157 +633,157 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional float vel_x = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_vel_x(), target);
   }
 
   // optional float vel_y = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_vel_y(), target);
   }
 
   // optional uint32 area = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_area(), target);
   }
 
   // required float x = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_x(), target);
   }
 
   // required float y = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_y(), target);
   }
 
   // optional float height = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_height(), target);
   }
 
   // optional uint32 ball_state = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(7, this->_internal_ball_state(), target);
   }
 
   // optional uint32 last_touch = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(8, this->_internal_last_touch(), target);
   }
 
   // required bool valid = 9;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(9, this->_internal_valid(), target);
   }
 
   // required float raw_x = 10;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(10, this->_internal_raw_x(), target);
   }
 
   // required float raw_y = 11;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(11, this->_internal_raw_y(), target);
   }
 
   // optional float chip_predict_x = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(12, this->_internal_chip_predict_x(), target);
   }
 
   // optional float chip_predict_y = 13;
   if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(13, this->_internal_chip_predict_y(), target);
   }
 
   // optional float chip_best_predict_x = 14;
   if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(14, this->_internal_chip_best_predict_x(), target);
   }
 
   // optional float chip_best_predict_y = 15;
   if (cached_has_bits & 0x00004000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(15, this->_internal_chip_best_predict_y(), target);
   }
 
   // optional float real_x = 16;
   if (cached_has_bits & 0x00008000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(16, this->_internal_real_x(), target);
   }
 
   // optional float real_y = 17;
   if (cached_has_bits & 0x00010000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(17, this->_internal_real_y(), target);
   }
 
   // optional float real_z = 18;
   if (cached_has_bits & 0x00020000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(18, this->_internal_real_z(), target);
   }
 
   // optional float chip_vel_x = 19;
   if (cached_has_bits & 0x00040000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(19, this->_internal_chip_vel_x(), target);
   }
 
   // optional float chip_vel_y = 20;
   if (cached_has_bits & 0x00080000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(20, this->_internal_chip_vel_y(), target);
   }
 
   // optional float chip_vel_z = 21;
   if (cached_has_bits & 0x00100000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(21, this->_internal_chip_vel_z(), target);
   }
 
   // optional float chip_second_pos_x = 22;
   if (cached_has_bits & 0x00200000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(22, this->_internal_chip_second_pos_x(), target);
   }
 
   // optional float chip_second_pos_y = 23;
   if (cached_has_bits & 0x00400000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(23, this->_internal_chip_second_pos_y(), target);
   }
 
   // optional float chip_fly_time = 24;
   if (cached_has_bits & 0x00800000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(24, this->_internal_chip_fly_time(), target);
   }
 
   // optional float chip_rest_fly_time = 25;
   if (cached_has_bits & 0x01000000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(25, this->_internal_chip_rest_fly_time(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Vision_DetectionBall)
   return target;
@@ -820,27 +793,27 @@ size_t Vision_DetectionBall::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Vision_DetectionBall)
   size_t total_size = 0;
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required float x = 4;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required float y = 5;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_valid()) {
+  if (has_valid()) {
     // required bool valid = 9;
     total_size += 1 + 1;
   }
 
-  if (_internal_has_raw_x()) {
+  if (has_raw_x()) {
     // required float raw_x = 10;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_raw_y()) {
+  if (has_raw_y()) {
     // required float raw_y = 11;
     total_size += 1 + 4;
   }
@@ -1016,7 +989,7 @@ void Vision_DetectionBall::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fro
 void Vision_DetectionBall::MergeFrom(const Vision_DetectionBall& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Vision_DetectionBall)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1122,20 +1095,39 @@ void Vision_DetectionBall::CopyFrom(const Vision_DetectionBall& from) {
 }
 
 bool Vision_DetectionBall::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000718) != 0x00000718) return false;
   return true;
 }
 
 void Vision_DetectionBall::InternalSwap(Vision_DetectionBall* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Vision_DetectionBall, chip_rest_fly_time_)
-      + sizeof(Vision_DetectionBall::chip_rest_fly_time_)
-      - PROTOBUF_FIELD_OFFSET(Vision_DetectionBall, vel_x_)>(
-          reinterpret_cast<char*>(&vel_x_),
-          reinterpret_cast<char*>(&other->vel_x_));
+  swap(vel_x_, other->vel_x_);
+  swap(vel_y_, other->vel_y_);
+  swap(area_, other->area_);
+  swap(x_, other->x_);
+  swap(y_, other->y_);
+  swap(height_, other->height_);
+  swap(ball_state_, other->ball_state_);
+  swap(last_touch_, other->last_touch_);
+  swap(valid_, other->valid_);
+  swap(raw_x_, other->raw_x_);
+  swap(raw_y_, other->raw_y_);
+  swap(chip_predict_x_, other->chip_predict_x_);
+  swap(chip_predict_y_, other->chip_predict_y_);
+  swap(chip_best_predict_x_, other->chip_best_predict_x_);
+  swap(chip_best_predict_y_, other->chip_best_predict_y_);
+  swap(real_x_, other->real_x_);
+  swap(real_y_, other->real_y_);
+  swap(real_z_, other->real_z_);
+  swap(chip_vel_x_, other->chip_vel_x_);
+  swap(chip_vel_y_, other->chip_vel_y_);
+  swap(chip_vel_z_, other->chip_vel_z_);
+  swap(chip_second_pos_x_, other->chip_second_pos_x_);
+  swap(chip_second_pos_y_, other->chip_second_pos_y_);
+  swap(chip_fly_time_, other->chip_fly_time_);
+  swap(chip_rest_fly_time_, other->chip_rest_fly_time_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Vision_DetectionBall::GetMetadata() const {
@@ -1145,6 +1137,8 @@ void Vision_DetectionBall::InternalSwap(Vision_DetectionBall* other) {
 
 // ===================================================================
 
+void Vision_DetectionRobot::InitAsDefaultInstance() {
+}
 class Vision_DetectionRobot::_Internal {
  public:
   using HasBits = decltype(std::declval<Vision_DetectionRobot>()._has_bits_);
@@ -1202,21 +1196,18 @@ class Vision_DetectionRobot::_Internal {
   static void set_has_imu_rotate_vel(HasBits* has_bits) {
     (*has_bits)[0] |= 131072u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000c0d) ^ 0x00000c0d) != 0;
-  }
 };
 
-Vision_DetectionRobot::Vision_DetectionRobot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Vision_DetectionRobot::Vision_DetectionRobot()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Vision_DetectionRobot)
+  // @@protoc_insertion_point(constructor:Vision_DetectionRobot)
 }
 Vision_DetectionRobot::Vision_DetectionRobot(const Vision_DetectionRobot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&valid_, &from.valid_,
     static_cast<size_t>(reinterpret_cast<char*>(&imu_rotate_vel_) -
     reinterpret_cast<char*>(&valid_)) + sizeof(imu_rotate_vel_));
@@ -1224,31 +1215,27 @@ Vision_DetectionRobot::Vision_DetectionRobot(const Vision_DetectionRobot& from)
 }
 
 void Vision_DetectionRobot::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&valid_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&imu_rotate_vel_) -
-    reinterpret_cast<char*>(&valid_)) + sizeof(imu_rotate_vel_));
+  ::memset(&valid_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&imu_rotate_vel_) -
+      reinterpret_cast<char*>(&valid_)) + sizeof(imu_rotate_vel_));
 }
 
 Vision_DetectionRobot::~Vision_DetectionRobot() {
   // @@protoc_insertion_point(destructor:Vision_DetectionRobot)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Vision_DetectionRobot::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Vision_DetectionRobot::ArenaDtor(void* object) {
-  Vision_DetectionRobot* _this = reinterpret_cast< Vision_DetectionRobot* >(object);
-  (void)_this;
-}
-void Vision_DetectionRobot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Vision_DetectionRobot::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Vision_DetectionRobot& Vision_DetectionRobot::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Vision_DetectionRobot_vision_5fdetection_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Vision_DetectionRobot::Clear() {
 // @@protoc_insertion_point(message_clear_start:Vision_DetectionRobot)
@@ -1273,7 +1260,7 @@ void Vision_DetectionRobot::Clear() {
         reinterpret_cast<char*>(&imu_dir_)) + sizeof(imu_rotate_vel_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Vision_DetectionRobot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1288,7 +1275,7 @@ const char* Vision_DetectionRobot::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_valid(&has_bits);
-          valid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          valid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1296,7 +1283,7 @@ const char* Vision_DetectionRobot::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_robot_id(&has_bits);
-          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          robot_id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1434,9 +1421,7 @@ const char* Vision_DetectionRobot::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1451,7 +1436,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Vision_DetectionRobot::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Vision_DetectionRobot::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Vision_DetectionRobot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1460,115 +1445,115 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required bool valid = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(1, this->_internal_valid(), target);
   }
 
   // optional uint32 robot_id = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_robot_id(), target);
   }
 
   // required float x = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_x(), target);
   }
 
   // required float y = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_y(), target);
   }
 
   // optional float orientation = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_orientation(), target);
   }
 
   // optional float vel_x = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_vel_x(), target);
   }
 
   // optional float vel_y = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(7, this->_internal_vel_y(), target);
   }
 
   // optional float rotate_vel = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(8, this->_internal_rotate_vel(), target);
   }
 
   // optional float accelerate_x = 9;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(9, this->_internal_accelerate_x(), target);
   }
 
   // optional float accelerate_y = 10;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(10, this->_internal_accelerate_y(), target);
   }
 
   // required float raw_x = 11;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(11, this->_internal_raw_x(), target);
   }
 
   // required float raw_y = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(12, this->_internal_raw_y(), target);
   }
 
   // optional float raw_orientation = 13;
   if (cached_has_bits & 0x00001000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(13, this->_internal_raw_orientation(), target);
   }
 
   // optional float raw_vel_x = 14;
   if (cached_has_bits & 0x00002000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(14, this->_internal_raw_vel_x(), target);
   }
 
   // optional float raw_vel_y = 15;
   if (cached_has_bits & 0x00004000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(15, this->_internal_raw_vel_y(), target);
   }
 
   // optional float raw_rotate_vel = 16;
   if (cached_has_bits & 0x00008000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(16, this->_internal_raw_rotate_vel(), target);
   }
 
   // optional float imu_dir = 17;
   if (cached_has_bits & 0x00010000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(17, this->_internal_imu_dir(), target);
   }
 
   // optional float imu_rotate_vel = 18;
   if (cached_has_bits & 0x00020000u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(18, this->_internal_imu_rotate_vel(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Vision_DetectionRobot)
   return target;
@@ -1578,27 +1563,27 @@ size_t Vision_DetectionRobot::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:Vision_DetectionRobot)
   size_t total_size = 0;
 
-  if (_internal_has_valid()) {
+  if (has_valid()) {
     // required bool valid = 1;
     total_size += 1 + 1;
   }
 
-  if (_internal_has_x()) {
+  if (has_x()) {
     // required float x = 3;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_y()) {
+  if (has_y()) {
     // required float y = 4;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_raw_x()) {
+  if (has_raw_x()) {
     // required float raw_x = 11;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_raw_y()) {
+  if (has_raw_y()) {
     // required float raw_y = 12;
     total_size += 1 + 4;
   }
@@ -1735,7 +1720,7 @@ void Vision_DetectionRobot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void Vision_DetectionRobot::MergeFrom(const Vision_DetectionRobot& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Vision_DetectionRobot)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1820,20 +1805,32 @@ void Vision_DetectionRobot::CopyFrom(const Vision_DetectionRobot& from) {
 }
 
 bool Vision_DetectionRobot::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000c0d) != 0x00000c0d) return false;
   return true;
 }
 
 void Vision_DetectionRobot::InternalSwap(Vision_DetectionRobot* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Vision_DetectionRobot, imu_rotate_vel_)
-      + sizeof(Vision_DetectionRobot::imu_rotate_vel_)
-      - PROTOBUF_FIELD_OFFSET(Vision_DetectionRobot, valid_)>(
-          reinterpret_cast<char*>(&valid_),
-          reinterpret_cast<char*>(&other->valid_));
+  swap(valid_, other->valid_);
+  swap(robot_id_, other->robot_id_);
+  swap(x_, other->x_);
+  swap(y_, other->y_);
+  swap(orientation_, other->orientation_);
+  swap(vel_x_, other->vel_x_);
+  swap(vel_y_, other->vel_y_);
+  swap(rotate_vel_, other->rotate_vel_);
+  swap(accelerate_x_, other->accelerate_x_);
+  swap(accelerate_y_, other->accelerate_y_);
+  swap(raw_x_, other->raw_x_);
+  swap(raw_y_, other->raw_y_);
+  swap(raw_orientation_, other->raw_orientation_);
+  swap(raw_vel_x_, other->raw_vel_x_);
+  swap(raw_vel_y_, other->raw_vel_y_);
+  swap(raw_rotate_vel_, other->raw_rotate_vel_);
+  swap(imu_dir_, other->imu_dir_);
+  swap(imu_rotate_vel_, other->imu_rotate_vel_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Vision_DetectionRobot::GetMetadata() const {
@@ -1843,6 +1840,10 @@ void Vision_DetectionRobot::InternalSwap(Vision_DetectionRobot* other) {
 
 // ===================================================================
 
+void Vision_DetectionFrame::InitAsDefaultInstance() {
+  ::_Vision_DetectionFrame_default_instance_._instance.get_mutable()->balls_ = const_cast< ::Vision_DetectionBall*>(
+      ::Vision_DetectionBall::internal_default_instance());
+}
 class Vision_DetectionFrame::_Internal {
  public:
   using HasBits = decltype(std::declval<Vision_DetectionFrame>()._has_bits_);
@@ -1850,29 +1851,24 @@ class Vision_DetectionFrame::_Internal {
   static void set_has_balls(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
 const ::Vision_DetectionBall&
 Vision_DetectionFrame::_Internal::balls(const Vision_DetectionFrame* msg) {
   return *msg->balls_;
 }
-Vision_DetectionFrame::Vision_DetectionFrame(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  robots_yellow_(arena),
-  robots_blue_(arena) {
+Vision_DetectionFrame::Vision_DetectionFrame()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:Vision_DetectionFrame)
+  // @@protoc_insertion_point(constructor:Vision_DetectionFrame)
 }
 Vision_DetectionFrame::Vision_DetectionFrame(const Vision_DetectionFrame& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       robots_yellow_(from.robots_yellow_),
       robots_blue_(from.robots_blue_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_balls()) {
     balls_ = new ::Vision_DetectionBall(*from.balls_);
   } else {
@@ -1882,29 +1878,27 @@ Vision_DetectionFrame::Vision_DetectionFrame(const Vision_DetectionFrame& from)
 }
 
 void Vision_DetectionFrame::SharedCtor() {
-balls_ = nullptr;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Vision_DetectionFrame_vision_5fdetection_2eproto.base);
+  balls_ = nullptr;
 }
 
 Vision_DetectionFrame::~Vision_DetectionFrame() {
   // @@protoc_insertion_point(destructor:Vision_DetectionFrame)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Vision_DetectionFrame::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete balls_;
 }
 
-void Vision_DetectionFrame::ArenaDtor(void* object) {
-  Vision_DetectionFrame* _this = reinterpret_cast< Vision_DetectionFrame* >(object);
-  (void)_this;
-}
-void Vision_DetectionFrame::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Vision_DetectionFrame::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Vision_DetectionFrame& Vision_DetectionFrame::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Vision_DetectionFrame_vision_5fdetection_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Vision_DetectionFrame::Clear() {
 // @@protoc_insertion_point(message_clear_start:Vision_DetectionFrame)
@@ -1920,7 +1914,7 @@ void Vision_DetectionFrame::Clear() {
     balls_->Clear();
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Vision_DetectionFrame::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1968,9 +1962,7 @@ const char* Vision_DetectionFrame::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1985,7 +1977,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Vision_DetectionFrame::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Vision_DetectionFrame::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:Vision_DetectionFrame)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1994,31 +1986,31 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Vision_DetectionBall balls = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::balls(this), target, stream);
   }
 
   // repeated .Vision_DetectionRobot robots_yellow = 2;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_robots_yellow_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, this->_internal_robots_yellow(i), target, stream);
+      InternalWriteMessageToArray(2, this->_internal_robots_yellow(i), target, stream);
   }
 
   // repeated .Vision_DetectionRobot robots_blue = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_robots_blue_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_robots_blue(i), target, stream);
+      InternalWriteMessageToArray(3, this->_internal_robots_blue(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:Vision_DetectionFrame)
   return target;
@@ -2029,7 +2021,7 @@ size_t Vision_DetectionFrame::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Vision_DetectionBall balls = 1;
-  if (_internal_has_balls()) {
+  if (has_balls()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *balls_);
@@ -2079,7 +2071,7 @@ void Vision_DetectionFrame::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void Vision_DetectionFrame::MergeFrom(const Vision_DetectionFrame& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:Vision_DetectionFrame)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2105,18 +2097,18 @@ void Vision_DetectionFrame::CopyFrom(const Vision_DetectionFrame& from) {
 }
 
 bool Vision_DetectionFrame::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(robots_yellow_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(robots_blue_)) return false;
-  if (_internal_has_balls()) {
-    if (!balls_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->robots_yellow())) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->robots_blue())) return false;
+  if (has_balls()) {
+    if (!this->balls_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Vision_DetectionFrame::InternalSwap(Vision_DetectionFrame* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   robots_yellow_.InternalSwap(&other->robots_yellow_);
   robots_blue_.InternalSwap(&other->robots_blue_);
@@ -2131,13 +2123,13 @@ void Vision_DetectionFrame::InternalSwap(Vision_DetectionFrame* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::Vision_DetectionBall* Arena::CreateMaybeMessage< ::Vision_DetectionBall >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Vision_DetectionBall >(arena);
+  return Arena::CreateInternal< ::Vision_DetectionBall >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Vision_DetectionRobot* Arena::CreateMaybeMessage< ::Vision_DetectionRobot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Vision_DetectionRobot >(arena);
+  return Arena::CreateInternal< ::Vision_DetectionRobot >(arena);
 }
 template<> PROTOBUF_NOINLINE ::Vision_DetectionFrame* Arena::CreateMaybeMessage< ::Vision_DetectionFrame >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Vision_DetectionFrame >(arena);
+  return Arena::CreateInternal< ::Vision_DetectionFrame >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

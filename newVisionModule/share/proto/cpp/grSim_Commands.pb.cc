@@ -14,45 +14,44 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_grSim_5fCommands_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_grSim_Robot_Command_grSim_5fCommands_2eproto;
+class grSim_Robot_CommandDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<grSim_Robot_Command> _instance;
+} _grSim_Robot_Command_default_instance_;
+class grSim_CommandsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<grSim_Commands> _instance;
+} _grSim_Commands_default_instance_;
+static void InitDefaultsscc_info_grSim_Commands_grSim_5fCommands_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr grSim_Robot_Command::grSim_Robot_Command(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : id_(0u)
-  , kickspeedx_(0)
-  , kickspeedz_(0)
-  , veltangent_(0)
-  , velnormal_(0)
-  , velangular_(0)
-  , spinner_(false)
-  , wheelsspeed_(false)
-  , wheel1_(0)
-  , wheel2_(0)
-  , wheel3_(0)
-  , wheel4_(0){}
-struct grSim_Robot_CommandDefaultTypeInternal {
-  constexpr grSim_Robot_CommandDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~grSim_Robot_CommandDefaultTypeInternal() {}
-  union {
-    grSim_Robot_Command _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT grSim_Robot_CommandDefaultTypeInternal _grSim_Robot_Command_default_instance_;
-constexpr grSim_Commands::grSim_Commands(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : robot_commands_()
-  , timestamp_(0)
-  , isteamyellow_(false){}
-struct grSim_CommandsDefaultTypeInternal {
-  constexpr grSim_CommandsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~grSim_CommandsDefaultTypeInternal() {}
-  union {
-    grSim_Commands _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT grSim_CommandsDefaultTypeInternal _grSim_Commands_default_instance_;
+  {
+    void* ptr = &::_grSim_Commands_default_instance_;
+    new (ptr) ::grSim_Commands();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::grSim_Commands::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_grSim_Commands_grSim_5fCommands_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_grSim_Commands_grSim_5fCommands_2eproto}, {
+      &scc_info_grSim_Robot_Command_grSim_5fCommands_2eproto.base,}};
+
+static void InitDefaultsscc_info_grSim_Robot_Command_grSim_5fCommands_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_grSim_Robot_Command_default_instance_;
+    new (ptr) ::grSim_Robot_Command();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::grSim_Robot_Command::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_grSim_Robot_Command_grSim_5fCommands_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_grSim_Robot_Command_grSim_5fCommands_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_grSim_5fCommands_2eproto[2];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_grSim_5fCommands_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_grSim_5fCommands_2eproto = nullptr;
@@ -121,24 +120,28 @@ const char descriptor_table_protodef_grSim_5fCommands_2eproto[] PROTOBUF_SECTION
   "\n\016robot_commands\030\003 \003(\0132\024.grSim_Robot_Com"
   "mand"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_grSim_5fCommands_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_grSim_5fCommands_2eproto = {
-  false, false, 364, descriptor_table_protodef_grSim_5fCommands_2eproto, "grSim_Commands.proto", 
-  &descriptor_table_grSim_5fCommands_2eproto_once, nullptr, 0, 2,
-  schemas, file_default_instances, TableStruct_grSim_5fCommands_2eproto::offsets,
-  file_level_metadata_grSim_5fCommands_2eproto, file_level_enum_descriptors_grSim_5fCommands_2eproto, file_level_service_descriptors_grSim_5fCommands_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_grSim_5fCommands_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_grSim_5fCommands_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_grSim_5fCommands_2eproto);
-  return descriptor_table_grSim_5fCommands_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_grSim_5fCommands_2eproto_sccs[2] = {
+  &scc_info_grSim_Commands_grSim_5fCommands_2eproto.base,
+  &scc_info_grSim_Robot_Command_grSim_5fCommands_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_grSim_5fCommands_2eproto_once;
+static bool descriptor_table_grSim_5fCommands_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_grSim_5fCommands_2eproto = {
+  &descriptor_table_grSim_5fCommands_2eproto_initialized, descriptor_table_protodef_grSim_5fCommands_2eproto, "grSim_Commands.proto", 364,
+  &descriptor_table_grSim_5fCommands_2eproto_once, descriptor_table_grSim_5fCommands_2eproto_sccs, descriptor_table_grSim_5fCommands_2eproto_deps, 2, 0,
+  schemas, file_default_instances, TableStruct_grSim_5fCommands_2eproto::offsets,
+  file_level_metadata_grSim_5fCommands_2eproto, 2, file_level_enum_descriptors_grSim_5fCommands_2eproto, file_level_service_descriptors_grSim_5fCommands_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_grSim_5fCommands_2eproto(&descriptor_table_grSim_5fCommands_2eproto);
+static bool dynamic_init_dummy_grSim_5fCommands_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_grSim_5fCommands_2eproto), true);
 
 // ===================================================================
 
+void grSim_Robot_Command::InitAsDefaultInstance() {
+}
 class grSim_Robot_Command::_Internal {
  public:
   using HasBits = decltype(std::declval<grSim_Robot_Command>()._has_bits_);
@@ -178,21 +181,18 @@ class grSim_Robot_Command::_Internal {
   static void set_has_wheel4(HasBits* has_bits) {
     (*has_bits)[0] |= 2048u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x000000ff) ^ 0x000000ff) != 0;
-  }
 };
 
-grSim_Robot_Command::grSim_Robot_Command(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+grSim_Robot_Command::grSim_Robot_Command()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:grSim_Robot_Command)
+  // @@protoc_insertion_point(constructor:grSim_Robot_Command)
 }
 grSim_Robot_Command::grSim_Robot_Command(const grSim_Robot_Command& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&id_, &from.id_,
     static_cast<size_t>(reinterpret_cast<char*>(&wheel4_) -
     reinterpret_cast<char*>(&id_)) + sizeof(wheel4_));
@@ -200,31 +200,27 @@ grSim_Robot_Command::grSim_Robot_Command(const grSim_Robot_Command& from)
 }
 
 void grSim_Robot_Command::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&id_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&wheel4_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(wheel4_));
+  ::memset(&id_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&wheel4_) -
+      reinterpret_cast<char*>(&id_)) + sizeof(wheel4_));
 }
 
 grSim_Robot_Command::~grSim_Robot_Command() {
   // @@protoc_insertion_point(destructor:grSim_Robot_Command)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void grSim_Robot_Command::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void grSim_Robot_Command::ArenaDtor(void* object) {
-  grSim_Robot_Command* _this = reinterpret_cast< grSim_Robot_Command* >(object);
-  (void)_this;
-}
-void grSim_Robot_Command::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void grSim_Robot_Command::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const grSim_Robot_Command& grSim_Robot_Command::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_grSim_Robot_Command_grSim_5fCommands_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void grSim_Robot_Command::Clear() {
 // @@protoc_insertion_point(message_clear_start:grSim_Robot_Command)
@@ -244,7 +240,7 @@ void grSim_Robot_Command::Clear() {
         reinterpret_cast<char*>(&wheel1_)) + sizeof(wheel4_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* grSim_Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -259,7 +255,7 @@ const char* grSim_Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_id(&has_bits);
-          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -307,7 +303,7 @@ const char* grSim_Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 56)) {
           _Internal::set_has_spinner(&has_bits);
-          spinner_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          spinner_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -315,7 +311,7 @@ const char* grSim_Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAME
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
           _Internal::set_has_wheelsspeed(&has_bits);
-          wheelsspeed_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          wheelsspeed_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -357,9 +353,7 @@ const char* grSim_Robot_Command::_InternalParse(const char* ptr, ::PROTOBUF_NAME
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -374,7 +368,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* grSim_Robot_Command::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* grSim_Robot_Command::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:grSim_Robot_Command)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -383,79 +377,79 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required uint32 id = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_id(), target);
   }
 
   // required float kickspeedx = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_kickspeedx(), target);
   }
 
   // required float kickspeedz = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_kickspeedz(), target);
   }
 
   // required float veltangent = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_veltangent(), target);
   }
 
   // required float velnormal = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_velnormal(), target);
   }
 
   // required float velangular = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_velangular(), target);
   }
 
   // required bool spinner = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(7, this->_internal_spinner(), target);
   }
 
   // required bool wheelsspeed = 8;
   if (cached_has_bits & 0x00000080u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(8, this->_internal_wheelsspeed(), target);
   }
 
   // optional float wheel1 = 9;
   if (cached_has_bits & 0x00000100u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(9, this->_internal_wheel1(), target);
   }
 
   // optional float wheel2 = 10;
   if (cached_has_bits & 0x00000200u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(10, this->_internal_wheel2(), target);
   }
 
   // optional float wheel3 = 11;
   if (cached_has_bits & 0x00000400u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(11, this->_internal_wheel3(), target);
   }
 
   // optional float wheel4 = 12;
   if (cached_has_bits & 0x00000800u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(12, this->_internal_wheel4(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:grSim_Robot_Command)
   return target;
@@ -465,44 +459,44 @@ size_t grSim_Robot_Command::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:grSim_Robot_Command)
   size_t total_size = 0;
 
-  if (_internal_has_id()) {
+  if (has_id()) {
     // required uint32 id = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
         this->_internal_id());
   }
 
-  if (_internal_has_kickspeedx()) {
+  if (has_kickspeedx()) {
     // required float kickspeedx = 2;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_kickspeedz()) {
+  if (has_kickspeedz()) {
     // required float kickspeedz = 3;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_veltangent()) {
+  if (has_veltangent()) {
     // required float veltangent = 4;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_velnormal()) {
+  if (has_velnormal()) {
     // required float velnormal = 5;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_velangular()) {
+  if (has_velangular()) {
     // required float velangular = 6;
     total_size += 1 + 4;
   }
 
-  if (_internal_has_spinner()) {
+  if (has_spinner()) {
     // required bool spinner = 7;
     total_size += 1 + 1;
   }
 
-  if (_internal_has_wheelsspeed()) {
+  if (has_wheelsspeed()) {
     // required bool wheelsspeed = 8;
     total_size += 1 + 1;
   }
@@ -597,7 +591,7 @@ void grSim_Robot_Command::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from
 void grSim_Robot_Command::MergeFrom(const grSim_Robot_Command& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:grSim_Robot_Command)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -661,20 +655,26 @@ void grSim_Robot_Command::CopyFrom(const grSim_Robot_Command& from) {
 }
 
 bool grSim_Robot_Command::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x000000ff) != 0x000000ff) return false;
   return true;
 }
 
 void grSim_Robot_Command::InternalSwap(grSim_Robot_Command* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(grSim_Robot_Command, wheel4_)
-      + sizeof(grSim_Robot_Command::wheel4_)
-      - PROTOBUF_FIELD_OFFSET(grSim_Robot_Command, id_)>(
-          reinterpret_cast<char*>(&id_),
-          reinterpret_cast<char*>(&other->id_));
+  swap(id_, other->id_);
+  swap(kickspeedx_, other->kickspeedx_);
+  swap(kickspeedz_, other->kickspeedz_);
+  swap(veltangent_, other->veltangent_);
+  swap(velnormal_, other->velnormal_);
+  swap(velangular_, other->velangular_);
+  swap(spinner_, other->spinner_);
+  swap(wheelsspeed_, other->wheelsspeed_);
+  swap(wheel1_, other->wheel1_);
+  swap(wheel2_, other->wheel2_);
+  swap(wheel3_, other->wheel3_);
+  swap(wheel4_, other->wheel4_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata grSim_Robot_Command::GetMetadata() const {
@@ -684,6 +684,8 @@ void grSim_Robot_Command::InternalSwap(grSim_Robot_Command* other) {
 
 // ===================================================================
 
+void grSim_Commands::InitAsDefaultInstance() {
+}
 class grSim_Commands::_Internal {
  public:
   using HasBits = decltype(std::declval<grSim_Commands>()._has_bits_);
@@ -693,23 +695,19 @@ class grSim_Commands::_Internal {
   static void set_has_isteamyellow(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-grSim_Commands::grSim_Commands(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  robot_commands_(arena) {
+grSim_Commands::grSim_Commands()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:grSim_Commands)
+  // @@protoc_insertion_point(constructor:grSim_Commands)
 }
 grSim_Commands::grSim_Commands(const grSim_Commands& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       robot_commands_(from.robot_commands_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&timestamp_, &from.timestamp_,
     static_cast<size_t>(reinterpret_cast<char*>(&isteamyellow_) -
     reinterpret_cast<char*>(&timestamp_)) + sizeof(isteamyellow_));
@@ -717,31 +715,28 @@ grSim_Commands::grSim_Commands(const grSim_Commands& from)
 }
 
 void grSim_Commands::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&timestamp_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&isteamyellow_) -
-    reinterpret_cast<char*>(&timestamp_)) + sizeof(isteamyellow_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_grSim_Commands_grSim_5fCommands_2eproto.base);
+  ::memset(&timestamp_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&isteamyellow_) -
+      reinterpret_cast<char*>(&timestamp_)) + sizeof(isteamyellow_));
 }
 
 grSim_Commands::~grSim_Commands() {
   // @@protoc_insertion_point(destructor:grSim_Commands)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void grSim_Commands::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void grSim_Commands::ArenaDtor(void* object) {
-  grSim_Commands* _this = reinterpret_cast< grSim_Commands* >(object);
-  (void)_this;
-}
-void grSim_Commands::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void grSim_Commands::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const grSim_Commands& grSim_Commands::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_grSim_Commands_grSim_5fCommands_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void grSim_Commands::Clear() {
 // @@protoc_insertion_point(message_clear_start:grSim_Commands)
@@ -757,7 +752,7 @@ void grSim_Commands::Clear() {
         reinterpret_cast<char*>(&timestamp_)) + sizeof(isteamyellow_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* grSim_Commands::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -780,7 +775,7 @@ const char* grSim_Commands::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_isteamyellow(&has_bits);
-          isteamyellow_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          isteamyellow_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -802,9 +797,7 @@ const char* grSim_Commands::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -819,7 +812,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* grSim_Commands::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* grSim_Commands::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:grSim_Commands)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -828,27 +821,27 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required double timestamp = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_timestamp(), target);
   }
 
   // required bool isteamyellow = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(2, this->_internal_isteamyellow(), target);
   }
 
   // repeated .grSim_Robot_Command robot_commands = 3;
   for (unsigned int i = 0,
       n = static_cast<unsigned int>(this->_internal_robot_commands_size()); i < n; i++) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, this->_internal_robot_commands(i), target, stream);
+      InternalWriteMessageToArray(3, this->_internal_robot_commands(i), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:grSim_Commands)
   return target;
@@ -858,12 +851,12 @@ size_t grSim_Commands::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:grSim_Commands)
   size_t total_size = 0;
 
-  if (_internal_has_timestamp()) {
+  if (has_timestamp()) {
     // required double timestamp = 1;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_isteamyellow()) {
+  if (has_isteamyellow()) {
     // required bool isteamyellow = 2;
     total_size += 1 + 1;
   }
@@ -922,7 +915,7 @@ void grSim_Commands::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void grSim_Commands::MergeFrom(const grSim_Commands& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:grSim_Commands)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -954,22 +947,18 @@ void grSim_Commands::CopyFrom(const grSim_Commands& from) {
 }
 
 bool grSim_Commands::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(robot_commands_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+  if (!::PROTOBUF_NAMESPACE_ID::internal::AllAreInitialized(this->robot_commands())) return false;
   return true;
 }
 
 void grSim_Commands::InternalSwap(grSim_Commands* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   robot_commands_.InternalSwap(&other->robot_commands_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(grSim_Commands, isteamyellow_)
-      + sizeof(grSim_Commands::isteamyellow_)
-      - PROTOBUF_FIELD_OFFSET(grSim_Commands, timestamp_)>(
-          reinterpret_cast<char*>(&timestamp_),
-          reinterpret_cast<char*>(&other->timestamp_));
+  swap(timestamp_, other->timestamp_);
+  swap(isteamyellow_, other->isteamyellow_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata grSim_Commands::GetMetadata() const {
@@ -980,10 +969,10 @@ void grSim_Commands::InternalSwap(grSim_Commands* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::grSim_Robot_Command* Arena::CreateMaybeMessage< ::grSim_Robot_Command >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::grSim_Robot_Command >(arena);
+  return Arena::CreateInternal< ::grSim_Robot_Command >(arena);
 }
 template<> PROTOBUF_NOINLINE ::grSim_Commands* Arena::CreateMaybeMessage< ::grSim_Commands >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::grSim_Commands >(arena);
+  return Arena::CreateInternal< ::grSim_Commands >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

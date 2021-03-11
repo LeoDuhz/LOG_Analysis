@@ -14,542 +14,768 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_BotSubstitution_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_MultipleCards_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_MultipleFouls_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_MultiplePlacementFailures_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_PlacementFailed_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_PlacementSucceeded_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_Prepared_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_TooManyRobots_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fevent_5f2019_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_ssl_5fgame_5fcontroller_5fcommon_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto;
+class GameEvent_BallLeftFieldDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BallLeftField> _instance;
+} _GameEvent_BallLeftField_default_instance_;
+class GameEvent_AimlessKickDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_AimlessKick> _instance;
+} _GameEvent_AimlessKick_default_instance_;
+class GameEvent_GoalDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_Goal> _instance;
+} _GameEvent_Goal_default_instance_;
+class GameEvent_IndirectGoalDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_IndirectGoal> _instance;
+} _GameEvent_IndirectGoal_default_instance_;
+class GameEvent_ChippedGoalDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_ChippedGoal> _instance;
+} _GameEvent_ChippedGoal_default_instance_;
+class GameEvent_BotTooFastInStopDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotTooFastInStop> _instance;
+} _GameEvent_BotTooFastInStop_default_instance_;
+class GameEvent_DefenderTooCloseToKickPointDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_DefenderTooCloseToKickPoint> _instance;
+} _GameEvent_DefenderTooCloseToKickPoint_default_instance_;
+class GameEvent_BotCrashDrawnDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotCrashDrawn> _instance;
+} _GameEvent_BotCrashDrawn_default_instance_;
+class GameEvent_BotCrashUniqueDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotCrashUnique> _instance;
+} _GameEvent_BotCrashUnique_default_instance_;
+class GameEvent_BotPushedBotDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotPushedBot> _instance;
+} _GameEvent_BotPushedBot_default_instance_;
+class GameEvent_BotTippedOverDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotTippedOver> _instance;
+} _GameEvent_BotTippedOver_default_instance_;
+class GameEvent_DefenderInDefenseAreaDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_DefenderInDefenseArea> _instance;
+} _GameEvent_DefenderInDefenseArea_default_instance_;
+class GameEvent_DefenderInDefenseAreaPartiallyDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_DefenderInDefenseAreaPartially> _instance;
+} _GameEvent_DefenderInDefenseAreaPartially_default_instance_;
+class GameEvent_AttackerTouchedBallInDefenseAreaDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_AttackerTouchedBallInDefenseArea> _instance;
+} _GameEvent_AttackerTouchedBallInDefenseArea_default_instance_;
+class GameEvent_BotKickedBallTooFastDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotKickedBallTooFast> _instance;
+} _GameEvent_BotKickedBallTooFast_default_instance_;
+class GameEvent_BotDribbledBallTooFarDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotDribbledBallTooFar> _instance;
+} _GameEvent_BotDribbledBallTooFar_default_instance_;
+class GameEvent_AttackerTouchedOpponentInDefenseAreaDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_AttackerTouchedOpponentInDefenseArea> _instance;
+} _GameEvent_AttackerTouchedOpponentInDefenseArea_default_instance_;
+class GameEvent_AttackerDoubleTouchedBallDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_AttackerDoubleTouchedBall> _instance;
+} _GameEvent_AttackerDoubleTouchedBall_default_instance_;
+class GameEvent_AttackerTooCloseToDefenseAreaDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_AttackerTooCloseToDefenseArea> _instance;
+} _GameEvent_AttackerTooCloseToDefenseArea_default_instance_;
+class GameEvent_BotHeldBallDeliberatelyDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotHeldBallDeliberately> _instance;
+} _GameEvent_BotHeldBallDeliberately_default_instance_;
+class GameEvent_BotInterferedPlacementDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotInterferedPlacement> _instance;
+} _GameEvent_BotInterferedPlacement_default_instance_;
+class GameEvent_MultipleCardsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_MultipleCards> _instance;
+} _GameEvent_MultipleCards_default_instance_;
+class GameEvent_MultipleFoulsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_MultipleFouls> _instance;
+} _GameEvent_MultipleFouls_default_instance_;
+class GameEvent_MultiplePlacementFailuresDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_MultiplePlacementFailures> _instance;
+} _GameEvent_MultiplePlacementFailures_default_instance_;
+class GameEvent_KickTimeoutDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_KickTimeout> _instance;
+} _GameEvent_KickTimeout_default_instance_;
+class GameEvent_NoProgressInGameDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_NoProgressInGame> _instance;
+} _GameEvent_NoProgressInGame_default_instance_;
+class GameEvent_PlacementFailedDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_PlacementFailed> _instance;
+} _GameEvent_PlacementFailed_default_instance_;
+class GameEvent_UnsportingBehaviorMinorDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_UnsportingBehaviorMinor> _instance;
+} _GameEvent_UnsportingBehaviorMinor_default_instance_;
+class GameEvent_UnsportingBehaviorMajorDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_UnsportingBehaviorMajor> _instance;
+} _GameEvent_UnsportingBehaviorMajor_default_instance_;
+class GameEvent_KeeperHeldBallDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_KeeperHeldBall> _instance;
+} _GameEvent_KeeperHeldBall_default_instance_;
+class GameEvent_PlacementSucceededDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_PlacementSucceeded> _instance;
+} _GameEvent_PlacementSucceeded_default_instance_;
+class GameEvent_PreparedDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_Prepared> _instance;
+} _GameEvent_Prepared_default_instance_;
+class GameEvent_BotSubstitutionDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_BotSubstitution> _instance;
+} _GameEvent_BotSubstitution_default_instance_;
+class GameEvent_TooManyRobotsDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent_TooManyRobots> _instance;
+} _GameEvent_TooManyRobots_default_instance_;
+class GameEventDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<GameEvent> _instance;
+  const ::GameEvent_Prepared* prepared_;
+  const ::GameEvent_NoProgressInGame* no_progress_in_game_;
+  const ::GameEvent_PlacementFailed* placement_failed_;
+  const ::GameEvent_PlacementSucceeded* placement_succeeded_;
+  const ::GameEvent_BotSubstitution* bot_substitution_;
+  const ::GameEvent_TooManyRobots* too_many_robots_;
+  const ::GameEvent_BallLeftField* ball_left_field_touch_line_;
+  const ::GameEvent_BallLeftField* ball_left_field_goal_line_;
+  const ::GameEvent_Goal* possible_goal_;
+  const ::GameEvent_Goal* goal_;
+  const ::GameEvent_IndirectGoal* indirect_goal_;
+  const ::GameEvent_ChippedGoal* chipped_goal_;
+  const ::GameEvent_AimlessKick* aimless_kick_;
+  const ::GameEvent_KickTimeout* kick_timeout_;
+  const ::GameEvent_KeeperHeldBall* keeper_held_ball_;
+  const ::GameEvent_AttackerDoubleTouchedBall* attacker_double_touched_ball_;
+  const ::GameEvent_AttackerTouchedBallInDefenseArea* attacker_touched_ball_in_defense_area_;
+  const ::GameEvent_AttackerTouchedOpponentInDefenseArea* attacker_touched_opponent_in_defense_area_;
+  const ::GameEvent_AttackerTouchedOpponentInDefenseArea* attacker_touched_opponent_in_defense_area_skipped_;
+  const ::GameEvent_BotDribbledBallTooFar* bot_dribbled_ball_too_far_;
+  const ::GameEvent_BotKickedBallTooFast* bot_kicked_ball_too_fast_;
+  const ::GameEvent_AttackerTooCloseToDefenseArea* attacker_too_close_to_defense_area_;
+  const ::GameEvent_BotInterferedPlacement* bot_interfered_placement_;
+  const ::GameEvent_BotCrashDrawn* bot_crash_drawn_;
+  const ::GameEvent_BotCrashUnique* bot_crash_unique_;
+  const ::GameEvent_BotCrashUnique* bot_crash_unique_skipped_;
+  const ::GameEvent_BotPushedBot* bot_pushed_bot_;
+  const ::GameEvent_BotPushedBot* bot_pushed_bot_skipped_;
+  const ::GameEvent_BotHeldBallDeliberately* bot_held_ball_deliberately_;
+  const ::GameEvent_BotTippedOver* bot_tipped_over_;
+  const ::GameEvent_BotTooFastInStop* bot_too_fast_in_stop_;
+  const ::GameEvent_DefenderTooCloseToKickPoint* defender_too_close_to_kick_point_;
+  const ::GameEvent_DefenderInDefenseAreaPartially* defender_in_defense_area_partially_;
+  const ::GameEvent_DefenderInDefenseArea* defender_in_defense_area_;
+  const ::GameEvent_MultipleCards* multiple_cards_;
+  const ::GameEvent_MultiplePlacementFailures* multiple_placement_failures_;
+  const ::GameEvent_MultipleFouls* multiple_fouls_;
+  const ::GameEvent_UnsportingBehaviorMinor* unsporting_behavior_minor_;
+  const ::GameEvent_UnsportingBehaviorMajor* unsporting_behavior_major_;
+} _GameEvent_default_instance_;
+static void InitDefaultsscc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-PROTOBUF_PRAGMA_INIT_SEG
-constexpr GameEvent_BallLeftField::GameEvent_BallLeftField(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+  {
+    void* ptr = &::_GameEvent_default_instance_;
+    new (ptr) ::GameEvent();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent::InitAsDefaultInstance();
+}
 
-  , by_bot_(0u){}
-struct GameEvent_BallLeftFieldDefaultTypeInternal {
-  constexpr GameEvent_BallLeftFieldDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BallLeftFieldDefaultTypeInternal() {}
-  union {
-    GameEvent_BallLeftField _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BallLeftFieldDefaultTypeInternal _GameEvent_BallLeftField_default_instance_;
-constexpr GameEvent_AimlessKick::GameEvent_AimlessKick(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , kick_location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<34> scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 34, 0, InitDefaultsscc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_GameEvent_Prepared_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_PlacementFailed_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_PlacementSucceeded_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotSubstitution_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_TooManyRobots_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_MultipleCards_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_MultiplePlacementFailures_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_MultipleFouls_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto.base,
+      &scc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto.base,}};
 
-  , by_bot_(0u){}
-struct GameEvent_AimlessKickDefaultTypeInternal {
-  constexpr GameEvent_AimlessKickDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_AimlessKickDefaultTypeInternal() {}
-  union {
-    GameEvent_AimlessKick _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_AimlessKickDefaultTypeInternal _GameEvent_AimlessKick_default_instance_;
-constexpr GameEvent_Goal::GameEvent_Goal(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , kick_location_(nullptr)
-  , by_team_(0)
+static void InitDefaultsscc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , kicking_bot_(0u)
-  , kicking_team_(0)
-{}
-struct GameEvent_GoalDefaultTypeInternal {
-  constexpr GameEvent_GoalDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_GoalDefaultTypeInternal() {}
-  union {
-    GameEvent_Goal _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_GoalDefaultTypeInternal _GameEvent_Goal_default_instance_;
-constexpr GameEvent_IndirectGoal::GameEvent_IndirectGoal(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , kick_location_(nullptr)
-  , by_team_(0)
+  {
+    void* ptr = &::_GameEvent_AimlessKick_default_instance_;
+    new (ptr) ::GameEvent_AimlessKick();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_AimlessKick::InitAsDefaultInstance();
+}
 
-  , by_bot_(0u){}
-struct GameEvent_IndirectGoalDefaultTypeInternal {
-  constexpr GameEvent_IndirectGoalDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_IndirectGoalDefaultTypeInternal() {}
-  union {
-    GameEvent_IndirectGoal _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_IndirectGoalDefaultTypeInternal _GameEvent_IndirectGoal_default_instance_;
-constexpr GameEvent_ChippedGoal::GameEvent_ChippedGoal(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , kick_location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
 
-  , by_bot_(0u)
-  , max_ball_height_(0){}
-struct GameEvent_ChippedGoalDefaultTypeInternal {
-  constexpr GameEvent_ChippedGoalDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_ChippedGoalDefaultTypeInternal() {}
-  union {
-    GameEvent_ChippedGoal _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_ChippedGoalDefaultTypeInternal _GameEvent_ChippedGoal_default_instance_;
-constexpr GameEvent_BotTooFastInStop::GameEvent_BotTooFastInStop(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+static void InitDefaultsscc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , by_bot_(0u)
-  , speed_(0){}
-struct GameEvent_BotTooFastInStopDefaultTypeInternal {
-  constexpr GameEvent_BotTooFastInStopDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotTooFastInStopDefaultTypeInternal() {}
-  union {
-    GameEvent_BotTooFastInStop _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotTooFastInStopDefaultTypeInternal _GameEvent_BotTooFastInStop_default_instance_;
-constexpr GameEvent_DefenderTooCloseToKickPoint::GameEvent_DefenderTooCloseToKickPoint(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+  {
+    void* ptr = &::_GameEvent_AttackerDoubleTouchedBall_default_instance_;
+    new (ptr) ::GameEvent_AttackerDoubleTouchedBall();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_AttackerDoubleTouchedBall::InitAsDefaultInstance();
+}
 
-  , by_bot_(0u)
-  , distance_(0){}
-struct GameEvent_DefenderTooCloseToKickPointDefaultTypeInternal {
-  constexpr GameEvent_DefenderTooCloseToKickPointDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_DefenderTooCloseToKickPointDefaultTypeInternal() {}
-  union {
-    GameEvent_DefenderTooCloseToKickPoint _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_DefenderTooCloseToKickPointDefaultTypeInternal _GameEvent_DefenderTooCloseToKickPoint_default_instance_;
-constexpr GameEvent_BotCrashDrawn::GameEvent_BotCrashDrawn(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , bot_yellow_(0u)
-  , bot_blue_(0u)
-  , crash_speed_(0)
-  , speed_diff_(0)
-  , crash_angle_(0){}
-struct GameEvent_BotCrashDrawnDefaultTypeInternal {
-  constexpr GameEvent_BotCrashDrawnDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotCrashDrawnDefaultTypeInternal() {}
-  union {
-    GameEvent_BotCrashDrawn _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotCrashDrawnDefaultTypeInternal _GameEvent_BotCrashDrawn_default_instance_;
-constexpr GameEvent_BotCrashUnique::GameEvent_BotCrashUnique(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
 
-  , violator_(0u)
-  , victim_(0u)
-  , crash_speed_(0)
-  , speed_diff_(0)
-  , crash_angle_(0){}
-struct GameEvent_BotCrashUniqueDefaultTypeInternal {
-  constexpr GameEvent_BotCrashUniqueDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotCrashUniqueDefaultTypeInternal() {}
-  union {
-    GameEvent_BotCrashUnique _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotCrashUniqueDefaultTypeInternal _GameEvent_BotCrashUnique_default_instance_;
-constexpr GameEvent_BotPushedBot::GameEvent_BotPushedBot(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+static void InitDefaultsscc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , violator_(0u)
-  , victim_(0u)
-  , pushed_distance_(0){}
-struct GameEvent_BotPushedBotDefaultTypeInternal {
-  constexpr GameEvent_BotPushedBotDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotPushedBotDefaultTypeInternal() {}
-  union {
-    GameEvent_BotPushedBot _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotPushedBotDefaultTypeInternal _GameEvent_BotPushedBot_default_instance_;
-constexpr GameEvent_BotTippedOver::GameEvent_BotTippedOver(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+  {
+    void* ptr = &::_GameEvent_AttackerTooCloseToDefenseArea_default_instance_;
+    new (ptr) ::GameEvent_AttackerTooCloseToDefenseArea();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_AttackerTooCloseToDefenseArea::InitAsDefaultInstance();
+}
 
-  , by_bot_(0u){}
-struct GameEvent_BotTippedOverDefaultTypeInternal {
-  constexpr GameEvent_BotTippedOverDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotTippedOverDefaultTypeInternal() {}
-  union {
-    GameEvent_BotTippedOver _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotTippedOverDefaultTypeInternal _GameEvent_BotTippedOver_default_instance_;
-constexpr GameEvent_DefenderInDefenseArea::GameEvent_DefenderInDefenseArea(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
 
-  , by_bot_(0u)
-  , distance_(0){}
-struct GameEvent_DefenderInDefenseAreaDefaultTypeInternal {
-  constexpr GameEvent_DefenderInDefenseAreaDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_DefenderInDefenseAreaDefaultTypeInternal() {}
-  union {
-    GameEvent_DefenderInDefenseArea _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_DefenderInDefenseAreaDefaultTypeInternal _GameEvent_DefenderInDefenseArea_default_instance_;
-constexpr GameEvent_DefenderInDefenseAreaPartially::GameEvent_DefenderInDefenseAreaPartially(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+static void InitDefaultsscc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , by_bot_(0u)
-  , distance_(0){}
-struct GameEvent_DefenderInDefenseAreaPartiallyDefaultTypeInternal {
-  constexpr GameEvent_DefenderInDefenseAreaPartiallyDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_DefenderInDefenseAreaPartiallyDefaultTypeInternal() {}
-  union {
-    GameEvent_DefenderInDefenseAreaPartially _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_DefenderInDefenseAreaPartiallyDefaultTypeInternal _GameEvent_DefenderInDefenseAreaPartially_default_instance_;
-constexpr GameEvent_AttackerTouchedBallInDefenseArea::GameEvent_AttackerTouchedBallInDefenseArea(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+  {
+    void* ptr = &::_GameEvent_AttackerTouchedBallInDefenseArea_default_instance_;
+    new (ptr) ::GameEvent_AttackerTouchedBallInDefenseArea();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_AttackerTouchedBallInDefenseArea::InitAsDefaultInstance();
+}
 
-  , by_bot_(0u)
-  , distance_(0){}
-struct GameEvent_AttackerTouchedBallInDefenseAreaDefaultTypeInternal {
-  constexpr GameEvent_AttackerTouchedBallInDefenseAreaDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_AttackerTouchedBallInDefenseAreaDefaultTypeInternal() {}
-  union {
-    GameEvent_AttackerTouchedBallInDefenseArea _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_AttackerTouchedBallInDefenseAreaDefaultTypeInternal _GameEvent_AttackerTouchedBallInDefenseArea_default_instance_;
-constexpr GameEvent_BotKickedBallTooFast::GameEvent_BotKickedBallTooFast(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
 
-  , by_bot_(0u)
-  , initial_ball_speed_(0)
-  , chipped_(false){}
-struct GameEvent_BotKickedBallTooFastDefaultTypeInternal {
-  constexpr GameEvent_BotKickedBallTooFastDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotKickedBallTooFastDefaultTypeInternal() {}
-  union {
-    GameEvent_BotKickedBallTooFast _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotKickedBallTooFastDefaultTypeInternal _GameEvent_BotKickedBallTooFast_default_instance_;
-constexpr GameEvent_BotDribbledBallTooFar::GameEvent_BotDribbledBallTooFar(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : start_(nullptr)
-  , end_(nullptr)
-  , by_team_(0)
+static void InitDefaultsscc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , by_bot_(0u){}
-struct GameEvent_BotDribbledBallTooFarDefaultTypeInternal {
-  constexpr GameEvent_BotDribbledBallTooFarDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotDribbledBallTooFarDefaultTypeInternal() {}
-  union {
-    GameEvent_BotDribbledBallTooFar _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotDribbledBallTooFarDefaultTypeInternal _GameEvent_BotDribbledBallTooFar_default_instance_;
-constexpr GameEvent_AttackerTouchedOpponentInDefenseArea::GameEvent_AttackerTouchedOpponentInDefenseArea(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+  {
+    void* ptr = &::_GameEvent_AttackerTouchedOpponentInDefenseArea_default_instance_;
+    new (ptr) ::GameEvent_AttackerTouchedOpponentInDefenseArea();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_AttackerTouchedOpponentInDefenseArea::InitAsDefaultInstance();
+}
 
-  , by_bot_(0u)
-  , victim_(0u){}
-struct GameEvent_AttackerTouchedOpponentInDefenseAreaDefaultTypeInternal {
-  constexpr GameEvent_AttackerTouchedOpponentInDefenseAreaDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_AttackerTouchedOpponentInDefenseAreaDefaultTypeInternal() {}
-  union {
-    GameEvent_AttackerTouchedOpponentInDefenseArea _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_AttackerTouchedOpponentInDefenseAreaDefaultTypeInternal _GameEvent_AttackerTouchedOpponentInDefenseArea_default_instance_;
-constexpr GameEvent_AttackerDoubleTouchedBall::GameEvent_AttackerDoubleTouchedBall(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
 
-  , by_bot_(0u){}
-struct GameEvent_AttackerDoubleTouchedBallDefaultTypeInternal {
-  constexpr GameEvent_AttackerDoubleTouchedBallDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_AttackerDoubleTouchedBallDefaultTypeInternal() {}
-  union {
-    GameEvent_AttackerDoubleTouchedBall _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_AttackerDoubleTouchedBallDefaultTypeInternal _GameEvent_AttackerDoubleTouchedBall_default_instance_;
-constexpr GameEvent_AttackerTooCloseToDefenseArea::GameEvent_AttackerTooCloseToDefenseArea(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+static void InitDefaultsscc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , by_bot_(0u)
-  , distance_(0){}
-struct GameEvent_AttackerTooCloseToDefenseAreaDefaultTypeInternal {
-  constexpr GameEvent_AttackerTooCloseToDefenseAreaDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_AttackerTooCloseToDefenseAreaDefaultTypeInternal() {}
-  union {
-    GameEvent_AttackerTooCloseToDefenseArea _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_AttackerTooCloseToDefenseAreaDefaultTypeInternal _GameEvent_AttackerTooCloseToDefenseArea_default_instance_;
-constexpr GameEvent_BotHeldBallDeliberately::GameEvent_BotHeldBallDeliberately(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+  {
+    void* ptr = &::_GameEvent_BallLeftField_default_instance_;
+    new (ptr) ::GameEvent_BallLeftField();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BallLeftField::InitAsDefaultInstance();
+}
 
-  , by_bot_(0u)
-  , duration_(0){}
-struct GameEvent_BotHeldBallDeliberatelyDefaultTypeInternal {
-  constexpr GameEvent_BotHeldBallDeliberatelyDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotHeldBallDeliberatelyDefaultTypeInternal() {}
-  union {
-    GameEvent_BotHeldBallDeliberately _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotHeldBallDeliberatelyDefaultTypeInternal _GameEvent_BotHeldBallDeliberately_default_instance_;
-constexpr GameEvent_BotInterferedPlacement::GameEvent_BotInterferedPlacement(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
 
-  , by_bot_(0u){}
-struct GameEvent_BotInterferedPlacementDefaultTypeInternal {
-  constexpr GameEvent_BotInterferedPlacementDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotInterferedPlacementDefaultTypeInternal() {}
-  union {
-    GameEvent_BotInterferedPlacement _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotInterferedPlacementDefaultTypeInternal _GameEvent_BotInterferedPlacement_default_instance_;
-constexpr GameEvent_MultipleCards::GameEvent_MultipleCards(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : by_team_(0)
-{}
-struct GameEvent_MultipleCardsDefaultTypeInternal {
-  constexpr GameEvent_MultipleCardsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_MultipleCardsDefaultTypeInternal() {}
-  union {
-    GameEvent_MultipleCards _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_MultipleCardsDefaultTypeInternal _GameEvent_MultipleCards_default_instance_;
-constexpr GameEvent_MultipleFouls::GameEvent_MultipleFouls(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : by_team_(0)
-{}
-struct GameEvent_MultipleFoulsDefaultTypeInternal {
-  constexpr GameEvent_MultipleFoulsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_MultipleFoulsDefaultTypeInternal() {}
-  union {
-    GameEvent_MultipleFouls _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_MultipleFoulsDefaultTypeInternal _GameEvent_MultipleFouls_default_instance_;
-constexpr GameEvent_MultiplePlacementFailures::GameEvent_MultiplePlacementFailures(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : by_team_(0)
-{}
-struct GameEvent_MultiplePlacementFailuresDefaultTypeInternal {
-  constexpr GameEvent_MultiplePlacementFailuresDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_MultiplePlacementFailuresDefaultTypeInternal() {}
-  union {
-    GameEvent_MultiplePlacementFailures _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_MultiplePlacementFailuresDefaultTypeInternal _GameEvent_MultiplePlacementFailures_default_instance_;
-constexpr GameEvent_KickTimeout::GameEvent_KickTimeout(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+static void InitDefaultsscc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , time_(0){}
-struct GameEvent_KickTimeoutDefaultTypeInternal {
-  constexpr GameEvent_KickTimeoutDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_KickTimeoutDefaultTypeInternal() {}
-  union {
-    GameEvent_KickTimeout _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_KickTimeoutDefaultTypeInternal _GameEvent_KickTimeout_default_instance_;
-constexpr GameEvent_NoProgressInGame::GameEvent_NoProgressInGame(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , time_(0){}
-struct GameEvent_NoProgressInGameDefaultTypeInternal {
-  constexpr GameEvent_NoProgressInGameDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_NoProgressInGameDefaultTypeInternal() {}
-  union {
-    GameEvent_NoProgressInGame _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_NoProgressInGameDefaultTypeInternal _GameEvent_NoProgressInGame_default_instance_;
-constexpr GameEvent_PlacementFailed::GameEvent_PlacementFailed(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : by_team_(0)
+  {
+    void* ptr = &::_GameEvent_BotCrashDrawn_default_instance_;
+    new (ptr) ::GameEvent_BotCrashDrawn();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotCrashDrawn::InitAsDefaultInstance();
+}
 
-  , remaining_distance_(0){}
-struct GameEvent_PlacementFailedDefaultTypeInternal {
-  constexpr GameEvent_PlacementFailedDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_PlacementFailedDefaultTypeInternal() {}
-  union {
-    GameEvent_PlacementFailed _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_PlacementFailedDefaultTypeInternal _GameEvent_PlacementFailed_default_instance_;
-constexpr GameEvent_UnsportingBehaviorMinor::GameEvent_UnsportingBehaviorMinor(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : reason_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , by_team_(0)
-{}
-struct GameEvent_UnsportingBehaviorMinorDefaultTypeInternal {
-  constexpr GameEvent_UnsportingBehaviorMinorDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_UnsportingBehaviorMinorDefaultTypeInternal() {}
-  union {
-    GameEvent_UnsportingBehaviorMinor _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_UnsportingBehaviorMinorDefaultTypeInternal _GameEvent_UnsportingBehaviorMinor_default_instance_;
-constexpr GameEvent_UnsportingBehaviorMajor::GameEvent_UnsportingBehaviorMajor(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : reason_(&::PROTOBUF_NAMESPACE_ID::internal::fixed_address_empty_string)
-  , by_team_(0)
-{}
-struct GameEvent_UnsportingBehaviorMajorDefaultTypeInternal {
-  constexpr GameEvent_UnsportingBehaviorMajorDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_UnsportingBehaviorMajorDefaultTypeInternal() {}
-  union {
-    GameEvent_UnsportingBehaviorMajor _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_UnsportingBehaviorMajorDefaultTypeInternal _GameEvent_UnsportingBehaviorMajor_default_instance_;
-constexpr GameEvent_KeeperHeldBall::GameEvent_KeeperHeldBall(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : location_(nullptr)
-  , by_team_(0)
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
 
-  , duration_(0){}
-struct GameEvent_KeeperHeldBallDefaultTypeInternal {
-  constexpr GameEvent_KeeperHeldBallDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_KeeperHeldBallDefaultTypeInternal() {}
-  union {
-    GameEvent_KeeperHeldBall _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_KeeperHeldBallDefaultTypeInternal _GameEvent_KeeperHeldBall_default_instance_;
-constexpr GameEvent_PlacementSucceeded::GameEvent_PlacementSucceeded(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : by_team_(0)
+static void InitDefaultsscc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  , time_taken_(0)
-  , precision_(0)
-  , distance_(0){}
-struct GameEvent_PlacementSucceededDefaultTypeInternal {
-  constexpr GameEvent_PlacementSucceededDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_PlacementSucceededDefaultTypeInternal() {}
-  union {
-    GameEvent_PlacementSucceeded _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_PlacementSucceededDefaultTypeInternal _GameEvent_PlacementSucceeded_default_instance_;
-constexpr GameEvent_Prepared::GameEvent_Prepared(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : time_taken_(0){}
-struct GameEvent_PreparedDefaultTypeInternal {
-  constexpr GameEvent_PreparedDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_PreparedDefaultTypeInternal() {}
-  union {
-    GameEvent_Prepared _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_PreparedDefaultTypeInternal _GameEvent_Prepared_default_instance_;
-constexpr GameEvent_BotSubstitution::GameEvent_BotSubstitution(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : by_team_(0)
-{}
-struct GameEvent_BotSubstitutionDefaultTypeInternal {
-  constexpr GameEvent_BotSubstitutionDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_BotSubstitutionDefaultTypeInternal() {}
-  union {
-    GameEvent_BotSubstitution _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_BotSubstitutionDefaultTypeInternal _GameEvent_BotSubstitution_default_instance_;
-constexpr GameEvent_TooManyRobots::GameEvent_TooManyRobots(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : by_team_(0)
-{}
-struct GameEvent_TooManyRobotsDefaultTypeInternal {
-  constexpr GameEvent_TooManyRobotsDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEvent_TooManyRobotsDefaultTypeInternal() {}
-  union {
-    GameEvent_TooManyRobots _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEvent_TooManyRobotsDefaultTypeInternal _GameEvent_TooManyRobots_default_instance_;
-constexpr GameEvent::GameEvent(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : origin_()
-  , type_(0)
+  {
+    void* ptr = &::_GameEvent_BotCrashUnique_default_instance_;
+    new (ptr) ::GameEvent_BotCrashUnique();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotCrashUnique::InitAsDefaultInstance();
+}
 
-  , _oneof_case_{}{}
-struct GameEventDefaultTypeInternal {
-  constexpr GameEventDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~GameEventDefaultTypeInternal() {}
-  union {
-    GameEvent _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT GameEventDefaultTypeInternal _GameEvent_default_instance_;
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotDribbledBallTooFar_default_instance_;
+    new (ptr) ::GameEvent_BotDribbledBallTooFar();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotDribbledBallTooFar::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotHeldBallDeliberately_default_instance_;
+    new (ptr) ::GameEvent_BotHeldBallDeliberately();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotHeldBallDeliberately::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotInterferedPlacement_default_instance_;
+    new (ptr) ::GameEvent_BotInterferedPlacement();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotInterferedPlacement::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotKickedBallTooFast_default_instance_;
+    new (ptr) ::GameEvent_BotKickedBallTooFast();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotKickedBallTooFast::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotPushedBot_default_instance_;
+    new (ptr) ::GameEvent_BotPushedBot();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotPushedBot::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_BotSubstitution_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotSubstitution_default_instance_;
+    new (ptr) ::GameEvent_BotSubstitution();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotSubstitution::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_BotSubstitution_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_BotSubstitution_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotTippedOver_default_instance_;
+    new (ptr) ::GameEvent_BotTippedOver();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotTippedOver::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_BotTooFastInStop_default_instance_;
+    new (ptr) ::GameEvent_BotTooFastInStop();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_BotTooFastInStop::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_ChippedGoal_default_instance_;
+    new (ptr) ::GameEvent_ChippedGoal();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_ChippedGoal::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_DefenderInDefenseArea_default_instance_;
+    new (ptr) ::GameEvent_DefenderInDefenseArea();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_DefenderInDefenseArea::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_DefenderInDefenseAreaPartially_default_instance_;
+    new (ptr) ::GameEvent_DefenderInDefenseAreaPartially();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_DefenderInDefenseAreaPartially::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_DefenderTooCloseToKickPoint_default_instance_;
+    new (ptr) ::GameEvent_DefenderTooCloseToKickPoint();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_DefenderTooCloseToKickPoint::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_Goal_default_instance_;
+    new (ptr) ::GameEvent_Goal();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_Goal::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_IndirectGoal_default_instance_;
+    new (ptr) ::GameEvent_IndirectGoal();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_IndirectGoal::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_KeeperHeldBall_default_instance_;
+    new (ptr) ::GameEvent_KeeperHeldBall();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_KeeperHeldBall::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_KickTimeout_default_instance_;
+    new (ptr) ::GameEvent_KickTimeout();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_KickTimeout::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_MultipleCards_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_MultipleCards_default_instance_;
+    new (ptr) ::GameEvent_MultipleCards();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_MultipleCards::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_MultipleCards_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_MultipleCards_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_MultipleFouls_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_MultipleFouls_default_instance_;
+    new (ptr) ::GameEvent_MultipleFouls();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_MultipleFouls::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_MultipleFouls_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_MultipleFouls_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_MultiplePlacementFailures_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_MultiplePlacementFailures_default_instance_;
+    new (ptr) ::GameEvent_MultiplePlacementFailures();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_MultiplePlacementFailures::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_MultiplePlacementFailures_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_MultiplePlacementFailures_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_NoProgressInGame_default_instance_;
+    new (ptr) ::GameEvent_NoProgressInGame();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_NoProgressInGame::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<1> scc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 1, 0, InitDefaultsscc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto}, {
+      &scc_info_Location_ssl_5fgame_5fcontroller_5fcommon_2eproto.base,}};
+
+static void InitDefaultsscc_info_GameEvent_PlacementFailed_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_PlacementFailed_default_instance_;
+    new (ptr) ::GameEvent_PlacementFailed();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_PlacementFailed::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_PlacementFailed_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_PlacementFailed_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_PlacementSucceeded_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_PlacementSucceeded_default_instance_;
+    new (ptr) ::GameEvent_PlacementSucceeded();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_PlacementSucceeded::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_PlacementSucceeded_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_PlacementSucceeded_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_Prepared_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_Prepared_default_instance_;
+    new (ptr) ::GameEvent_Prepared();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_Prepared::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_Prepared_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_Prepared_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_TooManyRobots_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_TooManyRobots_default_instance_;
+    new (ptr) ::GameEvent_TooManyRobots();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_TooManyRobots::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_TooManyRobots_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_TooManyRobots_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_UnsportingBehaviorMajor_default_instance_;
+    new (ptr) ::GameEvent_UnsportingBehaviorMajor();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_UnsportingBehaviorMajor::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
+static void InitDefaultsscc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::_GameEvent_UnsportingBehaviorMinor_default_instance_;
+    new (ptr) ::GameEvent_UnsportingBehaviorMinor();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::GameEvent_UnsportingBehaviorMinor::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto}, {}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_ssl_5fgame_5fevent_5f2019_2eproto[35];
 static const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* file_level_enum_descriptors_ssl_5fgame_5fevent_5f2019_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_ssl_5fgame_5fevent_5f2019_2eproto = nullptr;
@@ -958,45 +1184,45 @@ const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_ssl_5fgame_5fevent_5f2019_2epr
   ~0u,  // no _weak_field_map_
   PROTOBUF_FIELD_OFFSET(::GameEvent, type_),
   PROTOBUF_FIELD_OFFSET(::GameEvent, origin_),
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
-  ::PROTOBUF_NAMESPACE_ID::internal::kInvalidFieldOffsetTag,
+  offsetof(::GameEventDefaultTypeInternal, prepared_),
+  offsetof(::GameEventDefaultTypeInternal, no_progress_in_game_),
+  offsetof(::GameEventDefaultTypeInternal, placement_failed_),
+  offsetof(::GameEventDefaultTypeInternal, placement_succeeded_),
+  offsetof(::GameEventDefaultTypeInternal, bot_substitution_),
+  offsetof(::GameEventDefaultTypeInternal, too_many_robots_),
+  offsetof(::GameEventDefaultTypeInternal, ball_left_field_touch_line_),
+  offsetof(::GameEventDefaultTypeInternal, ball_left_field_goal_line_),
+  offsetof(::GameEventDefaultTypeInternal, possible_goal_),
+  offsetof(::GameEventDefaultTypeInternal, goal_),
+  offsetof(::GameEventDefaultTypeInternal, indirect_goal_),
+  offsetof(::GameEventDefaultTypeInternal, chipped_goal_),
+  offsetof(::GameEventDefaultTypeInternal, aimless_kick_),
+  offsetof(::GameEventDefaultTypeInternal, kick_timeout_),
+  offsetof(::GameEventDefaultTypeInternal, keeper_held_ball_),
+  offsetof(::GameEventDefaultTypeInternal, attacker_double_touched_ball_),
+  offsetof(::GameEventDefaultTypeInternal, attacker_touched_ball_in_defense_area_),
+  offsetof(::GameEventDefaultTypeInternal, attacker_touched_opponent_in_defense_area_),
+  offsetof(::GameEventDefaultTypeInternal, attacker_touched_opponent_in_defense_area_skipped_),
+  offsetof(::GameEventDefaultTypeInternal, bot_dribbled_ball_too_far_),
+  offsetof(::GameEventDefaultTypeInternal, bot_kicked_ball_too_fast_),
+  offsetof(::GameEventDefaultTypeInternal, attacker_too_close_to_defense_area_),
+  offsetof(::GameEventDefaultTypeInternal, bot_interfered_placement_),
+  offsetof(::GameEventDefaultTypeInternal, bot_crash_drawn_),
+  offsetof(::GameEventDefaultTypeInternal, bot_crash_unique_),
+  offsetof(::GameEventDefaultTypeInternal, bot_crash_unique_skipped_),
+  offsetof(::GameEventDefaultTypeInternal, bot_pushed_bot_),
+  offsetof(::GameEventDefaultTypeInternal, bot_pushed_bot_skipped_),
+  offsetof(::GameEventDefaultTypeInternal, bot_held_ball_deliberately_),
+  offsetof(::GameEventDefaultTypeInternal, bot_tipped_over_),
+  offsetof(::GameEventDefaultTypeInternal, bot_too_fast_in_stop_),
+  offsetof(::GameEventDefaultTypeInternal, defender_too_close_to_kick_point_),
+  offsetof(::GameEventDefaultTypeInternal, defender_in_defense_area_partially_),
+  offsetof(::GameEventDefaultTypeInternal, defender_in_defense_area_),
+  offsetof(::GameEventDefaultTypeInternal, multiple_cards_),
+  offsetof(::GameEventDefaultTypeInternal, multiple_placement_failures_),
+  offsetof(::GameEventDefaultTypeInternal, multiple_fouls_),
+  offsetof(::GameEventDefaultTypeInternal, unsporting_behavior_minor_),
+  offsetof(::GameEventDefaultTypeInternal, unsporting_behavior_major_),
   PROTOBUF_FIELD_OFFSET(::GameEvent, event_),
   0,
   ~0u,
@@ -1298,21 +1524,54 @@ const char descriptor_table_protodef_ssl_5fgame_5fevent_5f2019_2eproto[] PROTOBU
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_deps[1] = {
   &::descriptor_table_ssl_5fgame_5fcontroller_5fcommon_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto = {
-  false, false, 7066, descriptor_table_protodef_ssl_5fgame_5fevent_5f2019_2eproto, "ssl_game_event_2019.proto", 
-  &descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_once, descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_deps, 1, 35,
-  schemas, file_default_instances, TableStruct_ssl_5fgame_5fevent_5f2019_2eproto::offsets,
-  file_level_metadata_ssl_5fgame_5fevent_5f2019_2eproto, file_level_enum_descriptors_ssl_5fgame_5fevent_5f2019_2eproto, file_level_service_descriptors_ssl_5fgame_5fevent_5f2019_2eproto,
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_sccs[35] = {
+  &scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotSubstitution_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_MultipleCards_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_MultipleFouls_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_MultiplePlacementFailures_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_PlacementFailed_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_PlacementSucceeded_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_Prepared_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_TooManyRobots_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto.base,
+  &scc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto.base,
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto);
-  return descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_once;
+static bool descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto = {
+  &descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_initialized, descriptor_table_protodef_ssl_5fgame_5fevent_5f2019_2eproto, "ssl_game_event_2019.proto", 7066,
+  &descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_once, descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_sccs, descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto_deps, 35, 1,
+  schemas, file_default_instances, TableStruct_ssl_5fgame_5fevent_5f2019_2eproto::offsets,
+  file_level_metadata_ssl_5fgame_5fevent_5f2019_2eproto, 35, file_level_enum_descriptors_ssl_5fgame_5fevent_5f2019_2eproto, file_level_service_descriptors_ssl_5fgame_5fevent_5f2019_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_ssl_5fgame_5fevent_5f2019_2eproto(&descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto);
+static bool dynamic_init_dummy_ssl_5fgame_5fevent_5f2019_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto), true);
 const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* GameEventType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_ssl_5fgame_5fevent_5f2019_2eproto);
   return file_level_enum_descriptors_ssl_5fgame_5fevent_5f2019_2eproto[0];
@@ -1368,6 +1627,10 @@ bool GameEventType_IsValid(int value) {
 
 // ===================================================================
 
+void GameEvent_BallLeftField::InitAsDefaultInstance() {
+  ::_GameEvent_BallLeftField_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BallLeftField::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BallLeftField>()._has_bits_);
@@ -1381,9 +1644,6 @@ class GameEvent_BallLeftField::_Internal {
   static void set_has_location(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -1394,16 +1654,16 @@ void GameEvent_BallLeftField::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BallLeftField::GameEvent_BallLeftField(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BallLeftField::GameEvent_BallLeftField()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BallLeftField)
+  // @@protoc_insertion_point(constructor:GameEvent.BallLeftField)
 }
 GameEvent_BallLeftField::GameEvent_BallLeftField(const GameEvent_BallLeftField& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -1416,32 +1676,29 @@ GameEvent_BallLeftField::GameEvent_BallLeftField(const GameEvent_BallLeftField& 
 }
 
 void GameEvent_BallLeftField::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&by_bot_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&by_bot_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
 }
 
 GameEvent_BallLeftField::~GameEvent_BallLeftField() {
   // @@protoc_insertion_point(destructor:GameEvent.BallLeftField)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BallLeftField::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BallLeftField::ArenaDtor(void* object) {
-  GameEvent_BallLeftField* _this = reinterpret_cast< GameEvent_BallLeftField* >(object);
-  (void)_this;
-}
-void GameEvent_BallLeftField::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BallLeftField::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BallLeftField& GameEvent_BallLeftField::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BallLeftField_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BallLeftField::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BallLeftField)
@@ -1460,7 +1717,7 @@ void GameEvent_BallLeftField::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(by_bot_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BallLeftField::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1474,7 +1731,7 @@ const char* GameEvent_BallLeftField::_InternalParse(const char* ptr, ::PROTOBUF_
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -1487,7 +1744,7 @@ const char* GameEvent_BallLeftField::_InternalParse(const char* ptr, ::PROTOBUF_
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1504,9 +1761,7 @@ const char* GameEvent_BallLeftField::_InternalParse(const char* ptr, ::PROTOBUF_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1521,7 +1776,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BallLeftField::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BallLeftField::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BallLeftField)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1530,28 +1785,28 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BallLeftField)
   return target;
@@ -1562,7 +1817,7 @@ size_t GameEvent_BallLeftField::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -1612,7 +1867,7 @@ void GameEvent_BallLeftField::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& 
 void GameEvent_BallLeftField::MergeFrom(const GameEvent_BallLeftField& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BallLeftField)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1646,23 +1901,20 @@ void GameEvent_BallLeftField::CopyFrom(const GameEvent_BallLeftField& from) {
 }
 
 bool GameEvent_BallLeftField::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BallLeftField::InternalSwap(GameEvent_BallLeftField* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BallLeftField, by_bot_)
-      + sizeof(GameEvent_BallLeftField::by_bot_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BallLeftField, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BallLeftField::GetMetadata() const {
@@ -1672,6 +1924,12 @@ void GameEvent_BallLeftField::InternalSwap(GameEvent_BallLeftField* other) {
 
 // ===================================================================
 
+void GameEvent_AimlessKick::InitAsDefaultInstance() {
+  ::_GameEvent_AimlessKick_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+  ::_GameEvent_AimlessKick_default_instance_._instance.get_mutable()->kick_location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_AimlessKick::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_AimlessKick>()._has_bits_);
@@ -1688,9 +1946,6 @@ class GameEvent_AimlessKick::_Internal {
   static const ::Location& kick_location(const GameEvent_AimlessKick* msg);
   static void set_has_kick_location(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000004) ^ 0x00000004) != 0;
   }
 };
 
@@ -1710,16 +1965,16 @@ void GameEvent_AimlessKick::clear_kick_location() {
   if (kick_location_ != nullptr) kick_location_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-GameEvent_AimlessKick::GameEvent_AimlessKick(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_AimlessKick::GameEvent_AimlessKick()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.AimlessKick)
+  // @@protoc_insertion_point(constructor:GameEvent.AimlessKick)
 }
 GameEvent_AimlessKick::GameEvent_AimlessKick(const GameEvent_AimlessKick& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -1737,33 +1992,30 @@ GameEvent_AimlessKick::GameEvent_AimlessKick(const GameEvent_AimlessKick& from)
 }
 
 void GameEvent_AimlessKick::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&by_bot_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&by_bot_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
 }
 
 GameEvent_AimlessKick::~GameEvent_AimlessKick() {
   // @@protoc_insertion_point(destructor:GameEvent.AimlessKick)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_AimlessKick::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
   if (this != internal_default_instance()) delete kick_location_;
 }
 
-void GameEvent_AimlessKick::ArenaDtor(void* object) {
-  GameEvent_AimlessKick* _this = reinterpret_cast< GameEvent_AimlessKick* >(object);
-  (void)_this;
-}
-void GameEvent_AimlessKick::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_AimlessKick::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_AimlessKick& GameEvent_AimlessKick::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_AimlessKick_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_AimlessKick::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.AimlessKick)
@@ -1788,7 +2040,7 @@ void GameEvent_AimlessKick::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(by_bot_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_AimlessKick::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1802,7 +2054,7 @@ const char* GameEvent_AimlessKick::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -1815,7 +2067,7 @@ const char* GameEvent_AimlessKick::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1839,9 +2091,7 @@ const char* GameEvent_AimlessKick::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1856,7 +2106,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AimlessKick::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AimlessKick::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.AimlessKick)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1865,36 +2115,36 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional .Location kick_location = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::kick_location(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.AimlessKick)
   return target;
@@ -1905,7 +2155,7 @@ size_t GameEvent_AimlessKick::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -1964,7 +2214,7 @@ void GameEvent_AimlessKick::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void GameEvent_AimlessKick::MergeFrom(const GameEvent_AimlessKick& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.AimlessKick)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2001,26 +2251,24 @@ void GameEvent_AimlessKick::CopyFrom(const GameEvent_AimlessKick& from) {
 }
 
 bool GameEvent_AimlessKick::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000004) != 0x00000004) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
-  if (_internal_has_kick_location()) {
-    if (!kick_location_->IsInitialized()) return false;
+  if (has_kick_location()) {
+    if (!this->kick_location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_AimlessKick::InternalSwap(GameEvent_AimlessKick* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_AimlessKick, by_bot_)
-      + sizeof(GameEvent_AimlessKick::by_bot_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_AimlessKick, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(kick_location_, other->kick_location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_AimlessKick::GetMetadata() const {
@@ -2030,6 +2278,12 @@ void GameEvent_AimlessKick::InternalSwap(GameEvent_AimlessKick* other) {
 
 // ===================================================================
 
+void GameEvent_Goal::InitAsDefaultInstance() {
+  ::_GameEvent_Goal_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+  ::_GameEvent_Goal_default_instance_._instance.get_mutable()->kick_location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_Goal::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_Goal>()._has_bits_);
@@ -2050,9 +2304,6 @@ class GameEvent_Goal::_Internal {
   static void set_has_kick_location(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000004) ^ 0x00000004) != 0;
-  }
 };
 
 const ::Location&
@@ -2071,16 +2322,16 @@ void GameEvent_Goal::clear_kick_location() {
   if (kick_location_ != nullptr) kick_location_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-GameEvent_Goal::GameEvent_Goal(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_Goal::GameEvent_Goal()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.Goal)
+  // @@protoc_insertion_point(constructor:GameEvent.Goal)
 }
 GameEvent_Goal::GameEvent_Goal(const GameEvent_Goal& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -2098,33 +2349,30 @@ GameEvent_Goal::GameEvent_Goal(const GameEvent_Goal& from)
 }
 
 void GameEvent_Goal::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&kicking_team_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(kicking_team_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&kicking_team_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(kicking_team_));
 }
 
 GameEvent_Goal::~GameEvent_Goal() {
   // @@protoc_insertion_point(destructor:GameEvent.Goal)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_Goal::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
   if (this != internal_default_instance()) delete kick_location_;
 }
 
-void GameEvent_Goal::ArenaDtor(void* object) {
-  GameEvent_Goal* _this = reinterpret_cast< GameEvent_Goal* >(object);
-  (void)_this;
-}
-void GameEvent_Goal::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_Goal::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_Goal& GameEvent_Goal::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_Goal_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_Goal::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.Goal)
@@ -2149,7 +2397,7 @@ void GameEvent_Goal::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(kicking_team_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_Goal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -2163,7 +2411,7 @@ const char* GameEvent_Goal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -2176,7 +2424,7 @@ const char* GameEvent_Goal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_kicking_bot(&has_bits);
-          kicking_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          kicking_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2197,7 +2445,7 @@ const char* GameEvent_Goal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
       // optional .Team kicking_team = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 48)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_kicking_team(static_cast<::Team>(val));
@@ -2212,9 +2460,7 @@ const char* GameEvent_Goal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2229,7 +2475,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_Goal::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_Goal::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.Goal)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2238,43 +2484,43 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 kicking_bot = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_kicking_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional .Location kick_location = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::kick_location(this), target, stream);
   }
 
   // optional .Team kicking_team = 6;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       6, this->_internal_kicking_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.Goal)
   return target;
@@ -2285,7 +2531,7 @@ size_t GameEvent_Goal::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -2352,7 +2598,7 @@ void GameEvent_Goal::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void GameEvent_Goal::MergeFrom(const GameEvent_Goal& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.Goal)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2392,26 +2638,25 @@ void GameEvent_Goal::CopyFrom(const GameEvent_Goal& from) {
 }
 
 bool GameEvent_Goal::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000004) != 0x00000004) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
-  if (_internal_has_kick_location()) {
-    if (!kick_location_->IsInitialized()) return false;
+  if (has_kick_location()) {
+    if (!this->kick_location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_Goal::InternalSwap(GameEvent_Goal* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_Goal, kicking_team_)
-      + sizeof(GameEvent_Goal::kicking_team_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_Goal, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(kick_location_, other->kick_location_);
+  swap(by_team_, other->by_team_);
+  swap(kicking_bot_, other->kicking_bot_);
+  swap(kicking_team_, other->kicking_team_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_Goal::GetMetadata() const {
@@ -2421,6 +2666,12 @@ void GameEvent_Goal::InternalSwap(GameEvent_Goal* other) {
 
 // ===================================================================
 
+void GameEvent_IndirectGoal::InitAsDefaultInstance() {
+  ::_GameEvent_IndirectGoal_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+  ::_GameEvent_IndirectGoal_default_instance_._instance.get_mutable()->kick_location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_IndirectGoal::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_IndirectGoal>()._has_bits_);
@@ -2437,9 +2688,6 @@ class GameEvent_IndirectGoal::_Internal {
   static const ::Location& kick_location(const GameEvent_IndirectGoal* msg);
   static void set_has_kick_location(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000004) ^ 0x00000004) != 0;
   }
 };
 
@@ -2459,16 +2707,16 @@ void GameEvent_IndirectGoal::clear_kick_location() {
   if (kick_location_ != nullptr) kick_location_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-GameEvent_IndirectGoal::GameEvent_IndirectGoal(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_IndirectGoal::GameEvent_IndirectGoal()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.IndirectGoal)
+  // @@protoc_insertion_point(constructor:GameEvent.IndirectGoal)
 }
 GameEvent_IndirectGoal::GameEvent_IndirectGoal(const GameEvent_IndirectGoal& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -2486,33 +2734,30 @@ GameEvent_IndirectGoal::GameEvent_IndirectGoal(const GameEvent_IndirectGoal& fro
 }
 
 void GameEvent_IndirectGoal::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&by_bot_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&by_bot_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
 }
 
 GameEvent_IndirectGoal::~GameEvent_IndirectGoal() {
   // @@protoc_insertion_point(destructor:GameEvent.IndirectGoal)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_IndirectGoal::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
   if (this != internal_default_instance()) delete kick_location_;
 }
 
-void GameEvent_IndirectGoal::ArenaDtor(void* object) {
-  GameEvent_IndirectGoal* _this = reinterpret_cast< GameEvent_IndirectGoal* >(object);
-  (void)_this;
-}
-void GameEvent_IndirectGoal::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_IndirectGoal::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_IndirectGoal& GameEvent_IndirectGoal::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_IndirectGoal_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_IndirectGoal::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.IndirectGoal)
@@ -2537,7 +2782,7 @@ void GameEvent_IndirectGoal::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(by_bot_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_IndirectGoal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -2551,7 +2796,7 @@ const char* GameEvent_IndirectGoal::_InternalParse(const char* ptr, ::PROTOBUF_N
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -2564,7 +2809,7 @@ const char* GameEvent_IndirectGoal::_InternalParse(const char* ptr, ::PROTOBUF_N
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2588,9 +2833,7 @@ const char* GameEvent_IndirectGoal::_InternalParse(const char* ptr, ::PROTOBUF_N
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2605,7 +2848,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_IndirectGoal::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_IndirectGoal::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.IndirectGoal)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2614,36 +2857,36 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional .Location kick_location = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::kick_location(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.IndirectGoal)
   return target;
@@ -2654,7 +2897,7 @@ size_t GameEvent_IndirectGoal::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -2713,7 +2956,7 @@ void GameEvent_IndirectGoal::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& f
 void GameEvent_IndirectGoal::MergeFrom(const GameEvent_IndirectGoal& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.IndirectGoal)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2750,26 +2993,24 @@ void GameEvent_IndirectGoal::CopyFrom(const GameEvent_IndirectGoal& from) {
 }
 
 bool GameEvent_IndirectGoal::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000004) != 0x00000004) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
-  if (_internal_has_kick_location()) {
-    if (!kick_location_->IsInitialized()) return false;
+  if (has_kick_location()) {
+    if (!this->kick_location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_IndirectGoal::InternalSwap(GameEvent_IndirectGoal* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_IndirectGoal, by_bot_)
-      + sizeof(GameEvent_IndirectGoal::by_bot_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_IndirectGoal, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(kick_location_, other->kick_location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_IndirectGoal::GetMetadata() const {
@@ -2779,6 +3020,12 @@ void GameEvent_IndirectGoal::InternalSwap(GameEvent_IndirectGoal* other) {
 
 // ===================================================================
 
+void GameEvent_ChippedGoal::InitAsDefaultInstance() {
+  ::_GameEvent_ChippedGoal_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+  ::_GameEvent_ChippedGoal_default_instance_._instance.get_mutable()->kick_location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_ChippedGoal::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_ChippedGoal>()._has_bits_);
@@ -2799,9 +3046,6 @@ class GameEvent_ChippedGoal::_Internal {
   static void set_has_max_ball_height(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000004) ^ 0x00000004) != 0;
-  }
 };
 
 const ::Location&
@@ -2820,16 +3064,16 @@ void GameEvent_ChippedGoal::clear_kick_location() {
   if (kick_location_ != nullptr) kick_location_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-GameEvent_ChippedGoal::GameEvent_ChippedGoal(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_ChippedGoal::GameEvent_ChippedGoal()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.ChippedGoal)
+  // @@protoc_insertion_point(constructor:GameEvent.ChippedGoal)
 }
 GameEvent_ChippedGoal::GameEvent_ChippedGoal(const GameEvent_ChippedGoal& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -2847,33 +3091,30 @@ GameEvent_ChippedGoal::GameEvent_ChippedGoal(const GameEvent_ChippedGoal& from)
 }
 
 void GameEvent_ChippedGoal::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&max_ball_height_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(max_ball_height_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&max_ball_height_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(max_ball_height_));
 }
 
 GameEvent_ChippedGoal::~GameEvent_ChippedGoal() {
   // @@protoc_insertion_point(destructor:GameEvent.ChippedGoal)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_ChippedGoal::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
   if (this != internal_default_instance()) delete kick_location_;
 }
 
-void GameEvent_ChippedGoal::ArenaDtor(void* object) {
-  GameEvent_ChippedGoal* _this = reinterpret_cast< GameEvent_ChippedGoal* >(object);
-  (void)_this;
-}
-void GameEvent_ChippedGoal::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_ChippedGoal::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_ChippedGoal& GameEvent_ChippedGoal::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_ChippedGoal_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_ChippedGoal::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.ChippedGoal)
@@ -2898,7 +3139,7 @@ void GameEvent_ChippedGoal::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(max_ball_height_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_ChippedGoal::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -2912,7 +3153,7 @@ const char* GameEvent_ChippedGoal::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -2925,7 +3166,7 @@ const char* GameEvent_ChippedGoal::_InternalParse(const char* ptr, ::PROTOBUF_NA
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -2957,9 +3198,7 @@ const char* GameEvent_ChippedGoal::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -2974,7 +3213,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_ChippedGoal::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_ChippedGoal::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.ChippedGoal)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -2983,42 +3222,42 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional .Location kick_location = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::kick_location(this), target, stream);
   }
 
   // optional float max_ball_height = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_max_ball_height(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.ChippedGoal)
   return target;
@@ -3029,7 +3268,7 @@ size_t GameEvent_ChippedGoal::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -3095,7 +3334,7 @@ void GameEvent_ChippedGoal::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void GameEvent_ChippedGoal::MergeFrom(const GameEvent_ChippedGoal& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.ChippedGoal)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3135,26 +3374,25 @@ void GameEvent_ChippedGoal::CopyFrom(const GameEvent_ChippedGoal& from) {
 }
 
 bool GameEvent_ChippedGoal::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000004) != 0x00000004) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
-  if (_internal_has_kick_location()) {
-    if (!kick_location_->IsInitialized()) return false;
+  if (has_kick_location()) {
+    if (!this->kick_location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_ChippedGoal::InternalSwap(GameEvent_ChippedGoal* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_ChippedGoal, max_ball_height_)
-      + sizeof(GameEvent_ChippedGoal::max_ball_height_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_ChippedGoal, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(kick_location_, other->kick_location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(max_ball_height_, other->max_ball_height_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_ChippedGoal::GetMetadata() const {
@@ -3164,6 +3402,10 @@ void GameEvent_ChippedGoal::InternalSwap(GameEvent_ChippedGoal* other) {
 
 // ===================================================================
 
+void GameEvent_BotTooFastInStop::InitAsDefaultInstance() {
+  ::_GameEvent_BotTooFastInStop_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotTooFastInStop::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotTooFastInStop>()._has_bits_);
@@ -3180,9 +3422,6 @@ class GameEvent_BotTooFastInStop::_Internal {
   static void set_has_speed(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -3193,16 +3432,16 @@ void GameEvent_BotTooFastInStop::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotTooFastInStop::GameEvent_BotTooFastInStop(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotTooFastInStop::GameEvent_BotTooFastInStop()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotTooFastInStop)
+  // @@protoc_insertion_point(constructor:GameEvent.BotTooFastInStop)
 }
 GameEvent_BotTooFastInStop::GameEvent_BotTooFastInStop(const GameEvent_BotTooFastInStop& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -3215,32 +3454,29 @@ GameEvent_BotTooFastInStop::GameEvent_BotTooFastInStop(const GameEvent_BotTooFas
 }
 
 void GameEvent_BotTooFastInStop::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&speed_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(speed_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&speed_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(speed_));
 }
 
 GameEvent_BotTooFastInStop::~GameEvent_BotTooFastInStop() {
   // @@protoc_insertion_point(destructor:GameEvent.BotTooFastInStop)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotTooFastInStop::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotTooFastInStop::ArenaDtor(void* object) {
-  GameEvent_BotTooFastInStop* _this = reinterpret_cast< GameEvent_BotTooFastInStop* >(object);
-  (void)_this;
-}
-void GameEvent_BotTooFastInStop::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotTooFastInStop::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotTooFastInStop& GameEvent_BotTooFastInStop::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotTooFastInStop_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotTooFastInStop::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotTooFastInStop)
@@ -3259,7 +3495,7 @@ void GameEvent_BotTooFastInStop::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(speed_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotTooFastInStop::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -3273,7 +3509,7 @@ const char* GameEvent_BotTooFastInStop::_InternalParse(const char* ptr, ::PROTOB
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -3286,7 +3522,7 @@ const char* GameEvent_BotTooFastInStop::_InternalParse(const char* ptr, ::PROTOB
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3311,9 +3547,7 @@ const char* GameEvent_BotTooFastInStop::_InternalParse(const char* ptr, ::PROTOB
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -3328,7 +3562,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotTooFastInStop::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotTooFastInStop::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotTooFastInStop)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3337,34 +3571,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float speed = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_speed(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotTooFastInStop)
   return target;
@@ -3375,7 +3609,7 @@ size_t GameEvent_BotTooFastInStop::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -3432,7 +3666,7 @@ void GameEvent_BotTooFastInStop::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Messag
 void GameEvent_BotTooFastInStop::MergeFrom(const GameEvent_BotTooFastInStop& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotTooFastInStop)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3469,23 +3703,21 @@ void GameEvent_BotTooFastInStop::CopyFrom(const GameEvent_BotTooFastInStop& from
 }
 
 bool GameEvent_BotTooFastInStop::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotTooFastInStop::InternalSwap(GameEvent_BotTooFastInStop* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotTooFastInStop, speed_)
-      + sizeof(GameEvent_BotTooFastInStop::speed_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotTooFastInStop, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(speed_, other->speed_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotTooFastInStop::GetMetadata() const {
@@ -3495,6 +3727,10 @@ void GameEvent_BotTooFastInStop::InternalSwap(GameEvent_BotTooFastInStop* other)
 
 // ===================================================================
 
+void GameEvent_DefenderTooCloseToKickPoint::InitAsDefaultInstance() {
+  ::_GameEvent_DefenderTooCloseToKickPoint_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_DefenderTooCloseToKickPoint::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_DefenderTooCloseToKickPoint>()._has_bits_);
@@ -3511,9 +3747,6 @@ class GameEvent_DefenderTooCloseToKickPoint::_Internal {
   static void set_has_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -3524,16 +3757,16 @@ void GameEvent_DefenderTooCloseToKickPoint::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_DefenderTooCloseToKickPoint::GameEvent_DefenderTooCloseToKickPoint(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_DefenderTooCloseToKickPoint::GameEvent_DefenderTooCloseToKickPoint()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.DefenderTooCloseToKickPoint)
+  // @@protoc_insertion_point(constructor:GameEvent.DefenderTooCloseToKickPoint)
 }
 GameEvent_DefenderTooCloseToKickPoint::GameEvent_DefenderTooCloseToKickPoint(const GameEvent_DefenderTooCloseToKickPoint& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -3546,32 +3779,29 @@ GameEvent_DefenderTooCloseToKickPoint::GameEvent_DefenderTooCloseToKickPoint(con
 }
 
 void GameEvent_DefenderTooCloseToKickPoint::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(distance_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&distance_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(distance_));
 }
 
 GameEvent_DefenderTooCloseToKickPoint::~GameEvent_DefenderTooCloseToKickPoint() {
   // @@protoc_insertion_point(destructor:GameEvent.DefenderTooCloseToKickPoint)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_DefenderTooCloseToKickPoint::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_DefenderTooCloseToKickPoint::ArenaDtor(void* object) {
-  GameEvent_DefenderTooCloseToKickPoint* _this = reinterpret_cast< GameEvent_DefenderTooCloseToKickPoint* >(object);
-  (void)_this;
-}
-void GameEvent_DefenderTooCloseToKickPoint::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_DefenderTooCloseToKickPoint::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_DefenderTooCloseToKickPoint& GameEvent_DefenderTooCloseToKickPoint::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_DefenderTooCloseToKickPoint_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_DefenderTooCloseToKickPoint::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.DefenderTooCloseToKickPoint)
@@ -3590,7 +3820,7 @@ void GameEvent_DefenderTooCloseToKickPoint::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_DefenderTooCloseToKickPoint::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -3604,7 +3834,7 @@ const char* GameEvent_DefenderTooCloseToKickPoint::_InternalParse(const char* pt
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -3617,7 +3847,7 @@ const char* GameEvent_DefenderTooCloseToKickPoint::_InternalParse(const char* pt
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3642,9 +3872,7 @@ const char* GameEvent_DefenderTooCloseToKickPoint::_InternalParse(const char* pt
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -3659,7 +3887,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_DefenderTooCloseToKickPoint::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_DefenderTooCloseToKickPoint::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.DefenderTooCloseToKickPoint)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -3668,34 +3896,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float distance = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.DefenderTooCloseToKickPoint)
   return target;
@@ -3706,7 +3934,7 @@ size_t GameEvent_DefenderTooCloseToKickPoint::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -3763,7 +3991,7 @@ void GameEvent_DefenderTooCloseToKickPoint::MergeFrom(const ::PROTOBUF_NAMESPACE
 void GameEvent_DefenderTooCloseToKickPoint::MergeFrom(const GameEvent_DefenderTooCloseToKickPoint& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.DefenderTooCloseToKickPoint)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3800,23 +4028,21 @@ void GameEvent_DefenderTooCloseToKickPoint::CopyFrom(const GameEvent_DefenderToo
 }
 
 bool GameEvent_DefenderTooCloseToKickPoint::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_DefenderTooCloseToKickPoint::InternalSwap(GameEvent_DefenderTooCloseToKickPoint* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_DefenderTooCloseToKickPoint, distance_)
-      + sizeof(GameEvent_DefenderTooCloseToKickPoint::distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_DefenderTooCloseToKickPoint, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(distance_, other->distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_DefenderTooCloseToKickPoint::GetMetadata() const {
@@ -3826,6 +4052,10 @@ void GameEvent_DefenderTooCloseToKickPoint::InternalSwap(GameEvent_DefenderTooCl
 
 // ===================================================================
 
+void GameEvent_BotCrashDrawn::InitAsDefaultInstance() {
+  ::_GameEvent_BotCrashDrawn_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotCrashDrawn::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotCrashDrawn>()._has_bits_);
@@ -3858,16 +4088,16 @@ void GameEvent_BotCrashDrawn::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotCrashDrawn::GameEvent_BotCrashDrawn(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotCrashDrawn::GameEvent_BotCrashDrawn()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotCrashDrawn)
+  // @@protoc_insertion_point(constructor:GameEvent.BotCrashDrawn)
 }
 GameEvent_BotCrashDrawn::GameEvent_BotCrashDrawn(const GameEvent_BotCrashDrawn& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -3880,32 +4110,29 @@ GameEvent_BotCrashDrawn::GameEvent_BotCrashDrawn(const GameEvent_BotCrashDrawn& 
 }
 
 void GameEvent_BotCrashDrawn::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&crash_angle_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(crash_angle_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&crash_angle_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(crash_angle_));
 }
 
 GameEvent_BotCrashDrawn::~GameEvent_BotCrashDrawn() {
   // @@protoc_insertion_point(destructor:GameEvent.BotCrashDrawn)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotCrashDrawn::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotCrashDrawn::ArenaDtor(void* object) {
-  GameEvent_BotCrashDrawn* _this = reinterpret_cast< GameEvent_BotCrashDrawn* >(object);
-  (void)_this;
-}
-void GameEvent_BotCrashDrawn::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotCrashDrawn::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotCrashDrawn& GameEvent_BotCrashDrawn::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotCrashDrawn_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotCrashDrawn::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotCrashDrawn)
@@ -3924,7 +4151,7 @@ void GameEvent_BotCrashDrawn::Clear() {
         reinterpret_cast<char*>(&bot_yellow_)) + sizeof(crash_angle_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotCrashDrawn::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -3939,7 +4166,7 @@ const char* GameEvent_BotCrashDrawn::_InternalParse(const char* ptr, ::PROTOBUF_
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_bot_yellow(&has_bits);
-          bot_yellow_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          bot_yellow_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3947,7 +4174,7 @@ const char* GameEvent_BotCrashDrawn::_InternalParse(const char* ptr, ::PROTOBUF_
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_bot_blue(&has_bits);
-          bot_blue_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          bot_blue_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -3988,9 +4215,7 @@ const char* GameEvent_BotCrashDrawn::_InternalParse(const char* ptr, ::PROTOBUF_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -4005,7 +4230,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotCrashDrawn::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotCrashDrawn::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotCrashDrawn)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4014,45 +4239,45 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional uint32 bot_yellow = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_bot_yellow(), target);
   }
 
   // optional uint32 bot_blue = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_bot_blue(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float crash_speed = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_crash_speed(), target);
   }
 
   // optional float speed_diff = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_speed_diff(), target);
   }
 
   // optional float crash_angle = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_crash_angle(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotCrashDrawn)
   return target;
@@ -4132,7 +4357,7 @@ void GameEvent_BotCrashDrawn::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& 
 void GameEvent_BotCrashDrawn::MergeFrom(const GameEvent_BotCrashDrawn& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotCrashDrawn)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4175,22 +4400,22 @@ void GameEvent_BotCrashDrawn::CopyFrom(const GameEvent_BotCrashDrawn& from) {
 }
 
 bool GameEvent_BotCrashDrawn::IsInitialized() const {
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotCrashDrawn::InternalSwap(GameEvent_BotCrashDrawn* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotCrashDrawn, crash_angle_)
-      + sizeof(GameEvent_BotCrashDrawn::crash_angle_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotCrashDrawn, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(bot_yellow_, other->bot_yellow_);
+  swap(bot_blue_, other->bot_blue_);
+  swap(crash_speed_, other->crash_speed_);
+  swap(speed_diff_, other->speed_diff_);
+  swap(crash_angle_, other->crash_angle_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotCrashDrawn::GetMetadata() const {
@@ -4200,6 +4425,10 @@ void GameEvent_BotCrashDrawn::InternalSwap(GameEvent_BotCrashDrawn* other) {
 
 // ===================================================================
 
+void GameEvent_BotCrashUnique::InitAsDefaultInstance() {
+  ::_GameEvent_BotCrashUnique_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotCrashUnique::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotCrashUnique>()._has_bits_);
@@ -4225,9 +4454,6 @@ class GameEvent_BotCrashUnique::_Internal {
   static void set_has_crash_angle(HasBits* has_bits) {
     (*has_bits)[0] |= 64u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -4238,16 +4464,16 @@ void GameEvent_BotCrashUnique::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotCrashUnique::GameEvent_BotCrashUnique(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotCrashUnique::GameEvent_BotCrashUnique()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotCrashUnique)
+  // @@protoc_insertion_point(constructor:GameEvent.BotCrashUnique)
 }
 GameEvent_BotCrashUnique::GameEvent_BotCrashUnique(const GameEvent_BotCrashUnique& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -4260,32 +4486,29 @@ GameEvent_BotCrashUnique::GameEvent_BotCrashUnique(const GameEvent_BotCrashUniqu
 }
 
 void GameEvent_BotCrashUnique::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&crash_angle_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(crash_angle_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&crash_angle_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(crash_angle_));
 }
 
 GameEvent_BotCrashUnique::~GameEvent_BotCrashUnique() {
   // @@protoc_insertion_point(destructor:GameEvent.BotCrashUnique)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotCrashUnique::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotCrashUnique::ArenaDtor(void* object) {
-  GameEvent_BotCrashUnique* _this = reinterpret_cast< GameEvent_BotCrashUnique* >(object);
-  (void)_this;
-}
-void GameEvent_BotCrashUnique::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotCrashUnique::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotCrashUnique& GameEvent_BotCrashUnique::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotCrashUnique_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotCrashUnique::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotCrashUnique)
@@ -4304,7 +4527,7 @@ void GameEvent_BotCrashUnique::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(crash_angle_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotCrashUnique::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -4318,7 +4541,7 @@ const char* GameEvent_BotCrashUnique::_InternalParse(const char* ptr, ::PROTOBUF
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -4331,7 +4554,7 @@ const char* GameEvent_BotCrashUnique::_InternalParse(const char* ptr, ::PROTOBUF
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_violator(&has_bits);
-          violator_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          violator_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4339,7 +4562,7 @@ const char* GameEvent_BotCrashUnique::_InternalParse(const char* ptr, ::PROTOBUF
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           _Internal::set_has_victim(&has_bits);
-          victim_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          victim_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4380,9 +4603,7 @@ const char* GameEvent_BotCrashUnique::_InternalParse(const char* ptr, ::PROTOBUF
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -4397,7 +4618,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotCrashUnique::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotCrashUnique::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotCrashUnique)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4406,52 +4627,52 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 violator = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_violator(), target);
   }
 
   // optional uint32 victim = 3;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_victim(), target);
   }
 
   // optional .Location location = 4;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::location(this), target, stream);
   }
 
   // optional float crash_speed = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_crash_speed(), target);
   }
 
   // optional float speed_diff = 6;
   if (cached_has_bits & 0x00000020u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(6, this->_internal_speed_diff(), target);
   }
 
   // optional float crash_angle = 7;
   if (cached_has_bits & 0x00000040u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(7, this->_internal_crash_angle(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotCrashUnique)
   return target;
@@ -4462,7 +4683,7 @@ size_t GameEvent_BotCrashUnique::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -4536,7 +4757,7 @@ void GameEvent_BotCrashUnique::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message&
 void GameEvent_BotCrashUnique::MergeFrom(const GameEvent_BotCrashUnique& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotCrashUnique)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4582,23 +4803,24 @@ void GameEvent_BotCrashUnique::CopyFrom(const GameEvent_BotCrashUnique& from) {
 }
 
 bool GameEvent_BotCrashUnique::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotCrashUnique::InternalSwap(GameEvent_BotCrashUnique* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotCrashUnique, crash_angle_)
-      + sizeof(GameEvent_BotCrashUnique::crash_angle_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotCrashUnique, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(violator_, other->violator_);
+  swap(victim_, other->victim_);
+  swap(crash_speed_, other->crash_speed_);
+  swap(speed_diff_, other->speed_diff_);
+  swap(crash_angle_, other->crash_angle_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotCrashUnique::GetMetadata() const {
@@ -4608,6 +4830,10 @@ void GameEvent_BotCrashUnique::InternalSwap(GameEvent_BotCrashUnique* other) {
 
 // ===================================================================
 
+void GameEvent_BotPushedBot::InitAsDefaultInstance() {
+  ::_GameEvent_BotPushedBot_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotPushedBot::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotPushedBot>()._has_bits_);
@@ -4627,9 +4853,6 @@ class GameEvent_BotPushedBot::_Internal {
   static void set_has_pushed_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -4640,16 +4863,16 @@ void GameEvent_BotPushedBot::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotPushedBot::GameEvent_BotPushedBot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotPushedBot::GameEvent_BotPushedBot()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotPushedBot)
+  // @@protoc_insertion_point(constructor:GameEvent.BotPushedBot)
 }
 GameEvent_BotPushedBot::GameEvent_BotPushedBot(const GameEvent_BotPushedBot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -4662,32 +4885,29 @@ GameEvent_BotPushedBot::GameEvent_BotPushedBot(const GameEvent_BotPushedBot& fro
 }
 
 void GameEvent_BotPushedBot::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&pushed_distance_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(pushed_distance_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&pushed_distance_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(pushed_distance_));
 }
 
 GameEvent_BotPushedBot::~GameEvent_BotPushedBot() {
   // @@protoc_insertion_point(destructor:GameEvent.BotPushedBot)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotPushedBot::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotPushedBot::ArenaDtor(void* object) {
-  GameEvent_BotPushedBot* _this = reinterpret_cast< GameEvent_BotPushedBot* >(object);
-  (void)_this;
-}
-void GameEvent_BotPushedBot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotPushedBot::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotPushedBot& GameEvent_BotPushedBot::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotPushedBot_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotPushedBot::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotPushedBot)
@@ -4706,7 +4926,7 @@ void GameEvent_BotPushedBot::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(pushed_distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotPushedBot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -4720,7 +4940,7 @@ const char* GameEvent_BotPushedBot::_InternalParse(const char* ptr, ::PROTOBUF_N
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -4733,7 +4953,7 @@ const char* GameEvent_BotPushedBot::_InternalParse(const char* ptr, ::PROTOBUF_N
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_violator(&has_bits);
-          violator_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          violator_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4741,7 +4961,7 @@ const char* GameEvent_BotPushedBot::_InternalParse(const char* ptr, ::PROTOBUF_N
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 24)) {
           _Internal::set_has_victim(&has_bits);
-          victim_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          victim_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -4766,9 +4986,7 @@ const char* GameEvent_BotPushedBot::_InternalParse(const char* ptr, ::PROTOBUF_N
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -4783,7 +5001,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotPushedBot::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotPushedBot::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotPushedBot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -4792,40 +5010,40 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 violator = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_violator(), target);
   }
 
   // optional uint32 victim = 3;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(3, this->_internal_victim(), target);
   }
 
   // optional .Location location = 4;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::location(this), target, stream);
   }
 
   // optional float pushed_distance = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(5, this->_internal_pushed_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotPushedBot)
   return target;
@@ -4836,7 +5054,7 @@ size_t GameEvent_BotPushedBot::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -4900,7 +5118,7 @@ void GameEvent_BotPushedBot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& f
 void GameEvent_BotPushedBot::MergeFrom(const GameEvent_BotPushedBot& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotPushedBot)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4940,23 +5158,22 @@ void GameEvent_BotPushedBot::CopyFrom(const GameEvent_BotPushedBot& from) {
 }
 
 bool GameEvent_BotPushedBot::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotPushedBot::InternalSwap(GameEvent_BotPushedBot* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotPushedBot, pushed_distance_)
-      + sizeof(GameEvent_BotPushedBot::pushed_distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotPushedBot, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(violator_, other->violator_);
+  swap(victim_, other->victim_);
+  swap(pushed_distance_, other->pushed_distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotPushedBot::GetMetadata() const {
@@ -4966,6 +5183,10 @@ void GameEvent_BotPushedBot::InternalSwap(GameEvent_BotPushedBot* other) {
 
 // ===================================================================
 
+void GameEvent_BotTippedOver::InitAsDefaultInstance() {
+  ::_GameEvent_BotTippedOver_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotTippedOver::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotTippedOver>()._has_bits_);
@@ -4979,9 +5200,6 @@ class GameEvent_BotTippedOver::_Internal {
   static void set_has_location(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -4992,16 +5210,16 @@ void GameEvent_BotTippedOver::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotTippedOver::GameEvent_BotTippedOver(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotTippedOver::GameEvent_BotTippedOver()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotTippedOver)
+  // @@protoc_insertion_point(constructor:GameEvent.BotTippedOver)
 }
 GameEvent_BotTippedOver::GameEvent_BotTippedOver(const GameEvent_BotTippedOver& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -5014,32 +5232,29 @@ GameEvent_BotTippedOver::GameEvent_BotTippedOver(const GameEvent_BotTippedOver& 
 }
 
 void GameEvent_BotTippedOver::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&by_bot_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&by_bot_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
 }
 
 GameEvent_BotTippedOver::~GameEvent_BotTippedOver() {
   // @@protoc_insertion_point(destructor:GameEvent.BotTippedOver)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotTippedOver::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotTippedOver::ArenaDtor(void* object) {
-  GameEvent_BotTippedOver* _this = reinterpret_cast< GameEvent_BotTippedOver* >(object);
-  (void)_this;
-}
-void GameEvent_BotTippedOver::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotTippedOver::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotTippedOver& GameEvent_BotTippedOver::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotTippedOver_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotTippedOver::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotTippedOver)
@@ -5058,7 +5273,7 @@ void GameEvent_BotTippedOver::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(by_bot_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotTippedOver::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -5072,7 +5287,7 @@ const char* GameEvent_BotTippedOver::_InternalParse(const char* ptr, ::PROTOBUF_
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -5085,7 +5300,7 @@ const char* GameEvent_BotTippedOver::_InternalParse(const char* ptr, ::PROTOBUF_
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5102,9 +5317,7 @@ const char* GameEvent_BotTippedOver::_InternalParse(const char* ptr, ::PROTOBUF_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -5119,7 +5332,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotTippedOver::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotTippedOver::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotTippedOver)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5128,28 +5341,28 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotTippedOver)
   return target;
@@ -5160,7 +5373,7 @@ size_t GameEvent_BotTippedOver::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -5210,7 +5423,7 @@ void GameEvent_BotTippedOver::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& 
 void GameEvent_BotTippedOver::MergeFrom(const GameEvent_BotTippedOver& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotTippedOver)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5244,23 +5457,20 @@ void GameEvent_BotTippedOver::CopyFrom(const GameEvent_BotTippedOver& from) {
 }
 
 bool GameEvent_BotTippedOver::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotTippedOver::InternalSwap(GameEvent_BotTippedOver* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotTippedOver, by_bot_)
-      + sizeof(GameEvent_BotTippedOver::by_bot_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotTippedOver, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotTippedOver::GetMetadata() const {
@@ -5270,6 +5480,10 @@ void GameEvent_BotTippedOver::InternalSwap(GameEvent_BotTippedOver* other) {
 
 // ===================================================================
 
+void GameEvent_DefenderInDefenseArea::InitAsDefaultInstance() {
+  ::_GameEvent_DefenderInDefenseArea_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_DefenderInDefenseArea::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_DefenderInDefenseArea>()._has_bits_);
@@ -5286,9 +5500,6 @@ class GameEvent_DefenderInDefenseArea::_Internal {
   static void set_has_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -5299,16 +5510,16 @@ void GameEvent_DefenderInDefenseArea::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_DefenderInDefenseArea::GameEvent_DefenderInDefenseArea(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_DefenderInDefenseArea::GameEvent_DefenderInDefenseArea()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.DefenderInDefenseArea)
+  // @@protoc_insertion_point(constructor:GameEvent.DefenderInDefenseArea)
 }
 GameEvent_DefenderInDefenseArea::GameEvent_DefenderInDefenseArea(const GameEvent_DefenderInDefenseArea& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -5321,32 +5532,29 @@ GameEvent_DefenderInDefenseArea::GameEvent_DefenderInDefenseArea(const GameEvent
 }
 
 void GameEvent_DefenderInDefenseArea::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(distance_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&distance_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(distance_));
 }
 
 GameEvent_DefenderInDefenseArea::~GameEvent_DefenderInDefenseArea() {
   // @@protoc_insertion_point(destructor:GameEvent.DefenderInDefenseArea)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_DefenderInDefenseArea::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_DefenderInDefenseArea::ArenaDtor(void* object) {
-  GameEvent_DefenderInDefenseArea* _this = reinterpret_cast< GameEvent_DefenderInDefenseArea* >(object);
-  (void)_this;
-}
-void GameEvent_DefenderInDefenseArea::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_DefenderInDefenseArea::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_DefenderInDefenseArea& GameEvent_DefenderInDefenseArea::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_DefenderInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_DefenderInDefenseArea::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.DefenderInDefenseArea)
@@ -5365,7 +5573,7 @@ void GameEvent_DefenderInDefenseArea::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_DefenderInDefenseArea::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -5379,7 +5587,7 @@ const char* GameEvent_DefenderInDefenseArea::_InternalParse(const char* ptr, ::P
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -5392,7 +5600,7 @@ const char* GameEvent_DefenderInDefenseArea::_InternalParse(const char* ptr, ::P
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5417,9 +5625,7 @@ const char* GameEvent_DefenderInDefenseArea::_InternalParse(const char* ptr, ::P
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -5434,7 +5640,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_DefenderInDefenseArea::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_DefenderInDefenseArea::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.DefenderInDefenseArea)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5443,34 +5649,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float distance = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.DefenderInDefenseArea)
   return target;
@@ -5481,7 +5687,7 @@ size_t GameEvent_DefenderInDefenseArea::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -5538,7 +5744,7 @@ void GameEvent_DefenderInDefenseArea::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::M
 void GameEvent_DefenderInDefenseArea::MergeFrom(const GameEvent_DefenderInDefenseArea& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.DefenderInDefenseArea)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5575,23 +5781,21 @@ void GameEvent_DefenderInDefenseArea::CopyFrom(const GameEvent_DefenderInDefense
 }
 
 bool GameEvent_DefenderInDefenseArea::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_DefenderInDefenseArea::InternalSwap(GameEvent_DefenderInDefenseArea* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_DefenderInDefenseArea, distance_)
-      + sizeof(GameEvent_DefenderInDefenseArea::distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_DefenderInDefenseArea, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(distance_, other->distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_DefenderInDefenseArea::GetMetadata() const {
@@ -5601,6 +5805,10 @@ void GameEvent_DefenderInDefenseArea::InternalSwap(GameEvent_DefenderInDefenseAr
 
 // ===================================================================
 
+void GameEvent_DefenderInDefenseAreaPartially::InitAsDefaultInstance() {
+  ::_GameEvent_DefenderInDefenseAreaPartially_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_DefenderInDefenseAreaPartially::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_DefenderInDefenseAreaPartially>()._has_bits_);
@@ -5617,9 +5825,6 @@ class GameEvent_DefenderInDefenseAreaPartially::_Internal {
   static void set_has_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -5630,16 +5835,16 @@ void GameEvent_DefenderInDefenseAreaPartially::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_DefenderInDefenseAreaPartially::GameEvent_DefenderInDefenseAreaPartially(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_DefenderInDefenseAreaPartially::GameEvent_DefenderInDefenseAreaPartially()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.DefenderInDefenseAreaPartially)
+  // @@protoc_insertion_point(constructor:GameEvent.DefenderInDefenseAreaPartially)
 }
 GameEvent_DefenderInDefenseAreaPartially::GameEvent_DefenderInDefenseAreaPartially(const GameEvent_DefenderInDefenseAreaPartially& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -5652,32 +5857,29 @@ GameEvent_DefenderInDefenseAreaPartially::GameEvent_DefenderInDefenseAreaPartial
 }
 
 void GameEvent_DefenderInDefenseAreaPartially::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(distance_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&distance_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(distance_));
 }
 
 GameEvent_DefenderInDefenseAreaPartially::~GameEvent_DefenderInDefenseAreaPartially() {
   // @@protoc_insertion_point(destructor:GameEvent.DefenderInDefenseAreaPartially)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_DefenderInDefenseAreaPartially::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_DefenderInDefenseAreaPartially::ArenaDtor(void* object) {
-  GameEvent_DefenderInDefenseAreaPartially* _this = reinterpret_cast< GameEvent_DefenderInDefenseAreaPartially* >(object);
-  (void)_this;
-}
-void GameEvent_DefenderInDefenseAreaPartially::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_DefenderInDefenseAreaPartially::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_DefenderInDefenseAreaPartially& GameEvent_DefenderInDefenseAreaPartially::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_DefenderInDefenseAreaPartially_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_DefenderInDefenseAreaPartially::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.DefenderInDefenseAreaPartially)
@@ -5696,7 +5898,7 @@ void GameEvent_DefenderInDefenseAreaPartially::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_DefenderInDefenseAreaPartially::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -5710,7 +5912,7 @@ const char* GameEvent_DefenderInDefenseAreaPartially::_InternalParse(const char*
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -5723,7 +5925,7 @@ const char* GameEvent_DefenderInDefenseAreaPartially::_InternalParse(const char*
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -5748,9 +5950,7 @@ const char* GameEvent_DefenderInDefenseAreaPartially::_InternalParse(const char*
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -5765,7 +5965,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_DefenderInDefenseAreaPartially::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_DefenderInDefenseAreaPartially::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.DefenderInDefenseAreaPartially)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -5774,34 +5974,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float distance = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.DefenderInDefenseAreaPartially)
   return target;
@@ -5812,7 +6012,7 @@ size_t GameEvent_DefenderInDefenseAreaPartially::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -5869,7 +6069,7 @@ void GameEvent_DefenderInDefenseAreaPartially::MergeFrom(const ::PROTOBUF_NAMESP
 void GameEvent_DefenderInDefenseAreaPartially::MergeFrom(const GameEvent_DefenderInDefenseAreaPartially& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.DefenderInDefenseAreaPartially)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -5906,23 +6106,21 @@ void GameEvent_DefenderInDefenseAreaPartially::CopyFrom(const GameEvent_Defender
 }
 
 bool GameEvent_DefenderInDefenseAreaPartially::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_DefenderInDefenseAreaPartially::InternalSwap(GameEvent_DefenderInDefenseAreaPartially* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_DefenderInDefenseAreaPartially, distance_)
-      + sizeof(GameEvent_DefenderInDefenseAreaPartially::distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_DefenderInDefenseAreaPartially, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(distance_, other->distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_DefenderInDefenseAreaPartially::GetMetadata() const {
@@ -5932,6 +6130,10 @@ void GameEvent_DefenderInDefenseAreaPartially::InternalSwap(GameEvent_DefenderIn
 
 // ===================================================================
 
+void GameEvent_AttackerTouchedBallInDefenseArea::InitAsDefaultInstance() {
+  ::_GameEvent_AttackerTouchedBallInDefenseArea_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_AttackerTouchedBallInDefenseArea::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_AttackerTouchedBallInDefenseArea>()._has_bits_);
@@ -5948,9 +6150,6 @@ class GameEvent_AttackerTouchedBallInDefenseArea::_Internal {
   static void set_has_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -5961,16 +6160,16 @@ void GameEvent_AttackerTouchedBallInDefenseArea::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_AttackerTouchedBallInDefenseArea::GameEvent_AttackerTouchedBallInDefenseArea(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_AttackerTouchedBallInDefenseArea::GameEvent_AttackerTouchedBallInDefenseArea()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.AttackerTouchedBallInDefenseArea)
+  // @@protoc_insertion_point(constructor:GameEvent.AttackerTouchedBallInDefenseArea)
 }
 GameEvent_AttackerTouchedBallInDefenseArea::GameEvent_AttackerTouchedBallInDefenseArea(const GameEvent_AttackerTouchedBallInDefenseArea& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -5983,32 +6182,29 @@ GameEvent_AttackerTouchedBallInDefenseArea::GameEvent_AttackerTouchedBallInDefen
 }
 
 void GameEvent_AttackerTouchedBallInDefenseArea::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(distance_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&distance_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(distance_));
 }
 
 GameEvent_AttackerTouchedBallInDefenseArea::~GameEvent_AttackerTouchedBallInDefenseArea() {
   // @@protoc_insertion_point(destructor:GameEvent.AttackerTouchedBallInDefenseArea)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_AttackerTouchedBallInDefenseArea::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_AttackerTouchedBallInDefenseArea::ArenaDtor(void* object) {
-  GameEvent_AttackerTouchedBallInDefenseArea* _this = reinterpret_cast< GameEvent_AttackerTouchedBallInDefenseArea* >(object);
-  (void)_this;
-}
-void GameEvent_AttackerTouchedBallInDefenseArea::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_AttackerTouchedBallInDefenseArea::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_AttackerTouchedBallInDefenseArea& GameEvent_AttackerTouchedBallInDefenseArea::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_AttackerTouchedBallInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_AttackerTouchedBallInDefenseArea::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.AttackerTouchedBallInDefenseArea)
@@ -6027,7 +6223,7 @@ void GameEvent_AttackerTouchedBallInDefenseArea::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_AttackerTouchedBallInDefenseArea::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -6041,7 +6237,7 @@ const char* GameEvent_AttackerTouchedBallInDefenseArea::_InternalParse(const cha
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -6054,7 +6250,7 @@ const char* GameEvent_AttackerTouchedBallInDefenseArea::_InternalParse(const cha
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6079,9 +6275,7 @@ const char* GameEvent_AttackerTouchedBallInDefenseArea::_InternalParse(const cha
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -6096,7 +6290,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerTouchedBallInDefenseArea::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerTouchedBallInDefenseArea::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.AttackerTouchedBallInDefenseArea)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6105,34 +6299,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float distance = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.AttackerTouchedBallInDefenseArea)
   return target;
@@ -6143,7 +6337,7 @@ size_t GameEvent_AttackerTouchedBallInDefenseArea::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -6200,7 +6394,7 @@ void GameEvent_AttackerTouchedBallInDefenseArea::MergeFrom(const ::PROTOBUF_NAME
 void GameEvent_AttackerTouchedBallInDefenseArea::MergeFrom(const GameEvent_AttackerTouchedBallInDefenseArea& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.AttackerTouchedBallInDefenseArea)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6237,23 +6431,21 @@ void GameEvent_AttackerTouchedBallInDefenseArea::CopyFrom(const GameEvent_Attack
 }
 
 bool GameEvent_AttackerTouchedBallInDefenseArea::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_AttackerTouchedBallInDefenseArea::InternalSwap(GameEvent_AttackerTouchedBallInDefenseArea* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_AttackerTouchedBallInDefenseArea, distance_)
-      + sizeof(GameEvent_AttackerTouchedBallInDefenseArea::distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_AttackerTouchedBallInDefenseArea, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(distance_, other->distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_AttackerTouchedBallInDefenseArea::GetMetadata() const {
@@ -6263,6 +6455,10 @@ void GameEvent_AttackerTouchedBallInDefenseArea::InternalSwap(GameEvent_Attacker
 
 // ===================================================================
 
+void GameEvent_BotKickedBallTooFast::InitAsDefaultInstance() {
+  ::_GameEvent_BotKickedBallTooFast_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotKickedBallTooFast::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotKickedBallTooFast>()._has_bits_);
@@ -6282,9 +6478,6 @@ class GameEvent_BotKickedBallTooFast::_Internal {
   static void set_has_chipped(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -6295,16 +6488,16 @@ void GameEvent_BotKickedBallTooFast::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotKickedBallTooFast::GameEvent_BotKickedBallTooFast(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotKickedBallTooFast::GameEvent_BotKickedBallTooFast()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotKickedBallTooFast)
+  // @@protoc_insertion_point(constructor:GameEvent.BotKickedBallTooFast)
 }
 GameEvent_BotKickedBallTooFast::GameEvent_BotKickedBallTooFast(const GameEvent_BotKickedBallTooFast& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -6317,32 +6510,29 @@ GameEvent_BotKickedBallTooFast::GameEvent_BotKickedBallTooFast(const GameEvent_B
 }
 
 void GameEvent_BotKickedBallTooFast::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&chipped_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(chipped_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&chipped_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(chipped_));
 }
 
 GameEvent_BotKickedBallTooFast::~GameEvent_BotKickedBallTooFast() {
   // @@protoc_insertion_point(destructor:GameEvent.BotKickedBallTooFast)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotKickedBallTooFast::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotKickedBallTooFast::ArenaDtor(void* object) {
-  GameEvent_BotKickedBallTooFast* _this = reinterpret_cast< GameEvent_BotKickedBallTooFast* >(object);
-  (void)_this;
-}
-void GameEvent_BotKickedBallTooFast::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotKickedBallTooFast::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotKickedBallTooFast& GameEvent_BotKickedBallTooFast::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotKickedBallTooFast_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotKickedBallTooFast::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotKickedBallTooFast)
@@ -6361,7 +6551,7 @@ void GameEvent_BotKickedBallTooFast::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(chipped_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotKickedBallTooFast::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -6375,7 +6565,7 @@ const char* GameEvent_BotKickedBallTooFast::_InternalParse(const char* ptr, ::PR
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -6388,7 +6578,7 @@ const char* GameEvent_BotKickedBallTooFast::_InternalParse(const char* ptr, ::PR
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6411,7 +6601,7 @@ const char* GameEvent_BotKickedBallTooFast::_InternalParse(const char* ptr, ::PR
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 40)) {
           _Internal::set_has_chipped(&has_bits);
-          chipped_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          chipped_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6421,9 +6611,7 @@ const char* GameEvent_BotKickedBallTooFast::_InternalParse(const char* ptr, ::PR
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -6438,7 +6626,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotKickedBallTooFast::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotKickedBallTooFast::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotKickedBallTooFast)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6447,40 +6635,40 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float initial_ball_speed = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_initial_ball_speed(), target);
   }
 
   // optional bool chipped = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteBoolToArray(5, this->_internal_chipped(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotKickedBallTooFast)
   return target;
@@ -6491,7 +6679,7 @@ size_t GameEvent_BotKickedBallTooFast::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -6553,7 +6741,7 @@ void GameEvent_BotKickedBallTooFast::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Me
 void GameEvent_BotKickedBallTooFast::MergeFrom(const GameEvent_BotKickedBallTooFast& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotKickedBallTooFast)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6593,23 +6781,22 @@ void GameEvent_BotKickedBallTooFast::CopyFrom(const GameEvent_BotKickedBallTooFa
 }
 
 bool GameEvent_BotKickedBallTooFast::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotKickedBallTooFast::InternalSwap(GameEvent_BotKickedBallTooFast* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotKickedBallTooFast, chipped_)
-      + sizeof(GameEvent_BotKickedBallTooFast::chipped_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotKickedBallTooFast, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(initial_ball_speed_, other->initial_ball_speed_);
+  swap(chipped_, other->chipped_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotKickedBallTooFast::GetMetadata() const {
@@ -6619,6 +6806,12 @@ void GameEvent_BotKickedBallTooFast::InternalSwap(GameEvent_BotKickedBallTooFast
 
 // ===================================================================
 
+void GameEvent_BotDribbledBallTooFar::InitAsDefaultInstance() {
+  ::_GameEvent_BotDribbledBallTooFar_default_instance_._instance.get_mutable()->start_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+  ::_GameEvent_BotDribbledBallTooFar_default_instance_._instance.get_mutable()->end_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotDribbledBallTooFar::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotDribbledBallTooFar>()._has_bits_);
@@ -6635,9 +6828,6 @@ class GameEvent_BotDribbledBallTooFar::_Internal {
   static const ::Location& end(const GameEvent_BotDribbledBallTooFar* msg);
   static void set_has_end(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
-  }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000004) ^ 0x00000004) != 0;
   }
 };
 
@@ -6657,16 +6847,16 @@ void GameEvent_BotDribbledBallTooFar::clear_end() {
   if (end_ != nullptr) end_->Clear();
   _has_bits_[0] &= ~0x00000002u;
 }
-GameEvent_BotDribbledBallTooFar::GameEvent_BotDribbledBallTooFar(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotDribbledBallTooFar::GameEvent_BotDribbledBallTooFar()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotDribbledBallTooFar)
+  // @@protoc_insertion_point(constructor:GameEvent.BotDribbledBallTooFar)
 }
 GameEvent_BotDribbledBallTooFar::GameEvent_BotDribbledBallTooFar(const GameEvent_BotDribbledBallTooFar& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_start()) {
     start_ = new ::Location(*from.start_);
   } else {
@@ -6684,33 +6874,30 @@ GameEvent_BotDribbledBallTooFar::GameEvent_BotDribbledBallTooFar(const GameEvent
 }
 
 void GameEvent_BotDribbledBallTooFar::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&start_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&by_bot_) -
-    reinterpret_cast<char*>(&start_)) + sizeof(by_bot_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&start_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&by_bot_) -
+      reinterpret_cast<char*>(&start_)) + sizeof(by_bot_));
 }
 
 GameEvent_BotDribbledBallTooFar::~GameEvent_BotDribbledBallTooFar() {
   // @@protoc_insertion_point(destructor:GameEvent.BotDribbledBallTooFar)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotDribbledBallTooFar::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete start_;
   if (this != internal_default_instance()) delete end_;
 }
 
-void GameEvent_BotDribbledBallTooFar::ArenaDtor(void* object) {
-  GameEvent_BotDribbledBallTooFar* _this = reinterpret_cast< GameEvent_BotDribbledBallTooFar* >(object);
-  (void)_this;
-}
-void GameEvent_BotDribbledBallTooFar::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotDribbledBallTooFar::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotDribbledBallTooFar& GameEvent_BotDribbledBallTooFar::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotDribbledBallTooFar_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotDribbledBallTooFar::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotDribbledBallTooFar)
@@ -6735,7 +6922,7 @@ void GameEvent_BotDribbledBallTooFar::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(by_bot_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotDribbledBallTooFar::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -6749,7 +6936,7 @@ const char* GameEvent_BotDribbledBallTooFar::_InternalParse(const char* ptr, ::P
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -6762,7 +6949,7 @@ const char* GameEvent_BotDribbledBallTooFar::_InternalParse(const char* ptr, ::P
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -6786,9 +6973,7 @@ const char* GameEvent_BotDribbledBallTooFar::_InternalParse(const char* ptr, ::P
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -6803,7 +6988,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotDribbledBallTooFar::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotDribbledBallTooFar::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotDribbledBallTooFar)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -6812,36 +6997,36 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location start = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::start(this), target, stream);
   }
 
   // optional .Location end = 4;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         4, _Internal::end(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotDribbledBallTooFar)
   return target;
@@ -6852,7 +7037,7 @@ size_t GameEvent_BotDribbledBallTooFar::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -6911,7 +7096,7 @@ void GameEvent_BotDribbledBallTooFar::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::M
 void GameEvent_BotDribbledBallTooFar::MergeFrom(const GameEvent_BotDribbledBallTooFar& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotDribbledBallTooFar)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -6948,26 +7133,24 @@ void GameEvent_BotDribbledBallTooFar::CopyFrom(const GameEvent_BotDribbledBallTo
 }
 
 bool GameEvent_BotDribbledBallTooFar::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_start()) {
-    if (!start_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000004) != 0x00000004) return false;
+  if (has_start()) {
+    if (!this->start_->IsInitialized()) return false;
   }
-  if (_internal_has_end()) {
-    if (!end_->IsInitialized()) return false;
+  if (has_end()) {
+    if (!this->end_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotDribbledBallTooFar::InternalSwap(GameEvent_BotDribbledBallTooFar* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotDribbledBallTooFar, by_bot_)
-      + sizeof(GameEvent_BotDribbledBallTooFar::by_bot_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotDribbledBallTooFar, start_)>(
-          reinterpret_cast<char*>(&start_),
-          reinterpret_cast<char*>(&other->start_));
+  swap(start_, other->start_);
+  swap(end_, other->end_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotDribbledBallTooFar::GetMetadata() const {
@@ -6977,6 +7160,10 @@ void GameEvent_BotDribbledBallTooFar::InternalSwap(GameEvent_BotDribbledBallTooF
 
 // ===================================================================
 
+void GameEvent_AttackerTouchedOpponentInDefenseArea::InitAsDefaultInstance() {
+  ::_GameEvent_AttackerTouchedOpponentInDefenseArea_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_AttackerTouchedOpponentInDefenseArea::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_AttackerTouchedOpponentInDefenseArea>()._has_bits_);
@@ -6993,9 +7180,6 @@ class GameEvent_AttackerTouchedOpponentInDefenseArea::_Internal {
   static void set_has_location(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -7006,16 +7190,16 @@ void GameEvent_AttackerTouchedOpponentInDefenseArea::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_AttackerTouchedOpponentInDefenseArea::GameEvent_AttackerTouchedOpponentInDefenseArea(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_AttackerTouchedOpponentInDefenseArea::GameEvent_AttackerTouchedOpponentInDefenseArea()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.AttackerTouchedOpponentInDefenseArea)
+  // @@protoc_insertion_point(constructor:GameEvent.AttackerTouchedOpponentInDefenseArea)
 }
 GameEvent_AttackerTouchedOpponentInDefenseArea::GameEvent_AttackerTouchedOpponentInDefenseArea(const GameEvent_AttackerTouchedOpponentInDefenseArea& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -7028,32 +7212,29 @@ GameEvent_AttackerTouchedOpponentInDefenseArea::GameEvent_AttackerTouchedOpponen
 }
 
 void GameEvent_AttackerTouchedOpponentInDefenseArea::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&victim_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(victim_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&victim_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(victim_));
 }
 
 GameEvent_AttackerTouchedOpponentInDefenseArea::~GameEvent_AttackerTouchedOpponentInDefenseArea() {
   // @@protoc_insertion_point(destructor:GameEvent.AttackerTouchedOpponentInDefenseArea)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_AttackerTouchedOpponentInDefenseArea::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_AttackerTouchedOpponentInDefenseArea::ArenaDtor(void* object) {
-  GameEvent_AttackerTouchedOpponentInDefenseArea* _this = reinterpret_cast< GameEvent_AttackerTouchedOpponentInDefenseArea* >(object);
-  (void)_this;
-}
-void GameEvent_AttackerTouchedOpponentInDefenseArea::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_AttackerTouchedOpponentInDefenseArea::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_AttackerTouchedOpponentInDefenseArea& GameEvent_AttackerTouchedOpponentInDefenseArea::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_AttackerTouchedOpponentInDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_AttackerTouchedOpponentInDefenseArea::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.AttackerTouchedOpponentInDefenseArea)
@@ -7072,7 +7253,7 @@ void GameEvent_AttackerTouchedOpponentInDefenseArea::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(victim_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_AttackerTouchedOpponentInDefenseArea::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -7086,7 +7267,7 @@ const char* GameEvent_AttackerTouchedOpponentInDefenseArea::_InternalParse(const
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -7099,7 +7280,7 @@ const char* GameEvent_AttackerTouchedOpponentInDefenseArea::_InternalParse(const
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7114,7 +7295,7 @@ const char* GameEvent_AttackerTouchedOpponentInDefenseArea::_InternalParse(const
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 32)) {
           _Internal::set_has_victim(&has_bits);
-          victim_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          victim_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7124,9 +7305,7 @@ const char* GameEvent_AttackerTouchedOpponentInDefenseArea::_InternalParse(const
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -7141,7 +7320,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerTouchedOpponentInDefenseArea::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerTouchedOpponentInDefenseArea::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.AttackerTouchedOpponentInDefenseArea)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7150,34 +7329,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional uint32 victim = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(4, this->_internal_victim(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.AttackerTouchedOpponentInDefenseArea)
   return target;
@@ -7188,7 +7367,7 @@ size_t GameEvent_AttackerTouchedOpponentInDefenseArea::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -7247,7 +7426,7 @@ void GameEvent_AttackerTouchedOpponentInDefenseArea::MergeFrom(const ::PROTOBUF_
 void GameEvent_AttackerTouchedOpponentInDefenseArea::MergeFrom(const GameEvent_AttackerTouchedOpponentInDefenseArea& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.AttackerTouchedOpponentInDefenseArea)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7284,23 +7463,21 @@ void GameEvent_AttackerTouchedOpponentInDefenseArea::CopyFrom(const GameEvent_At
 }
 
 bool GameEvent_AttackerTouchedOpponentInDefenseArea::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_AttackerTouchedOpponentInDefenseArea::InternalSwap(GameEvent_AttackerTouchedOpponentInDefenseArea* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_AttackerTouchedOpponentInDefenseArea, victim_)
-      + sizeof(GameEvent_AttackerTouchedOpponentInDefenseArea::victim_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_AttackerTouchedOpponentInDefenseArea, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(victim_, other->victim_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_AttackerTouchedOpponentInDefenseArea::GetMetadata() const {
@@ -7310,6 +7487,10 @@ void GameEvent_AttackerTouchedOpponentInDefenseArea::InternalSwap(GameEvent_Atta
 
 // ===================================================================
 
+void GameEvent_AttackerDoubleTouchedBall::InitAsDefaultInstance() {
+  ::_GameEvent_AttackerDoubleTouchedBall_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_AttackerDoubleTouchedBall::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_AttackerDoubleTouchedBall>()._has_bits_);
@@ -7323,9 +7504,6 @@ class GameEvent_AttackerDoubleTouchedBall::_Internal {
   static void set_has_location(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -7336,16 +7514,16 @@ void GameEvent_AttackerDoubleTouchedBall::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_AttackerDoubleTouchedBall::GameEvent_AttackerDoubleTouchedBall(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_AttackerDoubleTouchedBall::GameEvent_AttackerDoubleTouchedBall()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.AttackerDoubleTouchedBall)
+  // @@protoc_insertion_point(constructor:GameEvent.AttackerDoubleTouchedBall)
 }
 GameEvent_AttackerDoubleTouchedBall::GameEvent_AttackerDoubleTouchedBall(const GameEvent_AttackerDoubleTouchedBall& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -7358,32 +7536,29 @@ GameEvent_AttackerDoubleTouchedBall::GameEvent_AttackerDoubleTouchedBall(const G
 }
 
 void GameEvent_AttackerDoubleTouchedBall::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&by_bot_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&by_bot_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
 }
 
 GameEvent_AttackerDoubleTouchedBall::~GameEvent_AttackerDoubleTouchedBall() {
   // @@protoc_insertion_point(destructor:GameEvent.AttackerDoubleTouchedBall)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_AttackerDoubleTouchedBall::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_AttackerDoubleTouchedBall::ArenaDtor(void* object) {
-  GameEvent_AttackerDoubleTouchedBall* _this = reinterpret_cast< GameEvent_AttackerDoubleTouchedBall* >(object);
-  (void)_this;
-}
-void GameEvent_AttackerDoubleTouchedBall::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_AttackerDoubleTouchedBall::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_AttackerDoubleTouchedBall& GameEvent_AttackerDoubleTouchedBall::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_AttackerDoubleTouchedBall_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_AttackerDoubleTouchedBall::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.AttackerDoubleTouchedBall)
@@ -7402,7 +7577,7 @@ void GameEvent_AttackerDoubleTouchedBall::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(by_bot_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_AttackerDoubleTouchedBall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -7416,7 +7591,7 @@ const char* GameEvent_AttackerDoubleTouchedBall::_InternalParse(const char* ptr,
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -7429,7 +7604,7 @@ const char* GameEvent_AttackerDoubleTouchedBall::_InternalParse(const char* ptr,
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7446,9 +7621,7 @@ const char* GameEvent_AttackerDoubleTouchedBall::_InternalParse(const char* ptr,
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -7463,7 +7636,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerDoubleTouchedBall::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerDoubleTouchedBall::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.AttackerDoubleTouchedBall)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7472,28 +7645,28 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.AttackerDoubleTouchedBall)
   return target;
@@ -7504,7 +7677,7 @@ size_t GameEvent_AttackerDoubleTouchedBall::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -7554,7 +7727,7 @@ void GameEvent_AttackerDoubleTouchedBall::MergeFrom(const ::PROTOBUF_NAMESPACE_I
 void GameEvent_AttackerDoubleTouchedBall::MergeFrom(const GameEvent_AttackerDoubleTouchedBall& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.AttackerDoubleTouchedBall)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7588,23 +7761,20 @@ void GameEvent_AttackerDoubleTouchedBall::CopyFrom(const GameEvent_AttackerDoubl
 }
 
 bool GameEvent_AttackerDoubleTouchedBall::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_AttackerDoubleTouchedBall::InternalSwap(GameEvent_AttackerDoubleTouchedBall* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_AttackerDoubleTouchedBall, by_bot_)
-      + sizeof(GameEvent_AttackerDoubleTouchedBall::by_bot_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_AttackerDoubleTouchedBall, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_AttackerDoubleTouchedBall::GetMetadata() const {
@@ -7614,6 +7784,10 @@ void GameEvent_AttackerDoubleTouchedBall::InternalSwap(GameEvent_AttackerDoubleT
 
 // ===================================================================
 
+void GameEvent_AttackerTooCloseToDefenseArea::InitAsDefaultInstance() {
+  ::_GameEvent_AttackerTooCloseToDefenseArea_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_AttackerTooCloseToDefenseArea::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_AttackerTooCloseToDefenseArea>()._has_bits_);
@@ -7630,9 +7804,6 @@ class GameEvent_AttackerTooCloseToDefenseArea::_Internal {
   static void set_has_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -7643,16 +7814,16 @@ void GameEvent_AttackerTooCloseToDefenseArea::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_AttackerTooCloseToDefenseArea::GameEvent_AttackerTooCloseToDefenseArea(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_AttackerTooCloseToDefenseArea::GameEvent_AttackerTooCloseToDefenseArea()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.AttackerTooCloseToDefenseArea)
+  // @@protoc_insertion_point(constructor:GameEvent.AttackerTooCloseToDefenseArea)
 }
 GameEvent_AttackerTooCloseToDefenseArea::GameEvent_AttackerTooCloseToDefenseArea(const GameEvent_AttackerTooCloseToDefenseArea& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -7665,32 +7836,29 @@ GameEvent_AttackerTooCloseToDefenseArea::GameEvent_AttackerTooCloseToDefenseArea
 }
 
 void GameEvent_AttackerTooCloseToDefenseArea::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(distance_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&distance_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(distance_));
 }
 
 GameEvent_AttackerTooCloseToDefenseArea::~GameEvent_AttackerTooCloseToDefenseArea() {
   // @@protoc_insertion_point(destructor:GameEvent.AttackerTooCloseToDefenseArea)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_AttackerTooCloseToDefenseArea::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_AttackerTooCloseToDefenseArea::ArenaDtor(void* object) {
-  GameEvent_AttackerTooCloseToDefenseArea* _this = reinterpret_cast< GameEvent_AttackerTooCloseToDefenseArea* >(object);
-  (void)_this;
-}
-void GameEvent_AttackerTooCloseToDefenseArea::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_AttackerTooCloseToDefenseArea::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_AttackerTooCloseToDefenseArea& GameEvent_AttackerTooCloseToDefenseArea::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_AttackerTooCloseToDefenseArea_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_AttackerTooCloseToDefenseArea::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.AttackerTooCloseToDefenseArea)
@@ -7709,7 +7877,7 @@ void GameEvent_AttackerTooCloseToDefenseArea::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_AttackerTooCloseToDefenseArea::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -7723,7 +7891,7 @@ const char* GameEvent_AttackerTooCloseToDefenseArea::_InternalParse(const char* 
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -7736,7 +7904,7 @@ const char* GameEvent_AttackerTooCloseToDefenseArea::_InternalParse(const char* 
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -7761,9 +7929,7 @@ const char* GameEvent_AttackerTooCloseToDefenseArea::_InternalParse(const char* 
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -7778,7 +7944,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerTooCloseToDefenseArea::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_AttackerTooCloseToDefenseArea::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.AttackerTooCloseToDefenseArea)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -7787,34 +7953,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float distance = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.AttackerTooCloseToDefenseArea)
   return target;
@@ -7825,7 +7991,7 @@ size_t GameEvent_AttackerTooCloseToDefenseArea::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -7882,7 +8048,7 @@ void GameEvent_AttackerTooCloseToDefenseArea::MergeFrom(const ::PROTOBUF_NAMESPA
 void GameEvent_AttackerTooCloseToDefenseArea::MergeFrom(const GameEvent_AttackerTooCloseToDefenseArea& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.AttackerTooCloseToDefenseArea)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -7919,23 +8085,21 @@ void GameEvent_AttackerTooCloseToDefenseArea::CopyFrom(const GameEvent_AttackerT
 }
 
 bool GameEvent_AttackerTooCloseToDefenseArea::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_AttackerTooCloseToDefenseArea::InternalSwap(GameEvent_AttackerTooCloseToDefenseArea* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_AttackerTooCloseToDefenseArea, distance_)
-      + sizeof(GameEvent_AttackerTooCloseToDefenseArea::distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_AttackerTooCloseToDefenseArea, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(distance_, other->distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_AttackerTooCloseToDefenseArea::GetMetadata() const {
@@ -7945,6 +8109,10 @@ void GameEvent_AttackerTooCloseToDefenseArea::InternalSwap(GameEvent_AttackerToo
 
 // ===================================================================
 
+void GameEvent_BotHeldBallDeliberately::InitAsDefaultInstance() {
+  ::_GameEvent_BotHeldBallDeliberately_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotHeldBallDeliberately::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotHeldBallDeliberately>()._has_bits_);
@@ -7961,9 +8129,6 @@ class GameEvent_BotHeldBallDeliberately::_Internal {
   static void set_has_duration(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -7974,16 +8139,16 @@ void GameEvent_BotHeldBallDeliberately::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotHeldBallDeliberately::GameEvent_BotHeldBallDeliberately(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotHeldBallDeliberately::GameEvent_BotHeldBallDeliberately()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotHeldBallDeliberately)
+  // @@protoc_insertion_point(constructor:GameEvent.BotHeldBallDeliberately)
 }
 GameEvent_BotHeldBallDeliberately::GameEvent_BotHeldBallDeliberately(const GameEvent_BotHeldBallDeliberately& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -7996,32 +8161,29 @@ GameEvent_BotHeldBallDeliberately::GameEvent_BotHeldBallDeliberately(const GameE
 }
 
 void GameEvent_BotHeldBallDeliberately::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&duration_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(duration_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&duration_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(duration_));
 }
 
 GameEvent_BotHeldBallDeliberately::~GameEvent_BotHeldBallDeliberately() {
   // @@protoc_insertion_point(destructor:GameEvent.BotHeldBallDeliberately)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotHeldBallDeliberately::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotHeldBallDeliberately::ArenaDtor(void* object) {
-  GameEvent_BotHeldBallDeliberately* _this = reinterpret_cast< GameEvent_BotHeldBallDeliberately* >(object);
-  (void)_this;
-}
-void GameEvent_BotHeldBallDeliberately::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotHeldBallDeliberately::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotHeldBallDeliberately& GameEvent_BotHeldBallDeliberately::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotHeldBallDeliberately_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotHeldBallDeliberately::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotHeldBallDeliberately)
@@ -8040,7 +8202,7 @@ void GameEvent_BotHeldBallDeliberately::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(duration_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotHeldBallDeliberately::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -8054,7 +8216,7 @@ const char* GameEvent_BotHeldBallDeliberately::_InternalParse(const char* ptr, :
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -8067,7 +8229,7 @@ const char* GameEvent_BotHeldBallDeliberately::_InternalParse(const char* ptr, :
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8092,9 +8254,7 @@ const char* GameEvent_BotHeldBallDeliberately::_InternalParse(const char* ptr, :
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -8109,7 +8269,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotHeldBallDeliberately::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotHeldBallDeliberately::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotHeldBallDeliberately)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8118,34 +8278,34 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   // optional float duration = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_duration(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotHeldBallDeliberately)
   return target;
@@ -8156,7 +8316,7 @@ size_t GameEvent_BotHeldBallDeliberately::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -8213,7 +8373,7 @@ void GameEvent_BotHeldBallDeliberately::MergeFrom(const ::PROTOBUF_NAMESPACE_ID:
 void GameEvent_BotHeldBallDeliberately::MergeFrom(const GameEvent_BotHeldBallDeliberately& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotHeldBallDeliberately)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8250,23 +8410,21 @@ void GameEvent_BotHeldBallDeliberately::CopyFrom(const GameEvent_BotHeldBallDeli
 }
 
 bool GameEvent_BotHeldBallDeliberately::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotHeldBallDeliberately::InternalSwap(GameEvent_BotHeldBallDeliberately* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotHeldBallDeliberately, duration_)
-      + sizeof(GameEvent_BotHeldBallDeliberately::duration_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotHeldBallDeliberately, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
+  swap(duration_, other->duration_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotHeldBallDeliberately::GetMetadata() const {
@@ -8276,6 +8434,10 @@ void GameEvent_BotHeldBallDeliberately::InternalSwap(GameEvent_BotHeldBallDelibe
 
 // ===================================================================
 
+void GameEvent_BotInterferedPlacement::InitAsDefaultInstance() {
+  ::_GameEvent_BotInterferedPlacement_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_BotInterferedPlacement::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotInterferedPlacement>()._has_bits_);
@@ -8289,9 +8451,6 @@ class GameEvent_BotInterferedPlacement::_Internal {
   static void set_has_location(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -8302,16 +8461,16 @@ void GameEvent_BotInterferedPlacement::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_BotInterferedPlacement::GameEvent_BotInterferedPlacement(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotInterferedPlacement::GameEvent_BotInterferedPlacement()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotInterferedPlacement)
+  // @@protoc_insertion_point(constructor:GameEvent.BotInterferedPlacement)
 }
 GameEvent_BotInterferedPlacement::GameEvent_BotInterferedPlacement(const GameEvent_BotInterferedPlacement& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -8324,32 +8483,29 @@ GameEvent_BotInterferedPlacement::GameEvent_BotInterferedPlacement(const GameEve
 }
 
 void GameEvent_BotInterferedPlacement::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&by_bot_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&by_bot_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(by_bot_));
 }
 
 GameEvent_BotInterferedPlacement::~GameEvent_BotInterferedPlacement() {
   // @@protoc_insertion_point(destructor:GameEvent.BotInterferedPlacement)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotInterferedPlacement::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_BotInterferedPlacement::ArenaDtor(void* object) {
-  GameEvent_BotInterferedPlacement* _this = reinterpret_cast< GameEvent_BotInterferedPlacement* >(object);
-  (void)_this;
-}
-void GameEvent_BotInterferedPlacement::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotInterferedPlacement::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotInterferedPlacement& GameEvent_BotInterferedPlacement::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotInterferedPlacement_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotInterferedPlacement::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotInterferedPlacement)
@@ -8368,7 +8524,7 @@ void GameEvent_BotInterferedPlacement::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(by_bot_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotInterferedPlacement::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -8382,7 +8538,7 @@ const char* GameEvent_BotInterferedPlacement::_InternalParse(const char* ptr, ::
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -8395,7 +8551,7 @@ const char* GameEvent_BotInterferedPlacement::_InternalParse(const char* ptr, ::
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_by_bot(&has_bits);
-          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          by_bot_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -8412,9 +8568,7 @@ const char* GameEvent_BotInterferedPlacement::_InternalParse(const char* ptr, ::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -8429,7 +8583,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotInterferedPlacement::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotInterferedPlacement::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotInterferedPlacement)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8438,28 +8592,28 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional uint32 by_bot = 2;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(2, this->_internal_by_bot(), target);
   }
 
   // optional .Location location = 3;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::location(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotInterferedPlacement)
   return target;
@@ -8470,7 +8624,7 @@ size_t GameEvent_BotInterferedPlacement::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -8520,7 +8674,7 @@ void GameEvent_BotInterferedPlacement::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::
 void GameEvent_BotInterferedPlacement::MergeFrom(const GameEvent_BotInterferedPlacement& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotInterferedPlacement)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8554,23 +8708,20 @@ void GameEvent_BotInterferedPlacement::CopyFrom(const GameEvent_BotInterferedPla
 }
 
 bool GameEvent_BotInterferedPlacement::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_BotInterferedPlacement::InternalSwap(GameEvent_BotInterferedPlacement* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_BotInterferedPlacement, by_bot_)
-      + sizeof(GameEvent_BotInterferedPlacement::by_bot_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_BotInterferedPlacement, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(by_bot_, other->by_bot_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_BotInterferedPlacement::GetMetadata() const {
@@ -8580,54 +8731,50 @@ void GameEvent_BotInterferedPlacement::InternalSwap(GameEvent_BotInterferedPlace
 
 // ===================================================================
 
+void GameEvent_MultipleCards::InitAsDefaultInstance() {
+}
 class GameEvent_MultipleCards::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_MultipleCards>()._has_bits_);
   static void set_has_by_team(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-GameEvent_MultipleCards::GameEvent_MultipleCards(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_MultipleCards::GameEvent_MultipleCards()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.MultipleCards)
+  // @@protoc_insertion_point(constructor:GameEvent.MultipleCards)
 }
 GameEvent_MultipleCards::GameEvent_MultipleCards(const GameEvent_MultipleCards& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   by_team_ = from.by_team_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.MultipleCards)
 }
 
 void GameEvent_MultipleCards::SharedCtor() {
-by_team_ = 0;
+  by_team_ = 0;
 }
 
 GameEvent_MultipleCards::~GameEvent_MultipleCards() {
   // @@protoc_insertion_point(destructor:GameEvent.MultipleCards)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_MultipleCards::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_MultipleCards::ArenaDtor(void* object) {
-  GameEvent_MultipleCards* _this = reinterpret_cast< GameEvent_MultipleCards* >(object);
-  (void)_this;
-}
-void GameEvent_MultipleCards::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_MultipleCards::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_MultipleCards& GameEvent_MultipleCards::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_MultipleCards_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_MultipleCards::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.MultipleCards)
@@ -8637,7 +8784,7 @@ void GameEvent_MultipleCards::Clear() {
 
   by_team_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_MultipleCards::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -8651,7 +8798,7 @@ const char* GameEvent_MultipleCards::_InternalParse(const char* ptr, ::PROTOBUF_
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -8666,9 +8813,7 @@ const char* GameEvent_MultipleCards::_InternalParse(const char* ptr, ::PROTOBUF_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -8683,7 +8828,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_MultipleCards::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_MultipleCards::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.MultipleCards)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8692,14 +8837,14 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.MultipleCards)
   return target;
@@ -8710,7 +8855,7 @@ size_t GameEvent_MultipleCards::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -8745,7 +8890,7 @@ void GameEvent_MultipleCards::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& 
 void GameEvent_MultipleCards::MergeFrom(const GameEvent_MultipleCards& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.MultipleCards)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8769,13 +8914,13 @@ void GameEvent_MultipleCards::CopyFrom(const GameEvent_MultipleCards& from) {
 }
 
 bool GameEvent_MultipleCards::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void GameEvent_MultipleCards::InternalSwap(GameEvent_MultipleCards* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(by_team_, other->by_team_);
 }
@@ -8787,54 +8932,50 @@ void GameEvent_MultipleCards::InternalSwap(GameEvent_MultipleCards* other) {
 
 // ===================================================================
 
+void GameEvent_MultipleFouls::InitAsDefaultInstance() {
+}
 class GameEvent_MultipleFouls::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_MultipleFouls>()._has_bits_);
   static void set_has_by_team(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-GameEvent_MultipleFouls::GameEvent_MultipleFouls(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_MultipleFouls::GameEvent_MultipleFouls()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.MultipleFouls)
+  // @@protoc_insertion_point(constructor:GameEvent.MultipleFouls)
 }
 GameEvent_MultipleFouls::GameEvent_MultipleFouls(const GameEvent_MultipleFouls& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   by_team_ = from.by_team_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.MultipleFouls)
 }
 
 void GameEvent_MultipleFouls::SharedCtor() {
-by_team_ = 0;
+  by_team_ = 0;
 }
 
 GameEvent_MultipleFouls::~GameEvent_MultipleFouls() {
   // @@protoc_insertion_point(destructor:GameEvent.MultipleFouls)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_MultipleFouls::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_MultipleFouls::ArenaDtor(void* object) {
-  GameEvent_MultipleFouls* _this = reinterpret_cast< GameEvent_MultipleFouls* >(object);
-  (void)_this;
-}
-void GameEvent_MultipleFouls::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_MultipleFouls::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_MultipleFouls& GameEvent_MultipleFouls::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_MultipleFouls_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_MultipleFouls::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.MultipleFouls)
@@ -8844,7 +8985,7 @@ void GameEvent_MultipleFouls::Clear() {
 
   by_team_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_MultipleFouls::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -8858,7 +8999,7 @@ const char* GameEvent_MultipleFouls::_InternalParse(const char* ptr, ::PROTOBUF_
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -8873,9 +9014,7 @@ const char* GameEvent_MultipleFouls::_InternalParse(const char* ptr, ::PROTOBUF_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -8890,7 +9029,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_MultipleFouls::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_MultipleFouls::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.MultipleFouls)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -8899,14 +9038,14 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.MultipleFouls)
   return target;
@@ -8917,7 +9056,7 @@ size_t GameEvent_MultipleFouls::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -8952,7 +9091,7 @@ void GameEvent_MultipleFouls::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& 
 void GameEvent_MultipleFouls::MergeFrom(const GameEvent_MultipleFouls& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.MultipleFouls)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -8976,13 +9115,13 @@ void GameEvent_MultipleFouls::CopyFrom(const GameEvent_MultipleFouls& from) {
 }
 
 bool GameEvent_MultipleFouls::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void GameEvent_MultipleFouls::InternalSwap(GameEvent_MultipleFouls* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(by_team_, other->by_team_);
 }
@@ -8994,54 +9133,50 @@ void GameEvent_MultipleFouls::InternalSwap(GameEvent_MultipleFouls* other) {
 
 // ===================================================================
 
+void GameEvent_MultiplePlacementFailures::InitAsDefaultInstance() {
+}
 class GameEvent_MultiplePlacementFailures::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_MultiplePlacementFailures>()._has_bits_);
   static void set_has_by_team(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-GameEvent_MultiplePlacementFailures::GameEvent_MultiplePlacementFailures(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_MultiplePlacementFailures::GameEvent_MultiplePlacementFailures()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.MultiplePlacementFailures)
+  // @@protoc_insertion_point(constructor:GameEvent.MultiplePlacementFailures)
 }
 GameEvent_MultiplePlacementFailures::GameEvent_MultiplePlacementFailures(const GameEvent_MultiplePlacementFailures& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   by_team_ = from.by_team_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.MultiplePlacementFailures)
 }
 
 void GameEvent_MultiplePlacementFailures::SharedCtor() {
-by_team_ = 0;
+  by_team_ = 0;
 }
 
 GameEvent_MultiplePlacementFailures::~GameEvent_MultiplePlacementFailures() {
   // @@protoc_insertion_point(destructor:GameEvent.MultiplePlacementFailures)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_MultiplePlacementFailures::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_MultiplePlacementFailures::ArenaDtor(void* object) {
-  GameEvent_MultiplePlacementFailures* _this = reinterpret_cast< GameEvent_MultiplePlacementFailures* >(object);
-  (void)_this;
-}
-void GameEvent_MultiplePlacementFailures::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_MultiplePlacementFailures::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_MultiplePlacementFailures& GameEvent_MultiplePlacementFailures::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_MultiplePlacementFailures_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_MultiplePlacementFailures::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.MultiplePlacementFailures)
@@ -9051,7 +9186,7 @@ void GameEvent_MultiplePlacementFailures::Clear() {
 
   by_team_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_MultiplePlacementFailures::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -9065,7 +9200,7 @@ const char* GameEvent_MultiplePlacementFailures::_InternalParse(const char* ptr,
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -9080,9 +9215,7 @@ const char* GameEvent_MultiplePlacementFailures::_InternalParse(const char* ptr,
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -9097,7 +9230,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_MultiplePlacementFailures::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_MultiplePlacementFailures::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.MultiplePlacementFailures)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9106,14 +9239,14 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.MultiplePlacementFailures)
   return target;
@@ -9124,7 +9257,7 @@ size_t GameEvent_MultiplePlacementFailures::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -9159,7 +9292,7 @@ void GameEvent_MultiplePlacementFailures::MergeFrom(const ::PROTOBUF_NAMESPACE_I
 void GameEvent_MultiplePlacementFailures::MergeFrom(const GameEvent_MultiplePlacementFailures& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.MultiplePlacementFailures)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9183,13 +9316,13 @@ void GameEvent_MultiplePlacementFailures::CopyFrom(const GameEvent_MultiplePlace
 }
 
 bool GameEvent_MultiplePlacementFailures::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void GameEvent_MultiplePlacementFailures::InternalSwap(GameEvent_MultiplePlacementFailures* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(by_team_, other->by_team_);
 }
@@ -9201,6 +9334,10 @@ void GameEvent_MultiplePlacementFailures::InternalSwap(GameEvent_MultiplePlaceme
 
 // ===================================================================
 
+void GameEvent_KickTimeout::InitAsDefaultInstance() {
+  ::_GameEvent_KickTimeout_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_KickTimeout::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_KickTimeout>()._has_bits_);
@@ -9214,9 +9351,6 @@ class GameEvent_KickTimeout::_Internal {
   static void set_has_time(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -9227,16 +9361,16 @@ void GameEvent_KickTimeout::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_KickTimeout::GameEvent_KickTimeout(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_KickTimeout::GameEvent_KickTimeout()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.KickTimeout)
+  // @@protoc_insertion_point(constructor:GameEvent.KickTimeout)
 }
 GameEvent_KickTimeout::GameEvent_KickTimeout(const GameEvent_KickTimeout& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -9249,32 +9383,29 @@ GameEvent_KickTimeout::GameEvent_KickTimeout(const GameEvent_KickTimeout& from)
 }
 
 void GameEvent_KickTimeout::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&time_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(time_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&time_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(time_));
 }
 
 GameEvent_KickTimeout::~GameEvent_KickTimeout() {
   // @@protoc_insertion_point(destructor:GameEvent.KickTimeout)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_KickTimeout::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_KickTimeout::ArenaDtor(void* object) {
-  GameEvent_KickTimeout* _this = reinterpret_cast< GameEvent_KickTimeout* >(object);
-  (void)_this;
-}
-void GameEvent_KickTimeout::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_KickTimeout::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_KickTimeout& GameEvent_KickTimeout::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_KickTimeout_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_KickTimeout::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.KickTimeout)
@@ -9293,7 +9424,7 @@ void GameEvent_KickTimeout::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(time_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_KickTimeout::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -9307,7 +9438,7 @@ const char* GameEvent_KickTimeout::_InternalParse(const char* ptr, ::PROTOBUF_NA
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -9337,9 +9468,7 @@ const char* GameEvent_KickTimeout::_InternalParse(const char* ptr, ::PROTOBUF_NA
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -9354,7 +9483,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_KickTimeout::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_KickTimeout::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.KickTimeout)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9363,28 +9492,28 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional .Location location = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::location(this), target, stream);
   }
 
   // optional float time = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_time(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.KickTimeout)
   return target;
@@ -9395,7 +9524,7 @@ size_t GameEvent_KickTimeout::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -9443,7 +9572,7 @@ void GameEvent_KickTimeout::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& fr
 void GameEvent_KickTimeout::MergeFrom(const GameEvent_KickTimeout& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.KickTimeout)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9477,23 +9606,20 @@ void GameEvent_KickTimeout::CopyFrom(const GameEvent_KickTimeout& from) {
 }
 
 bool GameEvent_KickTimeout::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_KickTimeout::InternalSwap(GameEvent_KickTimeout* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_KickTimeout, time_)
-      + sizeof(GameEvent_KickTimeout::time_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_KickTimeout, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(time_, other->time_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_KickTimeout::GetMetadata() const {
@@ -9503,6 +9629,10 @@ void GameEvent_KickTimeout::InternalSwap(GameEvent_KickTimeout* other) {
 
 // ===================================================================
 
+void GameEvent_NoProgressInGame::InitAsDefaultInstance() {
+  ::_GameEvent_NoProgressInGame_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_NoProgressInGame::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_NoProgressInGame>()._has_bits_);
@@ -9523,16 +9653,16 @@ void GameEvent_NoProgressInGame::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_NoProgressInGame::GameEvent_NoProgressInGame(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_NoProgressInGame::GameEvent_NoProgressInGame()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.NoProgressInGame)
+  // @@protoc_insertion_point(constructor:GameEvent.NoProgressInGame)
 }
 GameEvent_NoProgressInGame::GameEvent_NoProgressInGame(const GameEvent_NoProgressInGame& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -9543,32 +9673,29 @@ GameEvent_NoProgressInGame::GameEvent_NoProgressInGame(const GameEvent_NoProgres
 }
 
 void GameEvent_NoProgressInGame::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&time_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(time_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&time_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(time_));
 }
 
 GameEvent_NoProgressInGame::~GameEvent_NoProgressInGame() {
   // @@protoc_insertion_point(destructor:GameEvent.NoProgressInGame)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_NoProgressInGame::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_NoProgressInGame::ArenaDtor(void* object) {
-  GameEvent_NoProgressInGame* _this = reinterpret_cast< GameEvent_NoProgressInGame* >(object);
-  (void)_this;
-}
-void GameEvent_NoProgressInGame::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_NoProgressInGame::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_NoProgressInGame& GameEvent_NoProgressInGame::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_NoProgressInGame_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_NoProgressInGame::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.NoProgressInGame)
@@ -9583,7 +9710,7 @@ void GameEvent_NoProgressInGame::Clear() {
   }
   time_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_NoProgressInGame::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -9615,9 +9742,7 @@ const char* GameEvent_NoProgressInGame::_InternalParse(const char* ptr, ::PROTOB
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -9632,7 +9757,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_NoProgressInGame::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_NoProgressInGame::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.NoProgressInGame)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9641,21 +9766,21 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional .Location location = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::location(this), target, stream);
   }
 
   // optional float time = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_time(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.NoProgressInGame)
   return target;
@@ -9711,7 +9836,7 @@ void GameEvent_NoProgressInGame::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Messag
 void GameEvent_NoProgressInGame::MergeFrom(const GameEvent_NoProgressInGame& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.NoProgressInGame)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9742,22 +9867,18 @@ void GameEvent_NoProgressInGame::CopyFrom(const GameEvent_NoProgressInGame& from
 }
 
 bool GameEvent_NoProgressInGame::IsInitialized() const {
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_NoProgressInGame::InternalSwap(GameEvent_NoProgressInGame* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_NoProgressInGame, time_)
-      + sizeof(GameEvent_NoProgressInGame::time_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_NoProgressInGame, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(time_, other->time_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_NoProgressInGame::GetMetadata() const {
@@ -9767,6 +9888,8 @@ void GameEvent_NoProgressInGame::InternalSwap(GameEvent_NoProgressInGame* other)
 
 // ===================================================================
 
+void GameEvent_PlacementFailed::InitAsDefaultInstance() {
+}
 class GameEvent_PlacementFailed::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_PlacementFailed>()._has_bits_);
@@ -9776,21 +9899,18 @@ class GameEvent_PlacementFailed::_Internal {
   static void set_has_remaining_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-GameEvent_PlacementFailed::GameEvent_PlacementFailed(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_PlacementFailed::GameEvent_PlacementFailed()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.PlacementFailed)
+  // @@protoc_insertion_point(constructor:GameEvent.PlacementFailed)
 }
 GameEvent_PlacementFailed::GameEvent_PlacementFailed(const GameEvent_PlacementFailed& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&by_team_, &from.by_team_,
     static_cast<size_t>(reinterpret_cast<char*>(&remaining_distance_) -
     reinterpret_cast<char*>(&by_team_)) + sizeof(remaining_distance_));
@@ -9798,31 +9918,27 @@ GameEvent_PlacementFailed::GameEvent_PlacementFailed(const GameEvent_PlacementFa
 }
 
 void GameEvent_PlacementFailed::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&by_team_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&remaining_distance_) -
-    reinterpret_cast<char*>(&by_team_)) + sizeof(remaining_distance_));
+  ::memset(&by_team_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&remaining_distance_) -
+      reinterpret_cast<char*>(&by_team_)) + sizeof(remaining_distance_));
 }
 
 GameEvent_PlacementFailed::~GameEvent_PlacementFailed() {
   // @@protoc_insertion_point(destructor:GameEvent.PlacementFailed)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_PlacementFailed::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_PlacementFailed::ArenaDtor(void* object) {
-  GameEvent_PlacementFailed* _this = reinterpret_cast< GameEvent_PlacementFailed* >(object);
-  (void)_this;
-}
-void GameEvent_PlacementFailed::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_PlacementFailed::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_PlacementFailed& GameEvent_PlacementFailed::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_PlacementFailed_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_PlacementFailed::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.PlacementFailed)
@@ -9837,7 +9953,7 @@ void GameEvent_PlacementFailed::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(remaining_distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_PlacementFailed::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -9851,7 +9967,7 @@ const char* GameEvent_PlacementFailed::_InternalParse(const char* ptr, ::PROTOBU
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -9874,9 +9990,7 @@ const char* GameEvent_PlacementFailed::_InternalParse(const char* ptr, ::PROTOBU
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -9891,7 +10005,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_PlacementFailed::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_PlacementFailed::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.PlacementFailed)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -9900,20 +10014,20 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional float remaining_distance = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_remaining_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.PlacementFailed)
   return target;
@@ -9924,7 +10038,7 @@ size_t GameEvent_PlacementFailed::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -9965,7 +10079,7 @@ void GameEvent_PlacementFailed::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message
 void GameEvent_PlacementFailed::MergeFrom(const GameEvent_PlacementFailed& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.PlacementFailed)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -9996,20 +10110,16 @@ void GameEvent_PlacementFailed::CopyFrom(const GameEvent_PlacementFailed& from) 
 }
 
 bool GameEvent_PlacementFailed::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void GameEvent_PlacementFailed::InternalSwap(GameEvent_PlacementFailed* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_PlacementFailed, remaining_distance_)
-      + sizeof(GameEvent_PlacementFailed::remaining_distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_PlacementFailed, by_team_)>(
-          reinterpret_cast<char*>(&by_team_),
-          reinterpret_cast<char*>(&other->by_team_));
+  swap(by_team_, other->by_team_);
+  swap(remaining_distance_, other->remaining_distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_PlacementFailed::GetMetadata() const {
@@ -10019,6 +10129,8 @@ void GameEvent_PlacementFailed::InternalSwap(GameEvent_PlacementFailed* other) {
 
 // ===================================================================
 
+void GameEvent_UnsportingBehaviorMinor::InitAsDefaultInstance() {
+}
 class GameEvent_UnsportingBehaviorMinor::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_UnsportingBehaviorMinor>()._has_bits_);
@@ -10028,55 +10140,49 @@ class GameEvent_UnsportingBehaviorMinor::_Internal {
   static void set_has_reason(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-GameEvent_UnsportingBehaviorMinor::GameEvent_UnsportingBehaviorMinor(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_UnsportingBehaviorMinor::GameEvent_UnsportingBehaviorMinor()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.UnsportingBehaviorMinor)
+  // @@protoc_insertion_point(constructor:GameEvent.UnsportingBehaviorMinor)
 }
 GameEvent_UnsportingBehaviorMinor::GameEvent_UnsportingBehaviorMinor(const GameEvent_UnsportingBehaviorMinor& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_reason()) {
-    reason_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_reason(), 
-      GetArena());
+    reason_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.reason_);
   }
   by_team_ = from.by_team_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.UnsportingBehaviorMinor)
 }
 
 void GameEvent_UnsportingBehaviorMinor::SharedCtor() {
-reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-by_team_ = 0;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  by_team_ = 0;
 }
 
 GameEvent_UnsportingBehaviorMinor::~GameEvent_UnsportingBehaviorMinor() {
   // @@protoc_insertion_point(destructor:GameEvent.UnsportingBehaviorMinor)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_UnsportingBehaviorMinor::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   reason_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void GameEvent_UnsportingBehaviorMinor::ArenaDtor(void* object) {
-  GameEvent_UnsportingBehaviorMinor* _this = reinterpret_cast< GameEvent_UnsportingBehaviorMinor* >(object);
-  (void)_this;
-}
-void GameEvent_UnsportingBehaviorMinor::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_UnsportingBehaviorMinor::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_UnsportingBehaviorMinor& GameEvent_UnsportingBehaviorMinor::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_UnsportingBehaviorMinor_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_UnsportingBehaviorMinor::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.UnsportingBehaviorMinor)
@@ -10086,11 +10192,11 @@ void GameEvent_UnsportingBehaviorMinor::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    reason_.ClearNonDefaultToEmpty();
+    reason_.ClearNonDefaultToEmptyNoArena();
   }
   by_team_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_UnsportingBehaviorMinor::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -10104,7 +10210,7 @@ const char* GameEvent_UnsportingBehaviorMinor::_InternalParse(const char* ptr, :
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -10116,11 +10222,7 @@ const char* GameEvent_UnsportingBehaviorMinor::_InternalParse(const char* ptr, :
       // required string reason = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_reason();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "GameEvent.UnsportingBehaviorMinor.reason");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_reason(), ptr, ctx, "GameEvent.UnsportingBehaviorMinor.reason");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10130,9 +10232,7 @@ const char* GameEvent_UnsportingBehaviorMinor::_InternalParse(const char* ptr, :
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -10147,7 +10247,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_UnsportingBehaviorMinor::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_UnsportingBehaviorMinor::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.UnsportingBehaviorMinor)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10156,7 +10256,7 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
@@ -10173,7 +10273,7 @@ failure:
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.UnsportingBehaviorMinor)
   return target;
@@ -10183,14 +10283,14 @@ size_t GameEvent_UnsportingBehaviorMinor::RequiredFieldsByteSizeFallback() const
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:GameEvent.UnsportingBehaviorMinor)
   size_t total_size = 0;
 
-  if (_internal_has_reason()) {
+  if (has_reason()) {
     // required string reason = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_reason());
   }
 
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     // required .Team by_team = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
@@ -10246,14 +10346,15 @@ void GameEvent_UnsportingBehaviorMinor::MergeFrom(const ::PROTOBUF_NAMESPACE_ID:
 void GameEvent_UnsportingBehaviorMinor::MergeFrom(const GameEvent_UnsportingBehaviorMinor& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.UnsportingBehaviorMinor)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_reason(from._internal_reason());
+      _has_bits_[0] |= 0x00000001u;
+      reason_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.reason_);
     }
     if (cached_has_bits & 0x00000002u) {
       by_team_ = from.by_team_;
@@ -10277,15 +10378,16 @@ void GameEvent_UnsportingBehaviorMinor::CopyFrom(const GameEvent_UnsportingBehav
 }
 
 bool GameEvent_UnsportingBehaviorMinor::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void GameEvent_UnsportingBehaviorMinor::InternalSwap(GameEvent_UnsportingBehaviorMinor* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  reason_.Swap(&other->reason_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  reason_.Swap(&other->reason_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(by_team_, other->by_team_);
 }
 
@@ -10296,6 +10398,8 @@ void GameEvent_UnsportingBehaviorMinor::InternalSwap(GameEvent_UnsportingBehavio
 
 // ===================================================================
 
+void GameEvent_UnsportingBehaviorMajor::InitAsDefaultInstance() {
+}
 class GameEvent_UnsportingBehaviorMajor::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_UnsportingBehaviorMajor>()._has_bits_);
@@ -10305,55 +10409,49 @@ class GameEvent_UnsportingBehaviorMajor::_Internal {
   static void set_has_reason(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-GameEvent_UnsportingBehaviorMajor::GameEvent_UnsportingBehaviorMajor(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_UnsportingBehaviorMajor::GameEvent_UnsportingBehaviorMajor()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.UnsportingBehaviorMajor)
+  // @@protoc_insertion_point(constructor:GameEvent.UnsportingBehaviorMajor)
 }
 GameEvent_UnsportingBehaviorMajor::GameEvent_UnsportingBehaviorMajor(const GameEvent_UnsportingBehaviorMajor& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   if (from._internal_has_reason()) {
-    reason_.Set(::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::EmptyDefault{}, from._internal_reason(), 
-      GetArena());
+    reason_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.reason_);
   }
   by_team_ = from.by_team_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.UnsportingBehaviorMajor)
 }
 
 void GameEvent_UnsportingBehaviorMajor::SharedCtor() {
-reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
-by_team_ = 0;
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  reason_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  by_team_ = 0;
 }
 
 GameEvent_UnsportingBehaviorMajor::~GameEvent_UnsportingBehaviorMajor() {
   // @@protoc_insertion_point(destructor:GameEvent.UnsportingBehaviorMajor)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_UnsportingBehaviorMajor::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   reason_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void GameEvent_UnsportingBehaviorMajor::ArenaDtor(void* object) {
-  GameEvent_UnsportingBehaviorMajor* _this = reinterpret_cast< GameEvent_UnsportingBehaviorMajor* >(object);
-  (void)_this;
-}
-void GameEvent_UnsportingBehaviorMajor::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_UnsportingBehaviorMajor::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_UnsportingBehaviorMajor& GameEvent_UnsportingBehaviorMajor::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_UnsportingBehaviorMajor_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_UnsportingBehaviorMajor::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.UnsportingBehaviorMajor)
@@ -10363,11 +10461,11 @@ void GameEvent_UnsportingBehaviorMajor::Clear() {
 
   cached_has_bits = _has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    reason_.ClearNonDefaultToEmpty();
+    reason_.ClearNonDefaultToEmptyNoArena();
   }
   by_team_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_UnsportingBehaviorMajor::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -10381,7 +10479,7 @@ const char* GameEvent_UnsportingBehaviorMajor::_InternalParse(const char* ptr, :
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -10393,11 +10491,7 @@ const char* GameEvent_UnsportingBehaviorMajor::_InternalParse(const char* ptr, :
       // required string reason = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
-          auto str = _internal_mutable_reason();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "GameEvent.UnsportingBehaviorMajor.reason");
-          #endif  // !NDEBUG
+          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_mutable_reason(), ptr, ctx, "GameEvent.UnsportingBehaviorMajor.reason");
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -10407,9 +10501,7 @@ const char* GameEvent_UnsportingBehaviorMajor::_InternalParse(const char* ptr, :
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -10424,7 +10516,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_UnsportingBehaviorMajor::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_UnsportingBehaviorMajor::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.UnsportingBehaviorMajor)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10433,7 +10525,7 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
@@ -10450,7 +10542,7 @@ failure:
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.UnsportingBehaviorMajor)
   return target;
@@ -10460,14 +10552,14 @@ size_t GameEvent_UnsportingBehaviorMajor::RequiredFieldsByteSizeFallback() const
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:GameEvent.UnsportingBehaviorMajor)
   size_t total_size = 0;
 
-  if (_internal_has_reason()) {
+  if (has_reason()) {
     // required string reason = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_reason());
   }
 
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     // required .Team by_team = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
@@ -10523,14 +10615,15 @@ void GameEvent_UnsportingBehaviorMajor::MergeFrom(const ::PROTOBUF_NAMESPACE_ID:
 void GameEvent_UnsportingBehaviorMajor::MergeFrom(const GameEvent_UnsportingBehaviorMajor& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.UnsportingBehaviorMajor)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
   cached_has_bits = from._has_bits_[0];
   if (cached_has_bits & 0x00000003u) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_set_reason(from._internal_reason());
+      _has_bits_[0] |= 0x00000001u;
+      reason_.AssignWithDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from.reason_);
     }
     if (cached_has_bits & 0x00000002u) {
       by_team_ = from.by_team_;
@@ -10554,15 +10647,16 @@ void GameEvent_UnsportingBehaviorMajor::CopyFrom(const GameEvent_UnsportingBehav
 }
 
 bool GameEvent_UnsportingBehaviorMajor::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void GameEvent_UnsportingBehaviorMajor::InternalSwap(GameEvent_UnsportingBehaviorMajor* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  reason_.Swap(&other->reason_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  reason_.Swap(&other->reason_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
+    GetArenaNoVirtual());
   swap(by_team_, other->by_team_);
 }
 
@@ -10573,6 +10667,10 @@ void GameEvent_UnsportingBehaviorMajor::InternalSwap(GameEvent_UnsportingBehavio
 
 // ===================================================================
 
+void GameEvent_KeeperHeldBall::InitAsDefaultInstance() {
+  ::_GameEvent_KeeperHeldBall_default_instance_._instance.get_mutable()->location_ = const_cast< ::Location*>(
+      ::Location::internal_default_instance());
+}
 class GameEvent_KeeperHeldBall::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_KeeperHeldBall>()._has_bits_);
@@ -10586,9 +10684,6 @@ class GameEvent_KeeperHeldBall::_Internal {
   static void set_has_duration(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000002) ^ 0x00000002) != 0;
-  }
 };
 
 const ::Location&
@@ -10599,16 +10694,16 @@ void GameEvent_KeeperHeldBall::clear_location() {
   if (location_ != nullptr) location_->Clear();
   _has_bits_[0] &= ~0x00000001u;
 }
-GameEvent_KeeperHeldBall::GameEvent_KeeperHeldBall(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_KeeperHeldBall::GameEvent_KeeperHeldBall()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.KeeperHeldBall)
+  // @@protoc_insertion_point(constructor:GameEvent.KeeperHeldBall)
 }
 GameEvent_KeeperHeldBall::GameEvent_KeeperHeldBall(const GameEvent_KeeperHeldBall& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_location()) {
     location_ = new ::Location(*from.location_);
   } else {
@@ -10621,32 +10716,29 @@ GameEvent_KeeperHeldBall::GameEvent_KeeperHeldBall(const GameEvent_KeeperHeldBal
 }
 
 void GameEvent_KeeperHeldBall::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&location_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&duration_) -
-    reinterpret_cast<char*>(&location_)) + sizeof(duration_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  ::memset(&location_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&duration_) -
+      reinterpret_cast<char*>(&location_)) + sizeof(duration_));
 }
 
 GameEvent_KeeperHeldBall::~GameEvent_KeeperHeldBall() {
   // @@protoc_insertion_point(destructor:GameEvent.KeeperHeldBall)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_KeeperHeldBall::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete location_;
 }
 
-void GameEvent_KeeperHeldBall::ArenaDtor(void* object) {
-  GameEvent_KeeperHeldBall* _this = reinterpret_cast< GameEvent_KeeperHeldBall* >(object);
-  (void)_this;
-}
-void GameEvent_KeeperHeldBall::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_KeeperHeldBall::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_KeeperHeldBall& GameEvent_KeeperHeldBall::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_KeeperHeldBall_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_KeeperHeldBall::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.KeeperHeldBall)
@@ -10665,7 +10757,7 @@ void GameEvent_KeeperHeldBall::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(duration_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_KeeperHeldBall::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -10679,7 +10771,7 @@ const char* GameEvent_KeeperHeldBall::_InternalParse(const char* ptr, ::PROTOBUF
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -10709,9 +10801,7 @@ const char* GameEvent_KeeperHeldBall::_InternalParse(const char* ptr, ::PROTOBUF
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -10726,7 +10816,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_KeeperHeldBall::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_KeeperHeldBall::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.KeeperHeldBall)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -10735,28 +10825,28 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional .Location location = 2;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::location(this), target, stream);
   }
 
   // optional float duration = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_duration(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.KeeperHeldBall)
   return target;
@@ -10767,7 +10857,7 @@ size_t GameEvent_KeeperHeldBall::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -10815,7 +10905,7 @@ void GameEvent_KeeperHeldBall::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message&
 void GameEvent_KeeperHeldBall::MergeFrom(const GameEvent_KeeperHeldBall& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.KeeperHeldBall)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -10849,23 +10939,20 @@ void GameEvent_KeeperHeldBall::CopyFrom(const GameEvent_KeeperHeldBall& from) {
 }
 
 bool GameEvent_KeeperHeldBall::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_location()) {
-    if (!location_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000002) != 0x00000002) return false;
+  if (has_location()) {
+    if (!this->location_->IsInitialized()) return false;
   }
   return true;
 }
 
 void GameEvent_KeeperHeldBall::InternalSwap(GameEvent_KeeperHeldBall* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_KeeperHeldBall, duration_)
-      + sizeof(GameEvent_KeeperHeldBall::duration_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_KeeperHeldBall, location_)>(
-          reinterpret_cast<char*>(&location_),
-          reinterpret_cast<char*>(&other->location_));
+  swap(location_, other->location_);
+  swap(by_team_, other->by_team_);
+  swap(duration_, other->duration_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_KeeperHeldBall::GetMetadata() const {
@@ -10875,6 +10962,8 @@ void GameEvent_KeeperHeldBall::InternalSwap(GameEvent_KeeperHeldBall* other) {
 
 // ===================================================================
 
+void GameEvent_PlacementSucceeded::InitAsDefaultInstance() {
+}
 class GameEvent_PlacementSucceeded::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_PlacementSucceeded>()._has_bits_);
@@ -10890,21 +10979,18 @@ class GameEvent_PlacementSucceeded::_Internal {
   static void set_has_distance(HasBits* has_bits) {
     (*has_bits)[0] |= 8u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-GameEvent_PlacementSucceeded::GameEvent_PlacementSucceeded(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_PlacementSucceeded::GameEvent_PlacementSucceeded()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.PlacementSucceeded)
+  // @@protoc_insertion_point(constructor:GameEvent.PlacementSucceeded)
 }
 GameEvent_PlacementSucceeded::GameEvent_PlacementSucceeded(const GameEvent_PlacementSucceeded& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&by_team_, &from.by_team_,
     static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
     reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
@@ -10912,31 +10998,27 @@ GameEvent_PlacementSucceeded::GameEvent_PlacementSucceeded(const GameEvent_Place
 }
 
 void GameEvent_PlacementSucceeded::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&by_team_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&distance_) -
-    reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
+  ::memset(&by_team_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&distance_) -
+      reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
 }
 
 GameEvent_PlacementSucceeded::~GameEvent_PlacementSucceeded() {
   // @@protoc_insertion_point(destructor:GameEvent.PlacementSucceeded)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_PlacementSucceeded::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_PlacementSucceeded::ArenaDtor(void* object) {
-  GameEvent_PlacementSucceeded* _this = reinterpret_cast< GameEvent_PlacementSucceeded* >(object);
-  (void)_this;
-}
-void GameEvent_PlacementSucceeded::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_PlacementSucceeded::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_PlacementSucceeded& GameEvent_PlacementSucceeded::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_PlacementSucceeded_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_PlacementSucceeded::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.PlacementSucceeded)
@@ -10951,7 +11033,7 @@ void GameEvent_PlacementSucceeded::Clear() {
         reinterpret_cast<char*>(&by_team_)) + sizeof(distance_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_PlacementSucceeded::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -10965,7 +11047,7 @@ const char* GameEvent_PlacementSucceeded::_InternalParse(const char* ptr, ::PROT
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -11004,9 +11086,7 @@ const char* GameEvent_PlacementSucceeded::_InternalParse(const char* ptr, ::PROT
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -11021,7 +11101,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_PlacementSucceeded::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_PlacementSucceeded::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.PlacementSucceeded)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -11030,32 +11110,32 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   // optional float time_taken = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(2, this->_internal_time_taken(), target);
   }
 
   // optional float precision = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(3, this->_internal_precision(), target);
   }
 
   // optional float distance = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(4, this->_internal_distance(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.PlacementSucceeded)
   return target;
@@ -11066,7 +11146,7 @@ size_t GameEvent_PlacementSucceeded::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -11119,7 +11199,7 @@ void GameEvent_PlacementSucceeded::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Mess
 void GameEvent_PlacementSucceeded::MergeFrom(const GameEvent_PlacementSucceeded& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.PlacementSucceeded)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -11156,20 +11236,18 @@ void GameEvent_PlacementSucceeded::CopyFrom(const GameEvent_PlacementSucceeded& 
 }
 
 bool GameEvent_PlacementSucceeded::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void GameEvent_PlacementSucceeded::InternalSwap(GameEvent_PlacementSucceeded* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(GameEvent_PlacementSucceeded, distance_)
-      + sizeof(GameEvent_PlacementSucceeded::distance_)
-      - PROTOBUF_FIELD_OFFSET(GameEvent_PlacementSucceeded, by_team_)>(
-          reinterpret_cast<char*>(&by_team_),
-          reinterpret_cast<char*>(&other->by_team_));
+  swap(by_team_, other->by_team_);
+  swap(time_taken_, other->time_taken_);
+  swap(precision_, other->precision_);
+  swap(distance_, other->distance_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata GameEvent_PlacementSucceeded::GetMetadata() const {
@@ -11179,6 +11257,8 @@ void GameEvent_PlacementSucceeded::InternalSwap(GameEvent_PlacementSucceeded* ot
 
 // ===================================================================
 
+void GameEvent_Prepared::InitAsDefaultInstance() {
+}
 class GameEvent_Prepared::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_Prepared>()._has_bits_);
@@ -11187,43 +11267,40 @@ class GameEvent_Prepared::_Internal {
   }
 };
 
-GameEvent_Prepared::GameEvent_Prepared(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_Prepared::GameEvent_Prepared()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.Prepared)
+  // @@protoc_insertion_point(constructor:GameEvent.Prepared)
 }
 GameEvent_Prepared::GameEvent_Prepared(const GameEvent_Prepared& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   time_taken_ = from.time_taken_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.Prepared)
 }
 
 void GameEvent_Prepared::SharedCtor() {
-time_taken_ = 0;
+  time_taken_ = 0;
 }
 
 GameEvent_Prepared::~GameEvent_Prepared() {
   // @@protoc_insertion_point(destructor:GameEvent.Prepared)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_Prepared::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_Prepared::ArenaDtor(void* object) {
-  GameEvent_Prepared* _this = reinterpret_cast< GameEvent_Prepared* >(object);
-  (void)_this;
-}
-void GameEvent_Prepared::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_Prepared::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_Prepared& GameEvent_Prepared::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_Prepared_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_Prepared::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.Prepared)
@@ -11233,7 +11310,7 @@ void GameEvent_Prepared::Clear() {
 
   time_taken_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_Prepared::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -11258,9 +11335,7 @@ const char* GameEvent_Prepared::_InternalParse(const char* ptr, ::PROTOBUF_NAMES
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -11275,7 +11350,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_Prepared::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_Prepared::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.Prepared)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -11284,13 +11359,13 @@ failure:
   cached_has_bits = _has_bits_[0];
   // optional float time_taken = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteFloatToArray(1, this->_internal_time_taken(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.Prepared)
   return target;
@@ -11337,7 +11412,7 @@ void GameEvent_Prepared::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from)
 void GameEvent_Prepared::MergeFrom(const GameEvent_Prepared& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.Prepared)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -11366,7 +11441,7 @@ bool GameEvent_Prepared::IsInitialized() const {
 
 void GameEvent_Prepared::InternalSwap(GameEvent_Prepared* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(time_taken_, other->time_taken_);
 }
@@ -11378,54 +11453,50 @@ void GameEvent_Prepared::InternalSwap(GameEvent_Prepared* other) {
 
 // ===================================================================
 
+void GameEvent_BotSubstitution::InitAsDefaultInstance() {
+}
 class GameEvent_BotSubstitution::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_BotSubstitution>()._has_bits_);
   static void set_has_by_team(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-GameEvent_BotSubstitution::GameEvent_BotSubstitution(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_BotSubstitution::GameEvent_BotSubstitution()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.BotSubstitution)
+  // @@protoc_insertion_point(constructor:GameEvent.BotSubstitution)
 }
 GameEvent_BotSubstitution::GameEvent_BotSubstitution(const GameEvent_BotSubstitution& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   by_team_ = from.by_team_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.BotSubstitution)
 }
 
 void GameEvent_BotSubstitution::SharedCtor() {
-by_team_ = 0;
+  by_team_ = 0;
 }
 
 GameEvent_BotSubstitution::~GameEvent_BotSubstitution() {
   // @@protoc_insertion_point(destructor:GameEvent.BotSubstitution)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_BotSubstitution::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_BotSubstitution::ArenaDtor(void* object) {
-  GameEvent_BotSubstitution* _this = reinterpret_cast< GameEvent_BotSubstitution* >(object);
-  (void)_this;
-}
-void GameEvent_BotSubstitution::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_BotSubstitution::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_BotSubstitution& GameEvent_BotSubstitution::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_BotSubstitution_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_BotSubstitution::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.BotSubstitution)
@@ -11435,7 +11506,7 @@ void GameEvent_BotSubstitution::Clear() {
 
   by_team_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_BotSubstitution::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -11449,7 +11520,7 @@ const char* GameEvent_BotSubstitution::_InternalParse(const char* ptr, ::PROTOBU
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -11464,9 +11535,7 @@ const char* GameEvent_BotSubstitution::_InternalParse(const char* ptr, ::PROTOBU
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -11481,7 +11550,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotSubstitution::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_BotSubstitution::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.BotSubstitution)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -11490,14 +11559,14 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.BotSubstitution)
   return target;
@@ -11508,7 +11577,7 @@ size_t GameEvent_BotSubstitution::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -11543,7 +11612,7 @@ void GameEvent_BotSubstitution::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message
 void GameEvent_BotSubstitution::MergeFrom(const GameEvent_BotSubstitution& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.BotSubstitution)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -11567,13 +11636,13 @@ void GameEvent_BotSubstitution::CopyFrom(const GameEvent_BotSubstitution& from) 
 }
 
 bool GameEvent_BotSubstitution::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void GameEvent_BotSubstitution::InternalSwap(GameEvent_BotSubstitution* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(by_team_, other->by_team_);
 }
@@ -11585,54 +11654,50 @@ void GameEvent_BotSubstitution::InternalSwap(GameEvent_BotSubstitution* other) {
 
 // ===================================================================
 
+void GameEvent_TooManyRobots::InitAsDefaultInstance() {
+}
 class GameEvent_TooManyRobots::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent_TooManyRobots>()._has_bits_);
   static void set_has_by_team(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
-GameEvent_TooManyRobots::GameEvent_TooManyRobots(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+GameEvent_TooManyRobots::GameEvent_TooManyRobots()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent.TooManyRobots)
+  // @@protoc_insertion_point(constructor:GameEvent.TooManyRobots)
 }
 GameEvent_TooManyRobots::GameEvent_TooManyRobots(const GameEvent_TooManyRobots& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   by_team_ = from.by_team_;
   // @@protoc_insertion_point(copy_constructor:GameEvent.TooManyRobots)
 }
 
 void GameEvent_TooManyRobots::SharedCtor() {
-by_team_ = 0;
+  by_team_ = 0;
 }
 
 GameEvent_TooManyRobots::~GameEvent_TooManyRobots() {
   // @@protoc_insertion_point(destructor:GameEvent.TooManyRobots)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent_TooManyRobots::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void GameEvent_TooManyRobots::ArenaDtor(void* object) {
-  GameEvent_TooManyRobots* _this = reinterpret_cast< GameEvent_TooManyRobots* >(object);
-  (void)_this;
-}
-void GameEvent_TooManyRobots::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent_TooManyRobots::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent_TooManyRobots& GameEvent_TooManyRobots::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_TooManyRobots_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent_TooManyRobots::Clear() {
 // @@protoc_insertion_point(message_clear_start:GameEvent.TooManyRobots)
@@ -11642,7 +11707,7 @@ void GameEvent_TooManyRobots::Clear() {
 
   by_team_ = 0;
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent_TooManyRobots::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -11656,7 +11721,7 @@ const char* GameEvent_TooManyRobots::_InternalParse(const char* ptr, ::PROTOBUF_
       // required .Team by_team = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::Team_IsValid(val))) {
             _internal_set_by_team(static_cast<::Team>(val));
@@ -11671,9 +11736,7 @@ const char* GameEvent_TooManyRobots::_InternalParse(const char* ptr, ::PROTOBUF_
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -11688,7 +11751,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_TooManyRobots::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent_TooManyRobots::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent.TooManyRobots)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -11697,14 +11760,14 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .Team by_team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       1, this->_internal_by_team(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent.TooManyRobots)
   return target;
@@ -11715,7 +11778,7 @@ size_t GameEvent_TooManyRobots::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .Team by_team = 1;
-  if (_internal_has_by_team()) {
+  if (has_by_team()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_by_team());
   }
@@ -11750,7 +11813,7 @@ void GameEvent_TooManyRobots::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& 
 void GameEvent_TooManyRobots::MergeFrom(const GameEvent_TooManyRobots& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent.TooManyRobots)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -11774,13 +11837,13 @@ void GameEvent_TooManyRobots::CopyFrom(const GameEvent_TooManyRobots& from) {
 }
 
 bool GameEvent_TooManyRobots::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   return true;
 }
 
 void GameEvent_TooManyRobots::InternalSwap(GameEvent_TooManyRobots* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   swap(by_team_, other->by_team_);
 }
@@ -11792,6 +11855,86 @@ void GameEvent_TooManyRobots::InternalSwap(GameEvent_TooManyRobots* other) {
 
 // ===================================================================
 
+void GameEvent::InitAsDefaultInstance() {
+  ::_GameEvent_default_instance_.prepared_ = const_cast< ::GameEvent_Prepared*>(
+      ::GameEvent_Prepared::internal_default_instance());
+  ::_GameEvent_default_instance_.no_progress_in_game_ = const_cast< ::GameEvent_NoProgressInGame*>(
+      ::GameEvent_NoProgressInGame::internal_default_instance());
+  ::_GameEvent_default_instance_.placement_failed_ = const_cast< ::GameEvent_PlacementFailed*>(
+      ::GameEvent_PlacementFailed::internal_default_instance());
+  ::_GameEvent_default_instance_.placement_succeeded_ = const_cast< ::GameEvent_PlacementSucceeded*>(
+      ::GameEvent_PlacementSucceeded::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_substitution_ = const_cast< ::GameEvent_BotSubstitution*>(
+      ::GameEvent_BotSubstitution::internal_default_instance());
+  ::_GameEvent_default_instance_.too_many_robots_ = const_cast< ::GameEvent_TooManyRobots*>(
+      ::GameEvent_TooManyRobots::internal_default_instance());
+  ::_GameEvent_default_instance_.ball_left_field_touch_line_ = const_cast< ::GameEvent_BallLeftField*>(
+      ::GameEvent_BallLeftField::internal_default_instance());
+  ::_GameEvent_default_instance_.ball_left_field_goal_line_ = const_cast< ::GameEvent_BallLeftField*>(
+      ::GameEvent_BallLeftField::internal_default_instance());
+  ::_GameEvent_default_instance_.possible_goal_ = const_cast< ::GameEvent_Goal*>(
+      ::GameEvent_Goal::internal_default_instance());
+  ::_GameEvent_default_instance_.goal_ = const_cast< ::GameEvent_Goal*>(
+      ::GameEvent_Goal::internal_default_instance());
+  ::_GameEvent_default_instance_.indirect_goal_ = const_cast< ::GameEvent_IndirectGoal*>(
+      ::GameEvent_IndirectGoal::internal_default_instance());
+  ::_GameEvent_default_instance_.chipped_goal_ = const_cast< ::GameEvent_ChippedGoal*>(
+      ::GameEvent_ChippedGoal::internal_default_instance());
+  ::_GameEvent_default_instance_.aimless_kick_ = const_cast< ::GameEvent_AimlessKick*>(
+      ::GameEvent_AimlessKick::internal_default_instance());
+  ::_GameEvent_default_instance_.kick_timeout_ = const_cast< ::GameEvent_KickTimeout*>(
+      ::GameEvent_KickTimeout::internal_default_instance());
+  ::_GameEvent_default_instance_.keeper_held_ball_ = const_cast< ::GameEvent_KeeperHeldBall*>(
+      ::GameEvent_KeeperHeldBall::internal_default_instance());
+  ::_GameEvent_default_instance_.attacker_double_touched_ball_ = const_cast< ::GameEvent_AttackerDoubleTouchedBall*>(
+      ::GameEvent_AttackerDoubleTouchedBall::internal_default_instance());
+  ::_GameEvent_default_instance_.attacker_touched_ball_in_defense_area_ = const_cast< ::GameEvent_AttackerTouchedBallInDefenseArea*>(
+      ::GameEvent_AttackerTouchedBallInDefenseArea::internal_default_instance());
+  ::_GameEvent_default_instance_.attacker_touched_opponent_in_defense_area_ = const_cast< ::GameEvent_AttackerTouchedOpponentInDefenseArea*>(
+      ::GameEvent_AttackerTouchedOpponentInDefenseArea::internal_default_instance());
+  ::_GameEvent_default_instance_.attacker_touched_opponent_in_defense_area_skipped_ = const_cast< ::GameEvent_AttackerTouchedOpponentInDefenseArea*>(
+      ::GameEvent_AttackerTouchedOpponentInDefenseArea::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_dribbled_ball_too_far_ = const_cast< ::GameEvent_BotDribbledBallTooFar*>(
+      ::GameEvent_BotDribbledBallTooFar::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_kicked_ball_too_fast_ = const_cast< ::GameEvent_BotKickedBallTooFast*>(
+      ::GameEvent_BotKickedBallTooFast::internal_default_instance());
+  ::_GameEvent_default_instance_.attacker_too_close_to_defense_area_ = const_cast< ::GameEvent_AttackerTooCloseToDefenseArea*>(
+      ::GameEvent_AttackerTooCloseToDefenseArea::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_interfered_placement_ = const_cast< ::GameEvent_BotInterferedPlacement*>(
+      ::GameEvent_BotInterferedPlacement::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_crash_drawn_ = const_cast< ::GameEvent_BotCrashDrawn*>(
+      ::GameEvent_BotCrashDrawn::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_crash_unique_ = const_cast< ::GameEvent_BotCrashUnique*>(
+      ::GameEvent_BotCrashUnique::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_crash_unique_skipped_ = const_cast< ::GameEvent_BotCrashUnique*>(
+      ::GameEvent_BotCrashUnique::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_pushed_bot_ = const_cast< ::GameEvent_BotPushedBot*>(
+      ::GameEvent_BotPushedBot::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_pushed_bot_skipped_ = const_cast< ::GameEvent_BotPushedBot*>(
+      ::GameEvent_BotPushedBot::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_held_ball_deliberately_ = const_cast< ::GameEvent_BotHeldBallDeliberately*>(
+      ::GameEvent_BotHeldBallDeliberately::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_tipped_over_ = const_cast< ::GameEvent_BotTippedOver*>(
+      ::GameEvent_BotTippedOver::internal_default_instance());
+  ::_GameEvent_default_instance_.bot_too_fast_in_stop_ = const_cast< ::GameEvent_BotTooFastInStop*>(
+      ::GameEvent_BotTooFastInStop::internal_default_instance());
+  ::_GameEvent_default_instance_.defender_too_close_to_kick_point_ = const_cast< ::GameEvent_DefenderTooCloseToKickPoint*>(
+      ::GameEvent_DefenderTooCloseToKickPoint::internal_default_instance());
+  ::_GameEvent_default_instance_.defender_in_defense_area_partially_ = const_cast< ::GameEvent_DefenderInDefenseAreaPartially*>(
+      ::GameEvent_DefenderInDefenseAreaPartially::internal_default_instance());
+  ::_GameEvent_default_instance_.defender_in_defense_area_ = const_cast< ::GameEvent_DefenderInDefenseArea*>(
+      ::GameEvent_DefenderInDefenseArea::internal_default_instance());
+  ::_GameEvent_default_instance_.multiple_cards_ = const_cast< ::GameEvent_MultipleCards*>(
+      ::GameEvent_MultipleCards::internal_default_instance());
+  ::_GameEvent_default_instance_.multiple_placement_failures_ = const_cast< ::GameEvent_MultiplePlacementFailures*>(
+      ::GameEvent_MultiplePlacementFailures::internal_default_instance());
+  ::_GameEvent_default_instance_.multiple_fouls_ = const_cast< ::GameEvent_MultipleFouls*>(
+      ::GameEvent_MultipleFouls::internal_default_instance());
+  ::_GameEvent_default_instance_.unsporting_behavior_minor_ = const_cast< ::GameEvent_UnsportingBehaviorMinor*>(
+      ::GameEvent_UnsportingBehaviorMinor::internal_default_instance());
+  ::_GameEvent_default_instance_.unsporting_behavior_major_ = const_cast< ::GameEvent_UnsportingBehaviorMajor*>(
+      ::GameEvent_UnsportingBehaviorMajor::internal_default_instance());
+}
 class GameEvent::_Internal {
  public:
   using HasBits = decltype(std::declval<GameEvent>()._has_bits_);
@@ -11837,9 +11980,6 @@ class GameEvent::_Internal {
   static const ::GameEvent_MultipleFouls& multiple_fouls(const GameEvent* msg);
   static const ::GameEvent_UnsportingBehaviorMinor& unsporting_behavior_minor(const GameEvent* msg);
   static const ::GameEvent_UnsportingBehaviorMajor& unsporting_behavior_major(const GameEvent* msg);
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000001) ^ 0x00000001) != 0;
-  }
 };
 
 const ::GameEvent_Prepared&
@@ -11999,11 +12139,10 @@ GameEvent::_Internal::unsporting_behavior_major(const GameEvent* msg) {
   return *msg->event_.unsporting_behavior_major_;
 }
 void GameEvent::set_allocated_prepared(::GameEvent_Prepared* prepared) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (prepared) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(prepared);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       prepared = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, prepared, submessage_arena);
@@ -12014,11 +12153,10 @@ void GameEvent::set_allocated_prepared(::GameEvent_Prepared* prepared) {
   // @@protoc_insertion_point(field_set_allocated:GameEvent.prepared)
 }
 void GameEvent::set_allocated_no_progress_in_game(::GameEvent_NoProgressInGame* no_progress_in_game) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (no_progress_in_game) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(no_progress_in_game);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       no_progress_in_game = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, no_progress_in_game, submessage_arena);
@@ -12029,11 +12167,10 @@ void GameEvent::set_allocated_no_progress_in_game(::GameEvent_NoProgressInGame* 
   // @@protoc_insertion_point(field_set_allocated:GameEvent.no_progress_in_game)
 }
 void GameEvent::set_allocated_placement_failed(::GameEvent_PlacementFailed* placement_failed) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (placement_failed) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(placement_failed);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       placement_failed = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, placement_failed, submessage_arena);
@@ -12044,11 +12181,10 @@ void GameEvent::set_allocated_placement_failed(::GameEvent_PlacementFailed* plac
   // @@protoc_insertion_point(field_set_allocated:GameEvent.placement_failed)
 }
 void GameEvent::set_allocated_placement_succeeded(::GameEvent_PlacementSucceeded* placement_succeeded) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (placement_succeeded) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(placement_succeeded);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       placement_succeeded = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, placement_succeeded, submessage_arena);
@@ -12059,11 +12195,10 @@ void GameEvent::set_allocated_placement_succeeded(::GameEvent_PlacementSucceeded
   // @@protoc_insertion_point(field_set_allocated:GameEvent.placement_succeeded)
 }
 void GameEvent::set_allocated_bot_substitution(::GameEvent_BotSubstitution* bot_substitution) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_substitution) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_substitution);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_substitution = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_substitution, submessage_arena);
@@ -12074,11 +12209,10 @@ void GameEvent::set_allocated_bot_substitution(::GameEvent_BotSubstitution* bot_
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_substitution)
 }
 void GameEvent::set_allocated_too_many_robots(::GameEvent_TooManyRobots* too_many_robots) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (too_many_robots) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(too_many_robots);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       too_many_robots = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, too_many_robots, submessage_arena);
@@ -12089,11 +12223,10 @@ void GameEvent::set_allocated_too_many_robots(::GameEvent_TooManyRobots* too_man
   // @@protoc_insertion_point(field_set_allocated:GameEvent.too_many_robots)
 }
 void GameEvent::set_allocated_ball_left_field_touch_line(::GameEvent_BallLeftField* ball_left_field_touch_line) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (ball_left_field_touch_line) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(ball_left_field_touch_line);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       ball_left_field_touch_line = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, ball_left_field_touch_line, submessage_arena);
@@ -12104,11 +12237,10 @@ void GameEvent::set_allocated_ball_left_field_touch_line(::GameEvent_BallLeftFie
   // @@protoc_insertion_point(field_set_allocated:GameEvent.ball_left_field_touch_line)
 }
 void GameEvent::set_allocated_ball_left_field_goal_line(::GameEvent_BallLeftField* ball_left_field_goal_line) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (ball_left_field_goal_line) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(ball_left_field_goal_line);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       ball_left_field_goal_line = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, ball_left_field_goal_line, submessage_arena);
@@ -12119,11 +12251,10 @@ void GameEvent::set_allocated_ball_left_field_goal_line(::GameEvent_BallLeftFiel
   // @@protoc_insertion_point(field_set_allocated:GameEvent.ball_left_field_goal_line)
 }
 void GameEvent::set_allocated_possible_goal(::GameEvent_Goal* possible_goal) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (possible_goal) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(possible_goal);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       possible_goal = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, possible_goal, submessage_arena);
@@ -12134,11 +12265,10 @@ void GameEvent::set_allocated_possible_goal(::GameEvent_Goal* possible_goal) {
   // @@protoc_insertion_point(field_set_allocated:GameEvent.possible_goal)
 }
 void GameEvent::set_allocated_goal(::GameEvent_Goal* goal) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (goal) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(goal);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       goal = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, goal, submessage_arena);
@@ -12149,11 +12279,10 @@ void GameEvent::set_allocated_goal(::GameEvent_Goal* goal) {
   // @@protoc_insertion_point(field_set_allocated:GameEvent.goal)
 }
 void GameEvent::set_allocated_indirect_goal(::GameEvent_IndirectGoal* indirect_goal) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (indirect_goal) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(indirect_goal);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       indirect_goal = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, indirect_goal, submessage_arena);
@@ -12164,11 +12293,10 @@ void GameEvent::set_allocated_indirect_goal(::GameEvent_IndirectGoal* indirect_g
   // @@protoc_insertion_point(field_set_allocated:GameEvent.indirect_goal)
 }
 void GameEvent::set_allocated_chipped_goal(::GameEvent_ChippedGoal* chipped_goal) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (chipped_goal) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(chipped_goal);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       chipped_goal = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, chipped_goal, submessage_arena);
@@ -12179,11 +12307,10 @@ void GameEvent::set_allocated_chipped_goal(::GameEvent_ChippedGoal* chipped_goal
   // @@protoc_insertion_point(field_set_allocated:GameEvent.chipped_goal)
 }
 void GameEvent::set_allocated_aimless_kick(::GameEvent_AimlessKick* aimless_kick) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (aimless_kick) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(aimless_kick);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       aimless_kick = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, aimless_kick, submessage_arena);
@@ -12194,11 +12321,10 @@ void GameEvent::set_allocated_aimless_kick(::GameEvent_AimlessKick* aimless_kick
   // @@protoc_insertion_point(field_set_allocated:GameEvent.aimless_kick)
 }
 void GameEvent::set_allocated_kick_timeout(::GameEvent_KickTimeout* kick_timeout) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (kick_timeout) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(kick_timeout);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       kick_timeout = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, kick_timeout, submessage_arena);
@@ -12209,11 +12335,10 @@ void GameEvent::set_allocated_kick_timeout(::GameEvent_KickTimeout* kick_timeout
   // @@protoc_insertion_point(field_set_allocated:GameEvent.kick_timeout)
 }
 void GameEvent::set_allocated_keeper_held_ball(::GameEvent_KeeperHeldBall* keeper_held_ball) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (keeper_held_ball) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(keeper_held_ball);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       keeper_held_ball = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, keeper_held_ball, submessage_arena);
@@ -12224,11 +12349,10 @@ void GameEvent::set_allocated_keeper_held_ball(::GameEvent_KeeperHeldBall* keepe
   // @@protoc_insertion_point(field_set_allocated:GameEvent.keeper_held_ball)
 }
 void GameEvent::set_allocated_attacker_double_touched_ball(::GameEvent_AttackerDoubleTouchedBall* attacker_double_touched_ball) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (attacker_double_touched_ball) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(attacker_double_touched_ball);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       attacker_double_touched_ball = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, attacker_double_touched_ball, submessage_arena);
@@ -12239,11 +12363,10 @@ void GameEvent::set_allocated_attacker_double_touched_ball(::GameEvent_AttackerD
   // @@protoc_insertion_point(field_set_allocated:GameEvent.attacker_double_touched_ball)
 }
 void GameEvent::set_allocated_attacker_touched_ball_in_defense_area(::GameEvent_AttackerTouchedBallInDefenseArea* attacker_touched_ball_in_defense_area) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (attacker_touched_ball_in_defense_area) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(attacker_touched_ball_in_defense_area);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       attacker_touched_ball_in_defense_area = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, attacker_touched_ball_in_defense_area, submessage_arena);
@@ -12254,11 +12377,10 @@ void GameEvent::set_allocated_attacker_touched_ball_in_defense_area(::GameEvent_
   // @@protoc_insertion_point(field_set_allocated:GameEvent.attacker_touched_ball_in_defense_area)
 }
 void GameEvent::set_allocated_attacker_touched_opponent_in_defense_area(::GameEvent_AttackerTouchedOpponentInDefenseArea* attacker_touched_opponent_in_defense_area) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (attacker_touched_opponent_in_defense_area) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(attacker_touched_opponent_in_defense_area);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       attacker_touched_opponent_in_defense_area = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, attacker_touched_opponent_in_defense_area, submessage_arena);
@@ -12269,11 +12391,10 @@ void GameEvent::set_allocated_attacker_touched_opponent_in_defense_area(::GameEv
   // @@protoc_insertion_point(field_set_allocated:GameEvent.attacker_touched_opponent_in_defense_area)
 }
 void GameEvent::set_allocated_attacker_touched_opponent_in_defense_area_skipped(::GameEvent_AttackerTouchedOpponentInDefenseArea* attacker_touched_opponent_in_defense_area_skipped) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (attacker_touched_opponent_in_defense_area_skipped) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(attacker_touched_opponent_in_defense_area_skipped);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       attacker_touched_opponent_in_defense_area_skipped = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, attacker_touched_opponent_in_defense_area_skipped, submessage_arena);
@@ -12284,11 +12405,10 @@ void GameEvent::set_allocated_attacker_touched_opponent_in_defense_area_skipped(
   // @@protoc_insertion_point(field_set_allocated:GameEvent.attacker_touched_opponent_in_defense_area_skipped)
 }
 void GameEvent::set_allocated_bot_dribbled_ball_too_far(::GameEvent_BotDribbledBallTooFar* bot_dribbled_ball_too_far) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_dribbled_ball_too_far) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_dribbled_ball_too_far);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_dribbled_ball_too_far = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_dribbled_ball_too_far, submessage_arena);
@@ -12299,11 +12419,10 @@ void GameEvent::set_allocated_bot_dribbled_ball_too_far(::GameEvent_BotDribbledB
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_dribbled_ball_too_far)
 }
 void GameEvent::set_allocated_bot_kicked_ball_too_fast(::GameEvent_BotKickedBallTooFast* bot_kicked_ball_too_fast) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_kicked_ball_too_fast) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_kicked_ball_too_fast);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_kicked_ball_too_fast = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_kicked_ball_too_fast, submessage_arena);
@@ -12314,11 +12433,10 @@ void GameEvent::set_allocated_bot_kicked_ball_too_fast(::GameEvent_BotKickedBall
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_kicked_ball_too_fast)
 }
 void GameEvent::set_allocated_attacker_too_close_to_defense_area(::GameEvent_AttackerTooCloseToDefenseArea* attacker_too_close_to_defense_area) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (attacker_too_close_to_defense_area) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(attacker_too_close_to_defense_area);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       attacker_too_close_to_defense_area = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, attacker_too_close_to_defense_area, submessage_arena);
@@ -12329,11 +12447,10 @@ void GameEvent::set_allocated_attacker_too_close_to_defense_area(::GameEvent_Att
   // @@protoc_insertion_point(field_set_allocated:GameEvent.attacker_too_close_to_defense_area)
 }
 void GameEvent::set_allocated_bot_interfered_placement(::GameEvent_BotInterferedPlacement* bot_interfered_placement) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_interfered_placement) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_interfered_placement);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_interfered_placement = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_interfered_placement, submessage_arena);
@@ -12344,11 +12461,10 @@ void GameEvent::set_allocated_bot_interfered_placement(::GameEvent_BotInterfered
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_interfered_placement)
 }
 void GameEvent::set_allocated_bot_crash_drawn(::GameEvent_BotCrashDrawn* bot_crash_drawn) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_crash_drawn) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_crash_drawn);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_crash_drawn = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_crash_drawn, submessage_arena);
@@ -12359,11 +12475,10 @@ void GameEvent::set_allocated_bot_crash_drawn(::GameEvent_BotCrashDrawn* bot_cra
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_crash_drawn)
 }
 void GameEvent::set_allocated_bot_crash_unique(::GameEvent_BotCrashUnique* bot_crash_unique) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_crash_unique) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_crash_unique);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_crash_unique = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_crash_unique, submessage_arena);
@@ -12374,11 +12489,10 @@ void GameEvent::set_allocated_bot_crash_unique(::GameEvent_BotCrashUnique* bot_c
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_crash_unique)
 }
 void GameEvent::set_allocated_bot_crash_unique_skipped(::GameEvent_BotCrashUnique* bot_crash_unique_skipped) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_crash_unique_skipped) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_crash_unique_skipped);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_crash_unique_skipped = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_crash_unique_skipped, submessage_arena);
@@ -12389,11 +12503,10 @@ void GameEvent::set_allocated_bot_crash_unique_skipped(::GameEvent_BotCrashUniqu
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_crash_unique_skipped)
 }
 void GameEvent::set_allocated_bot_pushed_bot(::GameEvent_BotPushedBot* bot_pushed_bot) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_pushed_bot) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_pushed_bot);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_pushed_bot = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_pushed_bot, submessage_arena);
@@ -12404,11 +12517,10 @@ void GameEvent::set_allocated_bot_pushed_bot(::GameEvent_BotPushedBot* bot_pushe
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_pushed_bot)
 }
 void GameEvent::set_allocated_bot_pushed_bot_skipped(::GameEvent_BotPushedBot* bot_pushed_bot_skipped) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_pushed_bot_skipped) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_pushed_bot_skipped);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_pushed_bot_skipped = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_pushed_bot_skipped, submessage_arena);
@@ -12419,11 +12531,10 @@ void GameEvent::set_allocated_bot_pushed_bot_skipped(::GameEvent_BotPushedBot* b
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_pushed_bot_skipped)
 }
 void GameEvent::set_allocated_bot_held_ball_deliberately(::GameEvent_BotHeldBallDeliberately* bot_held_ball_deliberately) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_held_ball_deliberately) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_held_ball_deliberately);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_held_ball_deliberately = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_held_ball_deliberately, submessage_arena);
@@ -12434,11 +12545,10 @@ void GameEvent::set_allocated_bot_held_ball_deliberately(::GameEvent_BotHeldBall
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_held_ball_deliberately)
 }
 void GameEvent::set_allocated_bot_tipped_over(::GameEvent_BotTippedOver* bot_tipped_over) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_tipped_over) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_tipped_over);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_tipped_over = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_tipped_over, submessage_arena);
@@ -12449,11 +12559,10 @@ void GameEvent::set_allocated_bot_tipped_over(::GameEvent_BotTippedOver* bot_tip
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_tipped_over)
 }
 void GameEvent::set_allocated_bot_too_fast_in_stop(::GameEvent_BotTooFastInStop* bot_too_fast_in_stop) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (bot_too_fast_in_stop) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(bot_too_fast_in_stop);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       bot_too_fast_in_stop = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, bot_too_fast_in_stop, submessage_arena);
@@ -12464,11 +12573,10 @@ void GameEvent::set_allocated_bot_too_fast_in_stop(::GameEvent_BotTooFastInStop*
   // @@protoc_insertion_point(field_set_allocated:GameEvent.bot_too_fast_in_stop)
 }
 void GameEvent::set_allocated_defender_too_close_to_kick_point(::GameEvent_DefenderTooCloseToKickPoint* defender_too_close_to_kick_point) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (defender_too_close_to_kick_point) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(defender_too_close_to_kick_point);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       defender_too_close_to_kick_point = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, defender_too_close_to_kick_point, submessage_arena);
@@ -12479,11 +12587,10 @@ void GameEvent::set_allocated_defender_too_close_to_kick_point(::GameEvent_Defen
   // @@protoc_insertion_point(field_set_allocated:GameEvent.defender_too_close_to_kick_point)
 }
 void GameEvent::set_allocated_defender_in_defense_area_partially(::GameEvent_DefenderInDefenseAreaPartially* defender_in_defense_area_partially) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (defender_in_defense_area_partially) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(defender_in_defense_area_partially);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       defender_in_defense_area_partially = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, defender_in_defense_area_partially, submessage_arena);
@@ -12494,11 +12601,10 @@ void GameEvent::set_allocated_defender_in_defense_area_partially(::GameEvent_Def
   // @@protoc_insertion_point(field_set_allocated:GameEvent.defender_in_defense_area_partially)
 }
 void GameEvent::set_allocated_defender_in_defense_area(::GameEvent_DefenderInDefenseArea* defender_in_defense_area) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (defender_in_defense_area) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(defender_in_defense_area);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       defender_in_defense_area = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, defender_in_defense_area, submessage_arena);
@@ -12509,11 +12615,10 @@ void GameEvent::set_allocated_defender_in_defense_area(::GameEvent_DefenderInDef
   // @@protoc_insertion_point(field_set_allocated:GameEvent.defender_in_defense_area)
 }
 void GameEvent::set_allocated_multiple_cards(::GameEvent_MultipleCards* multiple_cards) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (multiple_cards) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(multiple_cards);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       multiple_cards = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, multiple_cards, submessage_arena);
@@ -12524,11 +12629,10 @@ void GameEvent::set_allocated_multiple_cards(::GameEvent_MultipleCards* multiple
   // @@protoc_insertion_point(field_set_allocated:GameEvent.multiple_cards)
 }
 void GameEvent::set_allocated_multiple_placement_failures(::GameEvent_MultiplePlacementFailures* multiple_placement_failures) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (multiple_placement_failures) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(multiple_placement_failures);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       multiple_placement_failures = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, multiple_placement_failures, submessage_arena);
@@ -12539,11 +12643,10 @@ void GameEvent::set_allocated_multiple_placement_failures(::GameEvent_MultiplePl
   // @@protoc_insertion_point(field_set_allocated:GameEvent.multiple_placement_failures)
 }
 void GameEvent::set_allocated_multiple_fouls(::GameEvent_MultipleFouls* multiple_fouls) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (multiple_fouls) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(multiple_fouls);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       multiple_fouls = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, multiple_fouls, submessage_arena);
@@ -12554,11 +12657,10 @@ void GameEvent::set_allocated_multiple_fouls(::GameEvent_MultipleFouls* multiple
   // @@protoc_insertion_point(field_set_allocated:GameEvent.multiple_fouls)
 }
 void GameEvent::set_allocated_unsporting_behavior_minor(::GameEvent_UnsportingBehaviorMinor* unsporting_behavior_minor) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (unsporting_behavior_minor) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(unsporting_behavior_minor);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       unsporting_behavior_minor = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, unsporting_behavior_minor, submessage_arena);
@@ -12569,11 +12671,10 @@ void GameEvent::set_allocated_unsporting_behavior_minor(::GameEvent_UnsportingBe
   // @@protoc_insertion_point(field_set_allocated:GameEvent.unsporting_behavior_minor)
 }
 void GameEvent::set_allocated_unsporting_behavior_major(::GameEvent_UnsportingBehaviorMajor* unsporting_behavior_major) {
-  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArena();
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaNoVirtual();
   clear_event();
   if (unsporting_behavior_major) {
-    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-      ::PROTOBUF_NAMESPACE_ID::Arena::GetArena(unsporting_behavior_major);
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena = nullptr;
     if (message_arena != submessage_arena) {
       unsporting_behavior_major = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
           message_arena, unsporting_behavior_major, submessage_arena);
@@ -12583,18 +12684,17 @@ void GameEvent::set_allocated_unsporting_behavior_major(::GameEvent_UnsportingBe
   }
   // @@protoc_insertion_point(field_set_allocated:GameEvent.unsporting_behavior_major)
 }
-GameEvent::GameEvent(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena),
-  origin_(arena) {
+GameEvent::GameEvent()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:GameEvent)
+  // @@protoc_insertion_point(constructor:GameEvent)
 }
 GameEvent::GameEvent(const GameEvent& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_),
       origin_(from.origin_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   type_ = from.type_;
   clear_has_event();
   switch (from.event_case()) {
@@ -12762,268 +12862,188 @@ GameEvent::GameEvent(const GameEvent& from)
 }
 
 void GameEvent::SharedCtor() {
-type_ = 0;
-clear_has_event();
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  type_ = 0;
+  clear_has_event();
 }
 
 GameEvent::~GameEvent() {
   // @@protoc_insertion_point(destructor:GameEvent)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void GameEvent::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (has_event()) {
     clear_event();
   }
 }
 
-void GameEvent::ArenaDtor(void* object) {
-  GameEvent* _this = reinterpret_cast< GameEvent* >(object);
-  (void)_this;
-}
-void GameEvent::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void GameEvent::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const GameEvent& GameEvent::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_GameEvent_ssl_5fgame_5fevent_5f2019_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void GameEvent::clear_event() {
 // @@protoc_insertion_point(one_of_clear_start:GameEvent)
   switch (event_case()) {
     case kPrepared: {
-      if (GetArena() == nullptr) {
-        delete event_.prepared_;
-      }
+      delete event_.prepared_;
       break;
     }
     case kNoProgressInGame: {
-      if (GetArena() == nullptr) {
-        delete event_.no_progress_in_game_;
-      }
+      delete event_.no_progress_in_game_;
       break;
     }
     case kPlacementFailed: {
-      if (GetArena() == nullptr) {
-        delete event_.placement_failed_;
-      }
+      delete event_.placement_failed_;
       break;
     }
     case kPlacementSucceeded: {
-      if (GetArena() == nullptr) {
-        delete event_.placement_succeeded_;
-      }
+      delete event_.placement_succeeded_;
       break;
     }
     case kBotSubstitution: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_substitution_;
-      }
+      delete event_.bot_substitution_;
       break;
     }
     case kTooManyRobots: {
-      if (GetArena() == nullptr) {
-        delete event_.too_many_robots_;
-      }
+      delete event_.too_many_robots_;
       break;
     }
     case kBallLeftFieldTouchLine: {
-      if (GetArena() == nullptr) {
-        delete event_.ball_left_field_touch_line_;
-      }
+      delete event_.ball_left_field_touch_line_;
       break;
     }
     case kBallLeftFieldGoalLine: {
-      if (GetArena() == nullptr) {
-        delete event_.ball_left_field_goal_line_;
-      }
+      delete event_.ball_left_field_goal_line_;
       break;
     }
     case kPossibleGoal: {
-      if (GetArena() == nullptr) {
-        delete event_.possible_goal_;
-      }
+      delete event_.possible_goal_;
       break;
     }
     case kGoal: {
-      if (GetArena() == nullptr) {
-        delete event_.goal_;
-      }
+      delete event_.goal_;
       break;
     }
     case kIndirectGoal: {
-      if (GetArena() == nullptr) {
-        delete event_.indirect_goal_;
-      }
+      delete event_.indirect_goal_;
       break;
     }
     case kChippedGoal: {
-      if (GetArena() == nullptr) {
-        delete event_.chipped_goal_;
-      }
+      delete event_.chipped_goal_;
       break;
     }
     case kAimlessKick: {
-      if (GetArena() == nullptr) {
-        delete event_.aimless_kick_;
-      }
+      delete event_.aimless_kick_;
       break;
     }
     case kKickTimeout: {
-      if (GetArena() == nullptr) {
-        delete event_.kick_timeout_;
-      }
+      delete event_.kick_timeout_;
       break;
     }
     case kKeeperHeldBall: {
-      if (GetArena() == nullptr) {
-        delete event_.keeper_held_ball_;
-      }
+      delete event_.keeper_held_ball_;
       break;
     }
     case kAttackerDoubleTouchedBall: {
-      if (GetArena() == nullptr) {
-        delete event_.attacker_double_touched_ball_;
-      }
+      delete event_.attacker_double_touched_ball_;
       break;
     }
     case kAttackerTouchedBallInDefenseArea: {
-      if (GetArena() == nullptr) {
-        delete event_.attacker_touched_ball_in_defense_area_;
-      }
+      delete event_.attacker_touched_ball_in_defense_area_;
       break;
     }
     case kAttackerTouchedOpponentInDefenseArea: {
-      if (GetArena() == nullptr) {
-        delete event_.attacker_touched_opponent_in_defense_area_;
-      }
+      delete event_.attacker_touched_opponent_in_defense_area_;
       break;
     }
     case kAttackerTouchedOpponentInDefenseAreaSkipped: {
-      if (GetArena() == nullptr) {
-        delete event_.attacker_touched_opponent_in_defense_area_skipped_;
-      }
+      delete event_.attacker_touched_opponent_in_defense_area_skipped_;
       break;
     }
     case kBotDribbledBallTooFar: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_dribbled_ball_too_far_;
-      }
+      delete event_.bot_dribbled_ball_too_far_;
       break;
     }
     case kBotKickedBallTooFast: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_kicked_ball_too_fast_;
-      }
+      delete event_.bot_kicked_ball_too_fast_;
       break;
     }
     case kAttackerTooCloseToDefenseArea: {
-      if (GetArena() == nullptr) {
-        delete event_.attacker_too_close_to_defense_area_;
-      }
+      delete event_.attacker_too_close_to_defense_area_;
       break;
     }
     case kBotInterferedPlacement: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_interfered_placement_;
-      }
+      delete event_.bot_interfered_placement_;
       break;
     }
     case kBotCrashDrawn: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_crash_drawn_;
-      }
+      delete event_.bot_crash_drawn_;
       break;
     }
     case kBotCrashUnique: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_crash_unique_;
-      }
+      delete event_.bot_crash_unique_;
       break;
     }
     case kBotCrashUniqueSkipped: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_crash_unique_skipped_;
-      }
+      delete event_.bot_crash_unique_skipped_;
       break;
     }
     case kBotPushedBot: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_pushed_bot_;
-      }
+      delete event_.bot_pushed_bot_;
       break;
     }
     case kBotPushedBotSkipped: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_pushed_bot_skipped_;
-      }
+      delete event_.bot_pushed_bot_skipped_;
       break;
     }
     case kBotHeldBallDeliberately: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_held_ball_deliberately_;
-      }
+      delete event_.bot_held_ball_deliberately_;
       break;
     }
     case kBotTippedOver: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_tipped_over_;
-      }
+      delete event_.bot_tipped_over_;
       break;
     }
     case kBotTooFastInStop: {
-      if (GetArena() == nullptr) {
-        delete event_.bot_too_fast_in_stop_;
-      }
+      delete event_.bot_too_fast_in_stop_;
       break;
     }
     case kDefenderTooCloseToKickPoint: {
-      if (GetArena() == nullptr) {
-        delete event_.defender_too_close_to_kick_point_;
-      }
+      delete event_.defender_too_close_to_kick_point_;
       break;
     }
     case kDefenderInDefenseAreaPartially: {
-      if (GetArena() == nullptr) {
-        delete event_.defender_in_defense_area_partially_;
-      }
+      delete event_.defender_in_defense_area_partially_;
       break;
     }
     case kDefenderInDefenseArea: {
-      if (GetArena() == nullptr) {
-        delete event_.defender_in_defense_area_;
-      }
+      delete event_.defender_in_defense_area_;
       break;
     }
     case kMultipleCards: {
-      if (GetArena() == nullptr) {
-        delete event_.multiple_cards_;
-      }
+      delete event_.multiple_cards_;
       break;
     }
     case kMultiplePlacementFailures: {
-      if (GetArena() == nullptr) {
-        delete event_.multiple_placement_failures_;
-      }
+      delete event_.multiple_placement_failures_;
       break;
     }
     case kMultipleFouls: {
-      if (GetArena() == nullptr) {
-        delete event_.multiple_fouls_;
-      }
+      delete event_.multiple_fouls_;
       break;
     }
     case kUnsportingBehaviorMinor: {
-      if (GetArena() == nullptr) {
-        delete event_.unsporting_behavior_minor_;
-      }
+      delete event_.unsporting_behavior_minor_;
       break;
     }
     case kUnsportingBehaviorMajor: {
-      if (GetArena() == nullptr) {
-        delete event_.unsporting_behavior_major_;
-      }
+      delete event_.unsporting_behavior_major_;
       break;
     }
     case EVENT_NOT_SET: {
@@ -13044,7 +13064,7 @@ void GameEvent::Clear() {
   type_ = 0;
   clear_event();
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* GameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -13055,266 +13075,266 @@ const char* GameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
     ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
     CHK_(ptr);
     switch (tag >> 3) {
-      // .GameEvent.Prepared prepared = 1;
+      // optional .GameEvent.Prepared prepared = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_prepared(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.NoProgressInGame no_progress_in_game = 2;
+      // optional .GameEvent.NoProgressInGame no_progress_in_game = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_no_progress_in_game(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.PlacementFailed placement_failed = 3;
+      // optional .GameEvent.PlacementFailed placement_failed = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_placement_failed(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.PlacementSucceeded placement_succeeded = 5;
+      // optional .GameEvent.PlacementSucceeded placement_succeeded = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_placement_succeeded(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BallLeftField ball_left_field_touch_line = 6;
+      // optional .GameEvent.BallLeftField ball_left_field_touch_line = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_ball_left_field_touch_line(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BallLeftField ball_left_field_goal_line = 7;
+      // optional .GameEvent.BallLeftField ball_left_field_goal_line = 7;
       case 7:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_ball_left_field_goal_line(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.Goal goal = 8;
+      // optional .GameEvent.Goal goal = 8;
       case 8:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 66)) {
           ptr = ctx->ParseMessage(_internal_mutable_goal(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.IndirectGoal indirect_goal = 9;
+      // optional .GameEvent.IndirectGoal indirect_goal = 9;
       case 9:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 74)) {
           ptr = ctx->ParseMessage(_internal_mutable_indirect_goal(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.ChippedGoal chipped_goal = 10;
+      // optional .GameEvent.ChippedGoal chipped_goal = 10;
       case 10:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_chipped_goal(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.AimlessKick aimless_kick = 11;
+      // optional .GameEvent.AimlessKick aimless_kick = 11;
       case 11:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 90)) {
           ptr = ctx->ParseMessage(_internal_mutable_aimless_kick(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.KickTimeout kick_timeout = 12;
+      // optional .GameEvent.KickTimeout kick_timeout = 12;
       case 12:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 98)) {
           ptr = ctx->ParseMessage(_internal_mutable_kick_timeout(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.KeeperHeldBall keeper_held_ball = 13;
+      // optional .GameEvent.KeeperHeldBall keeper_held_ball = 13;
       case 13:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 106)) {
           ptr = ctx->ParseMessage(_internal_mutable_keeper_held_ball(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.AttackerDoubleTouchedBall attacker_double_touched_ball = 14;
+      // optional .GameEvent.AttackerDoubleTouchedBall attacker_double_touched_ball = 14;
       case 14:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 114)) {
           ptr = ctx->ParseMessage(_internal_mutable_attacker_double_touched_ball(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.AttackerTouchedBallInDefenseArea attacker_touched_ball_in_defense_area = 15;
+      // optional .GameEvent.AttackerTouchedBallInDefenseArea attacker_touched_ball_in_defense_area = 15;
       case 15:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 122)) {
           ptr = ctx->ParseMessage(_internal_mutable_attacker_touched_ball_in_defense_area(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area = 16;
+      // optional .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area = 16;
       case 16:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 130)) {
           ptr = ctx->ParseMessage(_internal_mutable_attacker_touched_opponent_in_defense_area(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotDribbledBallTooFar bot_dribbled_ball_too_far = 17;
+      // optional .GameEvent.BotDribbledBallTooFar bot_dribbled_ball_too_far = 17;
       case 17:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 138)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_dribbled_ball_too_far(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotKickedBallTooFast bot_kicked_ball_too_fast = 18;
+      // optional .GameEvent.BotKickedBallTooFast bot_kicked_ball_too_fast = 18;
       case 18:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 146)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_kicked_ball_too_fast(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.AttackerTooCloseToDefenseArea attacker_too_close_to_defense_area = 19;
+      // optional .GameEvent.AttackerTooCloseToDefenseArea attacker_too_close_to_defense_area = 19;
       case 19:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 154)) {
           ptr = ctx->ParseMessage(_internal_mutable_attacker_too_close_to_defense_area(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotInterferedPlacement bot_interfered_placement = 20;
+      // optional .GameEvent.BotInterferedPlacement bot_interfered_placement = 20;
       case 20:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 162)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_interfered_placement(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotCrashDrawn bot_crash_drawn = 21;
+      // optional .GameEvent.BotCrashDrawn bot_crash_drawn = 21;
       case 21:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 170)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_crash_drawn(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotCrashUnique bot_crash_unique = 22;
+      // optional .GameEvent.BotCrashUnique bot_crash_unique = 22;
       case 22:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 178)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_crash_unique(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotCrashUnique bot_crash_unique_skipped = 23;
+      // optional .GameEvent.BotCrashUnique bot_crash_unique_skipped = 23;
       case 23:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 186)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_crash_unique_skipped(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotPushedBot bot_pushed_bot = 24;
+      // optional .GameEvent.BotPushedBot bot_pushed_bot = 24;
       case 24:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 194)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_pushed_bot(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotPushedBot bot_pushed_bot_skipped = 25;
+      // optional .GameEvent.BotPushedBot bot_pushed_bot_skipped = 25;
       case 25:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 202)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_pushed_bot_skipped(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotHeldBallDeliberately bot_held_ball_deliberately = 26;
+      // optional .GameEvent.BotHeldBallDeliberately bot_held_ball_deliberately = 26;
       case 26:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 210)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_held_ball_deliberately(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotTippedOver bot_tipped_over = 27;
+      // optional .GameEvent.BotTippedOver bot_tipped_over = 27;
       case 27:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 218)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_tipped_over(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotTooFastInStop bot_too_fast_in_stop = 28;
+      // optional .GameEvent.BotTooFastInStop bot_too_fast_in_stop = 28;
       case 28:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 226)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_too_fast_in_stop(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.DefenderTooCloseToKickPoint defender_too_close_to_kick_point = 29;
+      // optional .GameEvent.DefenderTooCloseToKickPoint defender_too_close_to_kick_point = 29;
       case 29:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 234)) {
           ptr = ctx->ParseMessage(_internal_mutable_defender_too_close_to_kick_point(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.DefenderInDefenseAreaPartially defender_in_defense_area_partially = 30;
+      // optional .GameEvent.DefenderInDefenseAreaPartially defender_in_defense_area_partially = 30;
       case 30:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 242)) {
           ptr = ctx->ParseMessage(_internal_mutable_defender_in_defense_area_partially(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.DefenderInDefenseArea defender_in_defense_area = 31;
+      // optional .GameEvent.DefenderInDefenseArea defender_in_defense_area = 31;
       case 31:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 250)) {
           ptr = ctx->ParseMessage(_internal_mutable_defender_in_defense_area(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.MultipleCards multiple_cards = 32;
+      // optional .GameEvent.MultipleCards multiple_cards = 32;
       case 32:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 2)) {
           ptr = ctx->ParseMessage(_internal_mutable_multiple_cards(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.MultiplePlacementFailures multiple_placement_failures = 33;
+      // optional .GameEvent.MultiplePlacementFailures multiple_placement_failures = 33;
       case 33:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_multiple_placement_failures(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.MultipleFouls multiple_fouls = 34;
+      // optional .GameEvent.MultipleFouls multiple_fouls = 34;
       case 34:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_multiple_fouls(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.UnsportingBehaviorMinor unsporting_behavior_minor = 35;
+      // optional .GameEvent.UnsportingBehaviorMinor unsporting_behavior_minor = 35;
       case 35:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_unsporting_behavior_minor(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.UnsportingBehaviorMajor unsporting_behavior_major = 36;
+      // optional .GameEvent.UnsportingBehaviorMajor unsporting_behavior_major = 36;
       case 36:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_unsporting_behavior_major(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.BotSubstitution bot_substitution = 37;
+      // optional .GameEvent.BotSubstitution bot_substitution = 37;
       case 37:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           ptr = ctx->ParseMessage(_internal_mutable_bot_substitution(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.TooManyRobots too_many_robots = 38;
+      // optional .GameEvent.TooManyRobots too_many_robots = 38;
       case 38:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 50)) {
           ptr = ctx->ParseMessage(_internal_mutable_too_many_robots(), ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // .GameEvent.Goal possible_goal = 39;
+      // optional .GameEvent.Goal possible_goal = 39;
       case 39:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 58)) {
           ptr = ctx->ParseMessage(_internal_mutable_possible_goal(), ptr);
@@ -13324,7 +13344,7 @@ const char* GameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
       // required .GameEventType type = 40;
       case 40:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 64)) {
-          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          ::PROTOBUF_NAMESPACE_ID::uint64 val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
           if (PROTOBUF_PREDICT_TRUE(::GameEventType_IsValid(val))) {
             _internal_set_type(static_cast<::GameEventType>(val));
@@ -13339,17 +13359,13 @@ const char* GameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ptr -= 2;
           do {
             ptr += 2;
-            auto str = _internal_add_origin();
-            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-            #ifndef NDEBUG
-            ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "GameEvent.origin");
-            #endif  // !NDEBUG
+            ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParserUTF8Verify(_internal_add_origin(), ptr, ctx, "GameEvent.origin");
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<330>(ptr));
         } else goto handle_unusual;
         continue;
-      // .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area_skipped = 42;
+      // optional .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area_skipped = 42;
       case 42:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 82)) {
           ptr = ctx->ParseMessage(_internal_mutable_attacker_touched_opponent_in_defense_area_skipped(), ptr);
@@ -13362,9 +13378,7 @@ const char* GameEvent::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -13379,7 +13393,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* GameEvent::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* GameEvent::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:GameEvent)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -13387,268 +13401,268 @@ failure:
 
   switch (event_case()) {
     case kPrepared: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           1, _Internal::prepared(this), target, stream);
       break;
     }
     case kNoProgressInGame: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           2, _Internal::no_progress_in_game(this), target, stream);
       break;
     }
     case kPlacementFailed: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           3, _Internal::placement_failed(this), target, stream);
       break;
     }
     case kPlacementSucceeded: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           5, _Internal::placement_succeeded(this), target, stream);
       break;
     }
     case kBallLeftFieldTouchLine: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           6, _Internal::ball_left_field_touch_line(this), target, stream);
       break;
     }
     case kBallLeftFieldGoalLine: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           7, _Internal::ball_left_field_goal_line(this), target, stream);
       break;
     }
     case kGoal: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           8, _Internal::goal(this), target, stream);
       break;
     }
     case kIndirectGoal: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           9, _Internal::indirect_goal(this), target, stream);
       break;
     }
     case kChippedGoal: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           10, _Internal::chipped_goal(this), target, stream);
       break;
     }
     case kAimlessKick: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           11, _Internal::aimless_kick(this), target, stream);
       break;
     }
     case kKickTimeout: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           12, _Internal::kick_timeout(this), target, stream);
       break;
     }
     case kKeeperHeldBall: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           13, _Internal::keeper_held_ball(this), target, stream);
       break;
     }
     case kAttackerDoubleTouchedBall: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           14, _Internal::attacker_double_touched_ball(this), target, stream);
       break;
     }
     case kAttackerTouchedBallInDefenseArea: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           15, _Internal::attacker_touched_ball_in_defense_area(this), target, stream);
       break;
     }
     case kAttackerTouchedOpponentInDefenseArea: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           16, _Internal::attacker_touched_opponent_in_defense_area(this), target, stream);
       break;
     }
     case kBotDribbledBallTooFar: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           17, _Internal::bot_dribbled_ball_too_far(this), target, stream);
       break;
     }
     case kBotKickedBallTooFast: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           18, _Internal::bot_kicked_ball_too_fast(this), target, stream);
       break;
     }
     case kAttackerTooCloseToDefenseArea: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           19, _Internal::attacker_too_close_to_defense_area(this), target, stream);
       break;
     }
     case kBotInterferedPlacement: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           20, _Internal::bot_interfered_placement(this), target, stream);
       break;
     }
     case kBotCrashDrawn: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           21, _Internal::bot_crash_drawn(this), target, stream);
       break;
     }
     case kBotCrashUnique: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           22, _Internal::bot_crash_unique(this), target, stream);
       break;
     }
     case kBotCrashUniqueSkipped: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           23, _Internal::bot_crash_unique_skipped(this), target, stream);
       break;
     }
     case kBotPushedBot: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           24, _Internal::bot_pushed_bot(this), target, stream);
       break;
     }
     case kBotPushedBotSkipped: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           25, _Internal::bot_pushed_bot_skipped(this), target, stream);
       break;
     }
     case kBotHeldBallDeliberately: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           26, _Internal::bot_held_ball_deliberately(this), target, stream);
       break;
     }
     case kBotTippedOver: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           27, _Internal::bot_tipped_over(this), target, stream);
       break;
     }
     case kBotTooFastInStop: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           28, _Internal::bot_too_fast_in_stop(this), target, stream);
       break;
     }
     case kDefenderTooCloseToKickPoint: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           29, _Internal::defender_too_close_to_kick_point(this), target, stream);
       break;
     }
     case kDefenderInDefenseAreaPartially: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           30, _Internal::defender_in_defense_area_partially(this), target, stream);
       break;
     }
     case kDefenderInDefenseArea: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           31, _Internal::defender_in_defense_area(this), target, stream);
       break;
     }
     case kMultipleCards: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           32, _Internal::multiple_cards(this), target, stream);
       break;
     }
     case kMultiplePlacementFailures: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           33, _Internal::multiple_placement_failures(this), target, stream);
       break;
     }
     case kMultipleFouls: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           34, _Internal::multiple_fouls(this), target, stream);
       break;
     }
     case kUnsportingBehaviorMinor: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           35, _Internal::unsporting_behavior_minor(this), target, stream);
       break;
     }
     case kUnsportingBehaviorMajor: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           36, _Internal::unsporting_behavior_major(this), target, stream);
       break;
     }
     case kBotSubstitution: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           37, _Internal::bot_substitution(this), target, stream);
       break;
     }
     case kTooManyRobots: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           38, _Internal::too_many_robots(this), target, stream);
       break;
     }
     case kPossibleGoal: {
-      target = stream->EnsureSpace(target);
+      stream->EnsureSpace(&target);
       target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-        InternalWriteMessage(
+        InternalWriteMessageToArray(
           39, _Internal::possible_goal(this), target, stream);
       break;
     }
@@ -13657,7 +13671,7 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .GameEventType type = 40;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteEnumToArray(
       40, this->_internal_type(), target);
   }
@@ -13672,17 +13686,17 @@ failure:
     target = stream->WriteString(41, s, target);
   }
 
-  // .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area_skipped = 42;
-  if (_internal_has_attacker_touched_opponent_in_defense_area_skipped()) {
-    target = stream->EnsureSpace(target);
+  // optional .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area_skipped = 42;
+  if (has_attacker_touched_opponent_in_defense_area_skipped()) {
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         42, _Internal::attacker_touched_opponent_in_defense_area_skipped(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:GameEvent)
   return target;
@@ -13693,7 +13707,7 @@ size_t GameEvent::ByteSizeLong() const {
   size_t total_size = 0;
 
   // required .GameEventType type = 40;
-  if (_internal_has_type()) {
+  if (has_type()) {
     total_size += 2 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::EnumSize(this->_internal_type());
   }
@@ -13710,273 +13724,273 @@ size_t GameEvent::ByteSizeLong() const {
   }
 
   switch (event_case()) {
-    // .GameEvent.Prepared prepared = 1;
+    // optional .GameEvent.Prepared prepared = 1;
     case kPrepared: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.prepared_);
       break;
     }
-    // .GameEvent.NoProgressInGame no_progress_in_game = 2;
+    // optional .GameEvent.NoProgressInGame no_progress_in_game = 2;
     case kNoProgressInGame: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.no_progress_in_game_);
       break;
     }
-    // .GameEvent.PlacementFailed placement_failed = 3;
+    // optional .GameEvent.PlacementFailed placement_failed = 3;
     case kPlacementFailed: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.placement_failed_);
       break;
     }
-    // .GameEvent.PlacementSucceeded placement_succeeded = 5;
+    // optional .GameEvent.PlacementSucceeded placement_succeeded = 5;
     case kPlacementSucceeded: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.placement_succeeded_);
       break;
     }
-    // .GameEvent.BotSubstitution bot_substitution = 37;
+    // optional .GameEvent.BotSubstitution bot_substitution = 37;
     case kBotSubstitution: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_substitution_);
       break;
     }
-    // .GameEvent.TooManyRobots too_many_robots = 38;
+    // optional .GameEvent.TooManyRobots too_many_robots = 38;
     case kTooManyRobots: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.too_many_robots_);
       break;
     }
-    // .GameEvent.BallLeftField ball_left_field_touch_line = 6;
+    // optional .GameEvent.BallLeftField ball_left_field_touch_line = 6;
     case kBallLeftFieldTouchLine: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.ball_left_field_touch_line_);
       break;
     }
-    // .GameEvent.BallLeftField ball_left_field_goal_line = 7;
+    // optional .GameEvent.BallLeftField ball_left_field_goal_line = 7;
     case kBallLeftFieldGoalLine: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.ball_left_field_goal_line_);
       break;
     }
-    // .GameEvent.Goal possible_goal = 39;
+    // optional .GameEvent.Goal possible_goal = 39;
     case kPossibleGoal: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.possible_goal_);
       break;
     }
-    // .GameEvent.Goal goal = 8;
+    // optional .GameEvent.Goal goal = 8;
     case kGoal: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.goal_);
       break;
     }
-    // .GameEvent.IndirectGoal indirect_goal = 9;
+    // optional .GameEvent.IndirectGoal indirect_goal = 9;
     case kIndirectGoal: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.indirect_goal_);
       break;
     }
-    // .GameEvent.ChippedGoal chipped_goal = 10;
+    // optional .GameEvent.ChippedGoal chipped_goal = 10;
     case kChippedGoal: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.chipped_goal_);
       break;
     }
-    // .GameEvent.AimlessKick aimless_kick = 11;
+    // optional .GameEvent.AimlessKick aimless_kick = 11;
     case kAimlessKick: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.aimless_kick_);
       break;
     }
-    // .GameEvent.KickTimeout kick_timeout = 12;
+    // optional .GameEvent.KickTimeout kick_timeout = 12;
     case kKickTimeout: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.kick_timeout_);
       break;
     }
-    // .GameEvent.KeeperHeldBall keeper_held_ball = 13;
+    // optional .GameEvent.KeeperHeldBall keeper_held_ball = 13;
     case kKeeperHeldBall: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.keeper_held_ball_);
       break;
     }
-    // .GameEvent.AttackerDoubleTouchedBall attacker_double_touched_ball = 14;
+    // optional .GameEvent.AttackerDoubleTouchedBall attacker_double_touched_ball = 14;
     case kAttackerDoubleTouchedBall: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.attacker_double_touched_ball_);
       break;
     }
-    // .GameEvent.AttackerTouchedBallInDefenseArea attacker_touched_ball_in_defense_area = 15;
+    // optional .GameEvent.AttackerTouchedBallInDefenseArea attacker_touched_ball_in_defense_area = 15;
     case kAttackerTouchedBallInDefenseArea: {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.attacker_touched_ball_in_defense_area_);
       break;
     }
-    // .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area = 16;
+    // optional .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area = 16;
     case kAttackerTouchedOpponentInDefenseArea: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.attacker_touched_opponent_in_defense_area_);
       break;
     }
-    // .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area_skipped = 42;
+    // optional .GameEvent.AttackerTouchedOpponentInDefenseArea attacker_touched_opponent_in_defense_area_skipped = 42;
     case kAttackerTouchedOpponentInDefenseAreaSkipped: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.attacker_touched_opponent_in_defense_area_skipped_);
       break;
     }
-    // .GameEvent.BotDribbledBallTooFar bot_dribbled_ball_too_far = 17;
+    // optional .GameEvent.BotDribbledBallTooFar bot_dribbled_ball_too_far = 17;
     case kBotDribbledBallTooFar: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_dribbled_ball_too_far_);
       break;
     }
-    // .GameEvent.BotKickedBallTooFast bot_kicked_ball_too_fast = 18;
+    // optional .GameEvent.BotKickedBallTooFast bot_kicked_ball_too_fast = 18;
     case kBotKickedBallTooFast: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_kicked_ball_too_fast_);
       break;
     }
-    // .GameEvent.AttackerTooCloseToDefenseArea attacker_too_close_to_defense_area = 19;
+    // optional .GameEvent.AttackerTooCloseToDefenseArea attacker_too_close_to_defense_area = 19;
     case kAttackerTooCloseToDefenseArea: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.attacker_too_close_to_defense_area_);
       break;
     }
-    // .GameEvent.BotInterferedPlacement bot_interfered_placement = 20;
+    // optional .GameEvent.BotInterferedPlacement bot_interfered_placement = 20;
     case kBotInterferedPlacement: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_interfered_placement_);
       break;
     }
-    // .GameEvent.BotCrashDrawn bot_crash_drawn = 21;
+    // optional .GameEvent.BotCrashDrawn bot_crash_drawn = 21;
     case kBotCrashDrawn: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_crash_drawn_);
       break;
     }
-    // .GameEvent.BotCrashUnique bot_crash_unique = 22;
+    // optional .GameEvent.BotCrashUnique bot_crash_unique = 22;
     case kBotCrashUnique: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_crash_unique_);
       break;
     }
-    // .GameEvent.BotCrashUnique bot_crash_unique_skipped = 23;
+    // optional .GameEvent.BotCrashUnique bot_crash_unique_skipped = 23;
     case kBotCrashUniqueSkipped: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_crash_unique_skipped_);
       break;
     }
-    // .GameEvent.BotPushedBot bot_pushed_bot = 24;
+    // optional .GameEvent.BotPushedBot bot_pushed_bot = 24;
     case kBotPushedBot: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_pushed_bot_);
       break;
     }
-    // .GameEvent.BotPushedBot bot_pushed_bot_skipped = 25;
+    // optional .GameEvent.BotPushedBot bot_pushed_bot_skipped = 25;
     case kBotPushedBotSkipped: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_pushed_bot_skipped_);
       break;
     }
-    // .GameEvent.BotHeldBallDeliberately bot_held_ball_deliberately = 26;
+    // optional .GameEvent.BotHeldBallDeliberately bot_held_ball_deliberately = 26;
     case kBotHeldBallDeliberately: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_held_ball_deliberately_);
       break;
     }
-    // .GameEvent.BotTippedOver bot_tipped_over = 27;
+    // optional .GameEvent.BotTippedOver bot_tipped_over = 27;
     case kBotTippedOver: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_tipped_over_);
       break;
     }
-    // .GameEvent.BotTooFastInStop bot_too_fast_in_stop = 28;
+    // optional .GameEvent.BotTooFastInStop bot_too_fast_in_stop = 28;
     case kBotTooFastInStop: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.bot_too_fast_in_stop_);
       break;
     }
-    // .GameEvent.DefenderTooCloseToKickPoint defender_too_close_to_kick_point = 29;
+    // optional .GameEvent.DefenderTooCloseToKickPoint defender_too_close_to_kick_point = 29;
     case kDefenderTooCloseToKickPoint: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.defender_too_close_to_kick_point_);
       break;
     }
-    // .GameEvent.DefenderInDefenseAreaPartially defender_in_defense_area_partially = 30;
+    // optional .GameEvent.DefenderInDefenseAreaPartially defender_in_defense_area_partially = 30;
     case kDefenderInDefenseAreaPartially: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.defender_in_defense_area_partially_);
       break;
     }
-    // .GameEvent.DefenderInDefenseArea defender_in_defense_area = 31;
+    // optional .GameEvent.DefenderInDefenseArea defender_in_defense_area = 31;
     case kDefenderInDefenseArea: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.defender_in_defense_area_);
       break;
     }
-    // .GameEvent.MultipleCards multiple_cards = 32;
+    // optional .GameEvent.MultipleCards multiple_cards = 32;
     case kMultipleCards: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.multiple_cards_);
       break;
     }
-    // .GameEvent.MultiplePlacementFailures multiple_placement_failures = 33;
+    // optional .GameEvent.MultiplePlacementFailures multiple_placement_failures = 33;
     case kMultiplePlacementFailures: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.multiple_placement_failures_);
       break;
     }
-    // .GameEvent.MultipleFouls multiple_fouls = 34;
+    // optional .GameEvent.MultipleFouls multiple_fouls = 34;
     case kMultipleFouls: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.multiple_fouls_);
       break;
     }
-    // .GameEvent.UnsportingBehaviorMinor unsporting_behavior_minor = 35;
+    // optional .GameEvent.UnsportingBehaviorMinor unsporting_behavior_minor = 35;
     case kUnsportingBehaviorMinor: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
           *event_.unsporting_behavior_minor_);
       break;
     }
-    // .GameEvent.UnsportingBehaviorMajor unsporting_behavior_major = 36;
+    // optional .GameEvent.UnsportingBehaviorMajor unsporting_behavior_major = 36;
     case kUnsportingBehaviorMajor: {
       total_size += 2 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -14014,7 +14028,7 @@ void GameEvent::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void GameEvent::MergeFrom(const GameEvent& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:GameEvent)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -14200,7 +14214,7 @@ void GameEvent::CopyFrom(const GameEvent& from) {
 }
 
 bool GameEvent::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000001) != 0x00000001) return false;
   switch (event_case()) {
     case kPrepared: {
       break;
@@ -14442,7 +14456,7 @@ bool GameEvent::IsInitialized() const {
 
 void GameEvent::InternalSwap(GameEvent* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
   origin_.InternalSwap(&other->origin_);
   swap(type_, other->type_);
@@ -14458,109 +14472,109 @@ void GameEvent::InternalSwap(GameEvent* other) {
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::GameEvent_BallLeftField* Arena::CreateMaybeMessage< ::GameEvent_BallLeftField >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BallLeftField >(arena);
+  return Arena::CreateInternal< ::GameEvent_BallLeftField >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_AimlessKick* Arena::CreateMaybeMessage< ::GameEvent_AimlessKick >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_AimlessKick >(arena);
+  return Arena::CreateInternal< ::GameEvent_AimlessKick >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_Goal* Arena::CreateMaybeMessage< ::GameEvent_Goal >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_Goal >(arena);
+  return Arena::CreateInternal< ::GameEvent_Goal >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_IndirectGoal* Arena::CreateMaybeMessage< ::GameEvent_IndirectGoal >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_IndirectGoal >(arena);
+  return Arena::CreateInternal< ::GameEvent_IndirectGoal >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_ChippedGoal* Arena::CreateMaybeMessage< ::GameEvent_ChippedGoal >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_ChippedGoal >(arena);
+  return Arena::CreateInternal< ::GameEvent_ChippedGoal >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotTooFastInStop* Arena::CreateMaybeMessage< ::GameEvent_BotTooFastInStop >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotTooFastInStop >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotTooFastInStop >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_DefenderTooCloseToKickPoint* Arena::CreateMaybeMessage< ::GameEvent_DefenderTooCloseToKickPoint >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_DefenderTooCloseToKickPoint >(arena);
+  return Arena::CreateInternal< ::GameEvent_DefenderTooCloseToKickPoint >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotCrashDrawn* Arena::CreateMaybeMessage< ::GameEvent_BotCrashDrawn >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotCrashDrawn >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotCrashDrawn >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotCrashUnique* Arena::CreateMaybeMessage< ::GameEvent_BotCrashUnique >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotCrashUnique >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotCrashUnique >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotPushedBot* Arena::CreateMaybeMessage< ::GameEvent_BotPushedBot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotPushedBot >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotPushedBot >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotTippedOver* Arena::CreateMaybeMessage< ::GameEvent_BotTippedOver >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotTippedOver >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotTippedOver >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_DefenderInDefenseArea* Arena::CreateMaybeMessage< ::GameEvent_DefenderInDefenseArea >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_DefenderInDefenseArea >(arena);
+  return Arena::CreateInternal< ::GameEvent_DefenderInDefenseArea >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_DefenderInDefenseAreaPartially* Arena::CreateMaybeMessage< ::GameEvent_DefenderInDefenseAreaPartially >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_DefenderInDefenseAreaPartially >(arena);
+  return Arena::CreateInternal< ::GameEvent_DefenderInDefenseAreaPartially >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_AttackerTouchedBallInDefenseArea* Arena::CreateMaybeMessage< ::GameEvent_AttackerTouchedBallInDefenseArea >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_AttackerTouchedBallInDefenseArea >(arena);
+  return Arena::CreateInternal< ::GameEvent_AttackerTouchedBallInDefenseArea >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotKickedBallTooFast* Arena::CreateMaybeMessage< ::GameEvent_BotKickedBallTooFast >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotKickedBallTooFast >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotKickedBallTooFast >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotDribbledBallTooFar* Arena::CreateMaybeMessage< ::GameEvent_BotDribbledBallTooFar >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotDribbledBallTooFar >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotDribbledBallTooFar >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_AttackerTouchedOpponentInDefenseArea* Arena::CreateMaybeMessage< ::GameEvent_AttackerTouchedOpponentInDefenseArea >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_AttackerTouchedOpponentInDefenseArea >(arena);
+  return Arena::CreateInternal< ::GameEvent_AttackerTouchedOpponentInDefenseArea >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_AttackerDoubleTouchedBall* Arena::CreateMaybeMessage< ::GameEvent_AttackerDoubleTouchedBall >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_AttackerDoubleTouchedBall >(arena);
+  return Arena::CreateInternal< ::GameEvent_AttackerDoubleTouchedBall >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_AttackerTooCloseToDefenseArea* Arena::CreateMaybeMessage< ::GameEvent_AttackerTooCloseToDefenseArea >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_AttackerTooCloseToDefenseArea >(arena);
+  return Arena::CreateInternal< ::GameEvent_AttackerTooCloseToDefenseArea >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotHeldBallDeliberately* Arena::CreateMaybeMessage< ::GameEvent_BotHeldBallDeliberately >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotHeldBallDeliberately >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotHeldBallDeliberately >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotInterferedPlacement* Arena::CreateMaybeMessage< ::GameEvent_BotInterferedPlacement >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotInterferedPlacement >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotInterferedPlacement >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_MultipleCards* Arena::CreateMaybeMessage< ::GameEvent_MultipleCards >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_MultipleCards >(arena);
+  return Arena::CreateInternal< ::GameEvent_MultipleCards >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_MultipleFouls* Arena::CreateMaybeMessage< ::GameEvent_MultipleFouls >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_MultipleFouls >(arena);
+  return Arena::CreateInternal< ::GameEvent_MultipleFouls >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_MultiplePlacementFailures* Arena::CreateMaybeMessage< ::GameEvent_MultiplePlacementFailures >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_MultiplePlacementFailures >(arena);
+  return Arena::CreateInternal< ::GameEvent_MultiplePlacementFailures >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_KickTimeout* Arena::CreateMaybeMessage< ::GameEvent_KickTimeout >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_KickTimeout >(arena);
+  return Arena::CreateInternal< ::GameEvent_KickTimeout >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_NoProgressInGame* Arena::CreateMaybeMessage< ::GameEvent_NoProgressInGame >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_NoProgressInGame >(arena);
+  return Arena::CreateInternal< ::GameEvent_NoProgressInGame >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_PlacementFailed* Arena::CreateMaybeMessage< ::GameEvent_PlacementFailed >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_PlacementFailed >(arena);
+  return Arena::CreateInternal< ::GameEvent_PlacementFailed >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_UnsportingBehaviorMinor* Arena::CreateMaybeMessage< ::GameEvent_UnsportingBehaviorMinor >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_UnsportingBehaviorMinor >(arena);
+  return Arena::CreateInternal< ::GameEvent_UnsportingBehaviorMinor >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_UnsportingBehaviorMajor* Arena::CreateMaybeMessage< ::GameEvent_UnsportingBehaviorMajor >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_UnsportingBehaviorMajor >(arena);
+  return Arena::CreateInternal< ::GameEvent_UnsportingBehaviorMajor >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_KeeperHeldBall* Arena::CreateMaybeMessage< ::GameEvent_KeeperHeldBall >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_KeeperHeldBall >(arena);
+  return Arena::CreateInternal< ::GameEvent_KeeperHeldBall >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_PlacementSucceeded* Arena::CreateMaybeMessage< ::GameEvent_PlacementSucceeded >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_PlacementSucceeded >(arena);
+  return Arena::CreateInternal< ::GameEvent_PlacementSucceeded >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_Prepared* Arena::CreateMaybeMessage< ::GameEvent_Prepared >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_Prepared >(arena);
+  return Arena::CreateInternal< ::GameEvent_Prepared >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_BotSubstitution* Arena::CreateMaybeMessage< ::GameEvent_BotSubstitution >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_BotSubstitution >(arena);
+  return Arena::CreateInternal< ::GameEvent_BotSubstitution >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent_TooManyRobots* Arena::CreateMaybeMessage< ::GameEvent_TooManyRobots >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent_TooManyRobots >(arena);
+  return Arena::CreateInternal< ::GameEvent_TooManyRobots >(arena);
 }
 template<> PROTOBUF_NOINLINE ::GameEvent* Arena::CreateMaybeMessage< ::GameEvent >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::GameEvent >(arena);
+  return Arena::CreateInternal< ::GameEvent >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

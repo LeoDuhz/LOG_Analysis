@@ -14,71 +14,88 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-
-PROTOBUF_PRAGMA_INIT_SEG
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fkickparam_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Chip_Param_zss_5fkickparam_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fkickparam_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Flat_Param_zss_5fkickparam_2eproto;
+extern PROTOBUF_INTERNAL_EXPORT_zss_5fkickparam_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Robot_zss_5fkickparam_2eproto;
 namespace ZSS {
 namespace Protocol {
-constexpr Robot_Param::Robot_Param(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : robot_(nullptr)
-  , chipparam_(nullptr)
-  , flatparam_(nullptr){}
-struct Robot_ParamDefaultTypeInternal {
-  constexpr Robot_ParamDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Robot_ParamDefaultTypeInternal() {}
-  union {
-    Robot_Param _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Robot_ParamDefaultTypeInternal _Robot_Param_default_instance_;
-constexpr Flat_Param::Flat_Param(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : fa_(0)
-  , fb_(0)
-  , fc_(0)
-  , fmax_(0)
-  , fmin_(0){}
-struct Flat_ParamDefaultTypeInternal {
-  constexpr Flat_ParamDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Flat_ParamDefaultTypeInternal() {}
-  union {
-    Flat_Param _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Flat_ParamDefaultTypeInternal _Flat_Param_default_instance_;
-constexpr Chip_Param::Chip_Param(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : ca_(0)
-  , cb_(0)
-  , cc_(0)
-  , cmax_(0)
-  , cmin_(0){}
-struct Chip_ParamDefaultTypeInternal {
-  constexpr Chip_ParamDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~Chip_ParamDefaultTypeInternal() {}
-  union {
-    Chip_Param _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT Chip_ParamDefaultTypeInternal _Chip_Param_default_instance_;
-constexpr Robot::Robot(
-  ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized)
-  : team_(0)
-  , id_(0){}
-struct RobotDefaultTypeInternal {
-  constexpr RobotDefaultTypeInternal()
-    : _instance(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized{}) {}
-  ~RobotDefaultTypeInternal() {}
-  union {
-    Robot _instance;
-  };
-};
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT RobotDefaultTypeInternal _Robot_default_instance_;
+class Robot_ParamDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Robot_Param> _instance;
+} _Robot_Param_default_instance_;
+class Flat_ParamDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Flat_Param> _instance;
+} _Flat_Param_default_instance_;
+class Chip_ParamDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Chip_Param> _instance;
+} _Chip_Param_default_instance_;
+class RobotDefaultTypeInternal {
+ public:
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<Robot> _instance;
+} _Robot_default_instance_;
 }  // namespace Protocol
 }  // namespace ZSS
+static void InitDefaultsscc_info_Chip_Param_zss_5fkickparam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Chip_Param_default_instance_;
+    new (ptr) ::ZSS::Protocol::Chip_Param();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Chip_Param::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Chip_Param_zss_5fkickparam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Chip_Param_zss_5fkickparam_2eproto}, {}};
+
+static void InitDefaultsscc_info_Flat_Param_zss_5fkickparam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Flat_Param_default_instance_;
+    new (ptr) ::ZSS::Protocol::Flat_Param();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Flat_Param::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Flat_Param_zss_5fkickparam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Flat_Param_zss_5fkickparam_2eproto}, {}};
+
+static void InitDefaultsscc_info_Robot_zss_5fkickparam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Robot_default_instance_;
+    new (ptr) ::ZSS::Protocol::Robot();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Robot::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_Robot_zss_5fkickparam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_Robot_zss_5fkickparam_2eproto}, {}};
+
+static void InitDefaultsscc_info_Robot_Param_zss_5fkickparam_2eproto() {
+  GOOGLE_PROTOBUF_VERIFY_VERSION;
+
+  {
+    void* ptr = &::ZSS::Protocol::_Robot_Param_default_instance_;
+    new (ptr) ::ZSS::Protocol::Robot_Param();
+    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
+  }
+  ::ZSS::Protocol::Robot_Param::InitAsDefaultInstance();
+}
+
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<3> scc_info_Robot_Param_zss_5fkickparam_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 3, 0, InitDefaultsscc_info_Robot_Param_zss_5fkickparam_2eproto}, {
+      &scc_info_Robot_zss_5fkickparam_2eproto.base,
+      &scc_info_Chip_Param_zss_5fkickparam_2eproto.base,
+      &scc_info_Flat_Param_zss_5fkickparam_2eproto.base,}};
+
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_zss_5fkickparam_2eproto[4];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_zss_5fkickparam_2eproto = nullptr;
 static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_zss_5fkickparam_2eproto = nullptr;
@@ -161,26 +178,38 @@ const char descriptor_table_protodef_zss_5fkickparam_2eproto[] PROTOBUF_SECTION_
   "\014\n\004cmin\030\005 \002(\001\"!\n\005Robot\022\014\n\004team\030\001 \002(\005\022\n\n\002"
   "id\030\002 \002(\005"
   ;
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_zss_5fkickparam_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_zss_5fkickparam_2eproto = {
-  false, false, 368, descriptor_table_protodef_zss_5fkickparam_2eproto, "zss_kickparam.proto", 
-  &descriptor_table_zss_5fkickparam_2eproto_once, nullptr, 0, 4,
-  schemas, file_default_instances, TableStruct_zss_5fkickparam_2eproto::offsets,
-  file_level_metadata_zss_5fkickparam_2eproto, file_level_enum_descriptors_zss_5fkickparam_2eproto, file_level_service_descriptors_zss_5fkickparam_2eproto,
+static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_zss_5fkickparam_2eproto_deps[1] = {
 };
-PROTOBUF_ATTRIBUTE_WEAK ::PROTOBUF_NAMESPACE_ID::Metadata
-descriptor_table_zss_5fkickparam_2eproto_metadata_getter(int index) {
-  ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_zss_5fkickparam_2eproto);
-  return descriptor_table_zss_5fkickparam_2eproto.file_level_metadata[index];
-}
+static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_zss_5fkickparam_2eproto_sccs[4] = {
+  &scc_info_Chip_Param_zss_5fkickparam_2eproto.base,
+  &scc_info_Flat_Param_zss_5fkickparam_2eproto.base,
+  &scc_info_Robot_zss_5fkickparam_2eproto.base,
+  &scc_info_Robot_Param_zss_5fkickparam_2eproto.base,
+};
+static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_zss_5fkickparam_2eproto_once;
+static bool descriptor_table_zss_5fkickparam_2eproto_initialized = false;
+const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_zss_5fkickparam_2eproto = {
+  &descriptor_table_zss_5fkickparam_2eproto_initialized, descriptor_table_protodef_zss_5fkickparam_2eproto, "zss_kickparam.proto", 368,
+  &descriptor_table_zss_5fkickparam_2eproto_once, descriptor_table_zss_5fkickparam_2eproto_sccs, descriptor_table_zss_5fkickparam_2eproto_deps, 4, 0,
+  schemas, file_default_instances, TableStruct_zss_5fkickparam_2eproto::offsets,
+  file_level_metadata_zss_5fkickparam_2eproto, 4, file_level_enum_descriptors_zss_5fkickparam_2eproto, file_level_service_descriptors_zss_5fkickparam_2eproto,
+};
 
 // Force running AddDescriptors() at dynamic initialization time.
-PROTOBUF_ATTRIBUTE_INIT_PRIORITY static ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptorsRunner dynamic_init_dummy_zss_5fkickparam_2eproto(&descriptor_table_zss_5fkickparam_2eproto);
+static bool dynamic_init_dummy_zss_5fkickparam_2eproto = (  ::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_zss_5fkickparam_2eproto), true);
 namespace ZSS {
 namespace Protocol {
 
 // ===================================================================
 
+void Robot_Param::InitAsDefaultInstance() {
+  ::ZSS::Protocol::_Robot_Param_default_instance_._instance.get_mutable()->robot_ = const_cast< ::ZSS::Protocol::Robot*>(
+      ::ZSS::Protocol::Robot::internal_default_instance());
+  ::ZSS::Protocol::_Robot_Param_default_instance_._instance.get_mutable()->chipparam_ = const_cast< ::ZSS::Protocol::Chip_Param*>(
+      ::ZSS::Protocol::Chip_Param::internal_default_instance());
+  ::ZSS::Protocol::_Robot_Param_default_instance_._instance.get_mutable()->flatparam_ = const_cast< ::ZSS::Protocol::Flat_Param*>(
+      ::ZSS::Protocol::Flat_Param::internal_default_instance());
+}
 class Robot_Param::_Internal {
  public:
   using HasBits = decltype(std::declval<Robot_Param>()._has_bits_);
@@ -196,9 +225,6 @@ class Robot_Param::_Internal {
   static void set_has_flatparam(HasBits* has_bits) {
     (*has_bits)[0] |= 4u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000007) ^ 0x00000007) != 0;
-  }
 };
 
 const ::ZSS::Protocol::Robot&
@@ -213,16 +239,16 @@ const ::ZSS::Protocol::Flat_Param&
 Robot_Param::_Internal::flatparam(const Robot_Param* msg) {
   return *msg->flatparam_;
 }
-Robot_Param::Robot_Param(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Robot_Param::Robot_Param()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Robot_Param)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Robot_Param)
 }
 Robot_Param::Robot_Param(const Robot_Param& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   if (from._internal_has_robot()) {
     robot_ = new ::ZSS::Protocol::Robot(*from.robot_);
   } else {
@@ -242,34 +268,31 @@ Robot_Param::Robot_Param(const Robot_Param& from)
 }
 
 void Robot_Param::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&robot_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&flatparam_) -
-    reinterpret_cast<char*>(&robot_)) + sizeof(flatparam_));
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_Robot_Param_zss_5fkickparam_2eproto.base);
+  ::memset(&robot_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&flatparam_) -
+      reinterpret_cast<char*>(&robot_)) + sizeof(flatparam_));
 }
 
 Robot_Param::~Robot_Param() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Robot_Param)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Robot_Param::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
   if (this != internal_default_instance()) delete robot_;
   if (this != internal_default_instance()) delete chipparam_;
   if (this != internal_default_instance()) delete flatparam_;
 }
 
-void Robot_Param::ArenaDtor(void* object) {
-  Robot_Param* _this = reinterpret_cast< Robot_Param* >(object);
-  (void)_this;
-}
-void Robot_Param::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Robot_Param::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Robot_Param& Robot_Param::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Robot_Param_zss_5fkickparam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Robot_Param::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Robot_Param)
@@ -293,7 +316,7 @@ void Robot_Param::Clear() {
     }
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Robot_Param::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -331,9 +354,7 @@ const char* Robot_Param::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -348,7 +369,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Robot_Param::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Robot_Param::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Robot_Param)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -357,31 +378,31 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required .ZSS.Protocol.Robot robot = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         1, _Internal::robot(this), target, stream);
   }
 
   // required .ZSS.Protocol.Chip_Param chipparam = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         2, _Internal::chipparam(this), target, stream);
   }
 
   // required .ZSS.Protocol.Flat_Param flatparam = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
+      InternalWriteMessageToArray(
         3, _Internal::flatparam(this), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Robot_Param)
   return target;
@@ -391,21 +412,21 @@ size_t Robot_Param::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Robot_Param)
   size_t total_size = 0;
 
-  if (_internal_has_robot()) {
+  if (has_robot()) {
     // required .ZSS.Protocol.Robot robot = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *robot_);
   }
 
-  if (_internal_has_chipparam()) {
+  if (has_chipparam()) {
     // required .ZSS.Protocol.Chip_Param chipparam = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *chipparam_);
   }
 
-  if (_internal_has_flatparam()) {
+  if (has_flatparam()) {
     // required .ZSS.Protocol.Flat_Param flatparam = 3;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -468,7 +489,7 @@ void Robot_Param::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Robot_Param::MergeFrom(const Robot_Param& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Robot_Param)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -501,29 +522,26 @@ void Robot_Param::CopyFrom(const Robot_Param& from) {
 }
 
 bool Robot_Param::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
-  if (_internal_has_robot()) {
-    if (!robot_->IsInitialized()) return false;
+  if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+  if (has_robot()) {
+    if (!this->robot_->IsInitialized()) return false;
   }
-  if (_internal_has_chipparam()) {
-    if (!chipparam_->IsInitialized()) return false;
+  if (has_chipparam()) {
+    if (!this->chipparam_->IsInitialized()) return false;
   }
-  if (_internal_has_flatparam()) {
-    if (!flatparam_->IsInitialized()) return false;
+  if (has_flatparam()) {
+    if (!this->flatparam_->IsInitialized()) return false;
   }
   return true;
 }
 
 void Robot_Param::InternalSwap(Robot_Param* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Robot_Param, flatparam_)
-      + sizeof(Robot_Param::flatparam_)
-      - PROTOBUF_FIELD_OFFSET(Robot_Param, robot_)>(
-          reinterpret_cast<char*>(&robot_),
-          reinterpret_cast<char*>(&other->robot_));
+  swap(robot_, other->robot_);
+  swap(chipparam_, other->chipparam_);
+  swap(flatparam_, other->flatparam_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Robot_Param::GetMetadata() const {
@@ -533,6 +551,8 @@ void Robot_Param::InternalSwap(Robot_Param* other) {
 
 // ===================================================================
 
+void Flat_Param::InitAsDefaultInstance() {
+}
 class Flat_Param::_Internal {
  public:
   using HasBits = decltype(std::declval<Flat_Param>()._has_bits_);
@@ -551,21 +571,18 @@ class Flat_Param::_Internal {
   static void set_has_fmin(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000001f) ^ 0x0000001f) != 0;
-  }
 };
 
-Flat_Param::Flat_Param(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Flat_Param::Flat_Param()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Flat_Param)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Flat_Param)
 }
 Flat_Param::Flat_Param(const Flat_Param& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&fa_, &from.fa_,
     static_cast<size_t>(reinterpret_cast<char*>(&fmin_) -
     reinterpret_cast<char*>(&fa_)) + sizeof(fmin_));
@@ -573,31 +590,27 @@ Flat_Param::Flat_Param(const Flat_Param& from)
 }
 
 void Flat_Param::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&fa_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&fmin_) -
-    reinterpret_cast<char*>(&fa_)) + sizeof(fmin_));
+  ::memset(&fa_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&fmin_) -
+      reinterpret_cast<char*>(&fa_)) + sizeof(fmin_));
 }
 
 Flat_Param::~Flat_Param() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Flat_Param)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Flat_Param::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Flat_Param::ArenaDtor(void* object) {
-  Flat_Param* _this = reinterpret_cast< Flat_Param* >(object);
-  (void)_this;
-}
-void Flat_Param::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Flat_Param::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Flat_Param& Flat_Param::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Flat_Param_zss_5fkickparam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Flat_Param::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Flat_Param)
@@ -612,7 +625,7 @@ void Flat_Param::Clear() {
         reinterpret_cast<char*>(&fa_)) + sizeof(fmin_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Flat_Param::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -669,9 +682,7 @@ const char* Flat_Param::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -686,7 +697,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Flat_Param::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Flat_Param::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Flat_Param)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -695,37 +706,37 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required double fa = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_fa(), target);
   }
 
   // required double fb = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_fb(), target);
   }
 
   // required double fc = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_fc(), target);
   }
 
   // required double fmax = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_fmax(), target);
   }
 
   // required double fmin = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_fmin(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Flat_Param)
   return target;
@@ -735,27 +746,27 @@ size_t Flat_Param::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Flat_Param)
   size_t total_size = 0;
 
-  if (_internal_has_fa()) {
+  if (has_fa()) {
     // required double fa = 1;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_fb()) {
+  if (has_fb()) {
     // required double fb = 2;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_fc()) {
+  if (has_fc()) {
     // required double fc = 3;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_fmax()) {
+  if (has_fmax()) {
     // required double fmax = 4;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_fmin()) {
+  if (has_fmin()) {
     // required double fmin = 5;
     total_size += 1 + 8;
   }
@@ -816,7 +827,7 @@ void Flat_Param::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Flat_Param::MergeFrom(const Flat_Param& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Flat_Param)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -856,20 +867,19 @@ void Flat_Param::CopyFrom(const Flat_Param& from) {
 }
 
 bool Flat_Param::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000001f) != 0x0000001f) return false;
   return true;
 }
 
 void Flat_Param::InternalSwap(Flat_Param* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Flat_Param, fmin_)
-      + sizeof(Flat_Param::fmin_)
-      - PROTOBUF_FIELD_OFFSET(Flat_Param, fa_)>(
-          reinterpret_cast<char*>(&fa_),
-          reinterpret_cast<char*>(&other->fa_));
+  swap(fa_, other->fa_);
+  swap(fb_, other->fb_);
+  swap(fc_, other->fc_);
+  swap(fmax_, other->fmax_);
+  swap(fmin_, other->fmin_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Flat_Param::GetMetadata() const {
@@ -879,6 +889,8 @@ void Flat_Param::InternalSwap(Flat_Param* other) {
 
 // ===================================================================
 
+void Chip_Param::InitAsDefaultInstance() {
+}
 class Chip_Param::_Internal {
  public:
   using HasBits = decltype(std::declval<Chip_Param>()._has_bits_);
@@ -897,21 +909,18 @@ class Chip_Param::_Internal {
   static void set_has_cmin(HasBits* has_bits) {
     (*has_bits)[0] |= 16u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x0000001f) ^ 0x0000001f) != 0;
-  }
 };
 
-Chip_Param::Chip_Param(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Chip_Param::Chip_Param()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Chip_Param)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Chip_Param)
 }
 Chip_Param::Chip_Param(const Chip_Param& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&ca_, &from.ca_,
     static_cast<size_t>(reinterpret_cast<char*>(&cmin_) -
     reinterpret_cast<char*>(&ca_)) + sizeof(cmin_));
@@ -919,31 +928,27 @@ Chip_Param::Chip_Param(const Chip_Param& from)
 }
 
 void Chip_Param::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&ca_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&cmin_) -
-    reinterpret_cast<char*>(&ca_)) + sizeof(cmin_));
+  ::memset(&ca_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&cmin_) -
+      reinterpret_cast<char*>(&ca_)) + sizeof(cmin_));
 }
 
 Chip_Param::~Chip_Param() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Chip_Param)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Chip_Param::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Chip_Param::ArenaDtor(void* object) {
-  Chip_Param* _this = reinterpret_cast< Chip_Param* >(object);
-  (void)_this;
-}
-void Chip_Param::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Chip_Param::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Chip_Param& Chip_Param::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Chip_Param_zss_5fkickparam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Chip_Param::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Chip_Param)
@@ -958,7 +963,7 @@ void Chip_Param::Clear() {
         reinterpret_cast<char*>(&ca_)) + sizeof(cmin_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Chip_Param::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1015,9 +1020,7 @@ const char* Chip_Param::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1032,7 +1035,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Chip_Param::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Chip_Param::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Chip_Param)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1041,37 +1044,37 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required double ca = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(1, this->_internal_ca(), target);
   }
 
   // required double cb = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(2, this->_internal_cb(), target);
   }
 
   // required double cc = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(3, this->_internal_cc(), target);
   }
 
   // required double cmax = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(4, this->_internal_cmax(), target);
   }
 
   // required double cmin = 5;
   if (cached_has_bits & 0x00000010u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteDoubleToArray(5, this->_internal_cmin(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Chip_Param)
   return target;
@@ -1081,27 +1084,27 @@ size_t Chip_Param::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Chip_Param)
   size_t total_size = 0;
 
-  if (_internal_has_ca()) {
+  if (has_ca()) {
     // required double ca = 1;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_cb()) {
+  if (has_cb()) {
     // required double cb = 2;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_cc()) {
+  if (has_cc()) {
     // required double cc = 3;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_cmax()) {
+  if (has_cmax()) {
     // required double cmax = 4;
     total_size += 1 + 8;
   }
 
-  if (_internal_has_cmin()) {
+  if (has_cmin()) {
     // required double cmin = 5;
     total_size += 1 + 8;
   }
@@ -1162,7 +1165,7 @@ void Chip_Param::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Chip_Param::MergeFrom(const Chip_Param& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Chip_Param)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1202,20 +1205,19 @@ void Chip_Param::CopyFrom(const Chip_Param& from) {
 }
 
 bool Chip_Param::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x0000001f) != 0x0000001f) return false;
   return true;
 }
 
 void Chip_Param::InternalSwap(Chip_Param* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Chip_Param, cmin_)
-      + sizeof(Chip_Param::cmin_)
-      - PROTOBUF_FIELD_OFFSET(Chip_Param, ca_)>(
-          reinterpret_cast<char*>(&ca_),
-          reinterpret_cast<char*>(&other->ca_));
+  swap(ca_, other->ca_);
+  swap(cb_, other->cb_);
+  swap(cc_, other->cc_);
+  swap(cmax_, other->cmax_);
+  swap(cmin_, other->cmin_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Chip_Param::GetMetadata() const {
@@ -1225,6 +1227,8 @@ void Chip_Param::InternalSwap(Chip_Param* other) {
 
 // ===================================================================
 
+void Robot::InitAsDefaultInstance() {
+}
 class Robot::_Internal {
  public:
   using HasBits = decltype(std::declval<Robot>()._has_bits_);
@@ -1234,21 +1238,18 @@ class Robot::_Internal {
   static void set_has_id(HasBits* has_bits) {
     (*has_bits)[0] |= 2u;
   }
-  static bool MissingRequiredFields(const HasBits& has_bits) {
-    return ((has_bits[0] & 0x00000003) ^ 0x00000003) != 0;
-  }
 };
 
-Robot::Robot(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
+Robot::Robot()
+  : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  RegisterArenaDtor(arena);
-  // @@protoc_insertion_point(arena_constructor:ZSS.Protocol.Robot)
+  // @@protoc_insertion_point(constructor:ZSS.Protocol.Robot)
 }
 Robot::Robot(const Robot& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
+      _internal_metadata_(nullptr),
       _has_bits_(from._has_bits_) {
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::memcpy(&team_, &from.team_,
     static_cast<size_t>(reinterpret_cast<char*>(&id_) -
     reinterpret_cast<char*>(&team_)) + sizeof(id_));
@@ -1256,31 +1257,27 @@ Robot::Robot(const Robot& from)
 }
 
 void Robot::SharedCtor() {
-::memset(reinterpret_cast<char*>(this) + static_cast<size_t>(
-    reinterpret_cast<char*>(&team_) - reinterpret_cast<char*>(this)),
-    0, static_cast<size_t>(reinterpret_cast<char*>(&id_) -
-    reinterpret_cast<char*>(&team_)) + sizeof(id_));
+  ::memset(&team_, 0, static_cast<size_t>(
+      reinterpret_cast<char*>(&id_) -
+      reinterpret_cast<char*>(&team_)) + sizeof(id_));
 }
 
 Robot::~Robot() {
   // @@protoc_insertion_point(destructor:ZSS.Protocol.Robot)
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
 void Robot::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
 }
 
-void Robot::ArenaDtor(void* object) {
-  Robot* _this = reinterpret_cast< Robot* >(object);
-  (void)_this;
-}
-void Robot::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void Robot::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
+const Robot& Robot::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_Robot_zss_5fkickparam_2eproto.base);
+  return *internal_default_instance();
+}
+
 
 void Robot::Clear() {
 // @@protoc_insertion_point(message_clear_start:ZSS.Protocol.Robot)
@@ -1295,7 +1292,7 @@ void Robot::Clear() {
         reinterpret_cast<char*>(&team_)) + sizeof(id_));
   }
   _has_bits_.Clear();
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+  _internal_metadata_.Clear();
 }
 
 const char* Robot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
@@ -1310,7 +1307,7 @@ const char* Robot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
           _Internal::set_has_team(&has_bits);
-          team_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          team_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1318,7 +1315,7 @@ const char* Robot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 16)) {
           _Internal::set_has_id(&has_bits);
-          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
+          id_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint(&ptr);
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -1328,9 +1325,7 @@ const char* Robot::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::inte
           ctx->SetLastTag(tag);
           goto success;
         }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
+        ptr = UnknownFieldParse(tag, &_internal_metadata_, ptr, ctx);
         CHK_(ptr != nullptr);
         continue;
       }
@@ -1345,7 +1340,7 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* Robot::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* Robot::InternalSerializeWithCachedSizesToArray(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:ZSS.Protocol.Robot)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -1354,19 +1349,19 @@ failure:
   cached_has_bits = _has_bits_[0];
   // required int32 team = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_team(), target);
   }
 
   // required int32 id = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
+    stream->EnsureSpace(&target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(2, this->_internal_id(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+        _internal_metadata_.unknown_fields(), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:ZSS.Protocol.Robot)
   return target;
@@ -1376,14 +1371,14 @@ size_t Robot::RequiredFieldsByteSizeFallback() const {
 // @@protoc_insertion_point(required_fields_byte_size_fallback_start:ZSS.Protocol.Robot)
   size_t total_size = 0;
 
-  if (_internal_has_team()) {
+  if (has_team()) {
     // required int32 team = 1;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
         this->_internal_team());
   }
 
-  if (_internal_has_id()) {
+  if (has_id()) {
     // required int32 id = 2;
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::Int32Size(
@@ -1441,7 +1436,7 @@ void Robot::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
 void Robot::MergeFrom(const Robot& from) {
 // @@protoc_insertion_point(class_specific_merge_from_start:ZSS.Protocol.Robot)
   GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1472,20 +1467,16 @@ void Robot::CopyFrom(const Robot& from) {
 }
 
 bool Robot::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
   return true;
 }
 
 void Robot::InternalSwap(Robot* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
   swap(_has_bits_[0], other->_has_bits_[0]);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Robot, id_)
-      + sizeof(Robot::id_)
-      - PROTOBUF_FIELD_OFFSET(Robot, team_)>(
-          reinterpret_cast<char*>(&team_),
-          reinterpret_cast<char*>(&other->team_));
+  swap(team_, other->team_);
+  swap(id_, other->id_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata Robot::GetMetadata() const {
@@ -1498,16 +1489,16 @@ void Robot::InternalSwap(Robot* other) {
 }  // namespace ZSS
 PROTOBUF_NAMESPACE_OPEN
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Robot_Param* Arena::CreateMaybeMessage< ::ZSS::Protocol::Robot_Param >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Robot_Param >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Robot_Param >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Flat_Param* Arena::CreateMaybeMessage< ::ZSS::Protocol::Flat_Param >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Flat_Param >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Flat_Param >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Chip_Param* Arena::CreateMaybeMessage< ::ZSS::Protocol::Chip_Param >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Chip_Param >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Chip_Param >(arena);
 }
 template<> PROTOBUF_NOINLINE ::ZSS::Protocol::Robot* Arena::CreateMaybeMessage< ::ZSS::Protocol::Robot >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::ZSS::Protocol::Robot >(arena);
+  return Arena::CreateInternal< ::ZSS::Protocol::Robot >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 
