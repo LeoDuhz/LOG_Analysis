@@ -20,7 +20,7 @@ sudo apt --fix-broken install
 
 sudo apt-get -qq -y install cmake g++ git libprotobuf-dev protobuf-compiler zlib1g-dev libboost-progra\m-options-dev
 
-## 编译
+## 编译（auto_linux.sh）
 
 mkdir build
 
@@ -30,7 +30,7 @@ cmake ..
 
 make
 
-## 读取log文件
+## 读取log文件（run_logplayer.sh）
 
 进入build的bin中运行
 
