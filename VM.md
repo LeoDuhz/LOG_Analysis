@@ -1,8 +1,10 @@
 # newVisionModule-for-ssl
 
-## 在Qt中编译
+## 编译
 
 删除share/proto，把medusa编译的proto拉进来
+
+在Qt中编译
 
 ## 图形化界面
 

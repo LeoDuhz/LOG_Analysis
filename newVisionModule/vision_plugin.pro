@@ -3,12 +3,19 @@ QT += quick qml
 QT += gui
 CONFIG += c++17 console
 CONFIG -= app_bundle
+#CONFIG(debug, debug | release) : DESTDIR = $$PWD/../newVisionModule/qmake/debug
+#else : DESTDIR = $$PWD/../newVisionModule/qmake/release
+#TARGET = $$PWD/../newVisionModule/bin
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
+
+# Qt中屏蔽警告和调试信息
+DEFINES += QT_NO_WARNING_OUTPUT\
+                        QT_NO_DEBUG_OUTPUT
 
 THIRD_PARTY_DIR = /usr/local
 PROTOBUF_DIR = $${THIRD_PARTY_DIR}
