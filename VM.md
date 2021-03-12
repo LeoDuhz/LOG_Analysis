@@ -1,4 +1,4 @@
-# newVisionModule-for-ssl
+# newVisionModule
 
 ## 编译
 
@@ -10,7 +10,15 @@
 
 把main.qml文件放进Qtbuild的文件夹中
 
+Qt报错Plugin initialization failed: Cannot create OpenGL context:
 
+因为ubuntu下qt无法加载qmldesigner qmlprofiler
+
+打开qt->help->about plugins
+
+把qmldesigner qmlprofiler上的 √ 去掉
+
+重启电脑,再点 √ ,重新编译项目
 
 # ssl-logtools
 
@@ -35,3 +43,15 @@ make
 进入build的bin中运行
 
 ./logplayer
+
+
+
+# Pytorch Geometric
+
+先看
+
+https://blog.csdn.net/weixin_44502066/article/details/97809006
+
+再看
+
+https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html

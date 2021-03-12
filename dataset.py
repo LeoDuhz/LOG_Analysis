@@ -95,16 +95,13 @@ def gengerateY(playerData):
 
     return data_list
 
-#File preprocessing
+# File preprocessing
 NORMAL_START = 0
 FORCE_START = 0
 f = open('./dhzDATA', 'r')
 allData = []
-
-
 line = f.readline()
 dat = line.split(' ')
-
 cnt = 0
 while True:  
     # dat = line.split(' ')
@@ -114,7 +111,6 @@ while True:
     # print('length of all data',len(allData))
     if not line:
         break
-
     if(dat[0] == 'time:'):
         time = dat[1]
         line = f.readline()
@@ -128,12 +124,12 @@ while True:
                     line = f.readline()
                     dat = line.split(' ')
                     if(dat[0] != 'team:' and dat[0] != 'ballpos:'):
-                        #update all data
+                        # update all data
                         allData.append(gameData)
                         break
                     elif(dat[0] == 'team:'):
                         team = int(dat[1])
-                        #process blue player data
+                        # process blue player data
                         if(team == 0): 
                             if(dat[2] == 'num:'): 
                                 number = int(dat[3])
@@ -147,7 +143,7 @@ while True:
                                 w = float(dat[11])
                             bluePlayer = Player(team, number, x, y, orientation, velx, vely, w)
                             gameData.blueData.append(bluePlayer)
-                        #process yellow player data
+                        # process yellow player data
                         elif(team == 1):
                             if(dat[2] == 'num:'): 
                                 number = int(dat[3])
@@ -161,7 +157,7 @@ while True:
                                 w = float(dat[11])
                             yellowPlayer = Player(team, number, x, y, orientation, velx, vely, w)
                             gameData.yellowData.append(yellowPlayer)
-                    #process ball data
+                    # process ball data
                     elif(dat[0] == 'ballpos:'):
                         x = float(dat[1])
                         y = float(dat[2])
@@ -174,7 +170,6 @@ while True:
                     dat = line.split(' ')
                     if(dat[0] == 'time:' or not line):
                         break
-                
                 
 print('reading end')
 f.close()
@@ -197,21 +192,18 @@ class MyOwnDataset(InMemoryDataset):
         pass
 
     def process(self):
-        #process allData into geometric data format
+        # process allData into geometric data format
         data_list = []
         for raw_data in allData:
             blue_num = len(raw_data.blueData)
-            yellow_num = len(raw_data.yellowData)
-            
+            yellow_num = len(raw_data.yellowData)            
             x = torch.tensor(convertPlayData2List(raw_data.blueData), dtype=torch.float)
-
             y = torch.tensor(gengerateY(raw_data.blueData), dtype=torch.float)
-
             edge_index = torch.tensor(generateFullyConnetedEdge(blue_num), dtype=torch.long)
             edge_index = np.transpose(edge_index)
             data = Data(x=x, y=y, edge_index=edge_index.contiguous())
-
             data_list.append(data)
+            self.num = self.num + 1
 
         if self.pre_filter is not None:
             data_list = [data for data in data_list if self.pre_filter(data)]
@@ -219,10 +211,10 @@ class MyOwnDataset(InMemoryDataset):
         if self.pre_transform is not None:
             data_list = [self.pre_transform(data) for data in data_list]
 
-        
         data, slices = self.collate(data_list)
         torch.save((data, slices), self.processed_paths[0])
 
-dataset = MyOwnDataset(root='~/dhz/dataset')
-
+dataset = MyOwnDataset(root='./dataset')
+# print(dataset.num)
+# len_data = dataset.num
 loader = DataLoader(dataset, batch_size=32, shuffle=False)
