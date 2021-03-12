@@ -48,6 +48,8 @@ make
 
 # Pytorch Geometric
 
+## 环境配置
+
 先看
 
 https://blog.csdn.net/weixin_44502066/article/details/97809006
@@ -55,3 +57,25 @@ https://blog.csdn.net/weixin_44502066/article/details/97809006
 再看
 
 https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
+
+## GAT例程
+
+论文
+
+https://blog.csdn.net/weixin_36474809/article/details/89401552
+
+代码
+
+https://codechina.csdn.net/mirrors/diego999/pygat
+
+报错
+
+CUDA error: CUBLAS_STATUS_INTERNAL_ERROR when calling `cublasCreate(handle)
+
+解决
+
+是GPU配置出错,在import torch之前添加
+
+import os
+
+os.environ['CUDA_VISIBLE_DEVICES'] = "2"

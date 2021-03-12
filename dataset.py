@@ -203,7 +203,6 @@ class MyOwnDataset(InMemoryDataset):
             edge_index = np.transpose(edge_index)
             data = Data(x=x, y=y, edge_index=edge_index.contiguous())
             data_list.append(data)
-            self.num = self.num + 1
 
         if self.pre_filter is not None:
             data_list = [data for data in data_list if self.pre_filter(data)]
@@ -214,7 +213,6 @@ class MyOwnDataset(InMemoryDataset):
         data, slices = self.collate(data_list)
         torch.save((data, slices), self.processed_paths[0])
 
+
 dataset = MyOwnDataset(root='./dataset')
-# print(dataset.num)
-# len_data = dataset.num
 loader = DataLoader(dataset, batch_size=32, shuffle=False)
