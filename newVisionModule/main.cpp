@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
 //    while(true) {
 //        CactionModule::instance()->crazy(0,5,CVector(20,0),0,0,0,0);
 //    }
-    Datastore dataget;
 //    Rec_loader log_loader;
     CvisionModule::instance();
+    Datastore dataget;
     QQmlApplicationEngine engine;
     const QUrl url(QStringLiteral("main.qml"));
     engine.load(url);

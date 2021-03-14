@@ -40,12 +40,10 @@ void Datastore::udpSocketConnect(int sim) {
     }
     udpReceive.bind(QHostAddress::AnyIPv4, communicateport, QUdpSocket::ShareAddress);
     /*czkdebug*///qDebug() << "VisionPort : " << communicateport<<"Port "<<ZNetworkInterfaces::instance()->getFromIndex(networkinterface);
-    if (sim != 2) udpReceive.joinMulticastGroup(QHostAddress(ZSS::SSL_ADDRESS),ZNetworkInterfaces::instance()->getFromIndex(networkinterface));
-    else{
-        refereebox.joinMulticastGroup(QHostAddress("224.5.23.1"),ZNetworkInterfaces::instance()->getFromIndex(0));
-        udpReceive.joinMulticastGroup(QHostAddress("224.5.23.2"),ZNetworkInterfaces::instance()->getFromIndex(0));
-        connect(&refereebox, SIGNAL(readyRead()), this, SLOT(sendReferee()), Qt::DirectConnection);
-    }
+    refereebox.joinMulticastGroup(QHostAddress("224.5.23.1"),ZNetworkInterfaces::instance()->getFromIndex(0));
+    udpReceive.joinMulticastGroup(QHostAddress("224.5.23.2"),ZNetworkInterfaces::instance()->getFromIndex(0));
+    connect(&refereebox, SIGNAL(readyRead()), this, SLOT(sendReferee()), Qt::DirectConnection);
+    std::cout<<"connect referee thread"<<std::endl;
     connect(&udpReceive, SIGNAL(readyRead()), this, SLOT(sendData()), Qt::DirectConnection);
     /*czkdebug*/std::cout<<"udp connected: "<<communicateport<<std::endl;
 }
@@ -70,12 +68,20 @@ void Datastore::sendData() {
 }
 
 void Datastore::sendReferee(){
-    static QByteArray datagram;
+    static QByteArray referee;
     while(refereebox.hasPendingDatagrams()) {
-        datagram.resize(udpReceive.pendingDatagramSize());
-        refereebox.readDatagram(datagram.data(), datagram.size());
-        publish("refereebox", (void*)datagram.data(), datagram.size());
 //        std::cout<<"send referee"<<std::endl;
+        referee.resize(refereebox.pendingDatagramSize());
+        refereebox.readDatagram(referee.data(), referee.size());
+        publish("refereebox", (void*)referee.data(), referee.size());
+        CvisionModule::instance()->dealwithreferee((void*)referee.data(), referee.size());
+//        std::cout<<"send referee"<<std::endl;
+//        Referee ssl_referee;
+//        ssl_referee.ParseFromArray((void*)referee.data(), referee.size());
+//        if (ssl_referee.has_command()){
+//            const auto& command = ssl_referee.command();
+//            std::cout << "send command"<<command<<std::endl;
+//        }
     }
 }
 
@@ -143,8 +149,8 @@ Cvision::Cvision() : ZSPlugin("datareciever") , ballnum(0), oneball(false) {
     }
     camerareset();
     timepre = tv.tv_usec;
-    declare_receive("imgdata",false);
     declare_receive("refereebox",false);
+    declare_receive("imgdata",false);
     for(int i=0;i<PARAM::CAMERA;i++) updatetime[0][i] = 0;
 }
 
@@ -152,6 +158,7 @@ void Cvision::run() {
     ZSData data;
     ZSData refe;
     while(true) {
+//        std::cout<<try_receive("imgdata",data)<<std::endl;
         if(try_receive("refereebox",refe)) dealwithreferee(refe.data(), refe.size());
         if(try_receive("imgdata",data)) dealwithdata(data.data(), data.size());
     }
@@ -159,6 +166,7 @@ void Cvision::run() {
 
 void Cvision::dealwithreferee(const void *ptr, int size){
     Referee ssl_referee;
+//    std::cout<<"deal with referee"<<std::endl;
     ssl_referee.ParseFromArray(ptr,size);
     if (ssl_referee.has_command()){
         const auto& command = ssl_referee.command();
@@ -166,6 +174,7 @@ void Cvision::dealwithreferee(const void *ptr, int size){
         const auto& yellow = ssl_referee.yellow();
         const auto& blue = ssl_referee.blue();
         unsigned char cmd_index = 0;
+        std::cout<<"command"<<command<<std::endl;
         //command 对应
         switch(command) {
         case 0: cmd = PMHalt; break; // Halt
