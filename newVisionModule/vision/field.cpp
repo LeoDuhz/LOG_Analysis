@@ -71,8 +71,8 @@ void Field::drawvision() {
             }
         }
     }
-    /*czkdebug*///std::cout<<"blue number: "<<robotnum[0]<<" yellow number: "<<robotnum[1]<<std::endl;
-    if(CvisionModule::instance()->get_oneball() && CvisionModule::instance()->ballnum == 0){
+    /*czkdebug*///std::cout<<"ball number: "<<CvisionModule::instance()->ballnum<<std::endl;
+    if(CvisionModule::instance()->get_oneball()){
         Ball* ball = frame.balls[0];
         const CGeoPoint ballpos = pointtranform(ball->filterdpos);
         drawball(COLOR_ORANGE, 0, ballpos.x(), ballpos.y());

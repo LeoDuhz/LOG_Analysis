@@ -250,48 +250,76 @@ void Cvision::SetBallType(bool type) {
 
 void Cvision::dataupgrade() {
     FilterFrame newframe;
-    int temp_ball;
+    int temp_ball = 0;
     ballnum = 0;
     double robot_to_ball = 9999;
-    /*czkdebugstd::cout<<ballpaired[0]<<" "<<balls[0]->isobserved<<std::endl*/;
-    for(int i=0;i<PARAM::BALLNUM;i++){
-        if(ballpaired[i]==0){
-            if(!balls[i]->isobserved){
-                newframe.balls[i] = new Ball(CGeoPoint(-9999,-9999));
-                newframe.balls[i]->isobserved = false;
-            }
-            else{
-                balls[i]->missingframe++;
-                newframe.balls[i] = new Ball(balls[i]);
-                if(balls[i]->missingframe>10){
-                    balls[i]->missingframe = 0;
-                    balls[i]->isobserved = 0;
-                }
-            }
+    std::cout<<"observed"<<balls[0]->isobserved<<"paired"<<ballpaired[0]<<std::endl;
+    if(ballpaired[0]==0){
+        if(!balls[0]->isobserved){
+            CGeoPoint ball_pos = balls[0]->filterdpos = balls[0]->filterdpos + balls[0]->filtervelocity*interupt;
+            balls[0]->filterdpos = ball_pos;
+            balls[0]->update();
         }
         else{
-            ballnum++;
-            balls[i]->update();
-            /*czkdebug*///std::cout<<"ball rawposiiton "<<balls[i]->rawnowpos<<std::endl;
-            /*czkdebug*///std::cout<<"ball rawvelocity "<<balls[i]->getrawvelocity()<<std::endl;
-            /*czkdebug*///std::cout<<"ball filterd position"<<balls[i]->filterdpos<<std::endl;
-            if(balls[i]->isobserved) {
-                CGeoPoint ball_pos = ballfilter[i]->update(balls[i]->getrawposition(), balls[i]->getrawvelocity(), interupt);
-                balls[i]->filtervelocity = (ball_pos - balls[i]->filterdpos)/balls[i]->DeltaT;
-                balls[i]->filterdpos = ball_pos;
-                balls[i]->missingframe = 0;
-            }
-            else {
-                balls[i]->isobserved = true;
-                ballfilter[i]->reset(balls[i]->rawnowpos);
-                balls[i]->filterdpos = balls[i]->rawnowpos;
-                balls[i]->filtervelocity = CVector(0,0);
-            }
-            /*czkdebug*///std::cout<<"ball raw_vel: "<<balls[i]->rawvelocity<<"ball filter vel: "<<balls[i]->filtervelocity<<std::endl;
-            newframe.balls[i] = new Ball(balls[i]);
-            ballpaired[i] = 0;
+            balls[0]->filterdpos = balls[0]->getrawposition();
+            newframe.balls[0] = new Ball(balls[0]);
         }
     }
+    else{
+        temp_ball ++;
+        balls[0]->update();
+        if(balls[0]->isobserved) {
+            CGeoPoint ball_pos = ballfilter[0]->update(balls[0]->getrawposition(), balls[0]->getrawvelocity(), interupt);
+            balls[0]->filtervelocity = (ball_pos - balls[0]->filterdpos)/balls[0]->DeltaT;
+            balls[0]->filterdpos = ball_pos;
+            balls[0]->missingframe = 0;
+        }
+        else{
+            balls[0]->isobserved = true;
+            balls[0]->filterdpos = balls[0]->rawnowpos;
+        }
+        ballpaired[0] = 0;
+    }
+    newframe.balls[0] = new Ball(balls[0]);
+    /*czkdebugstd::cout<<ballpaired[0]<<" "<<balls[0]->isobserved<<std::endl*/;
+//    for(int i=0;i<PARAM::BALLNUM;i++){
+//        if(ballpaired[i]==0){
+//            if(!balls[i]->isobserved){
+//                newframe.balls[i] = new Ball(CGeoPoint(-9999,-9999));
+//                newframe.balls[i]->isobserved = false;
+//            }
+//            else{
+//                balls[i]->missingframe++;
+//                newframe.balls[i] = new Ball(balls[i]);
+//                if(balls[i]->missingframe>10){
+//                    balls[i]->missingframe = 0;
+//                    balls[i]->isobserved = 0;
+//                }
+//            }
+//        }
+//        else{
+//            temp_ball++;
+//            balls[i]->update();
+//            /*czkdebug*///std::cout<<"ball rawposiiton "<<balls[i]->rawnowpos<<std::endl;
+//            /*czkdebug*///std::cout<<"ball rawvelocity "<<balls[i]->getrawvelocity()<<std::endl;
+//            /*czkdebug*///std::cout<<"ball filterd position"<<balls[i]->filterdpos<<std::endl;
+//            if(balls[i]->isobserved) {
+//                CGeoPoint ball_pos = ballfilter[i]->update(balls[i]->getrawposition(), balls[i]->getrawvelocity(), interupt);
+//                balls[i]->filtervelocity = (ball_pos - balls[i]->filterdpos)/balls[i]->DeltaT;
+//                balls[i]->filterdpos = ball_pos;
+//                balls[i]->missingframe = 0;
+//            }
+//            else {
+//                balls[i]->isobserved = true;
+////                ballfilter[i]->reset(balls[i]->rawnowpos);
+//                balls[i]->filterdpos = balls[i]->rawnowpos;
+////                balls[i]->filtervelocity = CVector(0,0);
+//            }
+//            /*czkdebug*///std::cout<<"ball raw_vel: "<<balls[i]->rawvelocity<<"ball filter vel: "<<balls[i]->filtervelocity<<std::endl;
+//            newframe.balls[i] = new Ball(balls[i]);
+//            ballpaired[i] = 0;
+//        }
+//    }
 
     for(int i=0; i<=1; i++){
         for(int j=0;j<PARAM::ROBOTNUM;j++) {
@@ -331,8 +359,9 @@ void Cvision::dataupgrade() {
             newframe.robots[i][j] = new Robot(robots[i][j]);
         }
     }
-    /*czkdebug*///std::cout<<"robot_to_ball: "<<robot_to_ball<<std::endl;
-    if(ballnum == 0) balls[0]->filterdpos = balls[0]->filterdpos + balls[0]->filtervelocity*interupt;
+//    /*czkdebug*/std::cout<<"existed_ball: "<<temp_ball<<std::endl;
+//    ballnum = temp_ball;
+//    if(ballnum == 0) newframe.balls[0]->filterdpos = balls[0]->filterdpos + balls[0]->filtervelocity*interupt;
     if(oneball) balls[0]->evaluator->update(balls[0]->filtervelocity, robot_to_ball);
     /*czkdebug*///std::cout<<"after filtering the ball num is "<<ballnum<<std::endl;
     Frame.push(newframe);

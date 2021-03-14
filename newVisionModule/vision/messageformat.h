@@ -10,6 +10,7 @@ class Ball {
 public:
     Ball(CGeoPoint position) : isobserved(false), is_new(false), missingframe(0), rawnowpos(position), rawvelocity(CVector(0,0)), filtervelocity(CVector(0,0)), filterdpos(position) {
         evaluator = new BallState();
+        this->rawpreviouspos = filterdpos;
     }
     Ball(Ball* copied) : isobserved(copied->isobserved), is_new(copied->is_new), state(copied->state), missingframe(copied->missingframe){
         this->rawnowpos = copied->rawnowpos;
