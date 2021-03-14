@@ -60,6 +60,10 @@ https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html
 
 ## GAT例程
 
+介绍
+
+https://baijiahao.baidu.com/s?id=1671028964544884749&wfr=spider&for=pc
+
 论文
 
 https://blog.csdn.net/weixin_36474809/article/details/89401552
